@@ -103,7 +103,7 @@ A total of 114 individuals were tracked in Guadalupe Island between 2014 and 202
 | 2021 |  5 |
 | 2022 |  4 |
 | 2023 |  7 |
-| 2015 | 10 |
+| 2025 | 10 |
 
 A total of 26 individuals were tracked in Clarion Island between 2018 and 2022.
 
