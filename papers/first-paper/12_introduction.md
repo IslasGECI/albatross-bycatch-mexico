@@ -68,7 +68,8 @@ The gap in knowledge this study addresses is identifying the core areas used by 
 
 <!-- main idea: the question this paper answers -->
 Our objective is to determine the effectiveness of existing marine protected areas in protecting the Laysan albatross and its ecosystem.
-To this end, we aim to identify the key areas used by the Laysan albatross and determine the extent to which these areas are covered by existing marine protected areas.
+To this end, we aim to identify the key areas used by the Laysan albatross.
+We then determine the extent to which these areas are covered by existing marine protected areas.
 
 <!-- main idea: the question rests on key concepts whose meanings must be fixed first -->
 The key concepts are core area [@worton1989kernel], marine protected area [@critchley2018marine], umbrella species [@lascelles2016applying], and GPS tracking [@lascelles2016applying; @beal2021track2kba].
