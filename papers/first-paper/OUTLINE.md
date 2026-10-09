@@ -1,0 +1,67 @@
+# STORY
+
+- OPENING — Seabirds are among the most threatened groups of birds, and the main tool for protecting them at sea is anchored to land: 13.2% of pelagic species fall inside MPAs against 32.5% of coastal ones, so open-ocean users are missed by design. This is the problem the paper opens and closes on.
+- CHALLENGE — No study has quantified how much of the Laysan albatross core area in the Mexican Pacific falls inside existing MPAs. The paper asks one question — do Mexico's MPAs cover that core area? — states the hypothesis that they do not, and adds a brief approach clause (delineate the core area from 12 years of pooled GPS tracking; measure its overlap with the MPA layer). Core area here means the union of the offshore 50% UD polygons and the 60 km colony rings; the offshore component alone is a methodological byproduct and is not reported. Every Introduction paragraph must drive toward this question; the umbrella, stakeholder, oceanography, and replication material lives outside the funnel.
+- ACTION — The Action runs Trust, Place, Define, Measure: N_TAGGED tagged and N_ANALYZED analyzed individuals from Guadalupe, Clarion, and San Benedicto across 12 breeding seasons (2014–2026) are shown representative (REPRESENTATIVENESS inclusion, Rep95 = REP95; the 2014–2018 five-year claim stays qualitative); the tracks place the birds inside the EEZ; a pooled 50% UD delineates the offshore component, which unites with the 60 km colony rings to form the core area; and its overlap with MPAs is quantified on the union basis. Figure order is locked (tracks, representativeness, N_IND surface, core area with MPAs); only the prose moves.
+- RESOLUTION — The headline is a single percentage, CORE_MPA_PCT, on the union basis ((core ∪ rings) ∩ MPA) / (core ∪ rings); the same union appears on both sides, so overlapping rings and offshore component cannot be double-counted. The number's meaning is carried by location, not magnitude: the protection is anchored to islands (Revillagigedo's zones, the coastal band) while the core area lies offshore beyond every boundary (Fig 4), so the pelagic gap reproduces as a spatial pattern. The Discussion answers the question, closes the Opening circle spatially with Critchley cited qualitatively (13.2/32.5 open the problem in the Introduction and never return as a numeric comparison), limits the claim to the breeding season, and presents the core area as a candidate KBA that the layer makes available for future spatial planning (no expansion recommendation); the Conclusion is one take-home sentence.
+
+## OUTLINE
+
+- INTRODUCTION — funnel, 8 beats, Challenge-final: hook → pelagic gap → Mexican case (islands in ANPs, sea-use, fleet) → why tracking → concepts compressed → novelty compressed → the gap → question + hypothesis + approach.
+- METHODS — skeleton in 13_methods.md kept, story-tagged, analysis ordered Trust → Define → Measure: study area → GPS deployment → tracking effort → Trust (representativeness) → Define (track2KBA workflow, 60 km exclusion, 50% UD, then union with the rings to define the core area) → Place (MPA layer, EEZ) → Measure (overlap on the union basis) → ethical considerations.
+- RESULTS — 7 beats, figures locked: lead (Fig 1) → Trust (Fig 2) → Define i surface (Fig 3) → Define ii naming (core area debuts) → Measure answer (Fig 4, CORE_MPA_PCT) → Measure table + colonies → take-home (the sentence Conclusion repeats).
+- DISCUSSION — 4 moves: answer → circle (spatial, Critchley qualitative) → limitation (breeding season) → contribution (first 12-year analysis; candidate KBA, seeded in I5, available for future spatial planning; no expansion recommendation).
+- CONCLUSION — one take-home sentence carrying CORE_MPA_PCT on the union basis; no new number, no future-research sentence.
+
+## INTRODUCTION
+
+funnel; 8 beats, one point each; the Question and hypothesis land in the final beat
+
+- I1 Hook — seabirds among the most threatened groups of birds; the main tool for protecting them at sea is anchored to land. Opening sentence; nothing precedes it.
+- I2 Pelagic gap — 13.2% of pelagic species fall inside MPAs against 32.5% of coastal ones; open-ocean users are missed by design. @critchley2018marine lives here and stays here; Discussion move 2 cites it qualitatively only.
+- I3 Mexican case — Laysan albatrosses nesting on Mexican Pacific islands (Guadalupe; Clarion and San Benedicto, both inside the Revillagigedo ANP); the islands are protected, the sea around them need not be; a longline fleet works the same waters. Island oceanography and colony profiles belong to Methods (13_methods.md), not here.
+- I4 Why tracking — to know whether MPAs cover their core areas you must first know where the core areas are; GPS tracking locates them; a long pooled series is required because breeding areas shift between years (wires the 12-year design).
+- I5 Concepts compressed — core area defined as the union of the offshore 50% UD and the 60 km colony rings (one sentence, term fixed here); MPA vs ANP distinction (one sentence); the offshore component named as a methodological byproduct; one clause noting that tracking-derived core areas are the input the Key Biodiversity Area framework uses to nominate important sites — this seeds the term that the Discussion pays off (D4); no definition here. Full definitions live in Methods.
+- I6 Novelty compressed — first 12-year pooled core-area analysis for Mexico's albatross colonies. One sentence, no citation.
+- I7 The gap — no study has quantified how much of the Laysan albatross core area in the Mexican Pacific falls inside existing MPAs.
+- I8 Question + hypothesis + approach — final beat: "Do Mexico's MPAs cover the core area?", the hypothesis that they do not, and the approach clause (delineate the core area from pooled tracking; measure its overlap with the MPA layer). Objectives dissolved into these sentences.
+
+## METHODS
+
+13_methods.md skeleton kept; beats story-tagged; analysis ordered Trust → Define → Measure
+
+- M1 Study area — scope sentence (marine-coverage question, EEZ); the three colonies ordered by relevance; islands lie in ANPs; those protected areas carry a terrestrial and a marine component; California Current oceanography positioned because it explains where the core areas will sit. Island profiles each gain a connective stating why that island matters to the coverage question.
+- M2 GPS deployment — capture/attachment/Tesa protocol; December–June window enclosing the breeding season; why devices are recovered within the same season.
+- M3 Tracking data — N_TAGGED tagged (Guadalupe N_GUADALUPE, Clarion N_CLARION, San Benedicto N_SAN_BENEDICTO) and N_ANALYZED retained for analysis; 12 breeding seasons, 2014–2026; trips per colony; effort concentrated at the largest colony; the 2014–2018 five-year premise stated here and proven by M4.
+- M4 Trust — representativeness via repAssess: REPRESENTATIVENESS inclusion at n = N_ANALYZED (Rep70 = REP70, Rep95 = REP95); the 5-year subset was not representative, which is why 12 years are pooled; pooling justified because seasons align and years are comparable.
+- M5 Define — track2KBA workflow narrated, not bulleted (resolve 13_methods.md:142 note): formatFields → tripSplit → tripSummary → projectTracks → findScale (ARS via First Passage Time) → estSpaceUse → repAssess → findSite. The 60 km-around-the-colony exclusion completed and justified (13_methods.md:137 is an incomplete, load-bearing sentence — the excluded band is re-added as the ring that, with the offshore component, forms the core area); no resampling under uniform frequency.
+- M6 Define — offshore component delineation: KDE per trip → pooled density → 50% UD; then the union with the 60 km colony rings defines the core area; why track2KBA (replicable, open-source, built to identify potential KBAs).
+- M7 Place — the MPA layer (mexico_mpa) inside the EEZ mask; the intersection arithmetic and its units.
+- M8 Measure — the overlap index on the union basis: (core ∪ 60 km rings of all three colonies) ∩ MPA over (core ∪ 60 km rings); why the ring enters BOTH sides (it was removed for the KDE, so it must return for coverage); this is the paper's only percentage, computed once.
+- M9 Ethical considerations — permits, minimization, no harm (unchanged).
+
+## RESULTS
+
+7 beats; figures locked; several scaffold Qs rewritten or retired by the author's decisions
+
+- R1 Lead (Fig 1) — the sample and its geography: N_ANALYZED individuals, three colonies, 12 breeding seasons; where they went (compass, offshore distance, relation to the colonies). Carries Q1–Q3.
+- R2 Trust (Fig 2) — REPRESENTATIVENESS inclusion and what it means in plain words; a lower threshold would have licensed a different claim; Rep95 = REP95; the 2014–2018 subset only as a qualitative counterpoint. Carries Q4–Q6.
+- R3 Define i (Fig 3) — the N_IND surface, LD first: a shared core of heavily used cells; then the N_IND_RANGE range, the inverse relation between N_IND and polygon size, and the sparseness fact. Carries Q7–Q9. NOTE: the sparsity fact is a percentage and collides with the one-percentage rule — state it in counts (USED_CELLS of TOTAL_CELLS) or drop it (author's call). The Clarion and San Benedicto low maxima seeds of Q18 rest here in data terms.
+- R4 Define ii — "core area" debuts: the move from the continuous N_IND surface to the delineated 50% UD polygons, then the union with the 60 km colony rings. Carries Q10.
+- R5 Measure — the answer (Fig 4): the paper's only percentage, CORE_MPA_PCT = ((core ∪ 3 rings) ∩ MPA) / (core ∪ 3 rings) × 100, with every qualifier attached (pooled across three colonies, breeding season, inside the EEZ). The core area itself sits offshore beyond the boundaries — the map carries the deficiency the single percentage alone cannot show. Rewrites Q11; absorbs the 5-of-22 count and the island-edge location (Q13–Q14). WATCH: 17_discussion.md:6 and 18_conclusion.md:4 both say "core area falls inside MPAs" — both carry the union basis.
+- R6 Measure — table + colonies: rows are Core area and Core ∪ 60 km rings (three colonies); cores area (km²) and, on the union row only, the inside-MPA area (km²); the percentage sits in prose beside the union row. No standalone ring row, no standalone core ∩ MPA row (author's rule). Prose walks numerator and denominator. Clarion and San Benedicto delineate no core — their tracks feed the pooled surface, their protection shows only through the union (Q18 and Q19 become prose here, never reported as standalone ring percentages). NOTE: the union and overlap areas are this session's geodesic approximations; the author's own computation supersedes them, and the percentage stays CORE_MPA_PCT meanwhile.
+- R7 Take-home — one final sentence carrying CORE_MPA_PCT, one idea, no interpretation; the sentence 18_conclusion.md:4 will repeat. Rewrites Q20.
+
+## DISCUSSION
+
+4 moves; 17_discussion.md material re-arranged
+
+- D1 Answer — the question answered in one sentence: CORE_MPA_PCT (union basis), then the spatial answer: the core area lies offshore while the MPA coverage hugs islands (17_discussion.md:4–8 supply the material). The redundant re-question at 17_discussion.md:10 is dropped.
+- D2 Circle (spatial; Critchley qualitative) — the aggregate hides placement: protection is anchored to islands (Revillagigedo's near-full zones, the coastal band) while the core area sits beyond every boundary (Fig 4). The pelagic coverage gap reproduces in the Mexican Pacific as a location, not as a low total. @critchley2018marine is cited for this pattern; the 13.2/32.5 figures appear only in the Introduction. Rewrites 17_discussion.md:12–13; no numeric comparison with Critchley anywhere.
+- D3 Limitation — the data cover the breeding season only; conclusions apply to that period; the breeding season is when the population is most vulnerable, so it is also the most relevant period for protection (17_discussion.md:17–19, unchanged).
+- D4 Contribution — the paper evaluates existing ANP/MPAs rather than proposing new ones; the contribution is the first 12-year pooled core-area analysis for Mexico's albatross colonies, with the core area presented as a candidate KBA (one-sentence definition; the term, seeded in I5, debuts here as a payoff, not a reveal). No expansion recommendation and no 30×30 mention: the core-area layer is made available as one input for future spatial planning. The fisheries/bycatch link stays as a subordinate clause, giving a clean pass to the next paper. Rewrites 17_discussion.md:15, 21–22; the future-research sentence at :24 is demoted, not kept.
+
+## CONCLUSION
+
+- C1 — One take-home sentence restating the union-basis percentage (CORE_MPA_PCT), fused to the spatial implication: protection is island-anchored, so the number's meaning is location rather than magnitude. 18_conclusion.md:4 must be rewritten to the union basis ((core ∪ rings) ∩ MPA) / (core ∪ rings). No new number, no future-research sentence.
+
