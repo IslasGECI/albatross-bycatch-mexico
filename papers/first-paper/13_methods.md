@@ -80,7 +80,7 @@ Additionally, we attached GPS units to {{ clarion_n_total }} individuals on Clar
 We also attached GPS units to {{ san_benedicto_n_total }} individuals on San Benedicto Island in {{ san_benedicto_min_year }}.
 Sampling effort was implemented according to the available resources.
 
-GPS loggers have the appropriate accuracy and precision for the study given that …indicate here the basis for this argument, for example, location accuracy is down to XX m (citation of study or GPS logger technical detail for example).
+GPS loggers have the appropriate accuracy and precision for the study given that [[ indicate here the basis for this argument, for example, location accuracy is down to XXX m (citation of study or GPS logger technical detail for example) ]].
 Other devices, such as GLS loggers, are not accurate enough to determine core areas.
 We programmed the GPS to record one position every 10 minutes.
 The 10-minute frequency allows recording multiple trips per individual per season.
@@ -88,10 +88,12 @@ This frequency is high enough for the data to be representative and identify mom
 Also, this frequency is low enough for the battery to last the whole season and track multiple trips.
 The GPS needed to be securely attached during the whole breeding season.
 
-There were variations in the GPS device models across years and islands.On Guadalupe Island we used the following GPS devices: From 2014 to 2016: model GiSPy-4SB by Techno Smart (Italy).
+There were variations in the GPS device models across years and islands.
+On Guadalupe Island we used the following GPS devices: From 2014 to 2016: model GiSPy-4SB by Techno Smart (Italy).
 From 2017 to 2018: i-gotU model GT-120 by Mobile Action (Taiwan).
 From 2019 to 2023: ATS1 model Nodo-2018 by ACMOS (Mexico).
-From 2025 to 2026: GPS datalogger with accelerometer and UHF model Axy-Trek Remote by Techno Smart (Italy).On Clarion Island, from 2018 to 2022 we used the following GPS devices: i-gotU model GT-120 by Mobile Action (Taiwan).
+From 2025 to 2026: GPS datalogger with accelerometer and UHF model Axy-Trek Remote by Techno Smart (Italy).
+On Clarion Island, from 2018 to 2022 we used the following GPS devices: i-gotU model GT-120 by Mobile Action (Taiwan).
 CatLog-S, Catnip Technologies (China).
 CatLog-S2, Perthold Engineering (USA).
 
