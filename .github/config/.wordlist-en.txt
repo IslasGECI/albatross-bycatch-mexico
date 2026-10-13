@@ -1,9 +1,10 @@
-personal_ws-1.1 en 65 utf-8
+personal_ws-1.1 en 69 utf-8
 Beal
 Niña
 accelerometer
 acmos
 adehabitatlt
+afan
 anp
 anps
 anthropogenic
@@ -15,6 +16,7 @@ basemap
 benedicto
 bycatch
 catlog
+critchley
 datalogger
 eez
 el
@@ -50,11 +52,13 @@ of
 peakmethod
 perthold
 phoebastria
+pitman
 posteriori
 preprocessing
 representativeness
 revillagigedo
 shapefiles
+soanes
 subsample
 subsampled
 tesa
@@ -62,4 +66,5 @@ trophic
 ud
 udoi
 vms
+worton
 xxx

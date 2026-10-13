@@ -87,7 +87,7 @@ This identification uses 12 years of GPS tracking data that was not available be
 Previous studies used a shorter (5 years) GPS tracking dataset.
 They calculated the 50%, 75%, and 95% UD using a different method than the newer method suggested by the track2KBA framework [@hernandez2019sexual; @beal2021track2kba].
 Previous studies do not address the population representativeness of the GPS-tracked sample relative to the total population, which we do consider [@beal2021track2kba].
-Also, previous studies used data only from Guadalupe Island, while this study includes data from the islands of Clarión and San Benedicto [@hernandez2019sexual; @pitman2004population].
+Also, previous studies used data only from Guadalupe Island, while this study includes data from the islands of Clarion and San Benedicto [@hernandez2019sexual; @pitman2004population].
 
 <!-- main idea: the objective, the approach and the hypothesis the paper tests -->
 The main objective is to identify the core areas used by Laysan albatross in the Mexican Pacific and to assess their overlap with protected areas [@beal2021track2kba; @critchley2018marine].
