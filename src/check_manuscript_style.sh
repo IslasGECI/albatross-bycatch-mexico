@@ -14,7 +14,8 @@
 #   - Requiere estar en el directorio raíz del proyecto
 #   - Uso: check_manuscript_style.sh '<glob_pattern>'
 #   - Usa expresiones regulares extendidas para coincidencia
-#   - Ignora el contenido entre corchetes (citas, notas) al medir oraciones
+#   - Ignora el contenido entre corchetes (citas, notas)
+#     al medir oraciones, para no contar puntuación suelta
 # ==========================================
 
 # Validar que se proporcionó un patrón de archivos
@@ -68,14 +69,15 @@ check_sentence_length() {
     local violations=0
 
     # Procesar líneas que terminan con : . ? o comienzan con "1. " o caracteres no-palabra
-    # Excluir el texto entre corchetes (citas y notas) para no contarlo como prosa
+    # Excluir el texto entre corchetes junto con el espacio previo (citas y notas),
+    # para que la puntuación quede pegada a la palabra anterior y no cuente sola
     for pattern in ":$" "\.$" "\?$" "^1\. " "^\W"; do
         IFS=$'\n' read -d '' -r -a lines < <(egrep "$pattern" "$file" || true) || true
 
         for line in "${lines[@]}"; do
             ((line_count++))
             local word_count
-            word_count=$(echo "$line" | sed -E 's/\[[^]]*\]//g' | wc -w)
+            word_count=$(echo "$line" | sed -E 's/ ?\[[^]]*\]//g' | wc -w)
 
             if [[ $word_count -gt $max_words ]]; then
                 echo "❌ Line $line_count exceeds $max_words words ($word_count words):"
