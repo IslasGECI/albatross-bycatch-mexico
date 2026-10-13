@@ -5,7 +5,7 @@
 
 <!-- study scope, marine-coverage question, and candidate islands -->
 We studied the core areas that Laysan albatrosses use within the Mexican EEZ.
-Specifically, we assessed whether the marine protected area covers the core areas used by the Laysan albatross during its breeding season falls within any Mexican marine protected area.
+Specifically, we assessed whether Mexican marine protected areas cover the core areas used by the Laysan albatross during its breeding season.
 The protected areas relevant for this study have a terrestrial component (the island) and a marine component (the surrounding waters).
 There are several islands on which the Laysan albatross breeds: Guadalupe, Clarion, and San Benedicto are the relevant islands for the Mexican Pacific.
 The location of the islands is relevant to understand the surrounding oceanographic conditions, for instance, the California Current.
@@ -46,7 +46,7 @@ The number of nests is low (less than 40 for San Benedicto).
 
 We installed and recovered GPS tracking devices while individuals were breeding on the island.
 Devices were deployed from December to June to encompass the breeding season that usually runs from November to July.
-This overlap also ensured that we were able to retrieve GPS devices before individuals migrated off the islands as GPS devices and data cannot be recovered the next breeding season.
+This ensured that we were able to retrieve GPS devices before individuals migrated off the islands, since they cannot be recovered the next breeding season.
 Seabirds were captured by hand at the nest, and GPS devices were attached to feathers that are molted during the non-breeding season.
 We attached the GPS loggers to the albatrosses with Tesa tape (#4651, Tesa AG, Hamburg, Germany).
 The GPS was attached to the back feathers following [@hernandez2019sexual].
@@ -55,7 +55,7 @@ No albatross individuals were harmed during the study.
 
 We split each record into discrete round trips and analyze each trip as an independent tracking event using KDE [@beal2021track2kba].
 We focus solely on albatross that nest on the islands Guadalupe, Clarion, and San Benedicto.
-To identify the core areas that persist over time, we use a long time series of tracking data to capture interannual variability spanning tracking data from 2014 to 2026.
+To identify the core areas that persist, we use a long time series of tracking data from 2014 to 2026 to capture interannual variability.
 Each tracking device records multiple foraging trips during each breeding season.
 and the representativeness assessment checks that the sample is sufficient.
 
@@ -221,6 +221,6 @@ This measure of core habitat protection coverage tells us what fraction of the a
 
 Our study followed necessary ethical guidelines ensuring the welfare of the seabirds during their handling.
 We also had all the permits required by the Mexican government.
-The study was conducted under the permits from the following institutions: Ministry of the Interior, Ministry of Environment and Natural Resources, and the National Commission for Protected Natural Areas.
+Permits came from the Ministry of the Interior, the Ministry of Environment and Natural Resources, and the National Commission for Protected Natural Areas.
 A complete list of permits by island and year is available in the Supplementary Information.
 
