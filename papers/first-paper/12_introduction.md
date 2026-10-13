@@ -44,7 +44,7 @@ In the Mexican Pacific, however, protected areas are anchored to terrestrial uni
 There is evidence that in some cases protected areas do not actually protect highly mobile pelagic species [@critchley2018marine].
 
 <!-- main idea: the method turns tracks into a core area and tests it against protected areas -->
-To evaluate if whether the protected area actually protects the important areas for the Laysan albatross, we evlauate the overlap between those two areas.
+To evaluate whether the protected area actually protects the important areas for the Laysan albatross, we evaluate the overlap between those two areas.
 GPS tracking allows finding the UD by means of kernel density estimation (KDE), and we use the UD to identify the core areas [@beal2021track2kba; @worton1989kernel].
 The colony is used to define what constitutes a complete trip, which is the unit of analysis in this study.
 This evaluates the effectiveness of a protected area to protect an umbrella species, such as the Laysan albatross [@critchley2018marine].

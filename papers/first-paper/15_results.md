@@ -9,8 +9,10 @@
 
 [[ Q3. In one sentence, where did the 121 individuals go? Give the compass direction, the distance offshore, and the relationship to the three colonies. ]]
 
-![GPS tracks of Laysan Albatross (_Phoebastria immutabilis_) from the Guadalupe (green; 2014-2026), Clarion (purple; 2018-2022) and San Benedicto (coral; 2020) colonies.
-The blue line delimits Mexico's Exclusive Economic Zone, and green lines outline its protected areas.](reports/figures/mexico_eez_bounding_box_zoom_out.png)
+![
+GPS tracks of Laysan Albatross (_Phoebastria immutabilis_) from the Guadalupe (green; 2014-2026), Clarion (purple; 2018-2022) and San Benedicto (coral; 2020) colonies.
+The blue line delimits Mexico's Exclusive Economic Zone, and green lines outline its protected areas.
+](reports/figures/mexico_eez_bounding_box_zoom_out.png)
 
 [[ Q4. Write the sentence that opens the Results. What did the sample achieve, and what does that permit you to claim about the population? ("The sample of 121 individuals was ___% representative, which means ___.") ]]
 
@@ -18,10 +20,12 @@ The blue line delimits Mexico's Exclusive Economic Zone, and green lines outline
 
 [[ Q6. 13_methods.md:64 states a 2014–2018 subset was not representative. What did it score, and what does failing that threshold tell the reader that the 93.4% does not? ]]
 
-![Representativeness of the tracked Laysan Albatross (_Phoebastria immutabilis_) sample from the Guadalupe, Clarion and San Benedicto colonies (2014–2026).
+![
+Representativeness of the tracked Laysan Albatross (_Phoebastria immutabilis_) sample from the Guadalupe, Clarion and San Benedicto colonies (2014–2026).
 Gray points show bootstrap estimates of the inclusion rate for each sample size, and the black line is their mean.
 The gray band is the confidence interval, and the 93.4% value is the representativeness achieved with all 121 tracked individuals.
-The inclusion rate measures how much of the population's distribution the tracked sample covers.](reports/figures/gps_albatross_50_percent_representative_assessment_ars_all.png)
+The inclusion rate measures how much of the population's distribution the tracked sample covers.
+](reports/figures/gps_albatross_50_percent_representative_assessment_ars_all.png)
 
 [[ Q7. Write the LD sentence for Fig 3: what is the pattern, stated before the detail? (N_IND 1–36 across 10,417 used cells) ]]
 
@@ -29,7 +33,9 @@ The inclusion rate measures how much of the population's distribution the tracke
 
 [[ Q9. The most-shared cell reaches N_IND = 36, yet the largest polygons are the least shared (4,596 km2 at N_IND 13, against 127 km2 at N_IND 36). Is that inverse relationship a result in its own right? If so, write the sentence that states it without interpreting it. ]]
 
-![Number of tracked Laysan albatross (_Phoebastria immutabilis_) individuals (n = 121) whose 50% utilization distribution covers each grid cell (range 1–36).](reports/figures/ud_in_grid_map.png)
+![
+Number of tracked Laysan albatross (_Phoebastria immutabilis_) individuals (n = 121) whose 50% utilization distribution covers each grid cell (range 1–36).
+](reports/figures/ud_in_grid_map.png)
 
 [[ Q10. This is the sentence that introduces the term "core area" for the first time. Write it: how does moving from the continuous N_IND surface to the delineated purple polygons happen, and what is the core area? ]]
 
@@ -41,9 +47,11 @@ The inclusion rate measures how much of the population's distribution the tracke
 
 [[ Q14. The 198.1 km2 that is protected sits at the island edge, 28.5–29.4N and -116 to -119W. What does the where of the overlap add to the number? ]]
 
-![The core area (purple) for Laysan Albatross (_Phoebastria immutabilis_) delineated from the pooled tracking data of 121 individuals breeding at Guadalupe, Clarion and San Benedicto (2014–2026).
+![
+The core area (purple) for Laysan Albatross (_Phoebastria immutabilis_) delineated from pooled tracking data of 121 individuals breeding at Guadalupe, Clarion and San Benedicto (2014–2026).
 Green surfaces show Mexican Marine Protected Areas, and the brighter green marks where they overlap the core area.
-The blue line delimits Mexico's Exclusive Economic Zone.](reports/figures/gps_albatross_50_percent_potential_kba_ars_all_with_mpa.png)
+The blue line delimits Mexico's Exclusive Economic Zone.
+](reports/figures/gps_albatross_50_percent_potential_kba_ars_all_with_mpa.png)
 
 [[ Q15. Critchley reported 13.2% pelagic and 32.5% coastal coverage. Write the sentence that places 10.43% against those figures. Then state whether that sentence belongs in the Results or the Discussion — and why. ]]
 

@@ -136,8 +136,8 @@ The data from Guadalupe Island include {{ guadalupe_n_trips }} complete trips, C
 
 <!-- track2KBA workflow and filters -->
 We used the R package track2KBA [@beal2021track2kba] and followed the track2KBA methodology.
-We removed points within 60 km around the colony becasuse… .
-Our methodological approach called for removing incomplete trips to avoid bias in the computed utilization distribution that represents….
+We removed points within 60 km around the colony because XXX.
+Our methodological approach called for removing incomplete trips to avoid bias in the computed utilization distribution that represents XXX.
 
 
 <!-- track2KBA functions used -->
@@ -159,7 +159,7 @@ After processing the data, we analyzed them to identify the core areas.
 
 ## Data Analysis
 
-We splitted all tracks into single tracks representing a departure and return of an individual to the nesting colony.
+We split all tracks into single tracks representing a departure and return of an individual to the nesting colony.
 We then calculated the Kernel Density Estimation (KDE), and found core areas (50% UD; potential KBA).
 We chose the [@beal2021track2kba] methodology because it is replicable using a single open-source R package (track2KBA).
 It allows us to split tracks, estimate UD, and evaluate representativeness, and is explicitly designed to identify potential key biodiversity areas from tracking data.
