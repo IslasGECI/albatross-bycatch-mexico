@@ -1,4 +1,4 @@
-personal_ws-1.1 en 69 utf-8
+personal_ws-1.1 en 74 utf-8
 Beal
 Niña
 accelerometer
@@ -16,7 +16,10 @@ basemap
 benedicto
 bycatch
 catlog
+conanp
+conapesca
 critchley
+csos
 datalogger
 eez
 el
@@ -32,6 +35,8 @@ gls
 gotu
 gps
 guadalupe
+iattc
+iba
 immutabilis
 interannual
 interpretability
