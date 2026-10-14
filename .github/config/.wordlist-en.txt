@@ -1,4 +1,4 @@
-personal_ws-1.1 en 74 utf-8
+personal_ws-1.1 en 81 utf-8
 Beal
 Niña
 accelerometer
@@ -21,12 +21,14 @@ conapesca
 critchley
 csos
 datalogger
+dgvs
 eez
 el
 enso
 fieberg
 floatbarrier
 fpt
+frac
 garrott
 generalizability
 gfw
@@ -59,11 +61,16 @@ perthold
 phoebastria
 pitman
 posteriori
+predation
 preprocessing
+replicable
 representativeness
 revillagigedo
+sbra
+sgpa
 shapefiles
 soanes
+sparn
 subsample
 subsampled
 tesa
