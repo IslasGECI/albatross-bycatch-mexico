@@ -16,6 +16,7 @@
 ## Results
 
 - [ ] Representativeness `XXX%` — `15_results.md:17`.
+- [ ] Replace the literal 121 with a mustache variable for the analyzed count — `15_results.md:17`.
 - [ ] Area of the 50% UD (km2), from the pooled KBA polygons — `15_results.md:41`.
 - [ ] Area of the 60 km rings around Guadalupe, Clarion, and San Benedicto (km2) — `15_results.md:41`.
 - [ ] Total core area (km2): the 50% UD unioned with the rings — `15_results.md:42`.
