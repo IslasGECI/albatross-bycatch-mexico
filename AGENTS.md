@@ -2,6 +2,10 @@
 
 Workflow-oriented guide to the technical architecture, operational procedures, and engineering standards for the `bycatch_thesis` project.
 
+## External Surface
+
+The external surface is the set of `make` targets that a file under `papers/` references. A target that no `papers/` file mentions is not part of the surface. `DOCS.md` lists the current elements; `CHANGELOG.md` records only changes to those elements.
+
 ## Environment Setup & Operations
 
 ### Build System
@@ -106,6 +110,10 @@ Then: `# ==== CONFIGURACIÓN ====`, `# ==== ENTRADAS ====`, `# ==== PROCESAMIENT
 - `make check` runs spellcheck and manuscript style checks.
 - **Spellcheck**: Passing for both English and Spanish.
 - **Style**: ≤ 25 words per sentence, ≤ 200 words per paragraph.
+- **Pre-push gate**: the `pre-push` hook runs `make check` in Docker and aborts the push when any check fails.
+- **Manuscript placeholders**: `{{ key }}` resolves from `data/processed/methods.json`, and an unknown key renders empty silently; `[[ ... ]]` notes are skipped by the style checker; `XXX` marks a number the author must supply.
+- **Spelling whitelist**: add correct-but-unknown tokens to `.github/config/.wordlist-en.txt` (or `.wordlist-es.txt`) and bump the count in the `personal_ws-1.1` header; `aspell` runs with `--ignore-case`, so a lowercase entry covers capitalised uses.
+- **Authorship**: for the manuscripts, the author writes all prose; the assistant is bounded to structure, questions, and deterministic edits.
 
 ### Commits (Gitmoji)
 - Format: `[Emoji] [Imperative Verb] [Summary]` with blank line then body explaining why.

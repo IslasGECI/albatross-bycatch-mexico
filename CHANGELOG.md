@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- `reports/figures/combined_fishing_distribution_map.png` — UDOI-weighted combined fishing distribution for VMS longline and trawler
+- `reports/figures/gfw_fishing_effort_pacific_map.png` — GFW apparent fishing effort in the Pacific Mexico EEZ after spatial filtering
+- `reports/figures/ud_vms_trawler_udoi_map.png` — joint albatross-trawler UDOI per KDE grid cell
+- `reports/figures/ud_vms_all_gear_udoi_map.png` — joint albatross-all-gear UDOI per KDE grid cell
+- `reports/figures/ud_vms_all_gear_classification_map.png` — UDOI classification by percentile for all gears
+- `reports/figures/vms_longline_n_points_map.png` — VMS longline point count per KDE grid cell
+- `reports/figures/vms_trawler_n_points_map.png` — VMS trawler point count per KDE grid cell
+
 ## [v0.3.0] - 2026-06-26
 
 ### Added
