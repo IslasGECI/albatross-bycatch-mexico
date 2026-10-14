@@ -27,7 +27,7 @@ The gray band is the confidence interval, and the 93.4% value is the representat
 The inclusion rate measures how much of the population's distribution the tracked sample covers.
 ](reports/figures/gps_albatross_50_percent_representative_assessment_ars_all.png)
 
-[[ Q7. Write the LD sentence for Fig 3: what is the pattern, stated before the detail? (N_IND 1–36 across 10,417 used cells) ]]
+[[ Q7. Write the lead sentence for Fig 3: what is the pattern, stated before the detail? (N_IND 1–36 across 10,417 used cells) ]]
 
 [[ Q8. Only 4.8% of the 215,430 grid cells are used at all. What does that sparseness tell a reader about how to look at the map — and what does it rule out? ]]
 
@@ -55,7 +55,7 @@ The blue line delimits Mexico's Exclusive Economic Zone.
 
 [[ Q15. Critchley reported 13.2% pelagic and 32.5% coastal coverage. Write the sentence that places 10.43% against those figures. Then state whether that sentence belongs in the Results or the Discussion — and why. ]]
 
-[[ Q16. Write the LD sentence opening P5: what is the contrast, stated before the detail? ]]
+[[ Q16. Write the lead sentence opening P5: what is the contrast, stated before the detail? ]]
 
 [[ Q17. What goes in the table? Give the rows, the columns, and the one number per colony you most want the reader to leave with. ]]
 
