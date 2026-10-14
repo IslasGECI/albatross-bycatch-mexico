@@ -1,4 +1,4 @@
-personal_ws-1.1 en 81 utf-8
+personal_ws-1.1 en 83 utf-8
 Beal
 Niña
 accelerometer
@@ -9,6 +9,7 @@ anp
 anps
 anthropogenic
 ars
+asymptote
 axy
 azimuthal
 baja
@@ -73,6 +74,7 @@ soanes
 sparn
 subsample
 subsampled
+sur
 tesa
 trophic
 ud
