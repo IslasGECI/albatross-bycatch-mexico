@@ -2,9 +2,9 @@
 
 Workflow-oriented guide to the technical architecture, operational procedures, and engineering standards for the `bycatch_thesis` project.
 
-## External Surface
+## Public Interface
 
-The external surface is the set of `make` targets that a file under `papers/` references. A target that no `papers/` file mentions is not part of the surface. `DOCS.md` lists the current elements; `CHANGELOG.md` records only changes to those elements.
+The public interface is the set of `make` targets that a file under `papers/` references. A target that no `papers/` file mentions is not part of the interface. `DOCS.md` lists the current elements; `CHANGELOG.md` records only changes to those elements.
 
 ## Environment Setup & Operations
 
