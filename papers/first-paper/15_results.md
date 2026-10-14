@@ -14,7 +14,7 @@ The blue line delimits Mexico's Exclusive Economic Zone, and green lines outline
 ](reports/figures/mexico_eez_bounding_box_zoom_out.png)
 
 The asymptote in the inclusion curve in Fig 2 indicates that the sample size is adequate.
-The sample of 121 individuals has a representativeness of {{ mustache }}%, which means that it adequately represents the Laysan albatross population at the Guadalupe, Clarion and San Benedicto colonies.
+The sample of 121 individuals has a representativeness of XXX%, which means that it adequately represents the Laysan albatross population at the Guadalupe, Clarion and San Benedicto colonies.
 We can state that the results obtained from this sample are applicable to the population.
 
 ![
@@ -39,7 +39,7 @@ Following [@hernandez2019sexual], a radius of 60 km around each colony was used.
 We define the core area as the union of the 50% UD and the 60 km rings around each colony.
 
 The 50% UD has an area of XXX km2, and the 60 km rings around the colonies have an area of XXX km2.
-In total, the core area has an area of XXX km2, of which XXX km2 are within a Mexican marine protected area, which represents {{ mustache }}% of the core area.
+In total, the core area has an area of XXX km2, of which XXX km2 are within a Mexican marine protected area, which represents XXX% of the core area.
 
 ![
 The core area (purple) for Laysan Albatross (_Phoebastria immutabilis_) delineated from pooled tracking data of 121 individuals breeding at Guadalupe, Clarion and San Benedicto (2014–2026).
