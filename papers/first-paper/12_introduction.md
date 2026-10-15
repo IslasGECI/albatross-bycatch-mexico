@@ -93,3 +93,5 @@ The tracking data used by this study are made available for others to make their
 This study provides the scientific base necessary to extend the protected areas in an effective way [@critchley2018marine; @afan2018adaptive; @mendez2022population].
 We also recommend using these results to define biodiversity corridors [@afan2018adaptive].
 We recommend incorporating the core area and overlap maps into protected area management plans and using them to adjust boundaries toward uncovered core areas [@mendez2022population; @afan2018adaptive].
+Our results suggest that the existing protected areas do not adequately cover the core areas used by the Laysan albatross [@critchley2018marine].
+It extends the global picture of the effectiveness of MPAs to protect pelagic species [@critchley2018marine].
