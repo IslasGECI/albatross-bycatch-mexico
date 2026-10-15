@@ -3,7 +3,7 @@
 
 ## Study Area
 
-<!-- study scope, marine-coverage question, and candidate islands -->
+<!-- main idea: M1 Study area — scope sentence (marine-coverage question, EEZ); the three colonies ordered by relevance; islands lie in ANPs; those protected areas carry a terrestrial and a marine component; California Current oceanography positioned because it explains where the core areas will sit. Island profiles each gain a connective stating why that island matters to the coverage question. -->
 We studied the core areas that Laysan albatrosses use within the Mexican EEZ.
 Specifically, we assessed whether Mexican marine protected areas cover the core areas used by the Laysan albatross during its breeding season.
 The protected areas relevant for this study have a terrestrial component (the island) and a marine component (the surrounding waters).
@@ -13,7 +13,7 @@ These conditions help explain the location of the identified core areas.
 We describe each island in order of the relevance of the colonies.
 
 ### Guadalupe Island
-<!-- Guadalupe Island profile -->
+
 Guadalupe Island hosts the largest breeding colony of Laysan albatross in the eastern Pacific [@hernandez2019sexual].
 Guadalupe Island is an oceanic island of volcanic origin located 300 km west of the coast of Baja California.
 It has an area of 244 km$^2$.
@@ -22,7 +22,7 @@ On Guadalupe Island, there were 2,195 breeding pairs of Laysan albatross in 2025
 
 ### Clarion Island
 
-<!-- Clarion Island profile -->
+
 Clarion Island is part of the Revillagigedo Archipelago.
 Clarion is located 700 kilometers from the Mexican mainland.
 It has a tropical climate.
@@ -33,7 +33,7 @@ On Clarion Island, crows and snakes prey on Laysan albatross eggs and newly hatc
 
 ### San Benedicto
 
-<!-- San Benedicto: secondary colony, low reproductive success, and the three breeding grounds -->
+
 San Benedicto Island is also part of the Revillagigedo Archipelago and shares the same tropical climate.
 San Benedicto is located 600 kilometers from the Mexican mainland.
 It has an area of 10 km$^2$.
@@ -44,6 +44,7 @@ The number of nests is low (less than 40 for San Benedicto).
 
 ## GPS deployment
 
+<!-- main idea: M2 GPS deployment — capture/attachment/Tesa protocol; December–June window enclosing the breeding season; why devices are recovered within the same season. -->
 We installed and recovered GPS tracking devices while individuals were breeding on the island.
 Devices were deployed from December to June to encompass the breeding season that usually runs from November to July.
 This ensured that we were able to retrieve GPS devices before individuals migrated off the islands, since they cannot be recovered the next breeding season.
@@ -53,12 +54,14 @@ The GPS was attached to the back feathers following [@hernandez2019sexual].
 The capture is brief and harmless, and the individuals were released on site immediately after attaching or removing the GPS device.
 No albatross individuals were harmed during the study.
 
+<!-- main idea: M3 Tracking data — N_TAGGED tagged (Guadalupe N_GUADALUPE, Clarion N_CLARION, San Benedicto N_SAN_BENEDICTO) and N_ANALYZED retained for analysis; 12 breeding seasons, 2014–2026; trips per colony; effort concentrated at the largest colony; the 2014–2018 five-year premise stated here and proven by M4. -->
 We split each record into discrete round trips and analyze each trip as an independent tracking event using KDE [@beal2021track2kba].
 We focus solely on albatross that nest on the islands Guadalupe, Clarion, and San Benedicto.
 To identify the core areas that persist, we use a long time series of tracking data from 2014 to 2026 to capture interannual variability.
 Each tracking device records multiple foraging trips during each breeding season.
 and the representativeness assessment checks that the sample is sufficient.
 
+<!-- main idea: M4 Trust — representativeness via repAssess: REPRESENTATIVENESS inclusion at n = N_ANALYZED (Rep70 = REP70, Rep95 = REP95); the 5-year subset was not representative, which is why 12 years are pooled; pooling justified because seasons align and years are comparable. -->
 We assume that a 12-year tracking dataset would be long enough to capture the patterns that persist despite the interannual variability.
 We verified this assumption with a representativeness analysis.
 We also confirmed that a 5-year dataset (2014-2018) was not long enough to be representative of the population.
@@ -126,21 +129,21 @@ The following tables show the number of individuals tracked per season at each c
 | {{season}} | {{start}} | {{end}} | {{n}} | {{trips}} |
 {{/san_benedicto_seasons}}
 
-<!-- tracking effort concentration across colonies -->
+
 The tracking effort was concentrated at the largest colony, Guadalupe Island, and less effort was invested in the smallest colonies, Clarion and San Benedicto islands.
 
-<!-- sampled individuals and trips -->
+
 The data from Guadalupe Island include {{ guadalupe_n_trips }} complete trips, Clarion {{ clarion_n_trips }}, and San Benedicto {{ san_benedicto_n_trips }}.
 
 ## Data Processing
 
-<!-- track2KBA workflow and filters -->
+<!-- main idea: M5 Define — track2KBA workflow narrated, not bulleted: formatFields → tripSplit → tripSummary → projectTracks → findScale (ARS via First Passage Time) → estSpaceUse → repAssess → findSite. The 60 km-around-the-colony exclusion completed and justified (the excluded band is re-added as the ring that, with the offshore component, forms the core area); no resampling under uniform frequency. -->
 We used the R package track2KBA [@beal2021track2kba] and followed the track2KBA methodology.
 We removed points within 60 km around the colony because XXX.
 Our methodological approach called for removing incomplete trips to avoid bias in the computed utilization distribution that represents XXX.
 
 
-<!-- track2KBA functions used -->
+
 [[ Narrate instead of bullet points ]]
 The following track2KBA functions were used:
 
@@ -153,12 +156,13 @@ The following track2KBA functions were used:
 - `repAssess()` to bootstrap and assess sample representativeness
 - `findSite()` to identify potential KBA polygons (core areas) meeting thresholds.
 
-<!-- no resampling under uniform frequency -->
+
 We did not resample because all GPS devices were programmed with the same frequency, so the raw data were already homogeneous.
 After processing the data, we analyzed them to identify the core areas.
 
 ## Data Analysis
 
+<!-- main idea: M6 Define — offshore component delineation: KDE per trip → pooled density → 50% UD; then the union with the 60 km colony rings defines the core area; why track2KBA (replicable, open-source, built to identify potential KBAs). -->
 We split all tracks into single tracks representing a departure and return of an individual to the nesting colony.
 We then calculated the Kernel Density Estimation (KDE), and found core areas (50% UD; potential KBA).
 We chose the [@beal2021track2kba] methodology because it is replicable using a single open-source R package (track2KBA).
@@ -168,7 +172,7 @@ It allows us to split tracks, estimate UD, and evaluate representativeness, and 
 
 **Measurements and Variables**
 
-<!-- variables: GPS locations to core areas -->
+
 The independent variable is the GPS locations of the Laysan albatross.
 The dependent variable is the core areas used by the Laysan albatross.
 The unit of analysis is an individual trip, which is a set of GPS locations.
@@ -199,18 +203,19 @@ Once the core areas were identified, we quantified their overlap with the existi
 
 ### Overlap of core areas with MPAs
 
+<!-- main idea: M7 Place — the MPA layer (mexico_mpa) inside the EEZ mask; the intersection arithmetic and its units. -->
 To determine overlap, we intersect the core areas with the MPA polygons and quantify the level of overlap.
 
 **Measurements and Variables**
 
-<!-- variables: core areas and MPAs to overlap index -->
+
 The independent variables are the core areas used by the Laysan albatross and the MPA polygons.
 The dependent variable is the overlap index.
 The overlap index is a ratio between the two areas.
 
 **Analysis**
 
-<!-- overlap index definition, properties, and interpretation -->
+<!-- main idea: M8 Measure — the overlap index on the union basis: (core ∪ 60 km rings of all three colonies) ∩ MPA over (core ∪ 60 km rings); why the ring enters BOTH sides (it was removed for the KDE, so it must return for coverage). -->
 We calculated the overlap index to quantify the overlap of the core areas with the MPA polygons.
 @fieberg2005quantifying quantified home-range overlap using the utilization distribution.
 The overlap index is area-based (proportional) overlap: $HR_{i,j} = \frac{A_{i,j}}{A_i}$.
@@ -219,6 +224,7 @@ This measure of core habitat protection coverage tells us what fraction of the a
 
 ## Ethical Considerations
 
+<!-- main idea: M9 Ethical considerations — permits, minimization, no harm (unchanged). -->
 Our study followed necessary ethical guidelines ensuring the welfare of the seabirds during their handling.
 We also had all the permits required by the Mexican government.
 Permits came from the Ministry of the Interior, the Ministry of Environment and Natural Resources, and the National Commission for Protected Natural Areas.
