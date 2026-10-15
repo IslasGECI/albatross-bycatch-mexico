@@ -55,6 +55,8 @@ Green surfaces show Mexican marine protected areas, and the blue line delimits M
 ](reports/figures/gps_albatross_50_percent_potential_kba_ars_all_with_mpa.png)
 
 <!-- main idea: R6 Measure — table + colonies: rows are Core area and Core ∪ 60 km rings (three colonies); cores area (km²) and, on the union row only, the inside-MPA area (km²); the percentage sits in prose beside the union row. Prose walks numerator and denominator. Clarion and San Benedicto delineate no core — their tracks feed the pooled surface, their protection shows only through the union (they become prose here). -->
+[[ gap — "R6 table" — which rows, columns, and per-colony number should the table carry? ]]
 <!-- main idea: R7 Take-home — one final sentence carrying CORE_MPA_PCT, one idea, no interpretation; this is the Results answer (the LD close of the Action), deliberately distinct from the Conclusion resolution that closes the Opening circle. -->
+[[ gap — "R7 take-home" — what closing sentence carries the union-basis percentage? ]]
 
 \FloatBarrier

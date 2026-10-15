@@ -8,12 +8,18 @@ We studied the core areas that Laysan albatrosses use within the Mexican EEZ.
 Specifically, we assessed whether Mexican marine protected areas cover the core areas used by the Laysan albatross during its breeding season.
 The protected areas relevant for this study have a terrestrial component (the island) and a marine component (the surrounding waters).
 There are several islands on which the Laysan albatross breeds: Guadalupe, Clarion, and San Benedicto are the relevant islands for the Mexican Pacific.
+The global population size has been estimated to be around 800,000 breeding pairs [@birdlife2018phoebastria].
+The biggest nesting colonies are low-lying sites at risk due to sea-level rise associated with climate change [@birdlife2018phoebastria].
+Guadalupe Island has high nesting areas that are less affected by sea-level rise, offering a refuge for the species [@hernandez2019sexual].
 The location of the islands is relevant to understand the surrounding oceanographic conditions, for instance, the California Current.
 These conditions help explain the location of the identified core areas.
+Their food availability and distribution (fish, squid, etc.) are determined by oceanographic factors.
+The California Current enriches the water with nutrients, which makes food more available.
+ENSO variability might increase or reduce food availability in certain areas.
+This food availability will affect where the albatrosses feed, which will determine what the core areas are.
 We describe each island in order of the relevance of the colonies.
 
 ### Guadalupe Island
-
 Guadalupe Island hosts the largest breeding colony of Laysan albatross in the eastern Pacific [@hernandez2019sexual].
 Guadalupe Island is an oceanic island of volcanic origin located 300 km west of the coast of Baja California.
 It has an area of 244 km$^2$.
@@ -21,8 +27,6 @@ It measures 30 km at its longest part from the southern end to the northern end.
 On Guadalupe Island, there were 2,195 breeding pairs of Laysan albatross in 2025 (unpublished authors' monitoring data).
 
 ### Clarion Island
-
-
 Clarion Island is part of the Revillagigedo Archipelago.
 Clarion is located 700 kilometers from the Mexican mainland.
 It has a tropical climate.
@@ -32,8 +36,6 @@ Clarion Island has the second largest Laysan albatross colony in Mexico.
 On Clarion Island, crows and snakes prey on Laysan albatross eggs and newly hatched chicks.
 
 ### San Benedicto
-
-
 San Benedicto Island is also part of the Revillagigedo Archipelago and shares the same tropical climate.
 San Benedicto is located 600 kilometers from the Mexican mainland.
 It has an area of 10 km$^2$.
@@ -54,16 +56,15 @@ The GPS was attached to the back feathers following [@hernandez2019sexual].
 The capture is brief and harmless, and the individuals were released on site immediately after attaching or removing the GPS device.
 No albatross individuals were harmed during the study.
 
+## Tracking data
+
 <!-- main idea: M3 Tracking data — N_TAGGED tagged (Guadalupe N_GUADALUPE, Clarion N_CLARION, San Benedicto N_SAN_BENEDICTO) and N_ANALYZED retained for analysis; 12 breeding seasons, 2014–2026; trips per colony; effort concentrated at the largest colony; the 2014–2018 five-year premise stated here and proven by M4. -->
 We split each record into discrete round trips and analyze each trip as an independent tracking event using KDE [@beal2021track2kba].
 We focus solely on albatross that nest on the islands Guadalupe, Clarion, and San Benedicto.
 To identify the core areas that persist, we use a long time series of tracking data from 2014 to 2026 to capture interannual variability.
 Each tracking device records multiple foraging trips during each breeding season.
 and the representativeness assessment checks that the sample is sufficient.
-
-<!-- main idea: M4 Trust — representativeness via repAssess: REPRESENTATIVENESS inclusion at n = N_ANALYZED (Rep70 = REP70, Rep95 = REP95); the 5-year subset was not representative, which is why 12 years are pooled; pooling justified because seasons align and years are comparable. -->
 We assume that a 12-year tracking dataset would be long enough to capture the patterns that persist despite the interannual variability.
-We verified this assumption with a representativeness analysis.
 We also confirmed that a 5-year dataset (2014-2018) was not long enough to be representative of the population.
 We grouped all 12 years without distinguishing between years.
 Because every year covers only the breeding season, which occurs in the same time period, the years are comparable and can be pooled.
@@ -75,8 +76,6 @@ The table shows the deployment window for each colony.
 | Guadalupe | {{ guadalupe_min_date }} | {{ guadalupe_max_date }} |
 | Clarion | {{ clarion_min_date }} | {{ clarion_max_date }} |
 | San Benedicto | {{ san_benedicto_min_date }} | {{ san_benedicto_max_date }} |
-
-## Field Methods
 
 We attached GPS units to {{ guadalupe_n_total }} Laysan albatross individuals on Guadalupe Island from {{ guadalupe_min_year }} to {{ guadalupe_max_year }}.
 Additionally, we attached GPS units to {{ clarion_n_total }} individuals on Clarion Island from {{ clarion_min_year }} to {{ clarion_max_year }}.
@@ -129,20 +128,27 @@ The following tables show the number of individuals tracked per season at each c
 | {{season}} | {{start}} | {{end}} | {{n}} | {{trips}} |
 {{/san_benedicto_seasons}}
 
-
 The tracking effort was concentrated at the largest colony, Guadalupe Island, and less effort was invested in the smallest colonies, Clarion and San Benedicto islands.
-
 
 The data from Guadalupe Island include {{ guadalupe_n_trips }} complete trips, Clarion {{ clarion_n_trips }}, and San Benedicto {{ san_benedicto_n_trips }}.
 
 ## Data Processing
 
+<!-- main idea: M4 Trust — representativeness via repAssess: REPRESENTATIVENESS inclusion at n = N_ANALYZED (Rep70 = REP70, Rep95 = REP95); the 5-year subset was not representative, which is why 12 years are pooled; pooling justified because seasons align and years are comparable. -->
+We verified this assumption with a representativeness analysis.
+We then assessed sample representativeness and determined the core areas (potential key biodiversity areas).
+The representativeness assessment tells us whether the core areas calculated from the sample are valid for the whole population.
+It would not make sense to calculate core areas if their results could not be inferred to the entire population.
+Representativeness refers to how well the sample represents the population.
+The representativeness assessment rebuilds the UD from a resampled subset of the KDEs and measures out-of-sample inclusion.
+For this purpose, individual trips are subsampled, and KDEs are calculated and combined to obtain the UD.
+From the resulting area, we evaluate how many data points not selected in the subsample fall outside.
+That indicates whether the sample size is sufficiently representative of the population for the results to be valid for the entire population.
+
 <!-- main idea: M5 Define — track2KBA workflow narrated, not bulleted: formatFields → tripSplit → tripSummary → projectTracks → findScale (ARS via First Passage Time) → estSpaceUse → repAssess → findSite. The 60 km-around-the-colony exclusion completed and justified (the excluded band is re-added as the ring that, with the offshore component, forms the core area); no resampling under uniform frequency. -->
 We used the R package track2KBA [@beal2021track2kba] and followed the track2KBA methodology.
 We removed points within 60 km around the colony because XXX.
 Our methodological approach called for removing incomplete trips to avoid bias in the computed utilization distribution that represents XXX.
-
-
 
 [[ Narrate instead of bullet points ]]
 The following track2KBA functions were used:
@@ -156,11 +162,12 @@ The following track2KBA functions were used:
 - `repAssess()` to bootstrap and assess sample representativeness
 - `findSite()` to identify potential KBA polygons (core areas) meeting thresholds.
 
-
 We did not resample because all GPS devices were programmed with the same frequency, so the raw data were already homogeneous.
 After processing the data, we analyzed them to identify the core areas.
 
 ## Data Analysis
+
+### Core areas used by Laysan albatross
 
 <!-- main idea: M6 Define — offshore component delineation: KDE per trip → pooled density → 50% UD; then the union with the 60 km colony rings defines the core area; why track2KBA (replicable, open-source, built to identify potential KBAs). -->
 We split all tracks into single tracks representing a departure and return of an individual to the nesting colony.
@@ -168,10 +175,7 @@ We then calculated the Kernel Density Estimation (KDE), and found core areas (50
 We chose the [@beal2021track2kba] methodology because it is replicable using a single open-source R package (track2KBA).
 It allows us to split tracks, estimate UD, and evaluate representativeness, and is explicitly designed to identify potential key biodiversity areas from tracking data.
 
-### Core areas used by Laysan albatross
-
 **Measurements and Variables**
-
 
 The independent variable is the GPS locations of the Laysan albatross.
 The dependent variable is the core areas used by the Laysan albatross.
@@ -182,16 +186,6 @@ The individual trips are the input to KDE, and the core areas are the output of 
 
 To identify core areas, we split the tracks into individual trips and perform kernel density estimations for each trip.
 Each colony hosts multiple individuals; each individual makes multiple foraging trips per season; the foraging trip is the unit of analysis.
-We then assessed sample representativeness and determined the core areas (potential key biodiversity areas).
-The representativeness assessment tells us whether the core areas calculated from the sample are valid for the whole population.
-It would not make sense to calculate core areas if their results could not be inferred to the entire population.
-
-Representativeness refers to how well the sample represents the population.
-The representativeness assessment rebuilds the UD from a resampled subset of the KDEs and measures out-of-sample inclusion.
-For this purpose, individual trips are subsampled, and KDEs are calculated and combined to obtain the UD.
-From the resulting area, we evaluate how many data points not selected in the subsample fall outside.
-That indicates whether the sample size is sufficiently representative of the population for the results to be valid for the entire population.
-
 Core areas refer to the 50% Utilization Distribution (UD).
 From the GPS trajectories, we calculated kernel density estimation (KDE) to define the core areas.
 KDE has been widely used to determine UD.
@@ -208,14 +202,13 @@ To determine overlap, we intersect the core areas with the MPA polygons and quan
 
 **Measurements and Variables**
 
-
 The independent variables are the core areas used by the Laysan albatross and the MPA polygons.
 The dependent variable is the overlap index.
 The overlap index is a ratio between the two areas.
 
+<!-- main idea: M8 Measure — the overlap index on the union basis: (core ∪ 60 km rings of all three colonies) ∩ MPA over (core ∪ 60 km rings); why the ring enters BOTH sides (it was removed for the KDE, so it must return for coverage). -->
 **Analysis**
 
-<!-- main idea: M8 Measure — the overlap index on the union basis: (core ∪ 60 km rings of all three colonies) ∩ MPA over (core ∪ 60 km rings); why the ring enters BOTH sides (it was removed for the KDE, so it must return for coverage). -->
 We calculated the overlap index to quantify the overlap of the core areas with the MPA polygons.
 @fieberg2005quantifying quantified home-range overlap using the utilization distribution.
 The overlap index is area-based (proportional) overlap: $HR_{i,j} = \frac{A_{i,j}}{A_i}$.
@@ -229,4 +222,3 @@ Our study followed necessary ethical guidelines ensuring the welfare of the seab
 We also had all the permits required by the Mexican government.
 Permits came from the Ministry of the Interior, the Ministry of Environment and Natural Resources, and the National Commission for Protected Natural Areas.
 A complete list of permits by island and year is available in the Supplementary Information.
-
