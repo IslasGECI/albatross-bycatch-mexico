@@ -19,6 +19,7 @@ It extends the global picture of the effectiveness of MPAs to protect pelagic sp
 
 <!-- main idea: D4 Contribution — the paper evaluates existing ANP/MPAs rather than proposing new ones; its contribution is the knowledge that island-anchored protection leaves the pelagic core area uncovered; the first 12-year pooled core-area analysis for Mexico's albatross colonies and the candidate-KBA layer (one-sentence definition; the term, seeded in I5, debuts here as a payoff, not a reveal) are subordinate. The core-area layer is made available as one input for future spatial planning. The fisheries/bycatch link stays as a subordinate clause, giving a clean pass to the next paper. The future-research sentence is demoted, not kept. -->
 This is the first 12-year core-area analysis for Mexico’s albatross colonies.
+[[ gap — "D4" — what knowledge claim should lead the contribution, ahead of the first 12-year analysis? ]]
 
 ---
 
