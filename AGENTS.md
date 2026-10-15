@@ -104,6 +104,11 @@ Then: `# ==== CONFIGURACIÓN ====`, `# ==== ENTRADAS ====`, `# ==== PROCESAMIENT
 - **Images**: Only if ≤ 256 px and necessary. PNGs excluded from git via `.gitignore`.
 - **KML**: Spatial boundary files in `data/raw/` (e.g., `gulf_of_california.kml`) are tracked as raw data.
 
+### Manuscript Structure (first paper)
+- `papers/first-paper/OUTLINE.md` is the structural source of truth; it names every section's beats and their order.
+- Each `1?_*.md` file carries one `<!-- main idea: ... -->` comment per beat, in the outline's order, and a trailing `<!-- UNMAPPED -->` block for sentences with no node.
+- The assistant owns the `<!-- ... -->` comments and moves sentences verbatim; `[[ ... ]]` annotations, `XXX` placeholders, and `#` headings are the author's.
+
 ## Validation, Testing & Commits
 
 ### Quality Assurance
