@@ -15,8 +15,8 @@
 
 ## Results
 
+- [ ] Replace all literal magical numbers (121, 93.4, etc) with mustache variables — `15_results.md`.
 - [ ] Representativeness `XXX%` — `15_results.md:17`.
-- [ ] Replace the literal 121 with a mustache variable for the analyzed count — `15_results.md:17`.
 - [ ] Area of the 50% UD (km2), from the pooled KBA polygons — `15_results.md:41`.
 - [ ] Area of the 60 km rings around Guadalupe, Clarion, and San Benedicto (km2) — `15_results.md:41`.
 - [ ] Total core area (km2): the 50% UD unioned with the rings — `15_results.md:42`.
@@ -38,6 +38,10 @@
 - [ ] Fill the permit table `XXX` — `19_supplementary.md:23, 24, 25, 28, 37, 39, 40`.
 - [ ] Fill the foraging-trip count `XXX` — `19_supplementary.md:5`.
 - [ ] Fill the tracked-individual count `XXX` — `19_supplementary.md:9`.
+
+## Data
+
+- [ ] Reconcile the tracked-individual numbers: 154 identifier-seasons, 130 identifier strings, 129 with at least one trip, 122 with at least one complete trip, 121 with a KDE surface (the 121 `repAssess` sees), 116 the largest evaluated subsample — `data/processed/`.
 
 # Second paper
 
