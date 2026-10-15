@@ -22,7 +22,7 @@ The public interface is the set of `make` targets that a file under `papers/` re
 make reports/first_paper.pdf
 make reports/second_paper.pdf
 make reports/obsolete_results.pdf         # Archived superseded figures
-make articles
+make restore                                  # Reuse the copied data so Make skips the pipeline
 make format                                  # Style R code with styler
 docker exec bycatch_thesis_ci make <target>  # Run a make target inside the container
 docker exec bycatch_thesis_ci Rscript src/foo.R  # Run a script inside the container
@@ -109,10 +109,12 @@ Then: `# ==== CONFIGURACIÓN ====`, `# ==== ENTRADAS ====`, `# ==== PROCESAMIENT
 ### Quality Assurance
 - `make check` runs spellcheck and manuscript style checks.
 - **Spellcheck**: Passing for both English and Spanish.
-- **Style**: ≤ 25 words per sentence, ≤ 200 words per paragraph.
-- **Pre-push gate**: the `pre-push` hook runs `make check` in Docker and aborts the push when any check fails.
+- **Style**: ≤ 25 words per sentence, ≤ 200 words per paragraph. The checker counts words per line, so keep one sentence per line; splitting a merged line changes no rendered output, because consecutive lines form one Markdown paragraph.
+- **Pre-push gate**: `.githooks/pre-push`, wired through `core.hooksPath`, runs `make check` in the container named after the repository directory. There is no `make push`; push with `git push`.
 - **Manuscript placeholders**: `{{ key }}` resolves from `data/processed/methods.json`, and an unknown key renders empty silently; `[[ ... ]]` notes are skipped by the style checker; `XXX` marks a number the author must supply.
-- **Spelling whitelist**: add correct-but-unknown tokens to `.github/config/.wordlist-en.txt` (or `.wordlist-es.txt`) and bump the count in the `personal_ws-1.1` header; `aspell` runs with `--ignore-case`, so a lowercase entry covers capitalised uses.
+- **Annotations**: write every `[[ ... ]]` note on one line with no `]` inside. `src/remove_annotations_from_paper_for_docx.sh` deletes whole-line notes and collapses inline ones; the PDF keeps them and the DOCX strips them.
+- **Spelling whitelist**: add correct-but-unknown tokens to `.github/config/.wordlist-en.txt` (or `.wordlist-es.txt`) and bump the count in the `personal_ws-1.1` header; `aspell` runs with `--ignore-case`, so a lowercase entry covers capitalised uses but not a plural, which needs its own entry.
+- **Figure descriptions**: check a manuscript figure description against the rendered PNG first, then the script and the processed data; the figure is the source of truth.
 - **Authorship**: for the manuscripts, the author writes all prose; the assistant is bounded to structure, questions, and deterministic edits.
 
 ### Commits (Gitmoji)

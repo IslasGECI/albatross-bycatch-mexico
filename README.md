@@ -1,24 +1,38 @@
 # Bycatch risk assessment of the Laysan albatross in the Mexican Pacific
 
-Maps the foraging areas of Laysan albatrosses and evaluates their overlap with commercial fishing zones and marine protected areas in the Mexican Pacific.
+Maps where Laysan albatrosses forage and measures how much of that space overlaps fishing grounds and marine protected areas in the Mexican Pacific.
 
 ## What it does
 
 This project produces two scientific articles:
 
-1. **First paper** — identifies critical foraging areas (Key Biodiversity Areas) for Laysan albatrosses and measures how much of those areas are covered by marine protected areas
+1. **First paper** — locates the critical foraging areas (Key Biodiversity Areas) of Laysan albatrosses and measures how much of those areas falls inside marine protected areas
 2. **Second paper** — quantifies the spatial overlap between where albatrosses spend their time and where fishing vessels operate
 
-Each article is delivered as a PDF with embedded maps and tables.
+Each article is delivered as a PDF with embedded maps and tables, and the figures are kept as separate image files for reuse in talks and reports.
 
 ## How to use it
 
-Request the latest PDFs from the project director. The figures and reports are regenerated automatically whenever the underlying data or analysis code changes.
+Request the latest PDFs from the project director.
+The figures and reports rebuild themselves whenever the underlying data or analysis code changes, so what you receive always matches the current data.
 
 ## Before you start
 
-You need access credentials to download the seabird GPS tracking data. Contact the data steward to obtain your credentials.
+You need credentials to download the seabird tracking data.
+Ask the data steward for them, and keep them in the environment where you run the project.
 
-## Coming soon
+## Run the project
 
-- Behavioural classification of foraging versus transit events
+Docker is the supported way to run this project; it brings every other piece of software with it.
+
+1. Install Docker.
+2. Download the project and open a terminal in its folder.
+3. Start the project container, then build the article you need.
+
+```bash
+docker compose up --detach
+docker exec bycatch_thesis_ci make reports/first_paper.pdf
+```
+
+The developer manual lists every other report and figure you can build this way.
+If you prefer to run without Docker, install R and the packages named in the project Dockerfile, then run the same commands directly.

@@ -16,12 +16,12 @@
 ## Results
 
 - [ ] Replace all literal magical numbers (121, 93.4, etc) with mustache variables — `15_results.md`.
-- [ ] Representativeness `XXX%` — `15_results.md:17`.
-- [ ] Area of the 50% UD (km2), from the pooled KBA polygons — `15_results.md:41`.
-- [ ] Area of the 60 km rings around Guadalupe, Clarion, and San Benedicto (km2) — `15_results.md:41`.
-- [ ] Total core area (km2): the 50% UD unioned with the rings — `15_results.md:42`.
-- [ ] Area of the core area inside Mexican MPAs (km2) — `15_results.md:42`.
-- [ ] Percentage of the core area inside Mexican MPAs — `15_results.md:42`.
+- [ ] Representativeness `XXX%` — `15_results.md:19`.
+- [ ] Area of the 50% UD (km2), from the pooled KBA polygons — `15_results.md:43`.
+- [ ] Area of the 60 km rings around Guadalupe, Clarion, and San Benedicto (km2) — `15_results.md:43`.
+- [ ] Total core area (km2): the 50% UD unioned with the rings — `15_results.md:44`.
+- [ ] Area of the core area inside Mexican MPAs (km2) — `15_results.md:44`.
+- [ ] Percentage of the core area inside Mexican MPAs — `15_results.md:45`.
 - [ ] Pending discussion: the first paper's remaining paragraphs (comparison with Critchley, the table, per-colony detail, closing sentence).
 
 ## Discussion
