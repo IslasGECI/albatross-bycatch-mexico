@@ -72,7 +72,7 @@ check_sentence_length() {
     # Excluir el texto entre corchetes junto con el espacio previo (citas y notas),
     # para que la puntuación quede pegada a la palabra anterior y no cuente sola
     for pattern in ":$" "\.$" "\?$" "^1\. " "^\W"; do
-        IFS=$'\n' read -d '' -r -a lines < <(egrep "$pattern" "$file" || true) || true
+        IFS=$'\n' read -d '' -r -a lines < <(egrep "$pattern" "$file" | egrep -v '^<!--' || true) || true
 
         for line in "${lines[@]}"; do
             ((line_count++))
@@ -122,7 +122,7 @@ check_paragraph_length() {
         if (fail) exit 1;
         else printf "✅ All paragraphs are ≤%d words\n", max;
       }
-    ' "$file" || HAS_ERRORS=1
+    ' <(grep -v '^<!--' "$file") || HAS_ERRORS=1
 }
 
 # ==========================================
