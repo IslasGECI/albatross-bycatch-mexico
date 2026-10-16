@@ -31,7 +31,7 @@ Docker is the supported way to run this project; it brings every other piece of 
 
 ```bash
 docker compose up --detach
-docker exec bycatch_thesis_ci make reports/first_paper.pdf
+docker exec albatross-bycatch-mexico_ci make reports/first_paper.pdf
 ```
 
 The developer manual lists every other report and figure you can build this way.
