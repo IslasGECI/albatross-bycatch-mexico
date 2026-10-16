@@ -3,7 +3,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: islasgeci/bycatch_thesis:latest
+    image: islasgeci/albatross-bycatch-mexico:latest
     command: bash
     environment:
       BITBUCKET_API_TOKEN: $BITBUCKET_API_TOKEN

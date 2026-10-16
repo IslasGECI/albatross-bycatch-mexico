@@ -21,7 +21,7 @@ jobs:
       uses: docker/build-push-action@master
       with:
         context: .
-        tags: islasgeci/bycatch_thesis:latest
+        tags: islasgeci/albatross-bycatch-mexico:latest
     - name: 🐋🔏 Docker log-in
       run: echo "${DOCKER_PASSWORD}" | docker login -u "${DOCKER_USERNAME}" --password-stdin
     - name: Copy vessel data
@@ -30,7 +30,7 @@ jobs:
     - run: docker cp vessel_data:/data/. data/external
     - name: 🌎🦆🎣🛥️ Generate papers
       run: |
-        docker run --volume $PWD:/workdir --env BITBUCKET_EMAIL=$BITBUCKET_EMAIL --env BITBUCKET_API_TOKEN=$BITBUCKET_API_TOKEN islasgeci/bycatch_thesis:latest make all
+        docker run --volume $PWD:/workdir --env BITBUCKET_EMAIL=$BITBUCKET_EMAIL --env BITBUCKET_API_TOKEN=$BITBUCKET_API_TOKEN islasgeci/albatross-bycatch-mexico:latest make all
     - name: ⏫🏛️ Upload draft
       uses: actions/upload-artifact@main
       with:
@@ -42,9 +42,9 @@ jobs:
           reports/figures/*.png
         retention-days: 14
     - name: Push latest Docker image to Docker Hub
-      run: docker push islasgeci/bycatch_thesis:latest
+      run: docker push islasgeci/albatross-bycatch-mexico:latest
     - name: Push four-digit week tag to Docker Hub
       run: |
         four_digit_week=$(date +%y%V)
-        docker tag islasgeci/bycatch_thesis:latest islasgeci/bycatch_thesis:${four_digit_week}
-        docker push islasgeci/bycatch_thesis:${four_digit_week}
+        docker tag islasgeci/albatross-bycatch-mexico:latest islasgeci/albatross-bycatch-mexico:${four_digit_week}
+        docker push islasgeci/albatross-bycatch-mexico:${four_digit_week}

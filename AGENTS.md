@@ -1,6 +1,6 @@
 # Developer Manual (AGENTS.md)
 
-Workflow-oriented guide to the technical architecture, operational procedures, and engineering standards for the `bycatch_thesis` project.
+Workflow-oriented guide to the technical architecture, operational procedures, and engineering standards for the `albatross-bycatch-mexico` project.
 
 ## Public Interface
 
@@ -10,8 +10,8 @@ The public interface is the set of `make` targets that a file under `papers/` re
 
 ### Build System
 - **Primary**: `make` (Makefile-driven).
-- **Docker**: `docker-compose run --rm islasgeci` or `docker exec bycatch_thesis_ci <command>` for running ad-hoc commands inside the already-running container.
-- **Container image**: `islasgeci/bycatch_thesis:latest`.
+- **Docker**: `docker-compose run --rm islasgeci` or `docker exec albatross-bycatch-mexico_ci <command>` for running ad-hoc commands inside the already-running container.
+- **Container image**: `islasgeci/albatross-bycatch-mexico:latest`.
 
 ### Initial Configuration
 - **Credentials**: Set `BITBUCKET_EMAIL` and `BITBUCKET_API_TOKEN` for data access.
@@ -24,10 +24,10 @@ make reports/second_paper.pdf
 make reports/obsolete_results.pdf         # Archived superseded figures
 make restore                                  # Reuse the copied data so Make skips the pipeline
 make format                                  # Style R code with styler
-docker exec bycatch_thesis_ci make <target>  # Run a make target inside the container
-docker exec bycatch_thesis_ci Rscript src/foo.R  # Run a script inside the container
-docker exec bycatch_thesis_ci src/check_spelling.sh '<glob_pattern>' '<es|en>'  # Run spellcheck for a paper (e.g. 'papers/first-paper/1?_*.md' 'en')
-docker exec bycatch_thesis_ci src/check_manuscript_style.sh '<glob_pattern>'  # Run style checks (e.g. 'papers/first-paper/1?_*.md')
+docker exec albatross-bycatch-mexico_ci make <target>  # Run a make target inside the container
+docker exec albatross-bycatch-mexico_ci Rscript src/foo.R  # Run a script inside the container
+docker exec albatross-bycatch-mexico_ci src/check_spelling.sh '<glob_pattern>' '<es|en>'  # Run spellcheck for a paper (e.g. 'papers/first-paper/1?_*.md' 'en')
+docker exec albatross-bycatch-mexico_ci src/check_manuscript_style.sh '<glob_pattern>'  # Run style checks (e.g. 'papers/first-paper/1?_*.md')
 ```
 
 ### Make Dependency Gotchas
