@@ -76,3 +76,4 @@
 ## Repository housekeeping
 
 - [ ] Update the GitHub repository description, which still says "Tesis sobre captura incidental de aves marinas".
+- [ ] Split the three paragraphs over 200 words in `12_introduction.md` and `13_methods.md` so `make check` passes.
