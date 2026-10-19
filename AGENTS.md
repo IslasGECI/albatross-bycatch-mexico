@@ -75,6 +75,17 @@ Figures removed from active manuscripts go into `papers/obsolete-results/obsolet
 ### Figure registration rule
 Every PNG target in the Makefile must be referenced in at least one `papers/**/*.md` file. Dangling PNG targets (built by Make but unused in any manuscript) should be either added to a manuscript or removed from the Makefile.
 
+## Releases & Archiving
+
+- **Trigger**: a GitHub Release archives the tag; pushing a tag alone does not. Only tagged `vX.Y.Z` releases create Zenodo versions.
+- **Tag contents**: the native integration archives exactly the tag's tracked files. `LICENSE`, `.zenodo.json`, and `CITATION.cff` must be in the tag. Zenodo reads `.zenodo.json` and ignores `CITATION.cff`; GitHub reads `CITATION.cff`.
+- **Version field**: Zenodo takes the version from `.zenodo.json`, not from the tag name.
+- **DOIs**: `10.5281/zenodo.23485336` is the concept DOI and always resolves to the latest version; `10.5281/zenodo.23485337` is the `v0.4.0` version DOI. Cite the concept DOI.
+- **Private companion**: `references/` is the nested private repository `IslasGECI/bycatch.references`; the public repository ignores it, and its PDFs were removed from public history.
+- **Report record**: `10.5281/zenodo.18776466` is the separate manager-facing report lineage and stays out of the software record.
+- **Record metadata**: the record carries GECI as a creator, the `islasgeci` community, and R as the programming language.
+- **Interface**: the DOI is distribution, not an interface element; `DOCS.md` and `CHANGELOG.md` continue to track only `make` targets referenced by papers.
+
 ## Development & Coding Standards
 
 ### Script Structure (src/)

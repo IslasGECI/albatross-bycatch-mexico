@@ -60,7 +60,6 @@
 
 Released `v0.4.0`: concept DOI `10.5281/zenodo.23485336`, version DOI `10.5281/zenodo.23485337`.
 
-- [ ] Request inclusion in the `islasgeci` Zenodo community, whose submission policy is closed.
 - [ ] Add the code-availability sentence at `papers/first-paper/13_methods.md:153`, citing the concept DOI (author-written prose).
 - [ ] Update `version` in `.zenodo.json` and `CITATION.cff` to `0.5.0` at the next tagged release.
 
@@ -72,5 +71,4 @@ Released `v0.4.0`: concept DOI `10.5281/zenodo.23485336`, version DOI `10.5281/z
 
 ## Repository housekeeping
 
-- [ ] Update the GitHub repository description, which still says "Tesis sobre captura incidental de aves marinas".
 - [ ] Split the three paragraphs over 200 words in `12_introduction.md` and `13_methods.md` so `make check` passes.
