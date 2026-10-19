@@ -53,3 +53,26 @@
 
 - [ ] Create the binary hot-spot map script `src/plot_gfw_apparent_fishing_effort_hotspot_binary.R` (not started)
 - [ ] Add the Makefile rule that builds the binary hot-spot map (not started)
+
+# Zenodo release
+
+## Academic record (native GitHub integration)
+
+- [ ] Create the private repository `IslasGECI/bycatch.references` with the `references/*.pdf` reading copies.
+- [ ] Rewrite the history to drop every `references/*.pdf` from all commits and tags, then force-push `develop` and the tags.
+- [ ] Add `LICENSE` (AGPL-3.0-only), `.zenodo.json`, and `CITATION.cff`; tag `v0.4.0` at that commit and rebase `develop` onto it.
+- [ ] Enable the repository in Zenodo's GitHub integration and create the GitHub Release `v0.4.0`.
+- [ ] Verify the record metadata, license, creators, contributors, and keywords.
+- [ ] Request inclusion in the `islasgeci` Zenodo community, whose submission policy is closed.
+- [ ] Add the concept DOI to `README.md` and `CITATION.cff` in the next release, because the archived tag cannot contain the DOI it mints.
+- [ ] Add the code-availability sentence at `papers/first-paper/13_methods.md:153`, citing the concept DOI (author-written prose).
+
+## Report record (out of scope for now)
+
+- [ ] Publish `v0.4.0` of `10.5281/zenodo.18776466` with only the `make all` PDFs and PNGs; supply the consolidated report PDF from a private Docker image or a Google Drive link.
+- [ ] Update the report record metadata for conservation managers: report-only description, remove `code:codeRepository`, link it to the academic record, keep CC-BY-4.0, GECI as creator, and `islasgeci`.
+- [ ] Decide what to do about the 25 `references/*.pdf` files inside `bycatch_thesis.zip` in `v0.3.0` (request removal from Zenodo support or accept them).
+
+## Repository housekeeping
+
+- [ ] Update the GitHub repository description, which still says "Tesis sobre captura incidental de aves marinas".
