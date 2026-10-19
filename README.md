@@ -1,5 +1,7 @@
 # Bycatch risk assessment of the Laysan albatross in the Mexican Pacific
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23485336.svg)](https://doi.org/10.5281/zenodo.23485336)
+
 Maps where Laysan albatrosses forage and measures how much of that space overlaps fishing grounds and marine protected areas in the Mexican Pacific.
 
 ## What it does

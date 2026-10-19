@@ -6,6 +6,7 @@ type: software
 license: "AGPL-3.0-only"
 repository-code: "https://github.com/IslasGECI/albatross-bycatch-mexico"
 url: "https://github.com/IslasGECI/albatross-bycatch-mexico"
+doi: "10.5281/zenodo.23485336"
 abstract: "Code and manuscript sources for the assessment of Laysan albatross (Phoebastria immutabilis) core foraging areas in the Mexican Pacific and their overlap with Mexican marine protected areas."
 authors:
   - family-names: Rojas-Mayoral

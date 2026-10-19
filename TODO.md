@@ -58,14 +58,11 @@
 
 ## Academic record (native GitHub integration)
 
-- [ ] Create the private repository `IslasGECI/bycatch.references` with the `references/*.pdf` reading copies.
-- [ ] Rewrite the history to drop every `references/*.pdf` from all commits and tags, then force-push `develop` and the tags.
-- [ ] Add `LICENSE` (AGPL-3.0-only), `.zenodo.json`, and `CITATION.cff`; tag `v0.4.0` at that commit and rebase `develop` onto it.
-- [ ] Enable the repository in Zenodo's GitHub integration and create the GitHub Release `v0.4.0`.
-- [ ] Verify the record metadata, license, creators, contributors, and keywords.
+Released `v0.4.0`: concept DOI `10.5281/zenodo.23485336`, version DOI `10.5281/zenodo.23485337`.
+
 - [ ] Request inclusion in the `islasgeci` Zenodo community, whose submission policy is closed.
-- [ ] Add the concept DOI to `README.md` and `CITATION.cff` in the next release, because the archived tag cannot contain the DOI it mints.
 - [ ] Add the code-availability sentence at `papers/first-paper/13_methods.md:153`, citing the concept DOI (author-written prose).
+- [ ] Update `version` in `.zenodo.json` and `CITATION.cff` to `0.5.0` at the next tagged release.
 
 ## Report record (out of scope for now)
 
