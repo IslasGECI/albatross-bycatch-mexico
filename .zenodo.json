@@ -1,0 +1,40 @@
+{
+  "title": "Bycatch risk assessment of the Laysan albatross in the Mexican Pacific",
+  "version": "0.4.0",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "AGPL-3.0-only",
+  "language": "eng",
+  "creators": [
+    {
+      "name": "Rojas-Mayoral, Evaristo",
+      "affiliation": "Grupo de Ecología y Conservación de Islas, A.C.",
+      "orcid": "0000-0001-6812-9562"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Villasante-Barahona, Mario",
+      "affiliation": "Grupo de Ecología y Conservación de Islas, A.C.",
+      "orcid": "0009-0001-7867-8570",
+      "type": "Other"
+    },
+    {
+      "name": "Olvera-Guerrero, Guillermo",
+      "affiliation": "Grupo de Ecología y Conservación de Islas, A.C.",
+      "orcid": "0000-0002-6900-5315",
+      "type": "Other"
+    }
+  ],
+  "description": "Code and manuscript sources for the assessment of Laysan albatross (Phoebastria immutabilis) core foraging areas in the Mexican Pacific and their overlap with Mexican marine protected areas. The R pipeline processes GPS tracking data from the Guadalupe, Clarion and San Benedicto colonies (2014–2026), delineates the core area and computes the protected-area overlap index. It also builds the bycatch-risk maps that relate albatross space use to longline and trawler fishing effort. The code rebuilds every figure and table from the raw data.",
+  "keywords": [
+    "Laysan albatross",
+    "Phoebastria immutabilis",
+    "marine protected areas",
+    "GPS tracking",
+    "kernel density estimation",
+    "track2KBA",
+    "bycatch",
+    "Mexican Pacific"
+  ]
+}
