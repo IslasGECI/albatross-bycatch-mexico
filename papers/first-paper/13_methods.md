@@ -134,6 +134,15 @@ The data from Guadalupe Island include {{ guadalupe_n_trips }} complete trips, C
 
 ## Data Processing
 
+<!-- main idea: M3.5 Overview — track2KBA workflow narrated in five steps without function names; the detailed steps follow, and the full analysis code is archived at the concept DOI. -->
+We used the R package track2KBA [@beal2021track2kba] and followed its methodology.
+We standardized the GPS records and split them into individual foraging trips.
+We projected the tracks and estimated the area-restricted search scale.
+We fitted kernel density estimates for each individual.
+We assessed sample representativeness.
+We then identified potential core areas.
+Below, we describe these steps in more detail; the full analysis code is archived on Zenodo at https://doi.org/10.5281/zenodo.23485336.
+
 <!-- main idea: M4 Trust — representativeness via repAssess: REPRESENTATIVENESS inclusion at n = N_ANALYZED (Rep70 = REP70, Rep95 = REP95); the 5-year subset was not representative, which is why 12 years are pooled; pooling justified because seasons align and years are comparable. -->
 We verified this assumption with a representativeness analysis.
 We then assessed sample representativeness and determined the core areas (potential key biodiversity areas).
@@ -145,22 +154,9 @@ For this purpose, individual trips are subsampled, and KDEs are calculated and c
 From the resulting area, we evaluate how many data points not selected in the subsample fall outside.
 That indicates whether the sample size is sufficiently representative of the population for the results to be valid for the entire population.
 
-<!-- main idea: M5 Define — track2KBA workflow narrated, not bulleted: formatFields → tripSplit → tripSummary → projectTracks → findScale (ARS via First Passage Time) → estSpaceUse → repAssess → findSite. The 60 km-around-the-colony exclusion completed and justified (the excluded band is re-added as the ring that, with the offshore component, forms the core area); no resampling under uniform frequency. -->
-We used the R package track2KBA [@beal2021track2kba] and followed the track2KBA methodology.
+<!-- main idea: M5 Define — 60 km-around-the-colony exclusion completed and justified (the excluded band is re-added as the ring that, with the offshore component, forms the core area); no resampling under uniform frequency. -->
 We removed points within 60 km around the colony because XXX.
 Our methodological approach called for removing incomplete trips to avoid bias in the computed utilization distribution that represents XXX.
-
-[[ Narrate instead of bullet points ]]
-The following track2KBA functions were used:
-
-- `formatFields()` to normalize GPS field names and date-time format
-- `tripSplit()` to split GPS fixes into individual foraging trips
-- `tripSummary()` to summarize trip metrics
-- `projectTracks()` to project into an equal-area azimuthal projection
-- `findScale()` to estimate the ARS smoothing scale via First Passage Time
-- `estSpaceUse()` to compute kernel density estimates for each individual
-- `repAssess()` to bootstrap and assess sample representativeness
-- `findSite()` to identify potential KBA polygons (core areas) meeting thresholds.
 
 We did not resample because all GPS devices were programmed with the same frequency, so the raw data were already homogeneous.
 After processing the data, we analyzed them to identify the core areas.

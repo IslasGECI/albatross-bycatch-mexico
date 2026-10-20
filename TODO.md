@@ -13,9 +13,8 @@
 
 - [ ] Split the paragraph over 200 words so `make check` passes.
 - [ ] GPS accuracy basis `[[ ]]` and `XXX m` — `13_methods.md:85`.
-- [ ] Reason for the 60 km removal `XXX` — `13_methods.md:150`.
-- [ ] Bias the utilization distribution represents `XXX` — `13_methods.md:151`.
-- [ ] Narrate the track2KBA function list instead of bullets `[[ ]]` — `13_methods.md:153`.
+- [ ] Reason for the 60 km removal `XXX` — `13_methods.md:158`.
+- [ ] Bias the utilization distribution represents `XXX` — `13_methods.md:159`.
 
 ## Results
 
@@ -71,7 +70,6 @@
 
 Released `v0.4.0`: concept DOI `10.5281/zenodo.23485336`, version DOI `10.5281/zenodo.23485337`.
 
-- [ ] Add the code-availability sentence at `papers/first-paper/13_methods.md:153`, citing the concept DOI (author-written prose).
 - [ ] Update `version` in `.zenodo.json` and `CITATION.cff` to `0.5.0` at the next tagged release.
 
 ## Zenodo release: Report record (out of scope for now)

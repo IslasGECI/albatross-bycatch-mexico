@@ -1,6 +1,7 @@
-personal_ws-1.1 en 84 utf-8
+personal_ws-1.1 en 85 utf-8
 Beal
 Niña
+Zenodo
 accelerometer
 acmos
 adehabitatlt
