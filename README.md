@@ -54,3 +54,9 @@ This project is released under the [GNU Affero General Public License v3.0](LICE
 ## Authors' affiliation
 
 - [Grupo de Ecología y Conservación de Islas](https://www.islas.org.mx/)
+
+## References
+
+- **Software record.** _This code repository, archived on Zenodo:_ Rojas-Mayoral, E., & Grupo de Ecología y Conservación de Islas, A.C. (2026). _«Bycatch risk assessment of the Laysan albatross in the Mexican Pacific»._ Zenodo. [DOI: 10.5281/zenodo.23485336](https://doi.org/10.5281/zenodo.23485336)
+- **Report record.** _Generated artifacts (PDF reports and PNG figures):_ Grupo de Ecología y Conservación de Islas, A.C. (2026). _«Evaluación del riesgo de captura incidental del Albatros de Laysan (Phoebastria immutabilis) en el Pacífico mexicano»._ Zenodo. [DOI: 10.5281/zenodo.18776466](https://doi.org/10.5281/zenodo.18776466)
+- **bycatch package.** _The R package used for bycatch risk analysis:_ Ciencia de Datos, GECI (2026). _«bycatch: seabird bycatch risk assessment»._ GitHub. [github.com/IslasGECI/bycatch](https://github.com/IslasGECI/bycatch)
