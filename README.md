@@ -41,10 +41,6 @@ docker exec albatross-bycatch-mexico_ci make reports/first_paper.pdf
 The developer manual lists every other report and figure you can build this way.
 If you prefer to run without Docker, install R and the packages named in the project Dockerfile, then run the same commands directly.
 
-## Citation
-
-Rojas-Mayoral, E. (2026). *Bycatch risk assessment of the Laysan albatross in the Mexican Pacific*. Zenodo. https://doi.org/10.5281/zenodo.23485336
-
 ## License
 
 This project is released under the [GNU Affero General Public License v3.0](LICENSE).

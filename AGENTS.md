@@ -82,7 +82,7 @@ Every PNG target in the Makefile must be referenced in at least one `papers/**/*
 - **Version field**: Zenodo takes the version from `.zenodo.json`, not from the tag name.
 - **DOIs**: `10.5281/zenodo.23485336` is the concept DOI and always resolves to the latest version; `10.5281/zenodo.23485337` is the `v0.4.0` version DOI. Cite the concept DOI.
 - **Private companion**: `references/` is the nested private repository `IslasGECI/bycatch.references`; the public repository ignores it, and its PDFs were removed from public history.
-- **Report record**: `10.5281/zenodo.18776466` is the separate manager-facing report lineage and stays out of the software record.
+- **Report record**: `10.5281/zenodo.18776466` is the separate manager-facing lineage for generated artifacts (PDF reports and PNG figures); the software record carries the source. Keep the two apart.
 - **Record metadata**: the record carries GECI as a creator, the `islasgeci` community, and R as the programming language.
 - **Interface**: the DOI is distribution, not an interface element; `DOCS.md` and `CHANGELOG.md` continue to track only `make` targets referenced by papers.
 
@@ -142,8 +142,8 @@ Then: `# ==== CONFIGURACIÓN ====`, `# ==== ENTRADAS ====`, `# ==== PROCESAMIENT
 
 | File | Audience | Focus |
 |------|----------|-------|
-| `README.md` | End Users | What the project is and how to use it |
+| `README.md` | End Users | What the project is, how to use it, and its three references: software record, report record, and `bycatch` package |
 | `AGENTS.md` | Developers | How to build, code, and contribute (this file) |
 | `DOCS.md` | Developers | API, CLI, and data model reference |
 | `CHANGELOG.md` | Developers | Version history following SemVer |
-| `TODO.md` | Team | Current backlog |
+| `TODO.md` | Team | Current backlog; work not tied to a manuscript goes under `# Not visible in the papers` |
