@@ -119,6 +119,7 @@ Then: `# ==== CONFIGURACIÓN ====`, `# ==== ENTRADAS ====`, `# ==== PROCESAMIENT
 - `papers/first-paper/OUTLINE.md` is the structural source of truth; it names every section's beats and their order.
 - Each `1?_*.md` file carries one `<!-- main idea: ... -->` comment per beat, in the outline's order, and a trailing `<!-- UNMAPPED -->` block for sentences with no node.
 - The assistant owns the `<!-- ... -->` comments and moves sentences verbatim; `[[ ... ]]` annotations, `XXX` placeholders, and `#` headings are the author's.
+- **Code availability**: the methods name the R package and point to the concept DOI on Zenodo; function-level detail and repository links stay out of the paper.
 
 ## Validation, Testing & Commits
 
