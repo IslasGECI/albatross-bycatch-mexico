@@ -62,6 +62,10 @@
 
 # Not visible in the papers
 
+## Makefile
+
+- [ ] Retire or archive the two dangling PNG targets: `reports/figures/kba_and_vms_union_hotspot_map.png` (`Makefile:426`) and `reports/figures/kba_and_gfw_apparent_fishing_effort_hotspot_map.png` (`Makefile:450`) are prerequisites of `reports/second_paper.pdf` but no `papers/**/*.md` file references them.
+
 ## README
 
 - [ ] Replace the `bycatch` reference in `README.md` with its Zenodo DOI once the package record exists.
