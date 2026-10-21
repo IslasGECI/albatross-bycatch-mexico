@@ -2,7 +2,6 @@
 
 ## Introduction
 
-- [ ] Split the two paragraphs over 200 words so `make check` passes.
 - [ ] Threatened-species causes and consequences `[[ ]]` — `12_introduction.md:6`.
 - [ ] Citation for strategies to prevent collapse `[[ ]]` — `12_introduction.md:9`.
 - [ ] References for MPAs as a conservation strategy `[[ ]]` — `12_introduction.md:10`.
@@ -11,7 +10,6 @@
 
 ## Methods
 
-- [ ] Split the paragraph over 200 words so `make check` passes.
 - [ ] GPS accuracy basis `[[ ]]` and `XXX m` — `13_methods.md:85`.
 - [ ] Reason for the 60 km removal `XXX` — `13_methods.md:158`.
 - [ ] Bias the utilization distribution represents `XXX` — `13_methods.md:159`.

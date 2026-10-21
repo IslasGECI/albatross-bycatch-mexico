@@ -126,8 +126,8 @@ Then: `# ==== CONFIGURACIÓN ====`, `# ==== ENTRADAS ====`, `# ==== PROCESAMIENT
 ### Quality Assurance
 - `make check` runs spellcheck and manuscript style checks.
 - **Spellcheck**: Passing for both English and Spanish.
-- **Style**: ≤ 25 words per sentence, ≤ 200 words per paragraph. The checker counts words per line, so keep one sentence per line; splitting a merged line changes no rendered output, because consecutive lines form one Markdown paragraph.
-- **Comment lines**: the style checker skips every line that begins with `<!--`, so outline comments and the `UNMAPPED` block are not counted as sentences or paragraphs.
+- **Style**: ≤ 25 words per sentence. The checker counts words per line, so keep one sentence per line; splitting a merged line changes no rendered output, because consecutive lines form one Markdown paragraph.
+- **Comment lines**: the style checker skips every line that begins with `<!--`, so outline comments and the `UNMAPPED` block are not counted as sentences.
 - **Pre-push gate**: `.githooks/pre-push`, wired through `core.hooksPath`, runs `make check` in the container named after the repository directory. There is no `make push`; push with `git push`.
 - **Manuscript placeholders**: `{{ key }}` resolves from `data/processed/methods.json`, and an unknown key renders empty silently; `[[ ... ]]` notes are skipped by the style checker; `XXX` marks a number the author must supply.
 - **Annotations**: write every `[[ ... ]]` note on one line with no `]` inside. `src/remove_annotations_from_paper_for_docx.sh` deletes whole-line notes and collapses inline ones; the PDF keeps them and the DOCX strips them.

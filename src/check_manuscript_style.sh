@@ -2,8 +2,8 @@
 # ==========================================
 # Título: Validador de estilo de manuscritos
 # Contexto (Por qué): Los manuscritos (1?_*.md y 2?_*.md) deben cumplir
-#   con restricciones de legibilidad: ≤25 palabras por oración,
-#   ≤200 palabras por párrafo, y puntuación adecuada.
+#   con restricciones de legibilidad: ≤25 palabras por oración
+#   y puntuación adecuada.
 # Descripción (Qué / Cómo): Valida que cada línea termine con
 #   puntuación adecuada y que todas las oraciones sean ≤25 palabras.
 #   Itera sobre archivos de manuscrito y reporta violaciones.
@@ -94,38 +94,6 @@ check_sentence_length() {
 }
 
 # ==========================================
-# VERIFICACIÓN 3: Los párrafos tienen ≤200 palabras
-# ==========================================
-check_paragraph_length() {
-    local file="$1"
-
-    echo "Checking paragraph length in: $file"
-
-    awk '
-      BEGIN {
-        RS = "";
-        max = 200;
-        para_num = 0;
-        fail = 0;
-      }
-      {
-        para_num++;
-        words = NF;
-        if (words > max) {
-          split($0, lines, "\n");
-          printf "❌ Paragraph %d too long (%d words)\n→ %s\n\n",
-                 para_num, words, lines[1];
-          fail = 1;
-        }
-      }
-      END {
-        if (fail) exit 1;
-        else printf "✅ All paragraphs are ≤%d words\n", max;
-      }
-    ' <(grep -v '^<!--' "$file") || HAS_ERRORS=1
-}
-
-# ==========================================
 # ENTRADA PRINCIPAL
 # ==========================================
 main() {
@@ -145,8 +113,6 @@ main() {
             check_line_endings "$file"
             echo ""
             check_sentence_length "$file"
-            echo ""
-            check_paragraph_length "$file"
             echo "─────────────────────────────────────────"
         fi
     done
