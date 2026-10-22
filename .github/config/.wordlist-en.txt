@@ -1,4 +1,4 @@
-personal_ws-1.1 en 85 utf-8
+personal_ws-1.1 en 87 utf-8
 Beal
 Niña
 Zenodo
@@ -54,6 +54,7 @@ laysan
 longline
 mpa
 mpas
+naughton
 neq
 niño
 nodo
@@ -68,6 +69,7 @@ preprocessing
 replicable
 representativeness
 revillagigedo
+safina
 sbra
 sgpa
 shapefiles

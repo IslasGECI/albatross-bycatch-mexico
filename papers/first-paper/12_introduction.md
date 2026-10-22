@@ -3,11 +3,12 @@
 
 <!-- main idea: I1 Hook — seabirds among the most threatened groups of birds; the main tool for protecting them at sea is anchored to land. Opening sentence; nothing precedes it. -->
 Seabirds are one of the most threatened groups of birds, with ~31% of species at risk and ~47% in decline [@dias2019threats].
-[[ State with studies why they are threatened (harvesting, over fishing, predation from invasive species, etc., indicate cause and consequence, citations for each ]].
+[[ State with studies why they are threatened (harvesting, over fishing, predation from invasive species, etc., indicate cause and consequence you can find in the following citations: ]]
+XXX [@birdlife2018phoebastria; @naughton2007conservation; @safina1995world; @mendez2022population].
 
 <!-- main idea: I2 Pelagic gap — 13.2% of pelagic species fall inside MPAs against 32.5% of coastal ones; open-ocean users are missed by design. The global coverage study is cited here and stays here; Discussion move 3 cites it qualitatively only. -->
-Given all these negative impacts, different strategies have been pursued to prevent seabird populations from collapsing and improving their conservation status [[ citation ]].
-In particular, marine protected areas are considered an efficient conservation strategy for seabird species [[ references ]].
+Given all these negative impacts, different strategies have been pursued to prevent seabird populations from collapsing and improving their conservation status [@naughton2007conservation; @mendez2022population; @dias2019threats; @phillips2024incidental].
+In particular, marine protected areas are considered an efficient conservation strategy for seabird species [@critchley2018marine].
 In general, seabirds are threatened and pelagic species are poorly protected by protected areas [@dias2019threats; @critchley2018marine].
 Pelagic species, such as albatrosses, are less protected by MPAs than coastal species.
 13.2% of pelagic species are covered by MPAs, compared to 32.5% of coastal species [@critchley2018marine].

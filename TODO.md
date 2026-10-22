@@ -2,15 +2,12 @@
 
 ## Introduction
 
-- [ ] Threatened-species causes and consequences `[[ ]]` — `12_introduction.md:6`.
-- [ ] Citation for strategies to prevent collapse `[[ ]]` — `12_introduction.md:9`.
-- [ ] References for MPAs as a conservation strategy `[[ ]]` — `12_introduction.md:10`.
-- [ ] Concept beat: MPA versus ANP distinction, offshore byproduct, KBA seed `[[ ]]` — `12_introduction.md:37`.
-- [ ] Decide the home of the sentences parked in the UNMAPPED block — `12_introduction.md:76`.
+- [ ] Expand the hook with studies on why seabirds are threatened (harvesting, overfishing, invasive-species predation), cause and consequence — `12_introduction.md:6-7`.
+- [ ] Concept beat: MPA versus ANP distinction, offshore byproduct, KBA seed `[[ ]]` — `12_introduction.md:38`.
+- [ ] Decide the home of the sentences parked in the UNMAPPED block — `12_introduction.md:77`.
 
 ## Methods
 
-- [ ] GPS accuracy basis `[[ ]]` and `XXX m` — `13_methods.md:85`.
 - [ ] Reason for the 60 km removal `XXX` — `13_methods.md:158`.
 - [ ] Bias the utilization distribution represents `XXX` — `13_methods.md:159`.
 

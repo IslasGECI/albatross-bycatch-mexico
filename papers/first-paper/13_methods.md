@@ -82,7 +82,7 @@ Additionally, we attached GPS units to {{ clarion_n_total }} individuals on Clar
 We also attached GPS units to {{ san_benedicto_n_total }} individuals on San Benedicto Island in {{ san_benedicto_min_year }}.
 Sampling effort was implemented according to the available resources.
 
-GPS loggers have the appropriate accuracy and precision for the study given that [[ indicate here the basis for this argument, for example, location accuracy is down to XXX m (citation of study or GPS logger technical detail for example) ]].
+GPS loggers have the appropriate accuracy and precision for the study [@soanes2013many; @clay2023adjustment; @hernandez2019sexual].
 Other devices, such as GLS loggers, are not accurate enough to determine core areas.
 We programmed the GPS to record one position every 10 minutes.
 The 10-minute frequency allows recording multiple trips per individual per season.
