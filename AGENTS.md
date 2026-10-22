@@ -26,15 +26,14 @@ make restore
 make format
 docker exec albatross-bycatch-mexico_ci make <target>
 docker exec albatross-bycatch-mexico_ci Rscript src/foo.R
-docker exec albatross-bycatch-mexico_ci src/check_spelling.sh '<glob>' '<es|en>'
-docker exec albatross-bycatch-mexico_ci src/check_manuscript_style.sh '<glob>'
+docker exec albatross-bycatch-mexico_ci .pipelines/check_spelling.sh '<glob>' '<es|en>'
+docker exec albatross-bycatch-mexico_ci .pipelines/check_manuscript_style.sh '<glob>'
 ```
 
 ### Make Dependency Gotchas
-- A `.PHONY` group needs a recipe, even `@true`, or its prerequisites never run.
+- **`.PHONY`**: list every phony target as a prerequisite of `.PHONY`; a target left out can be mistaken for an up-to-date file.
 - Glob-concatenating rules need the real files via `$(wildcard ...)`.
 - PNG targets depend on intermediate `.gpkg` or `.rds` files, not raw CSVs.
-- `compute_*()` writes `data/processed/*.json`; a plot reading it must list it as a prerequisite.
 - Every PNG a paper references must be a prerequisite of its `reports/*_paper.pdf` target.
 - `papers/first-paper/first_paper.mustache` is generated from `1?_*.md`; never edit it.
 
@@ -43,7 +42,7 @@ docker exec albatross-bycatch-mexico_ci src/check_manuscript_style.sh '<glob>'
 - **Data**: `data/raw/` is immutable; `create_*()` shapes `data/processed/`, and `render_*()` reads it to write PNGs to `reports/figures/`.
 - **Traceability**: `analyses.json` maps each report to its scripts, data, and results.
 - **Custom scripts**: some figures use `src/` directly, bypassing `bycatch`.
-- **`references.bib`**: 13 screening fields per entry (URL, urldate, type, time period, species, region, methods, software, results, and related); unwritten values read `not_applicable`, never `NA`. `category` sits outside the 13. The CSL sentence-cases titles, so brace proper nouns.
+- **`references.bib`**: unwritten values read `not_applicable`, never `NA`.
 
 ### Pipelines
 
@@ -58,19 +57,19 @@ docker exec albatross-bycatch-mexico_ci src/check_manuscript_style.sh '<glob>'
 - A GitHub Release archives the tag; pushing a tag alone does nothing. Only `vX.Y.Z` tags create Zenodo versions, which take the version from `.zenodo.json`.
 - The release contains exactly the tracked files, so `LICENSE`, `.zenodo.json`, and `CITATION.cff` must be in the tag. Zenodo reads `.zenodo.json`; GitHub reads `CITATION.cff`.
 - `10.5281/zenodo.23485336` is the concept DOI and resolves to the latest version; `10.5281/zenodo.23485337` is `v0.4.0`. Cite the concept DOI.
-- `references/` is the private nested repository `IslasGECI/bycatch.references`; the public repository ignores it and its PDFs left public history.
+- `references/` is the private nested repository `IslasGECI/bycatch.references`; the public repository ignores it.
 - `10.5281/zenodo.18776466` is the manager-facing record for PDFs and PNGs; the software record carries the source. Keep them apart.
 - The software record credits GECI as creator, `islasgeci` as community, and R as language.
 
 ## Development & Coding Standards
 
 ### Script Structure (`src/`)
-Every script opens with a Spanish header in imperative form: title, context, description, inputs, output, dependencies, notes. Then four sections: `CONFIGURACIÓN`, `ENTRADAS`, `PROCESAMIENTO / ANÁLISIS`, `SALIDA`.
+Every script opens with a Spanish header in imperative form: title, context, description, inputs, output, dependencies, notes. Run all `src/` code in the container; `.pipelines/` scripts may run on the host.
 
 ### Style Rules
 - **Reference**: https://islas.dev/guia_de_estilo/STYLEGUIDE
 - **Code**: English variables, Tidyverse, linear (no functions, loops, or conditionals), one Spanish comment per line explaining why.
-- **Names and output**: scripts start with a verb, use letters, numbers, and underscores, and write exactly one file.
+- **Names and output**: scripts under `src/` start with a verb, use letters, numbers, and underscores, and write exactly one file.
 
 ### Repository Content
 - **KML**: boundaries in `data/raw/` (e.g. `gulf_of_california.kml`) are tracked.
@@ -86,9 +85,9 @@ Every script opens with a Spanish header in imperative form: title, context, des
 - `make check` runs spellcheck and style checks; both languages pass.
 - **Style**: ≤ 25 words per sentence. The checker counts words per line, so keep one sentence per line; splitting changes no output, because consecutive lines form one paragraph.
 - **Comments**: lines starting with `<!--` are not counted.
-- **Pre-push**: `.githooks/pre-push` (via `core.hooksPath`) runs `make check` in the container named after the repository. Push with `git push`; there is no `make push`.
+- **Pre-push**: `.githooks/pre-push` (via `core.hooksPath`) runs `make check` in the running `<directory>_ci` container, here `albatross-bycatch-mexico_ci`; start it before pushing. Push with `git push`; there is no `make push`.
 - **Placeholders**: `{{ key }}` resolves from `data/processed/methods.json`; unknown keys render empty. `[[ ... ]]` notes are skipped; `XXX` marks a number the author supplies.
-- **Annotations**: one `[[ ... ]]` note per line, no `]` inside; `remove_annotations_from_paper_for_docx.sh` strips them from the DOCX only.
+- **Annotations**: one `[[ ... ]]` note per line, no `]` inside; `.pipelines/remove_annotations_from_paper_for_docx.sh` strips them from the DOCX only.
 - **Whitelist**: add tokens to `.github/config/.wordlist-{en,es}.txt` and bump the `personal_ws-1.1` count; `aspell` runs `--ignore-case`, so a plural needs its own entry.
 - **Figures**: check a description against the rendered PNG first, then the script and data.
 - **Authorship**: the author writes all manuscript prose; the assistant handles structure, questions, and deterministic edits.

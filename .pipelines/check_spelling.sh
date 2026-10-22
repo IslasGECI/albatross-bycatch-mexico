@@ -21,6 +21,9 @@
 # Variable para rastrear si hay errores
 HAS_ERRORS=0
 
+# Raíz del repositorio, para resolver el diccionario desde cualquier directorio
+REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+
 # ==========================================
 # FUNCIÓN: Verificar ortografía con aspell
 # ==========================================
@@ -53,7 +56,7 @@ check_spelling() {
             misspellings=$(aspell --lang="$lang" \
                                   --ignore-case \
                                   --mode=markdown \
-                                  --personal="/workdir/$wordlist" \
+                                  --personal="$REPO_ROOT/$wordlist" \
                                   list < "$file" | sort -u)
 
             if [[ -n "$misspellings" ]]; then

@@ -27,7 +27,7 @@ reports/first_paper.pdf: \
 
 reports/first_paper_no_annotations.md: reports/first_paper.md
 	$(checkDirectories)
-	src/remove_annotations_from_paper_for_docx.sh
+	.pipelines/remove_annotations_from_paper_for_docx.sh
 
 reports/first_paper.docx: reports/first_paper.pdf reports/first_paper_no_annotations.md
 	$(checkDirectories)
@@ -1090,11 +1090,11 @@ format:
 		-e "style_dir('src')"
 
 check:
-	src/check_manuscript_style.sh 'papers/first-paper/1?_*.md'
-	src/check_manuscript_style.sh 'papers/second-paper/2?_*.md'
-	src/check_spelling.sh 'papers/proposal/0?_*.md' 'es'
-	src/check_spelling.sh 'papers/first-paper/1?_*.md' 'en'
-	src/check_spelling.sh 'papers/second-paper/2?_*.md' 'en'
+	.pipelines/check_manuscript_style.sh 'papers/first-paper/1?_*.md'
+	.pipelines/check_manuscript_style.sh 'papers/second-paper/2?_*.md'
+	.pipelines/check_spelling.sh 'papers/proposal/0?_*.md' 'es'
+	.pipelines/check_spelling.sh 'papers/first-paper/1?_*.md' 'en'
+	.pipelines/check_spelling.sh 'papers/second-paper/2?_*.md' 'en'
 
 init: init_git
 
