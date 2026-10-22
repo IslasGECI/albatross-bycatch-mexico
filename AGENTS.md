@@ -33,7 +33,6 @@ docker exec albatross-bycatch-mexico_ci .pipelines/check_manuscript_style.sh '<g
 ### Make Dependency Gotchas
 - **`.PHONY`**: list every phony target as a prerequisite of `.PHONY`; a target left out can be mistaken for an up-to-date file.
 - Glob-concatenating rules need the real files via `$(wildcard ...)`.
-- PNG targets depend on intermediate `.gpkg` or `.rds` files, not raw CSVs.
 - Every PNG a paper references must be a prerequisite of its `reports/*_paper.pdf` target.
 - `papers/first-paper/first_paper.mustache` is generated from `1?_*.md`; never edit it.
 
@@ -79,7 +78,7 @@ Every script opens with a Spanish header in imperative form: title, context, des
 - The assistant owns the `<!-- ... -->` comments and moves sentences verbatim; `[[ ... ]]`, `XXX`, and `#` headings are the author's.
 - **Code availability**: the methods name the analysis package (`track2KBA`) and cite the concept DOI; function detail and repository links stay out.
 
-## Validation, Testing & Commits
+## Validation & Testing
 
 ### Quality Assurance
 - `make check` runs spellcheck and style checks; both languages pass.
@@ -87,14 +86,10 @@ Every script opens with a Spanish header in imperative form: title, context, des
 - **Comments**: lines starting with `<!--` are not counted.
 - **Pre-push**: `.githooks/pre-push` (via `core.hooksPath`) runs `make check` in the running `<directory>_ci` container, here `albatross-bycatch-mexico_ci`; start it before pushing. Push with `git push`; there is no `make push`.
 - **Placeholders**: `{{ key }}` resolves from `data/processed/methods.json`; unknown keys render empty. `[[ ... ]]` notes are skipped; `XXX` marks a number the author supplies.
-- **Annotations**: one `[[ ... ]]` note per line, no `]` inside; `.pipelines/remove_annotations_from_paper_for_docx.sh` strips them from the DOCX only.
+- **Annotations**: one `[[ ... ]]` note per line, no `]` inside; `src/remove_annotations_from_paper_for_docx.sh` strips them from the DOCX only.
 - **Whitelist**: add tokens to `.github/config/.wordlist-{en,es}.txt` and bump the `personal_ws-1.1` count; `aspell` runs `--ignore-case`, so a plural needs its own entry.
 - **Figures**: check a description against the rendered PNG first, then the script and data.
 - **Authorship**: the author writes all manuscript prose; the assistant handles structure, questions, and deterministic edits.
-
-### Commits (Gitmoji)
-- Format: `[Emoji] [Imperative Verb] [Summary]`, a blank line, then a body explaining why.
-- Use ➕ feature, 🗺️ map, 🎨 style, ✅ task tracking, 📝 docs.
 
 ## Documentation Map
 

@@ -27,7 +27,7 @@ reports/first_paper.pdf: \
 
 reports/first_paper_no_annotations.md: reports/first_paper.md
 	$(checkDirectories)
-	.pipelines/remove_annotations_from_paper_for_docx.sh
+	src/remove_annotations_from_paper_for_docx.sh
 
 reports/first_paper.docx: reports/first_paper.pdf reports/first_paper_no_annotations.md
 	$(checkDirectories)
