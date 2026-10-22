@@ -2,9 +2,8 @@
 
 ## Introduction
 
-- [ ] Expand the hook with studies on why seabirds are threatened (harvesting, overfishing, invasive-species predation), cause and consequence — `12_introduction.md:6-7`.
-- [ ] Concept beat: MPA versus ANP distinction, offshore byproduct, KBA seed `[[ ]]` — `12_introduction.md:38`.
-- [ ] Decide the home of the sentences parked in the UNMAPPED block — `12_introduction.md:77`.
+- [ ] Concept beat: MPA versus ANP distinction, offshore byproduct, KBA seed `[[ ]]` — `12_introduction.md:37`.
+- [ ] Decide the home of the sentences parked in the UNMAPPED block — `12_introduction.md:76`.
 
 ## Methods
 
