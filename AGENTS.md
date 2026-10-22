@@ -67,7 +67,7 @@ Every script opens with a Spanish header in imperative form: title, context, des
 
 ### Style Rules
 - **Reference**: https://islas.dev/guia_de_estilo/STYLEGUIDE
-- **Code**: English variables, Tidyverse, linear (no functions, loops, or conditionals), one Spanish comment per line explaining why.
+- **Code**: English variables, Tidyverse, linear (no functions, loops, or conditionals).
 - **Names and output**: scripts under `src/` start with a verb, use letters, numbers, and underscores, and write exactly one file.
 
 ### Repository Content
