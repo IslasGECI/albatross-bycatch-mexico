@@ -26,8 +26,9 @@ make restore
 make format
 docker exec albatross-bycatch-mexico_ci make <target>
 docker exec albatross-bycatch-mexico_ci Rscript src/foo.R
-docker exec albatross-bycatch-mexico_ci .pipelines/check_spelling.sh '<glob>' '<es|en>'
-docker exec albatross-bycatch-mexico_ci .pipelines/check_manuscript_style.sh '<glob>'
+docker exec albatross-bycatch-mexico_ci src/check_spelling.sh '<glob>' '<es|en>'
+docker exec albatross-bycatch-mexico_ci src/check_manuscript_style.sh '<glob>'
+.pipelines/check.sh
 ```
 
 ### Make Dependency Gotchas
@@ -63,7 +64,14 @@ docker exec albatross-bycatch-mexico_ci .pipelines/check_manuscript_style.sh '<g
 ## Development & Coding Standards
 
 ### Script Structure (`src/`)
-Every script opens with a Spanish header in imperative form: title, context, description, inputs, output, dependencies, notes. Run all `src/` code in the container; `.pipelines/` scripts may run on the host.
+Every script opens with a Spanish header in imperative form: title, context, description, inputs, output, dependencies, notes. Run all `src/` code in the container.
+
+### Placement (`.pipelines/` vs `src/`)
+- **The test**: a script belongs to `.pipelines/` only if its own process runs outside the container; a script that Make invokes inside the container belongs to `src/`.
+- **Direction**: calls go downhill only — 5 (CI, `.pipelines/`) → 4 (Docker Compose) → 3 (Make) → 2 and 1 (`src/`). Make never calls `.pipelines/`.
+- **Reference**: https://islas.dev/guia_de_estilo/arquitectura.
+- **Deviations**: `check_*` is this project's level-2 verb for a validator whose artifact is an exit code; `create_*` would promise a file that does not exist. Shell scripts under `src/` keep functions and write no output file, so the linear-code and one-output-file rules bind R analysis scripts only.
+- **Git hooks**: `.githooks/pre-push` stays because git pins the path; it delegates to `.pipelines/check.sh`.
 
 ### Style Rules
 - **Reference**: https://islas.dev/guia_de_estilo/STYLEGUIDE
@@ -84,9 +92,9 @@ Every script opens with a Spanish header in imperative form: title, context, des
 - `make check` runs spellcheck and style checks; both languages pass.
 - **Style**: ≤ 25 words per sentence. The checker counts words per line, so keep one sentence per line; splitting changes no output, because consecutive lines form one paragraph.
 - **Comments**: lines starting with `<!--` are not counted.
-- **Pre-push**: `.githooks/pre-push` (via `core.hooksPath`) runs `make check` in the running `<directory>_ci` container, here `albatross-bycatch-mexico_ci`; start it before pushing. Push with `git push`; there is no `make push`.
+- **Pre-push**: `.githooks/pre-push` (via `core.hooksPath`, installed by `.pipelines/init.sh`) calls `.pipelines/check.sh`, which runs `make check` in the running `<directory>_ci` container, here `albatross-bycatch-mexico_ci`; start it before pushing. Push with `git push`; there is no `make push`.
 - **Placeholders**: `{{ key }}` resolves from `data/processed/methods.json`; unknown keys render empty. `[[ ... ]]` notes are skipped; `XXX` marks a number the author supplies.
-- **Annotations**: one `[[ ... ]]` note per line, no `]` inside; `src/remove_annotations_from_paper_for_docx.sh` strips them from the DOCX only.
+- **Annotations**: one `[[ ... ]]` note per line, no `]` inside; `src/create_first_paper_no_annotations.sh` strips them from the DOCX only.
 - **Whitelist**: add tokens to `.github/config/.wordlist-{en,es}.txt` and bump the `personal_ws-1.1` count; `aspell` runs `--ignore-case`, so a plural needs its own entry.
 - **Figures**: check a description against the rendered PNG first, then the script and data.
 - **Authorship**: the author writes all manuscript prose; the assistant handles structure, questions, and deterministic edits.

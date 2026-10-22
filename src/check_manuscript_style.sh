@@ -18,6 +18,13 @@
 #     al medir oraciones, para no contar puntuación suelta
 # ==========================================
 
+# ==== CONFIGURACIÓN ====
+
+# Rastrear si hay errores
+HAS_ERRORS=0
+
+# ==== ENTRADAS ====
+
 # Validar que se proporcionó un patrón de archivos
 if [[ $# -lt 1 ]]; then
     echo "❌ Error: No se proporcionó un patrón de archivos."
@@ -28,8 +35,8 @@ if [[ $# -lt 1 ]]; then
 fi
 PATTERN="$1"
 
-# Rastrear si hay errores
-HAS_ERRORS=0
+# ==== PROCESAMIENTO / ANÁLISIS ====
+# Las funciones de verificación leen los manuscritos y main agrega el resultado.
 
 # ==========================================
 # VERIFICACIÓN 1: Las líneas terminan con puntuación adecuada
@@ -132,4 +139,6 @@ main() {
     fi
 }
 
+# ==== SALIDA ====
+# El código de salida es 0 si pasa y 1 si hay errores.
 main "$@"

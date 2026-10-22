@@ -18,12 +18,16 @@
 #   - Diccionario personalizado en .github/config/.wordlist-es.txt o .wordlist-en.txt
 # ==========================================
 
+# ==== CONFIGURACIÓN ====
+
 # Variable para rastrear si hay errores
 HAS_ERRORS=0
 
 # Raíz del repositorio, para resolver el diccionario desde cualquier directorio
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 
+# ==== ENTRADAS ====
+# La función check_spelling lee los manuscritos y el diccionario del proyecto.
 # ==========================================
 # FUNCIÓN: Verificar ortografía con aspell
 # ==========================================
@@ -75,6 +79,8 @@ check_spelling() {
     fi
 }
 
+# ==== PROCESAMIENTO / ANÁLISIS ====
+# La función main valida los argumentos y agrega el resultado de las verificaciones.
 # ==========================================
 # ENTRADA PRINCIPAL
 # ==========================================
@@ -127,4 +133,6 @@ main() {
     fi
 }
 
+# ==== SALIDA ====
+# El código de salida es 0 si pasa y 1 si hay errores.
 main "$@"

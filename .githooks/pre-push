@@ -2,14 +2,13 @@
 
 # pre-push hook to run checks before pushing
 
-CONTAINER_NAME="${PWD##*/}_ci"
-
 echo "=========================================="
 echo "🚀 Running pre-push checks in Docker..."
 echo "=========================================="
 
-# Run the project's check suite inside the container
-docker exec "$CONTAINER_NAME" make check
+# Git exige que el hook viva en .githooks/; la entrada al contenedor
+# pertenece a .pipelines/ para que el nombre del contenedor se declare una vez.
+.pipelines/check.sh
 
 # Capture the exit status
 RESULT=$?
