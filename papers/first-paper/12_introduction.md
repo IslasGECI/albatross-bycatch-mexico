@@ -12,13 +12,13 @@ However, protected areas for seabirds usually extend from the coast around a sig
 Pelagic species, such as albatrosses, receive less protection through MPAs than coastal species do [@lascelles2012hotspots; @critchley2018marine].
 13.2% of pelagic populations are covered by MPAs, compared to 32.5% of coastal populations [@critchley2018marine].
 
-<!-- main idea: I3 Mexican case — Laysan albatrosses nesting on Mexican Pacific islands (Guadalupe; Clarion and San Benedicto, both inside the Revillagigedo ANP); the islands are protected, the sea around them need not be; a longline fleet works the same waters. Island oceanography and colony profiles belong to Methods, not here. -->
-Seabirds are marine organisms that are on land only during their reproductive stage.
-Albatrosses are seabirds.
-During the breeding season, albatrosses leave their nest only to feed themselves and bring food for the chick.
-They are at the nest, make a foraging trip, and return to the nest.
-The islands of Baja California lie within federal Protected Natural Areas (ANPs) managed by CONANP.
-Seabirds are affected by bycatch in longline, trawl, and purse-seine fisheries, and these fleets are regulated by national (CONAPESCA) and regional (IATTC) institutions [@phillips2024incidental; @morgan2016fourth].
+<!-- main idea: I3 Mexican case — Laysan albatrosses nesting on Guadalupe, Clarion, and San Benedicto; Guadalupe lies in the Guadalupe Island Biosphere Reserve and the other two in the Revillagigedo National Park; the islands and their surrounding waters lie within protected areas; commercial fishing takes place in the waters adjacent to these protected areas. Pitman supports the colony list, and Castillo and Mendez support the designations. Information regarding island oceanography and colony profiles belongs in the Methods section, not here. -->
+Seabirds are marine organisms that come ashore during their reproductive phase.
+The Laysan albatross is a seabird that nests on islands in the Pacific.
+In Mexico, the Laysan albatross nests on the islands of Guadalupe, Clarion, and San Benedicto [@pitman2004population].
+All three islands are located within protected areas, and their surrounding waters are MPAs [@castillo2026breeding; @mendez2022population].
+Guadalupe Island is part of the Guadalupe Island Biosphere Reserve, while Clarion and San Benedicto are part of the Revillagigedo National Park [@mendez2022population; @castillo2026breeding].
+Commercial fishing activities take place in the waters adjacent to these MPAs.
 
 <!-- main idea: I4 Why tracking — to know whether MPAs cover their core areas you must first know where the core areas are; GPS tracking locates them; a long pooled series is required because breeding areas shift between years (wires the 12-year design). -->
 Tracking seabirds is a standard method for identifying important marine areas [@lascelles2016applying].
