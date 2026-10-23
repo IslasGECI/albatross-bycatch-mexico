@@ -21,8 +21,8 @@
 
 ## INTRODUCTION — Opening then Challenge; internal order: funnel, 8 beats, one point each; the Question and hypothesis land in the final beat
 
-- I1 Hook — seabirds among the most threatened groups of birds; the main tool for protecting them at sea is anchored to land. Opening sentence; nothing precedes it.
-- I2 Pelagic gap — 13.2% of pelagic species fall inside MPAs against 32.5% of coastal ones; open-ocean users are missed by design. The global coverage study is cited here and stays here; Discussion move 3 cites it qualitatively only.
+- I1 Hook — seabirds among the most threatened groups of birds and the causes of their decline: bycatch, introduced predators, harvesting, and overfishing. Opening sentence; nothing precedes it.
+- I2 Pelagic gap — MPAs are an important conservation tool, but they are coastal and colony-centred, so open-ocean users are missed by design: 13.2% of pelagic populations fall inside MPAs against 32.5% of coastal ones. The global coverage study is cited here and stays here; Discussion move 3 cites it qualitatively only.
 - I3 Mexican case — Laysan albatrosses nesting on Mexican Pacific islands (Guadalupe; Clarion and San Benedicto, both inside the Revillagigedo ANP); the islands are protected, the sea around them need not be; a longline fleet works the same waters. Island oceanography and colony profiles belong to Methods, not here.
 - I4 Why tracking — to know whether MPAs cover their core areas you must first know where the core areas are; GPS tracking locates them; a long pooled series is required because breeding areas shift between years (wires the 12-year design).
 - I5 Concepts compressed — core area defined as the union of the offshore 50% UD and the 60 km colony rings (one sentence, term fixed here); MPA vs ANP distinction (one sentence); the offshore component named as a methodological byproduct; one clause noting that tracking-derived core areas are the input the Key Biodiversity Area framework uses to nominate important sites — this seeds the term that the Discussion pays off (D4); no definition here. Full definitions live in Methods.

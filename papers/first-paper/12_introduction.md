@@ -1,18 +1,16 @@
 
 # Introduction
 
-<!-- main idea: I1 Hook — seabirds among the most threatened groups of birds; the main tool for protecting them at sea is anchored to land. Opening sentence; nothing precedes it. -->
+<!-- main idea: I1 Hook — seabirds among the most threatened groups of birds and the causes of their decline: bycatch, introduced predators, harvesting, and overfishing. Opening sentence; nothing precedes it. -->
 Seabirds are one of the most threatened groups of birds, with ~31% of species at risk and ~47% in decline [@dias2019threats].
 Bycatch [@birdlife2018phoebastria; @naughton2007conservation; @safina1995world; @mendez2022population], introduced predators [@birdlife2018phoebastria; @naughton2007conservation; @mendez2022population], and feather and egg harvesting [@birdlife2018phoebastria; @naughton2007conservation] have reduced seabird numbers, and overfishing has depleted their prey [@safina1995world].
-Marine protected areas (MPAs) are an important tool for the conservation of seabirds.
-However, most MPAs are established as extensions from the coast, often surrounding a significant colony of a particular seabird species [@critchley2018marine].
 
-<!-- main idea: I2 Pelagic gap — 13.2% of pelagic species fall inside MPAs against 32.5% of coastal ones; open-ocean users are missed by design. The global coverage study is cited here and stays here; Discussion move 3 cites it qualitatively only. -->
-Given all these negative impacts, different strategies have been pursued to prevent seabird populations from collapsing and improving their conservation status [@naughton2007conservation; @mendez2022population; @dias2019threats; @phillips2024incidental].
-In particular, marine protected areas are considered an efficient conservation strategy for seabird species [@critchley2018marine].
-In general, seabirds are threatened and pelagic species are poorly protected by protected areas [@dias2019threats; @critchley2018marine].
-Pelagic species, such as albatrosses, are less protected by MPAs than coastal species.
-13.2% of pelagic species are covered by MPAs, compared to 32.5% of coastal species [@critchley2018marine].
+<!-- main idea: I2 Pelagic gap — MPAs are an important conservation tool, but they are coastal and colony-centred, so open-ocean users are missed by design: 13.2% of pelagic populations fall inside MPAs against 32.5% of coastal ones. The global coverage study is cited here and stays here; Discussion move 3 cites it qualitatively only. -->
+In light of all these negative impacts, various strategies have been implemented to prevent the collapse of seabird populations and improve their conservation status [@naughton2007conservation; @mendez2022population; @dias2019threats; @phillips2024incidental].
+In particular, marine protected areas (MPAs) are considered an important tool for the conservation of seabirds [@critchley2018marine].
+However, protected areas for seabirds usually extend from the coast around a significant colony of a particular seabird species [@critchley2018marine].
+Pelagic species, such as albatrosses, receive less protection through MPAs than coastal species do [@lascelles2012hotspots; @critchley2018marine].
+13.2% of pelagic populations are covered by MPAs, compared to 32.5% of coastal populations [@critchley2018marine].
 
 <!-- main idea: I3 Mexican case — Laysan albatrosses nesting on Mexican Pacific islands (Guadalupe; Clarion and San Benedicto, both inside the Revillagigedo ANP); the islands are protected, the sea around them need not be; a longline fleet works the same waters. Island oceanography and colony profiles belong to Methods, not here. -->
 Seabirds are marine organisms that are on land only during their reproductive stage.
