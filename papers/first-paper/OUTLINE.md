@@ -16,7 +16,7 @@
 - I1 Hook — seabirds among the most threatened groups of birds, and the causes of their decline.
 - I2 Pelagic gap — MPAs are a conservation tool, but they sit on the coast, so pelagic species receive less protection.
 - I3 Mexican case — the Laysan albatross nests on Guadalupe, Clarion, and San Benedicto; the islands and their waters sit in protected areas; fishing works those waters.
-- I4 Why tracking — the areas must be located before coverage can be tested, and one breeding season will not do.
+- I4 Why tracking — the areas must be located before coverage can be tested, and tracking locates them.
 - I5 Concepts — fix the core-area term, distinguish MPA from ANP, name the offshore component as a methodological byproduct, and seed the Key Biodiversity Area term; definitions stay in Methods.
 - I6 The gap — no study has quantified how much of the Laysan albatross core area in the Mexican Pacific falls inside existing MPAs.
 - I7 Novelty — the first pooled core-area analysis for Mexico's albatross colonies.

@@ -20,11 +20,11 @@ All three islands are located within protected areas, and their surrounding wate
 Guadalupe Island is part of the Guadalupe Island Biosphere Reserve, while Clarion and San Benedicto are part of the Revillagigedo National Park [@mendez2022population; @castillo2026breeding].
 Commercial fishing activities take place in the waters adjacent to these MPAs.
 
-<!-- main idea: I4 Why tracking — to know whether MPAs cover their core areas you must first know where the core areas are; GPS tracking locates them; a long pooled series is required because breeding areas shift between years (wires the 12-year design). -->
-Tracking seabirds is a standard method for identifying important marine areas [@lascelles2016applying].
-Important marine areas are the basis on which marine protected areas should be delineated [@lascelles2016applying; @critchley2018marine].
-In the Mexican Pacific, however, protected areas are anchored to terrestrial units and were not delineated from seabird tracking [@mendez2022population].
-There is evidence that in some cases protected areas do not actually protect highly mobile pelagic species [@critchley2018marine].
+<!-- main idea: I4 Why tracking — to determine whether MPAs cover the areas that matter for a species, those areas must first be identified; GPS tracking is the standard method for identifying them; such areas should guide MPA delineation; in the Mexican Pacific, protected areas are linked to terrestrial units and were not delineated from seabird tracking. -->
+To determine whether MPAs cover areas that are important for a given species, we must first identify what those areas are.
+Tracking seabirds (for example, using GPS devices) is a standard method for identifying such important marine areas [@lascelles2016applying].
+Ideally, these important marine areas should serve as the basis for delineating Marine Protected Areas [@lascelles2016applying; @critchley2018marine].
+However, in the Mexican Pacific, protected areas are linked to terrestrial units and were not delineated based on seabird tracking data [@mendez2022population].
 
 <!-- main idea: I5 Concepts compressed — core area defined as the union of the offshore 50% UD and the 60 km colony rings (one sentence, term fixed here); MPA vs ANP distinction (one sentence); the offshore component named as a methodological byproduct; one clause noting that tracking-derived core areas are the input the Key Biodiversity Area framework uses to nominate important sites — this seeds the term that the Discussion pays off (D4); no definition here. Full definitions live in Methods. -->
 A core area is the portion of an animal's utilization distribution that contains 50% of its space-use probability, in contrast to the 95% home range [@beal2021track2kba; @fieberg2005quantifying].
