@@ -7,13 +7,14 @@
 We studied the core areas that Laysan albatrosses use within the Mexican EEZ.
 Specifically, we assessed whether Mexican marine protected areas cover the core areas used by the Laysan albatross during its breeding season.
 The protected areas relevant for this study have a terrestrial component (the island) and a marine component (the surrounding waters).
+[[ which protected areas hold the three colonies, with their marine component ]]
 There are several islands on which the Laysan albatross breeds: Guadalupe, Clarion, and San Benedicto are the relevant islands for the Mexican Pacific.
 The location of the islands is relevant to understand the surrounding oceanographic conditions, for instance, the California Current.
-These conditions help explain the location of the identified core areas.
 Their food availability and distribution (fish, squid, etc.) are determined by oceanographic factors.
 The California Current enriches the water with nutrients, which makes food more available.
 ENSO variability might increase or reduce food availability in certain areas.
 This food availability will affect where the albatrosses feed, which will determine what the core areas are.
+These conditions help explain the location of the identified core areas.
 We describe each island in order of the relevance of the colonies.
 
 ### Guadalupe Island
@@ -50,6 +51,7 @@ This ensured that we were able to retrieve GPS devices before individuals migrat
 Seabirds were captured by hand at the nest, and GPS devices were attached to feathers that are molted during the non-breeding season.
 We attached the GPS loggers to the albatrosses with Tesa tape (#4651, Tesa AG, Hamburg, Germany).
 The GPS was attached to the back feathers following [@hernandez2019sexual].
+The GPS needed to be securely attached during the whole breeding season.
 The capture is brief and harmless, and the individuals were released on site immediately after attaching or removing the GPS device.
 No albatross individuals were harmed during the study.
 GPS loggers have the appropriate accuracy and precision for the study [@soanes2013many; @clay2023adjustment; @hernandez2019sexual].
@@ -58,7 +60,6 @@ We programmed the GPS to record one position every 10 minutes.
 The 10-minute frequency allows recording multiple trips per individual per season.
 This frequency is high enough for the data to be representative and identify moments when the individual stops or goes slow.
 Also, this frequency is low enough for the battery to last the whole season and track multiple trips.
-The GPS needed to be securely attached during the whole breeding season.
 
 There were variations in the GPS device models across years and islands.
 On Guadalupe Island we used the following GPS devices: From 2014 to 2016: model GiSPy-4SB by Techno Smart (Italy).
@@ -94,6 +95,7 @@ We attached GPS units to {{ guadalupe_n_total }} Laysan albatross individuals on
 Additionally, we attached GPS units to {{ clarion_n_total }} individuals on Clarion Island from {{ clarion_min_year }} to {{ clarion_max_year }}.
 We also attached GPS units to {{ san_benedicto_n_total }} individuals on San Benedicto Island in {{ san_benedicto_min_year }}.
 Sampling effort was implemented according to the available resources.
+[[ the analyzed count: individuals retained after filtering, per colony ]]
 
 The following tables show the number of individuals tracked per season at each colony.
 
@@ -137,20 +139,22 @@ We then identified potential core areas.
 Below, we describe these steps in more detail; the full analysis code is archived on Zenodo at https://doi.org/10.5281/zenodo.23485336.
 
 <!-- main idea: M4 Trust — representativeness at the analyzed sample size; the short subset was not representative, which is why seasons are pooled; pooling justified because seasons align and years are comparable. -->
-We verified this assumption with a representativeness analysis.
-We then assessed sample representativeness and determined the core areas (potential key biodiversity areas).
+Representativeness refers to how well the sample represents the population.
 The representativeness assessment tells us whether the core areas calculated from the sample are valid for the whole population.
 It would not make sense to calculate core areas if their results could not be inferred to the entire population.
-Representativeness refers to how well the sample represents the population.
+We verified this assumption with a representativeness analysis.
+We then assessed sample representativeness and determined the core areas (potential key biodiversity areas).
 The representativeness assessment rebuilds the UD from a resampled subset of the KDEs and measures out-of-sample inclusion.
 For this purpose, individual trips are subsampled, and KDEs are calculated and combined to obtain the UD.
 From the resulting area, we evaluate how many data points not selected in the subsample fall outside.
 That indicates whether the sample size is sufficiently representative of the population for the results to be valid for the entire population.
+[[ the inclusion values at the analyzed sample size ]]
 The representativeness assessment checks that the sample is sufficient.
 We also confirmed that a 5-year dataset (2014-2018) was not long enough to be representative of the population.
 
 <!-- main idea: M5 Define — the colony-radius exclusion completed and justified; the excluded band returns as the ring that, with the offshore component, forms the core area; no resampling under uniform frequency. -->
 We removed points within 60 km around the colony because XXX.
+[[ how the excluded band returns as the colony ring ]]
 Our methodological approach called for removing incomplete trips to avoid bias in the computed utilization distribution that represents XXX.
 
 We did not resample because all GPS devices were programmed with the same frequency, so the raw data were already homogeneous.
@@ -162,7 +166,6 @@ We did not resample because all GPS devices were programmed with the same freque
 <!-- main idea: M6 Define — the offshore component: kernel density per trip, pooled density, utilization distribution; the union with the colony rings defines the core area; why track2KBA. -->
 We split each record into discrete round trips and analyze each trip as an independent tracking event using KDE [@beal2021track2kba].
 We split all tracks into single tracks representing a departure and return of an individual to the nesting colony.
-We then calculated the Kernel Density Estimation (KDE), and found core areas (50% UD; potential KBA).
 We chose the [@beal2021track2kba] methodology because it is replicable using a single open-source R package (track2KBA).
 It allows us to split tracks, estimate UD, and evaluate representativeness, and is explicitly designed to identify potential key biodiversity areas from tracking data.
 
@@ -175,20 +178,23 @@ The individual trips are the input to KDE, and the core areas are the output of 
 
 **Analysis**
 
-To identify core areas, we split the tracks into individual trips and perform kernel density estimations for each trip.
-Each colony hosts multiple individuals; each individual makes multiple foraging trips per season; the foraging trip is the unit of analysis.
 Core areas refer to the 50% Utilization Distribution (UD).
+Each colony hosts multiple individuals; each individual makes multiple foraging trips per season; the foraging trip is the unit of analysis.
+To identify core areas, we split the tracks into individual trips and perform kernel density estimations for each trip.
+KDEs are calculated for individual trips.
+The Area-Restricted Search scale uses First Passage Time analysis (adehabitatLT).
 From the GPS trajectories, we calculated kernel density estimation (KDE) to define the core areas.
 KDE has been widely used to determine UD.
-The Area-Restricted Search scale uses First Passage Time analysis (adehabitatLT).
-KDEs are calculated for individual trips.
 Then the KDEs from individual trips are combined to obtain a pooled density, from which the core area (50% UD) is obtained.
+We then calculated the Kernel Density Estimation (KDE), and found core areas (50% UD; potential KBA).
+[[ the union: offshore component plus colony rings defines the core area ]]
 KDE was selected because a wide range of users are familiar with its use, which facilitates the communication of results among decision makers.
 
 ### Overlap of core areas with MPAs
 
 <!-- main idea: M7 Place — the MPA layer inside the EEZ mask; the intersection arithmetic and its units. -->
 Once the core areas were identified, we quantified their overlap with the existing protected areas.
+[[ the MPA layer clipped to the EEZ, and the intersection units ]]
 To determine overlap, we intersect the core areas with the MPA polygons and quantify the level of overlap.
 
 **Measurements and Variables**
@@ -201,10 +207,11 @@ The overlap index is a ratio between the two areas.
 **Analysis**
 
 We calculated the overlap index to quantify the overlap of the core areas with the MPA polygons.
-@fieberg2005quantifying quantified home-range overlap using the utilization distribution.
 The overlap index is area-based (proportional) overlap: $HR_{i,j} = \frac{A_{i,j}}{A_i}$.
+[[ the union basis: core plus rings on both sides, and why ]]
 This index is directional: $HR_{i,j} \neq HR_{j,i}$.
 This measure of core habitat protection coverage tells us what fraction of the animal's most intensively used space is inside the protected area.
+@fieberg2005quantifying quantified home-range overlap using the utilization distribution.
 
 ## Ethical Considerations
 
