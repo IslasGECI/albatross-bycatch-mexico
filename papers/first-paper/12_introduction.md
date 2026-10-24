@@ -47,27 +47,3 @@ We ask two questions: where are the Laysan albatross core areas in the Mexican P
 We hypothesize that this proportion will be low, given that the MPAs were not designed with these core areas in mind.
 To answer them, we delineate the core area from pooled GPS tracking and measure its overlap with the MPA layer.
 
----
-
-<!-- UNMAPPED -->
-Seabirds are top predators and serve as umbrella species, meaning that if they are protected, other species in the same habitat are also protected [@lascelles2016applying].
-An umbrella species is a species whose protection indirectly protects other species sharing its habitat [@lascelles2016applying].
-The Laysan albatross is an umbrella species.
-The top-predator trophic level of the Laysan albatross tells us that if this species does well, the lower trophic levels are thriving.
-Given that the Laysan albatross is an umbrella species, its protection by protected areas implies the protection of its ecosystem.
-Conversely, its lack of protection implies the lack of protection of its ecosystem [@lascelles2016applying].
-Stakeholders relevant to the issues addressed in this study include Mexican conservation and fisheries authorities, the fishing sector, and environmental civil society organizations (CSOs).
-For example, in 2023, the trilateral framework explicitly proposed using bird tracking, satellite imagery, and cloud computing to overcome "long-standing information gaps" [@trilateral2023meeting].
-This group seeks joint action regarding incidental catch, thereby raising the political priority of obtaining spatial data [@trilateral2023meeting].
-As authorities issue permits for seabird management, information gaps hinder the authorities' ability to be effective [@mendez2022population].
-Environmental CSOs rely on spatial data to guide their actions and justify their restoration interventions [@trilateral2023meeting; @mendez2022population].
-The methodology described can be replicated for other species or geographic regions [@beal2021track2kba].
-The practical application that could come from the results of this study is where to extend the protected areas.
-This is relevant in the context of the Kunming-Montreal 30x30 target [@critchley2018marine; @afan2018adaptive].
-CONANP could use the results to prioritize the extension of protected areas, and the trilateral group could use them to coordinate actions [@mendez2022population; @trilateral2023meeting].
-The tracking data used by this study are made available for others to make their own analysis.
-This study provides the scientific base necessary to extend the protected areas in an effective way [@critchley2018marine; @afan2018adaptive; @mendez2022population].
-We also recommend using these results to define biodiversity corridors [@afan2018adaptive].
-We recommend incorporating the core area and overlap maps into protected area management plans and using them to adjust boundaries toward uncovered core areas [@mendez2022population; @afan2018adaptive].
-Our results suggest that the existing protected areas do not adequately cover the core areas used by the Laysan albatross [@critchley2018marine].
-It extends the global picture of the effectiveness of MPAs to protect pelagic species [@critchley2018marine].

@@ -17,12 +17,4 @@ The results of this study confirm what has been reported elsewhere  by @critchle
 <!-- main idea: D4 Contribution — the paper evaluates existing ANP/MPAs rather than proposing new ones; its contribution is the knowledge that island-anchored protection leaves the pelagic core area uncovered; the first 12-year pooled core-area analysis for Mexico's albatross colonies and the candidate-KBA layer (one-sentence definition; the term, seeded in I5, debuts here as a payoff, not a reveal) are subordinate. The core-area layer is made available as one input for future spatial planning. The fisheries/bycatch link stays as a subordinate clause, giving a clean pass to the next paper. The future-research sentence is demoted, not kept. -->
 This is the first 12-year core-area analysis for Mexico’s albatross colonies.
 [[ gap — "D4" — what knowledge claim should lead the contribution, ahead of the first 12-year analysis? ]]
-
----
-
-<!-- UNMAPPED -->
-We question whether the Mexican MPAs protect the core areas used by the Laysan albatross breeding on Mexican islands.
-In the context of "30x30" commitments, our findings support a recommendation to expand protected areas to encompass the core areas identified in this study.
-[[ I think we should say it but better in a comprehensive way, like saying given our results, therefore these alternatives should be explored, and say other MPAs, but also management approaches that would protect them at high open seas, and given that the main problem there would be fisheries it makes for a nice pass to your other chapter paper ]]
-Future research should assess the overlap between the core areas and commercial fishing zones within the Mexican EEZ to evaluate the risk of bycatch [@dias2019threats; @phillips2024incidental].
-There is low coverage of pelagic species by MPAs.
+We recommend incorporating the core area and overlap maps into protected area management plans and using them to adjust boundaries toward uncovered core areas [@mendez2022population; @afan2018adaptive].
