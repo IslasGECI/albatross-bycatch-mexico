@@ -207,11 +207,11 @@ The overlap index is a ratio between the two areas.
 **Analysis**
 
 We calculated the overlap index to quantify the overlap of the core areas with the MPA polygons.
+@fieberg2005quantifying quantified home-range overlap using the utilization distribution.
 The overlap index is area-based (proportional) overlap: $HR_{i,j} = \frac{A_{i,j}}{A_i}$.
 [[ the union basis: core plus rings on both sides, and why ]]
 This index is directional: $HR_{i,j} \neq HR_{j,i}$.
 This measure of core habitat protection coverage tells us what fraction of the animal's most intensively used space is inside the protected area.
-@fieberg2005quantifying quantified home-range overlap using the utilization distribution.
 
 ## Ethical Considerations
 
