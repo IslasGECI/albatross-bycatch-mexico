@@ -30,7 +30,7 @@ However, in the Mexican Pacific, protected areas are linked to terrestrial units
 We define three terms: core area, MPA, and KBA.
 We define the core area as the union of the 50% utilization distribution and a 60 km circle around the colony [@fieberg2005quantifying; @hernandez2019sexual].
 For the Laysan albatross, the core area might be considered a potential Key Biodiversity Area (KBA) [@beal2021track2kba].
-In Mexico, an MPA is the marine component of a protected natural area administered by the National Commission of Protected Natural Areas (CONANP).
+In Mexico, an MPA is the marine component of a protected natural area (PNA) administered by the National Commission of Protected Natural Areas (CONANP).
 
 <!-- main idea: I6 The gap — no study has quantified how much of the Laysan albatross core area in the Mexican Pacific falls inside existing MPAs. -->
 No study has quantified what proportion of the Laysan albatross's core area in the Mexican Pacific falls within MPAs.
