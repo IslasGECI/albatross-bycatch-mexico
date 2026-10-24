@@ -1,7 +1,5 @@
 # Developer Manual (AGENTS.md)
 
-Workflow guide to this project's architecture, operations, and standards.
-
 ## Public Interface
 
 The public interface is the set of `make` targets that a file under `papers/` references. A target that no `papers/` file mentions is not part of the interface. `DOCS.md` lists the current elements; `CHANGELOG.md` records only changes to those elements.
@@ -9,13 +7,8 @@ The public interface is the set of `make` targets that a file under `papers/` re
 ## Environment Setup & Operations
 
 ### Build System
-- **Primary**: `make`.
-- **Docker**: `docker compose run --rm islasgeci`, or `docker exec albatross-bycatch-mexico_ci <command>` in the running container.
-- **Image**: `islasgeci/albatross-bycatch-mexico:latest`.
-- **CI**: `.github/workflows/check.yml` reruns the checks on pushes to `develop`; `render.yml` rebuilds `make all` weekly.
-
-### Initial Configuration
-- **Registry**: `DOCKER_USERNAME`/`DOCKER_PASSWORD` for pushing images.
+- **Docker**: `docker compose run --rm islasgeci`, or `docker exec albatross-bycatch-mexico_ci <command>` in the running container; the image is `islasgeci/albatross-bycatch-mexico:latest`.
+- **CI**: `.github/workflows/check.yml` reruns the checks on pushes to `develop`; `render.yml` rebuilds `make all` weekly and pushes the image with `DOCKER_USERNAME`/`DOCKER_PASSWORD`.
 
 ### Key Commands
 ```bash
@@ -42,7 +35,8 @@ docker exec albatross-bycatch-mexico_ci src/check_manuscript_style.sh '<glob>'
 - **Data**: `data/raw/` is immutable; `create_*()` shapes `data/processed/`, and `render_*()` reads it to write PNGs to `reports/figures/`.
 - **Traceability**: `analyses.json` maps each report to its scripts, data, and results.
 - **Custom scripts**: some figures use `src/` directly, bypassing `bycatch`.
-- **`references.bib`**: unwritten values read `not_applicable`, never `NA`.
+- **`references.bib`**: 17 fields per entry (author, title, year, `category`, 13 screening fields); unwritten values read `not_applicable`, never `NA`.
+- **PDF text**: the image lacks `pdftotext`; the PDFs live in the main checkout's ignored `references/`, so extract text there with the host's `pdftotext`.
 
 ### Pipelines
 
@@ -77,9 +71,6 @@ Every script opens with a Spanish header in imperative form: title, context, des
 - **Reference**: https://islas.dev/guia_de_estilo/STYLEGUIDE
 - **Code**: English variables, Tidyverse, linear (no functions, loops, or conditionals).
 - **Names and output**: scripts under `src/` start with a verb, use letters, numbers, and underscores, and write exactly one file.
-
-### Repository Content
-- **KML**: boundaries in `data/raw/` (e.g. `gulf_of_california.kml`) are tracked.
 
 ### Manuscript Structure (first paper)
 - `papers/first-paper/OUTLINE.md` is the structural source of truth; it names each section's beats and order.
