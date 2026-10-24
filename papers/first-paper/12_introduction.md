@@ -42,22 +42,10 @@ This study is the first to use 12 years of GPS tracking data from three colonies
 This study incorporates and extends the data from these previous studies.
 Furthermore, we employed *track2KBA* [@beal2021track2kba] to identify the core areas—an approach that had not previously been applied to the Laysan albatross in Mexico.
 
-<!-- main idea: I8 Question + hypothesis + approach — final beat: "Do Mexico's MPAs cover the core area?", the hypothesis that they do not, and the approach clause (delineate the core area from pooled tracking; measure its overlap with the MPA layer). Objectives dissolved into these sentences. -->
-Our objective is to determine the effectiveness of existing marine protected areas in protecting the Laysan albatross and its ecosystem.
-To this end, we aim to identify the key areas used by the Laysan albatross.
-We then determine the extent to which these areas are covered by existing marine protected areas.
-The main objective is to identify the core areas used by Laysan albatross in the Mexican Pacific and to assess their overlap with protected areas [@beal2021track2kba; @critchley2018marine].
-This study is based on GPS tracking, UD, and KBA methods to identify core areas.
-This study closes the knowledge gap by mapping the core areas and quantifying their coverage by protected areas [@phillips2024incidental; @critchley2018marine].
-This study quantifies the degree of overlap between a pelagic core area and existing protected areas.
-Finally, we compare this area with Mexican protected areas [@critchley2018marine; @mendez2022population].
-It challenges the assumption that protected areas effectively cover the core areas of mobile pelagic species [@lascelles2016applying; @beal2021track2kba; @critchley2018marine].
-Achieving the objective allows evaluating whether the existing protected areas effectively protect the Laysan albatross core area [@critchley2018marine; @mendez2022population].
-Our hypothesis is that the existing protected areas do not adequately cover the core area used by the Laysan albatross breeding in Mexico [@critchley2018marine].
-To evaluate whether the protected area actually protects the important areas for the Laysan albatross, we evaluate the overlap between those two areas.
-GPS tracking allows finding the UD by means of kernel density estimation (KDE), and we use the UD to identify the core areas [@beal2021track2kba; @worton1989kernel].
-The colony is used to define what constitutes a complete trip, which is the unit of analysis in this study.
-This evaluates the effectiveness of a protected area to protect an umbrella species, such as the Laysan albatross [@critchley2018marine].
+<!-- main idea: I8 Question + hypothesis + approach — final beat: two questions, where the Laysan albatross core areas lie in the Mexican Pacific and what proportion falls inside MPAs; the hypothesis that the proportion is low because the MPAs were not designed around those areas; the approach that delineates the core area from pooled GPS tracking and measures its overlap with the MPA layer. Objectives dissolved into these sentences. -->
+We ask two questions: where are the Laysan albatross core areas in the Mexican Pacific, and what proportion of them falls inside MPAs?
+We hypothesize that this proportion will be low, given that the MPAs were not designed with these core areas in mind.
+To answer them, we delineate the core area from pooled GPS tracking and measure its overlap with the MPA layer.
 
 ---
 
