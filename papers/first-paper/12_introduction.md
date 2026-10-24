@@ -34,16 +34,14 @@ In Mexico, an MPA is the marine component of a protected natural area administer
 
 <!-- main idea: I6 The gap — no study has quantified how much of the Laysan albatross core area in the Mexican Pacific falls inside existing MPAs. -->
 No study has quantified what proportion of the Laysan albatross's core area in the Mexican Pacific falls within MPAs.
-Without this information, it is not possible to determine whether the protection provided by the existing MPAs is spatially adequate for the Laysan albatross.
-[[ Schimel §12.2 — "spatially adequate" — move the key term to the stress ]]
+Without this information, it is not possible to determine whether the protection provided by the existing MPAs for the Laysan albatross is spatially adequate.
 
 <!-- main idea: I7 Novelty — first 12-year, three-colony identification of the Laysan albatross core area in Mexico; the prior baseline is five years at Guadalupe and four at Clarion; this study incorporates and extends those data; track2KBA had not been applied to the species in Mexico. -->
 This study is the first to use 12 years of GPS tracking data from three colonies to identify Laysan albatross core areas in Mexico.
 @hernandez2019sexual identified areas based on a 5-year time series from the colony on Guadalupe Island.
 @castillo2026breeding identified areas based on a 4-year time series from the colony on Clarion Island.
 This study incorporates and extends the data from these previous studies.
-Furthermore, we employed *track2KBA* [@beal2021track2kba] to identify the core areas—an approach that had not previously been applied to the Laysan albatross in Mexico.
-[[ Schimel §12.2 — "not previously applied" — move the key term to the stress ]]
+Furthermore, this is the first study to employ *track2KBA* [@beal2021track2kba] to identify the core areas of the Laysan albatross in Mexico.
 
 <!-- main idea: I8 Question + hypothesis + approach — final beat: two questions, where the Laysan albatross core areas lie in the Mexican Pacific and what proportion falls inside MPAs; the hypothesis that the proportion is low because the MPAs were not designed around those areas; the approach that delineates the core area from pooled GPS tracking and measures its overlap with the MPA layer. Objectives dissolved into these sentences. -->
 We ask two questions: where are the Laysan albatross core areas in the Mexican Pacific, and what proportion of them falls inside MPAs?
