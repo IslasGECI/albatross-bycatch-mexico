@@ -27,6 +27,7 @@ Ideally, these important marine areas should serve as the basis for delineating 
 However, in the Mexican Pacific, protected areas are linked to terrestrial units and were not delineated based on seabird tracking data [@mendez2022population].
 
 <!-- main idea: I5 Concepts compressed — core area defined as the union of the offshore 50% UD and the 60 km colony rings (one sentence, term fixed here); MPA vs ANP distinction (one sentence); one clause noting that tracking-derived core areas are the input the Key Biodiversity Area framework uses to nominate important sites — this seeds the term that the Discussion pays off (D4); no definition here. Full definitions live in Methods. -->
+We define three terms: core area, MPA, and KBA.
 We define the core area as the union of the 50% utilization distribution and a 60 km circle around the colony [@fieberg2005quantifying; @hernandez2019sexual].
 The core area might be considered a potential Key Biodiversity Area (KBA) for the Laysan albatross [@beal2021track2kba].
 In Mexico, an MPA is the marine component of a protected natural area administered by the National Commission of Protected Natural Areas (CONANP).
