@@ -29,12 +29,13 @@ However, in the Mexican Pacific, protected areas are linked to terrestrial units
 <!-- main idea: I5 Concepts compressed — core area defined as the union of the offshore 50% UD and the 60 km colony rings (one sentence, term fixed here); MPA vs ANP distinction (one sentence); one clause noting that tracking-derived core areas are the input the Key Biodiversity Area framework uses to nominate important sites — this seeds the term that the Discussion pays off (D4); no definition here. Full definitions live in Methods. -->
 We define three terms: core area, MPA, and KBA.
 We define the core area as the union of the 50% utilization distribution and a 60 km circle around the colony [@fieberg2005quantifying; @hernandez2019sexual].
-The core area might be considered a potential Key Biodiversity Area (KBA) for the Laysan albatross [@beal2021track2kba].
+For the Laysan albatross, the core area might be considered a potential Key Biodiversity Area (KBA) [@beal2021track2kba].
 In Mexico, an MPA is the marine component of a protected natural area administered by the National Commission of Protected Natural Areas (CONANP).
 
 <!-- main idea: I6 The gap — no study has quantified how much of the Laysan albatross core area in the Mexican Pacific falls inside existing MPAs. -->
 No study has quantified what proportion of the Laysan albatross's core area in the Mexican Pacific falls within MPAs.
 Without this information, it is not possible to determine whether the protection provided by the existing MPAs is spatially adequate for the Laysan albatross.
+[[ Schimel §12.2 — "spatially adequate" — move the key term to the stress ]]
 
 <!-- main idea: I7 Novelty — first 12-year, three-colony identification of the Laysan albatross core area in Mexico; the prior baseline is five years at Guadalupe and four at Clarion; this study incorporates and extends those data; track2KBA had not been applied to the species in Mexico. -->
 This study is the first to use 12 years of GPS tracking data from three colonies to identify Laysan albatross core areas in Mexico.
@@ -42,9 +43,10 @@ This study is the first to use 12 years of GPS tracking data from three colonies
 @castillo2026breeding identified areas based on a 4-year time series from the colony on Clarion Island.
 This study incorporates and extends the data from these previous studies.
 Furthermore, we employed *track2KBA* [@beal2021track2kba] to identify the core areas—an approach that had not previously been applied to the Laysan albatross in Mexico.
+[[ Schimel §12.2 — "not previously applied" — move the key term to the stress ]]
 
 <!-- main idea: I8 Question + hypothesis + approach — final beat: two questions, where the Laysan albatross core areas lie in the Mexican Pacific and what proportion falls inside MPAs; the hypothesis that the proportion is low because the MPAs were not designed around those areas; the approach that delineates the core area from pooled GPS tracking and measures its overlap with the MPA layer. Objectives dissolved into these sentences. -->
 We ask two questions: where are the Laysan albatross core areas in the Mexican Pacific, and what proportion of them falls inside MPAs?
-We hypothesize that this proportion will be low, given that the MPAs were not designed with these core areas in mind.
+Given that the MPAs were not designed with these core areas in mind, we hypothesize that this proportion will be low.
 To answer them, we delineate the core area from pooled GPS tracking and measure its overlap with the MPA layer.
 
