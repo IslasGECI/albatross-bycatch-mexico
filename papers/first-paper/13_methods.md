@@ -63,7 +63,7 @@ We split each record into discrete round trips and analyze each trip as an indep
 We focus solely on albatross that nest on the islands Guadalupe, Clarion, and San Benedicto.
 To identify the core areas that persist, we use a long time series of tracking data from 2014 to 2026 to capture interannual variability.
 Each tracking device records multiple foraging trips during each breeding season.
-and the representativeness assessment checks that the sample is sufficient.
+The representativeness assessment checks that the sample is sufficient.
 We assume that a 12-year tracking dataset would be long enough to capture the patterns that persist despite the interannual variability.
 We also confirmed that a 5-year dataset (2014-2018) was not long enough to be representative of the population.
 We grouped all 12 years without distinguishing between years.
