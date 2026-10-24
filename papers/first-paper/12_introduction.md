@@ -22,7 +22,7 @@ Commercial fishing activities take place in the waters adjacent to these MPAs.
 
 <!-- main idea: I4 Why tracking — to determine whether MPAs cover the areas that matter for a species, those areas must first be identified; GPS tracking is the standard method for identifying them; such areas should guide MPA delineation; in the Mexican Pacific, protected areas are linked to terrestrial units and were not delineated from seabird tracking. -->
 To determine whether MPAs cover areas that are important for a given species, we must first identify what those areas are.
-Tracking seabirds (for example, using GPS devices) is a standard method for identifying such important marine areas [@lascelles2016applying].
+Tracking seabirds is a standard method for identifying such important marine areas (for example, using GPS devices) [@lascelles2016applying].
 Ideally, these important marine areas should serve as the basis for delineating Marine Protected Areas [@lascelles2016applying; @critchley2018marine].
 However, in the Mexican Pacific, protected areas are linked to terrestrial units and were not delineated based on seabird tracking data [@mendez2022population].
 
