@@ -3,7 +3,7 @@
 
 ## Study Area
 
-<!-- main idea: M1 Study area — scope sentence (marine-coverage question, EEZ); the three colonies ordered by relevance; islands lie in ANPs; those protected areas carry a terrestrial and a marine component; California Current oceanography positioned because it explains where the core areas will sit. Island profiles each gain a connective stating why that island matters to the coverage question. -->
+<!-- main idea: M1 Study area — the spatial frame: the EEZ, the three colonies, the protected areas that hold them, and the oceanography that places the core areas. -->
 We studied the core areas that Laysan albatrosses use within the Mexican EEZ.
 Specifically, we assessed whether Mexican marine protected areas cover the core areas used by the Laysan albatross during its breeding season.
 The protected areas relevant for this study have a terrestrial component (the island) and a marine component (the surrounding waters).
@@ -46,7 +46,7 @@ The number of nests is low (less than 40 for San Benedicto).
 
 ## GPS deployment
 
-<!-- main idea: M2 GPS deployment — capture/attachment/Tesa protocol; December–June window enclosing the breeding season; why devices are recovered within the same season. -->
+<!-- main idea: M2 GPS deployment — capture, attachment, and recovery; the breeding-season window; why devices return within the season. -->
 We installed and recovered GPS tracking devices while individuals were breeding on the island.
 Devices were deployed from December to June to encompass the breeding season that usually runs from November to July.
 This ensured that we were able to retrieve GPS devices before individuals migrated off the islands, since they cannot be recovered the next breeding season.
@@ -58,7 +58,7 @@ No albatross individuals were harmed during the study.
 
 ## Tracking data
 
-<!-- main idea: M3 Tracking data — N_TAGGED tagged (Guadalupe N_GUADALUPE, Clarion N_CLARION, San Benedicto N_SAN_BENEDICTO) and N_ANALYZED retained for analysis; 12 breeding seasons, 2014–2026; trips per colony; effort concentrated at the largest colony; the 2014–2018 five-year premise stated here and proven by M4. -->
+<!-- main idea: M3 Tracking data — tagged and analyzed individuals per colony across the breeding seasons; trips; effort concentrated at the largest colony; the short-series premise that the trust beat proves. -->
 We split each record into discrete round trips and analyze each trip as an independent tracking event using KDE [@beal2021track2kba].
 We focus solely on albatross that nest on the islands Guadalupe, Clarion, and San Benedicto.
 To identify the core areas that persist, we use a long time series of tracking data from 2014 to 2026 to capture interannual variability.
@@ -134,7 +134,7 @@ The data from Guadalupe Island include {{ guadalupe_n_trips }} complete trips, C
 
 ## Data Processing
 
-<!-- main idea: M3.5 Overview — track2KBA workflow narrated in five steps without function names; the detailed steps follow, and the full analysis code is archived at the concept DOI. -->
+<!-- main idea: M3.5 Overview — the workflow narrated step by step without function names; then the detailed steps and the archived analysis code. -->
 We used the R package track2KBA [@beal2021track2kba] and followed its methodology.
 We standardized the GPS records and split them into individual foraging trips.
 We projected the tracks and estimated the area-restricted search scale.
@@ -143,7 +143,7 @@ We assessed sample representativeness.
 We then identified potential core areas.
 Below, we describe these steps in more detail; the full analysis code is archived on Zenodo at https://doi.org/10.5281/zenodo.23485336.
 
-<!-- main idea: M4 Trust — representativeness via repAssess: REPRESENTATIVENESS inclusion at n = N_ANALYZED (Rep70 = REP70, Rep95 = REP95); the 5-year subset was not representative, which is why 12 years are pooled; pooling justified because seasons align and years are comparable. -->
+<!-- main idea: M4 Trust — representativeness at the analyzed sample size; the short subset was not representative, which is why seasons are pooled; pooling justified because seasons align and years are comparable. -->
 We verified this assumption with a representativeness analysis.
 We then assessed sample representativeness and determined the core areas (potential key biodiversity areas).
 The representativeness assessment tells us whether the core areas calculated from the sample are valid for the whole population.
@@ -154,7 +154,7 @@ For this purpose, individual trips are subsampled, and KDEs are calculated and c
 From the resulting area, we evaluate how many data points not selected in the subsample fall outside.
 That indicates whether the sample size is sufficiently representative of the population for the results to be valid for the entire population.
 
-<!-- main idea: M5 Define — 60 km-around-the-colony exclusion completed and justified (the excluded band is re-added as the ring that, with the offshore component, forms the core area); no resampling under uniform frequency. -->
+<!-- main idea: M5 Define — the colony-radius exclusion completed and justified; the excluded band returns as the ring that, with the offshore component, forms the core area; no resampling under uniform frequency. -->
 We removed points within 60 km around the colony because XXX.
 Our methodological approach called for removing incomplete trips to avoid bias in the computed utilization distribution that represents XXX.
 
@@ -165,7 +165,7 @@ After processing the data, we analyzed them to identify the core areas.
 
 ### Core areas used by Laysan albatross
 
-<!-- main idea: M6 Define — offshore component delineation: KDE per trip → pooled density → 50% UD; then the union with the 60 km colony rings defines the core area; why track2KBA (replicable, open-source, built to identify potential KBAs). -->
+<!-- main idea: M6 Define — the offshore component: kernel density per trip, pooled density, utilization distribution; the union with the colony rings defines the core area; why track2KBA. -->
 We split all tracks into single tracks representing a departure and return of an individual to the nesting colony.
 We then calculated the Kernel Density Estimation (KDE), and found core areas (50% UD; potential KBA).
 We chose the [@beal2021track2kba] methodology because it is replicable using a single open-source R package (track2KBA).
@@ -193,7 +193,7 @@ Once the core areas were identified, we quantified their overlap with the existi
 
 ### Overlap of core areas with MPAs
 
-<!-- main idea: M7 Place — the MPA layer (mexico_mpa) inside the EEZ mask; the intersection arithmetic and its units. -->
+<!-- main idea: M7 Place — the MPA layer inside the EEZ mask; the intersection arithmetic and its units. -->
 To determine overlap, we intersect the core areas with the MPA polygons and quantify the level of overlap.
 
 **Measurements and Variables**
@@ -202,7 +202,7 @@ The independent variables are the core areas used by the Laysan albatross and th
 The dependent variable is the overlap index.
 The overlap index is a ratio between the two areas.
 
-<!-- main idea: M8 Measure — the overlap index on the union basis: (core ∪ 60 km rings of all three colonies) ∩ MPA over (core ∪ 60 km rings); why the ring enters BOTH sides (it was removed for the KDE, so it must return for coverage). -->
+<!-- main idea: M8 Measure — the overlap index on the union basis; why the ring enters both sides. -->
 **Analysis**
 
 We calculated the overlap index to quantify the overlap of the core areas with the MPA polygons.
@@ -213,7 +213,7 @@ This measure of core habitat protection coverage tells us what fraction of the a
 
 ## Ethical Considerations
 
-<!-- main idea: M9 Ethical considerations — permits, minimization, no harm (unchanged). -->
+<!-- main idea: M9 Ethical considerations — permits, minimization, no harm. -->
 Our study followed necessary ethical guidelines ensuring the welfare of the seabirds during their handling.
 We also had all the permits required by the Mexican government.
 Permits came from the Ministry of the Interior, the Ministry of Environment and Natural Resources, and the National Commission for Protected Natural Areas.
