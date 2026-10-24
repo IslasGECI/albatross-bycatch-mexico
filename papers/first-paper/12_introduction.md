@@ -33,7 +33,7 @@ The core area might be considered a potential Key Biodiversity Area (KBA) for th
 In Mexico, an MPA is the marine component of a protected natural area administered by the National Commission of Protected Natural Areas (CONANP).
 
 <!-- main idea: I6 The gap — no study has quantified how much of the Laysan albatross core area in the Mexican Pacific falls inside existing MPAs. -->
-No study has quantified what proportion of the Laysan albatross’s core area in the Mexican Pacific falls within MPAs.
+No study has quantified what proportion of the Laysan albatross's core area in the Mexican Pacific falls within MPAs.
 Without this information, it is not possible to determine whether the protection provided by the existing MPAs is spatially adequate for the Laysan albatross.
 
 <!-- main idea: I7 Novelty — first 12-year, three-colony identification of the Laysan albatross core area in Mexico; the prior baseline is five years at Guadalupe and four at Clarion; this study incorporates and extends those data; track2KBA had not been applied to the species in Mexico. -->
