@@ -26,15 +26,10 @@ Tracking seabirds (for example, using GPS devices) is a standard method for iden
 Ideally, these important marine areas should serve as the basis for delineating Marine Protected Areas [@lascelles2016applying; @critchley2018marine].
 However, in the Mexican Pacific, protected areas are linked to terrestrial units and were not delineated based on seabird tracking data [@mendez2022population].
 
-<!-- main idea: I5 Concepts compressed — core area defined as the union of the offshore 50% UD and the 60 km colony rings (one sentence, term fixed here); MPA vs ANP distinction (one sentence); the offshore component named as a methodological byproduct; one clause noting that tracking-derived core areas are the input the Key Biodiversity Area framework uses to nominate important sites — this seeds the term that the Discussion pays off (D4); no definition here. Full definitions live in Methods. -->
-A core area is the portion of an animal's utilization distribution that contains 50% of its space-use probability, in contrast to the 95% home range [@beal2021track2kba; @fieberg2005quantifying].
-Defining the core area as the 50% UD and the home range as the 95% UD is a standard practice but is not universal [@beal2021track2kba; @fieberg2005quantifying].
-A marine protected area is a spatially delimited marine zone designated to conserve biodiversity and regulate extractive activities such as fishing [@critchley2018marine; @afan2018adaptive].
-GPS tracking is the recording of an animal's position over time to estimate its space use and identify important areas [@lascelles2016applying; @beal2021track2kba].
-The key concepts are core area [@worton1989kernel], marine protected area [@critchley2018marine], umbrella species [@lascelles2016applying], and GPS tracking [@lascelles2016applying; @beal2021track2kba].
-These key concepts establish shared terminology to address the core-area question unambiguously.
-This question is underpinned by utilization-distribution/home-range theory [@worton1989kernel; @fieberg2005quantifying] and the KBA/IBA criteria [@lascelles2016applying; @beal2021track2kba; @soanes2016defining].
-[[ gap — "I5" — add the MPA versus ANP distinction, the offshore component named as a methodological byproduct, and the clause seeding the Key Biodiversity Area term ]]
+<!-- main idea: I5 Concepts compressed — core area defined as the union of the offshore 50% UD and the 60 km colony rings (one sentence, term fixed here); MPA vs ANP distinction (one sentence); one clause noting that tracking-derived core areas are the input the Key Biodiversity Area framework uses to nominate important sites — this seeds the term that the Discussion pays off (D4); no definition here. Full definitions live in Methods. -->
+Here, we define the "core area" as the portion of an animal’s space-use distribution that encompasses 50% of the probability of such use [@fieberg2005quantifying], combined with a circle of 60 km radius centered on the colony [@hernandez2019sexual].
+The core area might be considered a potential Key Biodiversity Area (KBA) for the Laysan albatross [@beal2021track2kba].
+When we refer to an "MPA," we mean the marine component of a protected natural area in Mexico, as administered by the National Commission of Protected Natural Areas (CONANP).
 
 <!-- main idea: I6 The gap — no study has quantified how much of the Laysan albatross core area in the Mexican Pacific falls inside existing MPAs. -->
 @phillips2024incidental concludes that there are "clear knowledge gaps" in the Northeast Pacific, the region where this study is located.
