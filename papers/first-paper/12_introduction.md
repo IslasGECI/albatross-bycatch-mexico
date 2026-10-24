@@ -27,9 +27,9 @@ Ideally, these important marine areas should serve as the basis for delineating 
 However, in the Mexican Pacific, protected areas are linked to terrestrial units and were not delineated based on seabird tracking data [@mendez2022population].
 
 <!-- main idea: I5 Concepts compressed — core area defined as the union of the offshore 50% UD and the 60 km colony rings (one sentence, term fixed here); MPA vs ANP distinction (one sentence); one clause noting that tracking-derived core areas are the input the Key Biodiversity Area framework uses to nominate important sites — this seeds the term that the Discussion pays off (D4); no definition here. Full definitions live in Methods. -->
-Here, we define the "core area" as the portion of an animal’s space-use distribution that encompasses 50% of the probability of such use [@fieberg2005quantifying], combined with a circle of 60 km radius centered on the colony [@hernandez2019sexual].
+We define the core area as the union of the 50% utilization distribution and a 60 km circle around the colony [@fieberg2005quantifying; @hernandez2019sexual].
 The core area might be considered a potential Key Biodiversity Area (KBA) for the Laysan albatross [@beal2021track2kba].
-When we refer to an "MPA," we mean the marine component of a protected natural area in Mexico, as administered by the National Commission of Protected Natural Areas (CONANP).
+In Mexico, an MPA is the marine component of a protected natural area administered by the National Commission of Protected Natural Areas (CONANP).
 
 <!-- main idea: I6 The gap — no study has quantified how much of the Laysan albatross core area in the Mexican Pacific falls inside existing MPAs. -->
 No study has quantified what proportion of the Laysan albatross’s core area in the Mexican Pacific falls within MPAs.
@@ -37,8 +37,8 @@ Without this information, it is not possible to determine whether the protection
 
 <!-- main idea: I7 Novelty — first 12-year, three-colony identification of the Laysan albatross core area in Mexico; the prior baseline is five years at Guadalupe and four at Clarion; this study incorporates and extends those data; track2KBA had not been applied to the species in Mexico. -->
 This study is the first to use 12 years of GPS tracking data from three colonies to identify Laysan albatross core areas in Mexico.
-@hernandez2019sexual identified areas based on a 5-year time series from the colony on Isla Guadalupe.
-@castillo2026breeding identified areas based on a 4-year time series from the colony on Isla Clarion.
+@hernandez2019sexual identified areas based on a 5-year time series from the colony on Guadalupe Island.
+@castillo2026breeding identified areas based on a 4-year time series from the colony on Clarion Island.
 This study incorporates and extends the data from these previous studies.
 Furthermore, we employed *track2KBA* [@beal2021track2kba] to identify the core areas—an approach that had not previously been applied to the Laysan albatross in Mexico.
 
