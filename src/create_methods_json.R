@@ -1,5 +1,5 @@
 # ==========================================
-# Título: Exporta fechas extremas, individuos rastreados y analizados, y viajes completos
+# Título: Crea las fechas extremas, los individuos rastreados y analizados, y los viajes completos
 #
 # Contexto (Por qué):
 # El manuscrito del primer artículo necesita las fechas de inicio y fin del
