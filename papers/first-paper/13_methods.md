@@ -80,7 +80,7 @@ Despite model changes, all devices have similar accuracy and were programmed wit
 
 ## Tracking data
 
-<!-- main idea: M3 Tracking data — tagged and analyzed individuals per colony across the breeding seasons; trips; effort concentrated at the largest colony; the short-series premise that the trust beat proves. -->
+<!-- main idea: M3 Tracking data — tagged individuals per colony across the breeding seasons; trips; effort concentrated at the largest colony; the short-series premise that the trust beat proves. -->
 We focused solely on albatross that nest on the islands Guadalupe, Clarion, and San Benedicto.
 To identify the core areas that persist across interannual variability, we used a long time series spanning {{n_tracking_span_years}} years.
 From the {{tracking_season_span}} seasons, {{n_tracking_seasons}} carried tracking.
