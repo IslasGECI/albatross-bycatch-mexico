@@ -9,8 +9,10 @@ Specifically, we assessed whether Mexico's MPAs encompass core areas used by the
 The MPAs of interest for this study corresponded to the marine components of three PNAs.
 Isla Guadalupe Biosphere Reserve and Revillagigedo National Park hosted the three albatross colonies.
 The Pacific Islands of the Baja California Peninsula Biosphere Reserve lay along the foraging paths used by the albatross during its breeding season.
+
 The oceanographic conditions of the waters surrounding the breeding colonies determine foraging patterns, which in turn define the albatrosses' core areas.
 The California Current and the El Niño-Southern Oscillation (ENSO) phenomenon are examples of such oceanographic conditions.
+
 Below we describe the three islands where the colonies breed.
 
 ### Guadalupe Island
@@ -26,6 +28,7 @@ Clarion is located 700 kilometers from the Mexican mainland.
 It has a tropical climate.
 It has an area of 19.8 km$^2$.
 It measures 8.6 km at its longest part from the eastern end to the western end.
+
 Clarion Island has the second largest Laysan albatross colony in Mexico.
 On Clarion Island, crows and snakes prey on Laysan albatross eggs and newly hatched chicks.
 The colony experienced complete breeding failure between 2016 and 2023 [@castillo2026breeding].
@@ -36,6 +39,7 @@ San Benedicto Island is also part of the Revillagigedo Archipelago and shares th
 San Benedicto is located 600 kilometers from the Mexican mainland.
 It has an area of 10 km$^2$.
 It measures 4.8 km at its longest part from the northern end to the southern end.
+
 On San Benedicto Island, crabs feed on the chicks, and nests can be buried in ash.
 Reproductive success for Laysan albatross is close to 0%.
 The colony holds fewer than 80 breeding individuals.
