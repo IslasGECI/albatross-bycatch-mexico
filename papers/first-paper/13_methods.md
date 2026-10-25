@@ -130,30 +130,22 @@ Table: Breeding season, deployment window, tagged individuals, and trips for Lay
 ## Data Processing
 
 <!-- main idea: M3.5 Overview — the workflow narrated step by step without function names; then the detailed steps and the archived analysis code. -->
-We used the R package track2KBA [@beal2021track2kba].
+We followed the track2KBA methodology [@beal2021track2kba].
 We standardized the GPS records and split them into individual foraging trips.
 We removed incomplete trips and points within a 60 km radius.
 We estimated the area-restricted search scale.
 We fitted kernel density estimates for each individual.
 We assessed sample representativeness.
-We then identified the area used by at least 10% of the population.
+We then identified the area used by a threshold percentage of the population.
 We then defined the core area.
 Below, we describe these steps in more detail.
 We shared the full analysis code on Zenodo at https://doi.org/10.5281/zenodo.23485336.
 
-<!-- main idea: M4 Trust — representativeness at the analyzed sample size; the short subset was not representative, which is why seasons are pooled; pooling justified because seasons align and years are comparable. -->
-Representativeness refers to how well the sample represents the population.
-The representativeness assessment tells us whether the core areas calculated from the sample are valid for the whole population.
-It would not make sense to calculate core areas if their results could not be inferred to the entire population.
-We verified this assumption with a representativeness analysis.
-We then assessed sample representativeness and determined the area used by at least 10% of the population.
-The representativeness assessment rebuilds the UD from a resampled subset of the KDEs and measures out-of-sample inclusion.
-For this purpose, individuals are subsampled, and their KDEs are combined to obtain a UD.
-From the resulting UD, we evaluate how many locations from the individuals not in the subsample fall outside.
-That indicates whether the sample size is sufficiently representative of the population for the results to be valid for the entire population.
-[[ the inclusion values at the analyzed sample size ]]
-The representativeness assessment checks that the sample is sufficient.
-We also confirmed that a 5-year dataset (2014-2018) was not long enough to be representative of the population.
+<!-- main idea: M4 Trust — what the representativeness assessment answers: whether the sample's areas are valid for the population; the UD rebuilt from a subset of KDEs and the inclusion of locations outside the subsample; the threshold percentage it sets for the foraging component. -->
+The representativeness assessment indicates whether the areas identified as important for the sample are valid for the entire population.
+The representativeness assessment reconstructs the utilization distribution (UD) from a subset of kernel density estimates (KDEs) obtained by resampling.
+It measures the inclusion of locations from the individuals not in the subsample.
+It also sets the threshold percentage of the population that we use to define the foraging component.
 
 <!-- main idea: M5 Define — the colony-radius exclusion completed and justified; the excluded band returns as the area within a 60 km radius that, with the foraging component, forms the core area; no resampling under uniform frequency. -->
 We removed points falling within a 60 km radius of the colony because XXX.
@@ -181,12 +173,12 @@ The individual locations are the input to KDE, and the output is the area used b
 
 **Analysis**
 
-The 50% utilization distribution (UD) of an individual is the area containing half of its estimated density.
+The 50% utilization distribution of an individual is the area containing half of its estimated density.
 Each colony hosts multiple individuals; each individual makes multiple foraging trips per season; the individual is the unit of analysis.
 To identify that area, we split the tracks into individual trips and perform kernel density estimations for each individual.
 KDEs are calculated for each individual.
 The Area-Restricted Search scale uses First Passage Time analysis (adehabitatLT).
-From the GPS trajectories, we calculated kernel density estimation (KDE) to define the individual UDs.
+From the GPS trajectories, we calculated the KDEs to define the individual UDs.
 KDE has been widely used to determine UD.
 The foraging component is the cells where the individual 50% UDs overlap enough to reach 10% of the population.
 The core area is the union of the foraging component and the disk with a radius of 60 km around each colony.
