@@ -145,8 +145,8 @@ It would not make sense to calculate core areas if their results could not be in
 We verified this assumption with a representativeness analysis.
 We then assessed sample representativeness and determined the core areas (potential key biodiversity areas).
 The representativeness assessment rebuilds the UD from a resampled subset of the KDEs and measures out-of-sample inclusion.
-For this purpose, individual trips are subsampled, and KDEs are calculated and combined to obtain the UD.
-From the resulting area, we evaluate how many data points not selected in the subsample fall outside.
+For this purpose, individuals are subsampled, and their KDEs are combined to obtain a UD.
+From the resulting UD, we evaluate how many locations from the individuals not in the subsample fall outside.
 That indicates whether the sample size is sufficiently representative of the population for the results to be valid for the entire population.
 [[ the inclusion values at the analyzed sample size ]]
 The representativeness assessment checks that the sample is sufficient.
@@ -163,8 +163,8 @@ We did not resample because all GPS devices were programmed with the same freque
 
 ### Core areas used by Laysan albatross
 
-<!-- main idea: M6 Define — the offshore component: kernel density per trip, pooled density, utilization distribution; the union with the colony rings defines the core area; why track2KBA. -->
-We split each record into discrete round trips and analyze each trip as an independent tracking event using KDE [@beal2021track2kba].
+<!-- main idea: M6 Define — the offshore component: kernel density per individual, the 50% utilization distribution, and the overlap of individual UDs that yields the core area; the union with the colony rings; why track2KBA. -->
+We split each record into discrete round trips and analyze each individual as an independent tracking event using KDE [@beal2021track2kba].
 We split all tracks into single tracks representing a departure and return of an individual to the nesting colony.
 We chose the [@beal2021track2kba] methodology because it is replicable using a single open-source R package (track2KBA).
 It allows us to split tracks, estimate UD, and evaluate representativeness, and is explicitly designed to identify potential key biodiversity areas from tracking data.
@@ -173,19 +173,20 @@ It allows us to split tracks, estimate UD, and evaluate representativeness, and 
 
 The independent variable is the GPS locations of the Laysan albatross.
 The dependent variable is the core areas used by the Laysan albatross.
-The unit of analysis is an individual trip, which is a set of GPS locations.
-The individual trips are the input to KDE, and the core areas are the output of the UD analysis.
+The unit of analysis is an individual, represented by a set of GPS locations.
+The individual locations are the input to KDE, and the core areas are the output of the UD analysis.
 
 **Analysis**
 
 Core areas refer to the 50% Utilization Distribution (UD).
-Each colony hosts multiple individuals; each individual makes multiple foraging trips per season; the foraging trip is the unit of analysis.
-To identify core areas, we split the tracks into individual trips and perform kernel density estimations for each trip.
-KDEs are calculated for individual trips.
+Each colony hosts multiple individuals; each individual makes multiple foraging trips per season; the individual is the unit of analysis.
+To identify core areas, we split the tracks into individual trips and perform kernel density estimations for each individual.
+KDEs are calculated for each individual.
 The Area-Restricted Search scale uses First Passage Time analysis (adehabitatLT).
 From the GPS trajectories, we calculated kernel density estimation (KDE) to define the core areas.
 KDE has been widely used to determine UD.
-Then the KDEs from individual trips are combined to obtain a pooled density, from which the core area (50% UD) is obtained.
+We then converted each individual 50% UD to a binary surface and counted the individuals covering each cell.
+We delineated as the core area the cells where at least 10% of the population was estimated to occur.
 We then calculated the Kernel Density Estimation (KDE), and found core areas (50% UD; potential KBA).
 [[ the union: offshore component plus colony rings defines the core area ]]
 KDE was selected because a wide range of users are familiar with its use, which facilitates the communication of results among decision makers.

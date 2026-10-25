@@ -30,7 +30,7 @@
 - M3.5 Overview — the workflow narrated step by step without function names; then the detailed steps and the archived analysis code.
 - M4 Trust — representativeness at the analyzed sample size; the short subset was not representative, which is why seasons are pooled; pooling justified because seasons align and years are comparable.
 - M5 Define — the colony-radius exclusion completed and justified; the excluded band returns as the ring that, with the offshore component, forms the core area; no resampling under uniform frequency.
-- M6 Define — the offshore component: kernel density per trip, pooled density, utilization distribution; the union with the colony rings defines the core area; why track2KBA.
+- M6 Define — the offshore component: kernel density per individual, the 50% utilization distribution, and the overlap of individual UDs that yields the core area; the union with the colony rings; why track2KBA.
 - M7 Place — the MPA layer inside the EEZ mask; the intersection arithmetic and its units.
 - M8 Measure — the overlap index on the union basis; why the ring enters both sides.
 - M9 Ethical considerations — permits, minimization, no harm.
