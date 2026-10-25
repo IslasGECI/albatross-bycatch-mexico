@@ -1,6 +1,8 @@
-personal_ws-1.1 en 88 utf-8
+personal_ws-1.1 en 90 utf-8
 Beal
 Niña
+PNA
+PNAs
 Zenodo
 accelerometer
 acmos

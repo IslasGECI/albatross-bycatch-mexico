@@ -82,14 +82,19 @@ Despite model changes, all devices have similar accuracy and were programmed wit
 
 <!-- main idea: M3 Tracking data — tagged and analyzed individuals per colony across the breeding seasons; trips; effort concentrated at the largest colony; the short-series premise that the trust beat proves. -->
 We focused solely on albatross that nest on the islands Guadalupe, Clarion, and San Benedicto.
-Each tracking device records multiple foraging trips during each breeding season.
 To identify the core areas that persist across interannual variability, we used a long time series spanning {{n_tracking_span_years}} years.
 From the {{tracking_season_span}} seasons, {{n_tracking_seasons}} carried tracking.
 We assumed that this dataset would be long enough to capture the patterns that persist despite the interannual variability.
 We grouped all {{n_tracking_seasons}} seasons without distinguishing between years.
 Because every year covers only the breeding season, which occurs in the same time period, the years are comparable and can be pooled.
 
-The table shows the deployment window for each colony.
+Each tracking device records multiple foraging trips during each breeding season.
+We tagged {{n_tagged_individuals}} total individuals across the three colonies, {{n_analyzed_individuals}} of which were analyzed after filtering for data quality and completeness.
+Table 1 summarizes the deployment window, tagged individuals, and complete trips for each colony.
+Tables 2, 3, and 4 show the deployment window, tagged individuals, and complete trips for each breeding season at Guadalupe, Clarion, and San Benedicto, respectively.
+The tracking effort was concentrated at the largest colony, Guadalupe Island, and less at Clarion and San Benedicto, according to the available resources.
+
+Table: Deployment window, tagged individuals, and complete trips for Laysan albatrosses, {{tracking_season_span}}.
 
 | Colony | Start | End | Tagged individuals | Trips |
 |------------------|-------------|-------------|------------------------|--------|
@@ -98,14 +103,7 @@ The table shows the deployment window for each colony.
 | San Benedicto | {{ san_benedicto_min_date }} | {{ san_benedicto_max_date }} | {{ san_benedicto_n_tagged }} | {{ san_benedicto_n_trips }} |
 | TOTAL | | | {{n_tagged_individuals}} | {{n_trips_total}} |
 
-We attached GPS units to {{ guadalupe_n_tagged }} Laysan albatross individuals on Guadalupe Island from {{ guadalupe_min_year }} to {{ guadalupe_max_year }}.
-Additionally, we attached GPS units to {{ clarion_n_tagged }} individuals on Clarion Island from {{ clarion_min_year }} to {{ clarion_max_year }}.
-We also attached GPS units to {{ san_benedicto_n_tagged }} individuals on San Benedicto Island in {{ san_benedicto_min_year }}.
-We tagged {{n_tagged_individuals}} total individuals across the three colonies, {{n_analyzed_individuals}} of which were analyzed after filtering for data quality and completeness.
-
-The following tables show the number of individuals tagged per season at each colony.
-
-**Guadalupe Island**
+Table: Breeding season, deployment window, tagged individuals, and complete trips for Laysan albatrosses at Guadalupe Island.
 
 | Season | Start date | End date | Tagged individuals | Trips |
 |------------|------------|------------|--------------------|----------|
@@ -113,7 +111,8 @@ The following tables show the number of individuals tagged per season at each co
 | {{season}} | {{start}} | {{end}} | {{n_tagged}} | {{n_trips}} |
 {{/guadalupe_seasons}}
 
-**Clarion Island**
+Table: Breeding season, deployment window, tagged individuals, and complete trips for Laysan albatrosses at Clarion Island.
+A season without tracking data shows a dash for the dates and zero for the counts.
 
 | Season | Start date | End date | Tagged individuals | Trips |
 |------------|------------|------------|--------------------|----------|
@@ -121,7 +120,7 @@ The following tables show the number of individuals tagged per season at each co
 | {{season}} | {{start}} | {{end}} | {{n_tagged}} | {{n_trips}} |
 {{/clarion_seasons}}
 
-**San Benedicto Island**
+Table: Breeding season, deployment window, tagged individuals, and complete trips for Laysan albatrosses at San Benedicto Island.
 
 | Season | Start date | End date | Tagged individuals | Trips |
 |------------|------------|------------|--------------------|----------|
@@ -129,9 +128,6 @@ The following tables show the number of individuals tagged per season at each co
 | {{season}} | {{start}} | {{end}} | {{n_tagged}} | {{n_trips}} |
 {{/san_benedicto_seasons}}
 
-The tracking effort was concentrated at the largest colony, Guadalupe Island, and less at Clarion and San Benedicto, according to the available resources.
-
-The data from Guadalupe Island include {{ guadalupe_n_trips }} complete trips, Clarion {{ clarion_n_trips }}, and San Benedicto {{ san_benedicto_n_trips }}.
 
 ## Data Processing
 
