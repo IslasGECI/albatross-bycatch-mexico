@@ -75,34 +75,35 @@ CatLog-S2, Perthold Engineering (USA).
 
 On San Benedicto Island, in 2020, we used the ATS1 model Nodo-2018 by ACMOS (Mexico).
 
-We used different GPS models as new and better technology was available during the 12-year period of the study.
+We used different GPS models as new and better technology was available during the {{n_tracking_span_years}}-year period of the study.
 Despite model changes, all devices have similar accuracy and were programmed with the same frequency, so the data remain comparable.
 
 ## Tracking data
 
 <!-- main idea: M3 Tracking data — tagged and analyzed individuals per colony across the breeding seasons; trips; effort concentrated at the largest colony; the short-series premise that the trust beat proves. -->
-We focus solely on albatross that nest on the islands Guadalupe, Clarion, and San Benedicto.
-To identify the core areas that persist, we use a long time series of tracking data from 2014 to 2026 to capture interannual variability.
+We focused solely on albatross that nest on the islands Guadalupe, Clarion, and San Benedicto.
 Each tracking device records multiple foraging trips during each breeding season.
-We assume that a 12-year tracking dataset would be long enough to capture the patterns that persist despite the interannual variability.
-We grouped all 12 years without distinguishing between years.
+To identify the core areas that persist across interannual variability, we used a long time series spanning {{n_tracking_span_years}} years.
+From the {{tracking_season_span}} seasons, {{n_tracking_seasons}} carried tracking.
+We assumed that this dataset would be long enough to capture the patterns that persist despite the interannual variability.
+We grouped all {{n_tracking_seasons}} seasons without distinguishing between years.
 Because every year covers only the breeding season, which occurs in the same time period, the years are comparable and can be pooled.
 
 The table shows the deployment window for each colony.
 
-| Colony | Start | End |
-|--------|----------|----------|
-| Guadalupe | {{ guadalupe_min_date }} | {{ guadalupe_max_date }} |
-| Clarion | {{ clarion_min_date }} | {{ clarion_max_date }} |
-| San Benedicto | {{ san_benedicto_min_date }} | {{ san_benedicto_max_date }} |
+| Colony | Start | End | Tagged individuals | Trips |
+|------------------|-------------|-------------|------------------------|--------|
+| Guadalupe | {{ guadalupe_min_date }} | {{ guadalupe_max_date }} | {{ guadalupe_n_tagged }} | {{ guadalupe_n_trips }} |
+| Clarion | {{ clarion_min_date }} | {{ clarion_max_date }} | {{ clarion_n_tagged }} | {{ clarion_n_trips }} |
+| San Benedicto | {{ san_benedicto_min_date }} | {{ san_benedicto_max_date }} | {{ san_benedicto_n_tagged }} | {{ san_benedicto_n_trips }} |
+| TOTAL | | | {{n_tagged_individuals}} | {{n_trips_total}} |
 
 We attached GPS units to {{ guadalupe_n_tagged }} Laysan albatross individuals on Guadalupe Island from {{ guadalupe_min_year }} to {{ guadalupe_max_year }}.
 Additionally, we attached GPS units to {{ clarion_n_tagged }} individuals on Clarion Island from {{ clarion_min_year }} to {{ clarion_max_year }}.
 We also attached GPS units to {{ san_benedicto_n_tagged }} individuals on San Benedicto Island in {{ san_benedicto_min_year }}.
-Sampling effort was implemented according to the available resources.
-[[ the analyzed count: individuals retained after filtering, per colony ]]
+We tagged {{n_tagged_individuals}} total individuals across the three colonies, {{n_analyzed_individuals}} of which were analyzed after filtering for data quality and completeness.
 
-The following tables show the number of individuals tracked per season at each colony.
+The following tables show the number of individuals tagged per season at each colony.
 
 **Guadalupe Island**
 
@@ -128,7 +129,7 @@ The following tables show the number of individuals tracked per season at each c
 | {{season}} | {{start}} | {{end}} | {{n_tagged}} | {{n_trips}} |
 {{/san_benedicto_seasons}}
 
-The tracking effort was concentrated at the largest colony, Guadalupe Island, and less effort was invested in the smallest colonies, Clarion and San Benedicto islands.
+The tracking effort was concentrated at the largest colony, Guadalupe Island, and less at Clarion and San Benedicto, according to the available resources.
 
 The data from Guadalupe Island include {{ guadalupe_n_trips }} complete trips, Clarion {{ clarion_n_trips }}, and San Benedicto {{ san_benedicto_n_trips }}.
 

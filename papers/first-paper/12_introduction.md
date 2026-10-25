@@ -37,7 +37,7 @@ No study has quantified what proportion of the Laysan albatross's core area in t
 Without this information, it is not possible to determine whether the protection provided by the existing MPAs for the Laysan albatross is spatially adequate.
 
 <!-- main idea: I7 Novelty — first 12-year, three-colony identification of the Laysan albatross core area in Mexico; the prior baseline is five years at Guadalupe and four at Clarion; this study incorporates and extends those data; track2KBA had not been applied to the species in Mexico. -->
-This study is the first to use 12 years of GPS tracking data from three colonies to identify Laysan albatross core areas in Mexico.
+This study is the first to use {{n_tracking_span_years}} years of GPS tracking data from three colonies to identify Laysan albatross core areas in Mexico.
 @hernandez2019sexual identified areas based on a 5-year time series from the colony on Guadalupe Island.
 @castillo2026breeding identified areas based on a 4-year time series from the colony on Clarion Island.
 This study incorporates and extends the data from these previous studies.

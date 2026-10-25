@@ -384,12 +384,56 @@ clarion_n_tagged <- sum(clarion_seasons_full$n_tagged)
 san_benedicto_n_tagged <- sum(san_benedicto_seasons_full$n_tagged)
 # Suma los totales por colonia para obtener el total de individuos rastreados
 n_tagged_individuals <- guadalupe_n_tagged + clarion_n_tagged + san_benedicto_n_tagged
+# Suma los viajes completos de las tres colonias para el total de la tabla
+n_trips_total <- guadalupe_n_trips + clarion_n_trips + san_benedicto_n_trips
+
+# Combina las temporadas de las tres colonias para quedarse con las que tienen
+# datos de rastreo y evitar contar dos veces las temporadas compartidas
+seasons_with_data <- bind_rows(
+  guadalupe_seasons_full,
+  clarion_seasons_full,
+  san_benedicto_seasons_full
+) |>
+  filter(n_tagged > 0) |>
+  distinct(season) |>
+  arrange(season)
+
+# Cuenta las temporadas con datos de rastreo, que no siempre son consecutivas
+n_tracking_seasons <- nrow(seasons_with_data)
+
+# Calcula la extensión en años entre el primer y el último año de rastreo,
+# sumando uno para incluir ambos extremos del intervalo
+n_tracking_span_years <- max(as.numeric(c(
+  guadalupe_max_year,
+  clarion_max_year,
+  san_benedicto_max_year
+))) - min(as.numeric(c(
+  guadalupe_min_year,
+  clarion_min_year,
+  san_benedicto_min_year
+))) + 1
+
+# Construye la etiqueta de la primera y la última temporada con datos para
+# usarla como rango de temporadas en el texto del artículo
+tracking_season_span <- paste0(
+  str_sub(seasons_with_data$season[1], 1, 4),
+  "/",
+  str_sub(seasons_with_data$season[1], 8, 9),
+  "–",
+  str_sub(seasons_with_data$season[nrow(seasons_with_data)], 1, 4),
+  "/",
+  str_sub(seasons_with_data$season[nrow(seasons_with_data)], 8, 9)
+)
 
 # Combina los valores planos con las tablas de temporadas en una lista
 # única que el motor de mustache usa para resolver todas las variables
 methods_list <- list(
   n_tagged_individuals = n_tagged_individuals,
   n_analyzed_individuals = n_analyzed_individuals,
+  n_tracking_seasons = n_tracking_seasons,
+  n_tracking_span_years = n_tracking_span_years,
+  tracking_season_span = tracking_season_span,
+  n_trips_total = n_trips_total,
   guadalupe_n_tagged = guadalupe_n_tagged,
   guadalupe_n_trips = guadalupe_n_trips,
   guadalupe_min_date = guadalupe_min_date,
