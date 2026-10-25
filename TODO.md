@@ -9,13 +9,14 @@
 
 - [ ] Replace the remaining literal numbers (93.4, 1–36) with mustache variables — `15_results.md:28, 37`.
 - [ ] Representativeness `XXX%` — `15_results.md:21`.
-- [ ] Area of the 50% UD (km2), from the pooled KBA polygons — `15_results.md:48`.
+- [ ] Area of the potential KBA (km2) — `15_results.md:48`.
 - [ ] Area of the 60 km rings around Guadalupe, Clarion, and San Benedicto (km2) — `15_results.md:48`.
-- [ ] Total core area (km2): the 50% UD unioned with the rings — `15_results.md:49`.
+- [ ] Total core area (km2): the potential KBA unioned with the rings — `15_results.md:49`.
 - [ ] Area of the core area inside Mexican MPAs (km2) — `15_results.md:49`.
 - [ ] Percentage of the core area inside Mexican MPAs — `15_results.md:50`.
-- [ ] Add the comparison table: core area and core-plus-rings rows, inside-MPA area on the union row `[[ ]]` — `15_results.md:58`.
+- [ ] Add the comparison table: potential-KBA and core-area rows, inside-MPA area on the union row `[[ ]]` — `15_results.md:58`.
 - [ ] Add the closing Results sentence carrying the union-basis percentage `[[ ]]` — `15_results.md:60`.
+- [ ] Deduplicate the core-area definition, which now appears in the Methods and here — `13_methods.md:190`, `15_results.md:45`.
 
 ## Discussion
 
