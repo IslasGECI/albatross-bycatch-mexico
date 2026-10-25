@@ -127,79 +127,52 @@ Table: Breeding season, deployment window, tagged individuals, and trips for Lay
 | {{season}} | {{start}} | {{end}} | {{n_tagged}} | {{n_trips}} |
 {{/san_benedicto_seasons}}
 
-## Data Processing
-
-<!-- main idea: M3.5 Overview — the workflow narrated step by step without function names; then the detailed steps and the archived analysis code. -->
-We followed the track2KBA methodology [@beal2021track2kba].
-We standardized the GPS records and split them into individual foraging trips.
-We removed incomplete trips and points within a 60 km radius.
-We estimated the area-restricted search scale.
-We fitted kernel density estimates for each individual.
-We assessed sample representativeness.
-We then identified the area used by a threshold percentage of the population.
-We then defined the core area.
-Below, we describe these steps in more detail.
-We shared the full analysis code on Zenodo at https://doi.org/10.5281/zenodo.23485336.
-
-<!-- main idea: M4 Trust — what the representativeness assessment answers: whether the sample's areas are valid for the population; the UD rebuilt from a subset of KDEs and the inclusion of locations outside the subsample; the threshold percentage it sets for the foraging component. -->
-The representativeness assessment indicates whether the areas identified as important for the sample are valid for the entire population.
-The representativeness assessment reconstructs the utilization distribution (UD) from a subset of kernel density estimates (KDEs) obtained by resampling.
-It measures the inclusion of locations from the individuals not in the subsample.
-It also sets the threshold percentage of the population that we use to define the foraging component.
-
-<!-- main idea: M5 Define — the colony-radius exclusion completed and justified; the excluded band returns as the area within a 60 km radius that, with the foraging component, forms the core area; no resampling under uniform frequency. -->
-We removed points falling within a 60 km radius of the colony because XXX.
-[[ how the excluded band returns as the area within a 60 km radius ]]
-Our methodological approach called for removing incomplete trips to avoid bias in the computed utilization distribution that represents XXX.
-
-We did not resample because all GPS devices were programmed with the same frequency, so the raw data were already homogeneous.
-
 ## Data Analysis
 
 ### Core areas used by Laysan albatross
 
-<!-- main idea: M6 Define — the foraging component: kernel density per individual, the 50% utilization distribution, and the overlap of individual UDs that defines it; the union with the area within a 60 km radius defines the core area; why track2KBA. -->
-We split each record into discrete round trips and analyze each individual as an independent tracking event using KDE [@beal2021track2kba].
-We split all tracks into single tracks representing a departure and return of an individual to the nesting colony.
-We chose the [@beal2021track2kba] methodology because it is replicable using a single open-source R package (track2KBA).
-It allows us to split tracks, estimate UD, and evaluate representativeness, and is explicitly designed to identify important sites for biodiversity from tracking data.
+<!-- main idea: Overview — why track2KBA in two sentences, the six numbered steps without function names, the promise of detail, and the archived analysis code. -->
+We followed the track2KBA methodology because it is replicable using a single open-source R package [@beal2021track2kba].
+Also, it is explicitly designed to identify important sites for biodiversity from tracking data [@beal2021track2kba].
+1. We consolidated the GPS records and split them into individual foraging trips.
+2. We removed incomplete trips and trips that never reached beyond 60 km of the colony.
+3. We fitted kernel density estimates for each individual.
+4. We assessed the sample representativeness.
+5. We identified the area used by a threshold percentage of the population.
+6. We defined the core area.
+Below, we describe these steps in more detail.
+We shared the full analysis code on Zenodo at https://doi.org/10.5281/zenodo.23485336.
 
-**Measurements and Variables**
+<!-- main idea: Steps 1 and 2 — consolidate the records into one database, split the tracks into trips, remove incomplete trips and trips that never reached beyond 60 km, and keep the survivors as the foraging trips. -->
+We consolidated the GPS records to bring them into a single database with a common format.
+We split all tracks into single trips.
+We removed incomplete trips, which are those without a recorded return to the colony.
+Following @hernandez2019sexual, we removed trips that never reached beyond 60 km of the colony.
+The remaining trips were considered foraging trips.
 
-The independent variable is the GPS locations of the Laysan albatross.
-The dependent variable is the core areas used by the Laysan albatross.
-The unit of analysis is an individual, represented by a set of GPS locations.
-The individual locations are the input to KDE, and the output is the area used by at least 10% of the population.
+<!-- main idea: Step 3 — the ARS scale from First Passage Time is the KDE smoothing parameter; a 50% UD holds half the probability mass of a KDE, one per individual. -->
+The area-restricted search (ARS) scale is estimated using First Passage Time analysis (adehabitatLT).
+We used that scale as the smoothing parameter of the KDEs.
+The 50% UD is the region that contains half of the probability mass of the KDE.
+We calculated one 50% UD for each individual albatross [@beal2021track2kba].
 
-**Analysis**
+<!-- main idea: Step 4, Trust — what the representativeness assessment answers; the KDEs of a resampled subset of individuals averaged into a UD; the inclusion of the locations left out; the threshold percentage it sets for the foraging component. -->
+The representativeness assessment indicates whether the areas identified as important for the sample are valid for the entire population.
+The representativeness assessment averages the kernel density estimates (KDEs) of a resampled subset of individuals to obtain a utilization distribution (UD).
+It measures the inclusion of locations from the individuals not in the subsample.
+It also sets the threshold percentage of the population that we use to define the foraging component.
 
-The 50% utilization distribution of an individual is the area containing half of its estimated density.
-Each colony hosts multiple individuals; each individual makes multiple foraging trips per season; the individual is the unit of analysis.
-To identify that area, we split the tracks into individual trips and perform kernel density estimations for each individual.
-KDEs are calculated for each individual.
-The Area-Restricted Search scale uses First Passage Time analysis (adehabitatLT).
-From the GPS trajectories, we calculated the KDEs to define the individual UDs.
-KDE has been widely used to determine UD.
-The foraging component is the cells where the individual 50% UDs overlap enough to reach 10% of the population.
-The core area is the union of the foraging component and the disk with a radius of 60 km around each colony.
-KDE was selected because a wide range of users are familiar with its use, which facilitates the communication of results among decision makers.
+<!-- main idea: Steps 5 and 6 — the foraging component is the cells whose individual 50% UDs reach the threshold set by the assessment; the core area is its union with the 60 km disk. -->
+The foraging component is the cells where the individual 50% UDs overlap enough to reach that threshold set by the representativeness assessment.
+We define the core area as the union of the foraging component and the disk with a radius of 60 km around each colony.
 
 ### Overlap of core areas with MPAs
 
 <!-- main idea: M7 Place — the MPA layer inside the EEZ mask; the intersection arithmetic and its units. -->
 Once the core areas were identified, we quantified their overlap with the existing protected areas.
+
 [[ the MPA layer clipped to the EEZ, and the intersection units ]]
 To determine overlap, we intersect the core areas with the MPA polygons and quantify the level of overlap.
-
-**Measurements and Variables**
-
-The independent variables are the core areas used by the Laysan albatross and the MPA polygons.
-The dependent variable is the overlap index.
-The overlap index is a ratio between the two areas.
-
-<!-- main idea: M8 Measure — the overlap index on the union basis; why the area within a 60 km radius enters both sides. -->
-**Analysis**
-
 We calculated the overlap index to quantify the overlap of the core areas with the MPA polygons.
 @fieberg2005quantifying quantified home-range overlap using the utilization distribution.
 The overlap index is area-based (proportional) overlap: $HR_{i,j} = \frac{A_{i,j}}{A_i}$.
@@ -207,18 +180,11 @@ The overlap index is area-based (proportional) overlap: $HR_{i,j} = \frac{A_{i,j
 This index is directional: $HR_{i,j} \neq HR_{j,i}$.
 This measure of core habitat protection coverage tells us what fraction of the animal's most intensively used space is inside the protected area.
 
-## Ethical Considerations
+## Ethical considerations
 
-<!-- main idea: M9 Ethical considerations — permits, minimization, no harm. -->
+<!-- main idea: M8 Ethical considerations — permits, minimization, no harm. -->
 Our study followed necessary ethical guidelines ensuring the welfare of the seabirds during their handling.
 We also had all the permits required by the Mexican government.
 Permits came from the Ministry of the Interior, the Ministry of Environment and Natural Resources, and the National Commission for Protected Natural Areas.
 A complete list of permits by island and year is available in the Supplementary Information.
 
----
-
-<!-- UNMAPPED -->
-The global population size has been estimated to be around 800,000 breeding pairs [@birdlife2018phoebastria].
-The biggest nesting colonies are low-lying sites at risk due to sea-level rise associated with climate change [@birdlife2018phoebastria].
-Guadalupe Island has high nesting areas that are less affected by sea-level rise, offering a refuge for the species [@hernandez2019sexual].
-After processing the data, we analyzed them to identify the core areas.

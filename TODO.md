@@ -2,8 +2,8 @@
 
 ## Methods
 
-- [ ] Reason for the 60 km removal `XXX` — `13_methods.md:151`.
-- [ ] Bias the utilization distribution represents `XXX` — `13_methods.md:153`.
+- [ ] Fill the MPA layer and the intersection units `[[ ]]` — `13_methods.md:174`.
+- [ ] Fill the union basis `[[ ]]` — `13_methods.md:179`.
 
 ## Results
 
@@ -14,7 +14,7 @@
 - [ ] Total core area (km2): the foraging component unioned with the area within a 60 km radius — `15_results.md:48`.
 - [ ] Area of the core area inside Mexican MPAs (km2) — `15_results.md:48`.
 - [ ] Percentage of the core area inside Mexican MPAs — `15_results.md:49`.
-- [ ] Add the comparison table: potential-KBA and core-area rows, inside-MPA area on the union row `[[ ]]` — `15_results.md:57`.
+- [ ] Add the comparison table: foraging-component and core-area rows, inside-MPA area on the union row `[[ ]]` — `15_results.md:57`.
 - [ ] Add the closing Results sentence carrying the union-basis percentage `[[ ]]` — `15_results.md:59`.
 
 ## Discussion
