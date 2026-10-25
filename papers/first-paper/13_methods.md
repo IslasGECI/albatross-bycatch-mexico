@@ -4,13 +4,13 @@
 ## Study Area
 
 <!-- main idea: M1 Study area — the spatial frame: the EEZ, the three colonies, the protected areas involved, and the oceanography that places the core areas. -->
-We studied the core areas used by Laysan albatrosses within Mexico's EEZ.
+We studied the core areas used by Laysan albatross within Mexico's EEZ.
 Specifically, we assessed whether Mexico's MPAs encompass core areas used by the Laysan albatross during its breeding season.
 The MPAs of interest for this study corresponded to the marine components of three PNAs.
 Guadalupe Island Biosphere Reserve and Revillagigedo National Park hosted the three albatross colonies.
 The Pacific Islands of the Baja California Peninsula Biosphere Reserve lay along the foraging paths used by the albatross during its breeding season.
 
-The oceanographic conditions of the waters surrounding the breeding colonies determine foraging patterns, which in turn define the albatrosses' core areas.
+The oceanographic conditions of the waters surrounding the breeding colonies determine foraging patterns, which in turn define the albatross core areas.
 The California Current and the El Niño-Southern Oscillation (ENSO) phenomenon are examples of such oceanographic conditions.
 
 Below we describe the three islands where the colonies breed.
@@ -55,7 +55,7 @@ This ensured that we could recover the GPS devices before the individuals migrat
 The seabirds were captured by hand at their nests, and the GPS devices were attached to back feathers shed during the non-breeding season.
 We attached the GPS loggers using Tesa tape (#4651, Tesa AG, Hamburg, Germany), following the method described in [@hernandez2019sexual].
 The individuals were released at the same location immediately after the GPS device was attached or removed.
-No albatrosses were harmed during the study.
+No albatross were harmed during the study.
 
 The GPS loggers offer the level of accuracy and precision required for this study [@soanes2013many; @clay2023adjustment; @hernandez2019sexual].
 We programmed the GPS units to record a position every 10 minutes.
@@ -89,12 +89,11 @@ We grouped all {{n_tracking_seasons}} seasons without distinguishing between yea
 Because every year covers only the breeding season, which occurs in the same time period, the years are comparable and can be pooled.
 
 Each tracking device records multiple foraging trips during each breeding season.
-We tagged {{n_tagged_individuals}} total individuals across the three colonies, {{n_analyzed_individuals}} of which were analyzed after filtering for data quality and completeness.
-Table 1 summarizes the deployment window, tagged individuals, and complete trips for each colony.
-Tables 2, 3, and 4 show the deployment window, tagged individuals, and complete trips for each breeding season at Guadalupe, Clarion, and San Benedicto, respectively.
-The tracking effort was concentrated at the largest colony, Guadalupe Island, and less at Clarion and San Benedicto, according to the available resources.
+We tagged {{n_tagged_individuals}} total individuals across the three colonies (Table 1), {{n_analyzed_individuals}} of which were analyzed after filtering for data quality and completeness.
+The tracking effort was concentrated at the largest colony, Guadalupe Island (Table 2).
+Less effort was allocated at Clarion (Table 3) and San Benedicto (Table 4), according to the available resources.
 
-Table: Deployment window, tagged individuals, and complete trips for Laysan albatrosses, {{tracking_season_span}}.
+Table: Deployment window, tagged individuals, and complete trips for Laysan albatross, {{tracking_season_span}}.
 
 | Colony | Start | End | Tagged individuals | Trips |
 |------------------|-------------|-------------|------------------------|--------|
@@ -103,7 +102,7 @@ Table: Deployment window, tagged individuals, and complete trips for Laysan alba
 | San Benedicto | {{ san_benedicto_min_date }} | {{ san_benedicto_max_date }} | {{ san_benedicto_n_tagged }} | {{ san_benedicto_n_trips }} |
 | TOTAL | | | {{n_tagged_individuals}} | {{n_trips_total}} |
 
-Table: Breeding season, deployment window, tagged individuals, and complete trips for Laysan albatrosses at Guadalupe Island.
+Table: Breeding season, deployment window, tagged individuals, and complete trips for Laysan albatross at Guadalupe Island.
 
 | Season | Start date | End date | Tagged individuals | Trips |
 |------------|------------|------------|--------------------|----------|
@@ -111,7 +110,7 @@ Table: Breeding season, deployment window, tagged individuals, and complete trip
 | {{season}} | {{start}} | {{end}} | {{n_tagged}} | {{n_trips}} |
 {{/guadalupe_seasons}}
 
-Table: Breeding season, deployment window, tagged individuals, and complete trips for Laysan albatrosses at Clarion Island.
+Table: Breeding season, deployment window, tagged individuals, and complete trips for Laysan albatross at Clarion Island.
 A season without tracking data shows a dash for the dates and zero for the counts.
 
 | Season | Start date | End date | Tagged individuals | Trips |
@@ -120,7 +119,7 @@ A season without tracking data shows a dash for the dates and zero for the count
 | {{season}} | {{start}} | {{end}} | {{n_tagged}} | {{n_trips}} |
 {{/clarion_seasons}}
 
-Table: Breeding season, deployment window, tagged individuals, and complete trips for Laysan albatrosses at San Benedicto Island.
+Table: Breeding season, deployment window, tagged individuals, and complete trips for Laysan albatross at San Benedicto Island.
 
 | Season | Start date | End date | Tagged individuals | Trips |
 |------------|------------|------------|--------------------|----------|

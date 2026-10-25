@@ -71,6 +71,7 @@ Every script opens with a Spanish header in imperative form: title, context, des
 - **Reference**: https://islas.dev/guia_de_estilo/STYLEGUIDE
 - **Code**: English variables, Tidyverse, linear (no functions, loops, or conditionals).
 - **Names and output**: scripts under `src/` start with a verb, use letters, numbers, and underscores, and write exactly one file.
+- **Species names**: use the singular form for any number of individuals of one species, as with fish: `Laysan albatross`, not `Laysan albatrosses`. Verbs follow the number of individuals, and a group of several species keeps the plural.
 
 ### Manuscript Structure (first paper)
 - `papers/first-paper/OUTLINE.md` is the structural source of truth; it names each section's beats and order.

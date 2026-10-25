@@ -4,7 +4,7 @@
 \FloatBarrier
 
 <!-- main idea: R1 Lead (Fig 1) — the sample and its geography: N_ANALYZED individuals, three colonies, 12 breeding seasons; where they went (compass, offshore distance, relation to the colonies; the tracks lie inside the EEZ). -->
-Fig 1 shows the GPS tracks of Laysan albatrosses from Guadalupe, Clarion, and San Benedicto Islands.
+Fig 1 shows the GPS tracks of Laysan albatross from Guadalupe, Clarion, and San Benedicto Islands.
 The trajectories follow a counterclockwise pattern, beginning and ending at the corresponding colony, which is located to the south of the paths.
 For Guadalupe and Clarion Islands, the initial heading of the trajectories is toward the northeast, passing along the coast of Baja California.
 On their return journey, the trajectories move away from the coast toward international waters.
@@ -30,7 +30,7 @@ The inclusion rate measures how much of the population's distribution the analyz
 ](reports/figures/gps_albatross_50_percent_representative_assessment_ars_all.png)
 
 <!-- main idea: R3 Define i (Fig 3) — the N_IND surface, lead sentence first: a shared core of heavily used cells; then the N_IND_RANGE range, the inverse relation between N_IND and polygon size, and the sparseness fact. The Clarion and San Benedicto low maxima rest here in data terms. -->
-Fig 3 shows that the area between Guadalupe Island and the coast of Baja California is the most used by the Laysan albatrosses.
+Fig 3 shows that the area between Guadalupe Island and the coast of Baja California is the most used by the Laysan albatross.
 A second area of high use is located northwest of Guadalupe Island.
 
 ![
