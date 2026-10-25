@@ -49,7 +49,7 @@ The colony holds fewer than 80 breeding individuals.
 <!-- main idea: M2 GPS deployment — capture, attachment, and recovery; the breeding-season window and why devices return within it; the devices and settings across years and islands. -->
 
 We deployed and recovered GPS tracking devices while the individuals were breeding on the island.
-The devices were deployed from December to June, covering the breeding season, which generally spans from November to July.
+The devices were deployed from December to June, covering the breeding season, which generally spans from November to August.
 This ensured that we could recover the GPS devices before the individuals migrated, as recovery would not have been possible the next breeding season.
 
 The seabirds were captured by hand at their nests, and the GPS devices were attached to back feathers shed during the non-breeding season.
