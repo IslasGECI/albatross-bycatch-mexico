@@ -7,7 +7,7 @@
 We studied the core areas used by Laysan albatrosses within Mexico's EEZ.
 Specifically, we assessed whether Mexico's MPAs encompass core areas used by the Laysan albatross during its breeding season.
 The MPAs of interest for this study corresponded to the marine components of three PNAs.
-Isla Guadalupe Biosphere Reserve and Revillagigedo National Park hosted the three albatross colonies.
+Guadalupe Island Biosphere Reserve and Revillagigedo National Park hosted the three albatross colonies.
 The Pacific Islands of the Baja California Peninsula Biosphere Reserve lay along the foraging paths used by the albatross during its breeding season.
 
 The oceanographic conditions of the waters surrounding the breeding colonies determine foraging patterns, which in turn define the albatrosses' core areas.
