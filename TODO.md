@@ -1,18 +1,13 @@
 # First paper
 
-## Introduction
-
-- [ ] Concept beat: MPA versus ANP distinction, offshore byproduct, KBA seed `[[ ]]` — `12_introduction.md:37`.
-- [ ] Decide the home of the sentences parked in the UNMAPPED block — `12_introduction.md:76`.
-
 ## Methods
 
-- [ ] Reason for the 60 km removal `XXX` — `13_methods.md:158`.
-- [ ] Bias the utilization distribution represents `XXX` — `13_methods.md:159`.
+- [ ] Reason for the 60 km removal `XXX` — `13_methods.md:161`.
+- [ ] Bias the utilization distribution represents `XXX` — `13_methods.md:163`.
 
 ## Results
 
-- [ ] Replace all literal magical numbers (121, 93.4, etc) with mustache variables — `15_results.md`.
+- [ ] Replace the remaining literal numbers (93.4, 1–36) with mustache variables — `15_results.md:28, 37`.
 - [ ] Representativeness `XXX%` — `15_results.md:21`.
 - [ ] Area of the 50% UD (km2), from the pooled KBA polygons — `15_results.md:48`.
 - [ ] Area of the 60 km rings around Guadalupe, Clarion, and San Benedicto (km2) — `15_results.md:48`.
@@ -26,8 +21,6 @@
 
 - [ ] Fill `XXX percent` with the Results percentage — `17_discussion.md:6`.
 - [ ] Contribution beat: add the knowledge claim ahead of the first 12-year analysis `[[ ]]` — `17_discussion.md:19`.
-- [ ] Rewrite the 30x30 paragraph as alternatives `[[ ]]` — `17_discussion.md:26`.
-- [ ] Decide the home of the sentences parked in the UNMAPPED block — `17_discussion.md:23`.
 
 ## Conclusion
 
@@ -38,12 +31,6 @@
 
 - [ ] Fill the permit table `XXX` — `19_supplementary.md:23, 24, 25, 28, 37, 39, 40`.
 - [ ] Fill the foraging-trip count `XXX` — `19_supplementary.md:5`.
-- [ ] Fill the tracked-individual count `XXX` — `19_supplementary.md:9`.
-
-## Data
-
-- [ ] Reconcile the tracked-individual numbers: 154 identifier-seasons, 130 identifier strings, 129 with at least one trip, 122 with at least one complete trip, 121 with a KDE surface (the 121 `repAssess` sees), 116 the largest evaluated subsample — `data/processed/`.
-
 
 # Second paper
 
