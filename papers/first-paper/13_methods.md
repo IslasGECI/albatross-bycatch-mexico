@@ -130,14 +130,16 @@ Table: Breeding season, deployment window, tagged individuals, and trips for Lay
 ## Data Processing
 
 <!-- main idea: M3.5 Overview — the workflow narrated step by step without function names; then the detailed steps and the archived analysis code. -->
-We used the R package track2KBA [@beal2021track2kba] and followed its methodology.
+We used the R package track2KBA [@beal2021track2kba].
 We standardized the GPS records and split them into individual foraging trips.
 We removed incomplete trips and points within a 60 km radius.
 We estimated the area-restricted search scale.
 We fitted kernel density estimates for each individual.
 We assessed sample representativeness.
 We then identified the area used by at least 10% of the population.
-Below, we describe these steps in more detail; the full analysis code is archived on Zenodo at https://doi.org/10.5281/zenodo.23485336.
+We then defined the core area.
+Below, we describe these steps in more detail.
+We shared the full analysis code on Zenodo at https://doi.org/10.5281/zenodo.23485336.
 
 <!-- main idea: M4 Trust — representativeness at the analyzed sample size; the short subset was not representative, which is why seasons are pooled; pooling justified because seasons align and years are comparable. -->
 Representativeness refers to how well the sample represents the population.
