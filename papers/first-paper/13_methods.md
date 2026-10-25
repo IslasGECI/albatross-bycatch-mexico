@@ -28,7 +28,7 @@ It measures 30 km at its longest part from the southern end to the northern end.
 ### Clarion Island
 <!-- point: "Clarion Island has the second largest Laysan albatross colony in Mexico." -->
 Clarion Island is part of the Revillagigedo Archipelago.
-Clarion is located 700 kilometers from the Mexican mainland.
+Clarion is located 700 km from the Mexican mainland.
 It has a tropical climate.
 It has an area of 19.8 km$^2$.
 It measures 8.6 km at its longest part from the eastern end to the western end.
@@ -40,7 +40,7 @@ The colony held approximately 100 breeding individuals in 2021/22 [@castillo2026
 ### San Benedicto
 <!-- point: "Reproductive success for Laysan albatross is close to 0%." -->
 San Benedicto Island is also part of the Revillagigedo Archipelago and shares the same tropical climate.
-San Benedicto is located 600 kilometers from the Mexican mainland.
+San Benedicto is located 600 km from the Mexican mainland.
 It has an area of 10 km$^2$.
 It measures 4.8 km at its longest part from the northern end to the southern end.
 On San Benedicto Island, crabs feed on the chicks, and nests can be buried in ash.
@@ -92,7 +92,7 @@ Despite model changes, all devices have similar accuracy and were programmed wit
 
 <!-- main idea: M3 Tracking data — tagged individuals per colony across the breeding seasons; trips; effort concentrated at the largest colony; the long series and the comparable seasons. Point: "Because every year covers only the breeding season, which occurs in the same time period, the years are comparable and can be pooled." -->
 We focused solely on albatross that nest on the islands Guadalupe, Clarion, and San Benedicto.
-To identify the core areas that persist across interannual variability, we used a long time series spanning {{n_tracking_span_years}} years.
+We used a long time series spanning {{n_tracking_span_years}} years to identify the core areas that persist across interannual variability.
 From the {{tracking_season_span}} seasons, {{n_tracking_seasons}} carried tracking.
 We assumed that this dataset would be long enough to capture the patterns that persist despite the interannual variability.
 We grouped all {{n_tracking_seasons}} seasons without distinguishing between years.
@@ -163,7 +163,7 @@ Following @hernandez2019sexual, we removed trips that never reached beyond 60 km
 
 <!-- main idea: M6 KDE — the ARS scale from First Passage Time is the KDE smoothing parameter; a 50% UD holds half the probability mass of a KDE, one per individual. Point: "We calculated one 50% UD for each individual albatross [@beal2021track2kba]." -->
 We calculated one 50% UD for each individual albatross [@beal2021track2kba].
-The area-restricted search (ARS) scale is estimated using First Passage Time analysis (adehabitatLT).
+The area-restricted search (ARS) scale is estimated using first-passage time analysis (adehabitatLT).
 We used that scale as the smoothing parameter of the KDEs.
 The 50% UD is the region that contains half of the probability mass of the KDE.
 
