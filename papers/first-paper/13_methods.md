@@ -96,9 +96,9 @@ The table shows the deployment window for each colony.
 | Clarion | {{ clarion_min_date }} | {{ clarion_max_date }} |
 | San Benedicto | {{ san_benedicto_min_date }} | {{ san_benedicto_max_date }} |
 
-We attached GPS units to {{ guadalupe_n_total }} Laysan albatross individuals on Guadalupe Island from {{ guadalupe_min_year }} to {{ guadalupe_max_year }}.
-Additionally, we attached GPS units to {{ clarion_n_total }} individuals on Clarion Island from {{ clarion_min_year }} to {{ clarion_max_year }}.
-We also attached GPS units to {{ san_benedicto_n_total }} individuals on San Benedicto Island in {{ san_benedicto_min_year }}.
+We attached GPS units to {{ guadalupe_n_tagged }} Laysan albatross individuals on Guadalupe Island from {{ guadalupe_min_year }} to {{ guadalupe_max_year }}.
+Additionally, we attached GPS units to {{ clarion_n_tagged }} individuals on Clarion Island from {{ clarion_min_year }} to {{ clarion_max_year }}.
+We also attached GPS units to {{ san_benedicto_n_tagged }} individuals on San Benedicto Island in {{ san_benedicto_min_year }}.
 Sampling effort was implemented according to the available resources.
 [[ the analyzed count: individuals retained after filtering, per colony ]]
 
@@ -109,7 +109,7 @@ The following tables show the number of individuals tracked per season at each c
 | Season | Start date | End date | Number of individuals | Number of trips |
 |--------|------------|----------|----------------------|-----------------|
 {{#guadalupe_seasons}}
-| {{season}} | {{start}} | {{end}} | {{n}} | {{trips}} |
+| {{season}} | {{start}} | {{end}} | {{n_tagged}} | {{n_trips}} |
 {{/guadalupe_seasons}}
 
 **Clarion Island**
@@ -117,7 +117,7 @@ The following tables show the number of individuals tracked per season at each c
 | Season | Start date | End date | Number of individuals | Number of trips |
 |--------|------------|----------|----------------------|-----------------|
 {{#clarion_seasons}}
-| {{season}} | {{start}} | {{end}} | {{n}} | {{trips}} |
+| {{season}} | {{start}} | {{end}} | {{n_tagged}} | {{n_trips}} |
 {{/clarion_seasons}}
 
 **San Benedicto Island**
@@ -125,7 +125,7 @@ The following tables show the number of individuals tracked per season at each c
 | Season | Start date | End date | Number of individuals | Number of trips |
 |--------|------------|----------|----------------------|-----------------|
 {{#san_benedicto_seasons}}
-| {{season}} | {{start}} | {{end}} | {{n}} | {{trips}} |
+| {{season}} | {{start}} | {{end}} | {{n_tagged}} | {{n_trips}} |
 {{/san_benedicto_seasons}}
 
 The tracking effort was concentrated at the largest colony, Guadalupe Island, and less effort was invested in the smallest colonies, Clarion and San Benedicto islands.

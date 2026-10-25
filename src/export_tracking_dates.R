@@ -1,5 +1,5 @@
 # ==========================================
-# Título: Exporta fechas extremas, individuos y viajes completos por colonia
+# Título: Exporta fechas extremas, individuos rastreados y analizados, y viajes completos
 #
 # Contexto (Por qué):
 # El manuscrito del primer artículo necesita las fechas de inicio y fin del
@@ -9,12 +9,12 @@
 #
 # Descripción (Qué / Cómo):
 # Lee los archivos CSV con registros GPS de las colonias Guadalupe, Clarion
-# y San Benedicto. Para cada colonia extrae las fechas mínima y máxima de
-# la columna date, deriva el año de cada fecha extrema y cuenta los
-# individuos únicos en la columna name. Lee además el resumen de viajes y
-# cuenta los viajes completos por temporada. Combina todos los valores en un
-# único objeto JSON de estructura plana y lo escribe en
-# data/processed/methods.json.
+# y San Benedicto. Extrae las fechas mínima y máxima de la columna date y
+# deriva el año de cada fecha extrema. Agrupa los registros por temporada
+# octubre-septiembre y cuenta los individuos rastreados en cada temporada.
+# Lee el resumen de viajes y cuenta los viajes completos por temporada.
+# Lee las superficies KDE y cuenta los individuos analizados. Combina todos
+# los valores en un JSON plano y lo escribe en data/processed/methods.json.
 #
 # Entradas:
 # data/raw/gps-albatros-guadalupe.csv
@@ -23,6 +23,7 @@
 # data/processed/trips_summary_guadalupe.csv
 # data/processed/trips_summary_clarion.csv
 # data/processed/trips_summary_san_benedicto.csv
+# data/processed/individual_kde_all.rds
 #
 # Salida:
 # data/processed/methods.json
@@ -34,7 +35,8 @@
 # Notas:
 # - Las fechas deben estar en formato ISO 8601 (YYYY-MM-DD) para que el
 #   ordenamiento lexicográfico coincida con el orden cronológico
-# - El conteo de individuos usa la columna name como identificador único
+# - El conteo de individuos rastreados suma las temporadas de las tres colonias
+# - El conteo de individuos analizados proviene de las superficies KDE
 # - Solo se cuentan viajes con el valor "complete trip" en la columna complete
 # ==========================================
 
@@ -55,6 +57,8 @@ input_guadalupe_trips_path <- "data/processed/trips_summary_guadalupe.csv"
 input_clarion_trips_path <- "data/processed/trips_summary_clarion.csv"
 # Ruta del archivo CSV con el resumen de viajes de la colonia San Benedicto
 input_san_benedicto_trips_path <- "data/processed/trips_summary_san_benedicto.csv"
+# Ruta del archivo RDS con las superficies KDE de los individuos analizados
+input_kernel_density_estimation_path <- "data/processed/individual_kde_all.rds"
 # Ruta del archivo JSON que almacenará los metadatos del rastreo por colonia
 output_json_path <- "data/processed/methods.json"
 
@@ -96,6 +100,9 @@ san_benedicto_trips <- read_csv(
   input_san_benedicto_trips_path,
   show_col_types = FALSE
 )
+# Carga el objeto con las superficies KDE para contar los individuos que
+# entraron al análisis y quedaron representados en el artículo
+kernel_density_estimation_object <- readRDS(input_kernel_density_estimation_path)
 
 
 # ==== PROCESAMIENTO / ANÁLISIS ====
@@ -144,22 +151,11 @@ san_benedicto_min_year <- str_sub(san_benedicto_min_date, 1, 4)
 # Extrae el año de la fecha más reciente en San Benedicto
 san_benedicto_max_year <- str_sub(san_benedicto_max_date, 1, 4)
 
-# Cuenta los individuos únicos en la colonia Guadalupe usando la columna
-# name como identificador de cada individuo rastreado
-guadalupe_n_total <- guadalupe_data |>
-  filter(!is.na(name)) |>
-  pull(name) |>
-  n_distinct()
-# Cuenta los individuos únicos en la colonia Clarion
-clarion_n_total <- clarion_data |>
-  filter(!is.na(name)) |>
-  pull(name) |>
-  n_distinct()
-# Cuenta los individuos únicos en la colonia San Benedicto
-san_benedicto_n_total <- san_benedicto_data |>
-  filter(!is.na(name)) |>
-  pull(name) |>
-  n_distinct()
+# Cuenta los individuos analizados a partir de los nombres del objeto KDE,
+# porque cada nombre corresponde a un individuo con superficie calculada
+n_analyzed_individuals <- kernel_density_estimation_object$KDE_surface |>
+  names() |>
+  length()
 
 # Cuenta los viajes completos de Guadalupe filtrando la columna complete
 guadalupe_n_trips <- guadalupe_trips |>
@@ -252,7 +248,7 @@ guadalupe_seasons_full <- guadalupe_season_complete |>
   # descartar la columna season_year que solo sirve para el ordenamiento
   arrange(season_year) |>
   # Conserva solo las columnas que aparecerán en la tabla del artículo
-  select(season, start, end, n, trips)
+  select(season, start, end, n_tagged = n, n_trips = trips)
 
 
 # Prepara los registros de Clarion para el agrupamiento por temporada
@@ -314,7 +310,7 @@ clarion_seasons_full <- clarion_season_complete |>
     season = paste0(season_year, "-", season_year + 1)
   ) |>
   arrange(season_year) |>
-  select(season, start, end, n, trips)
+  select(season, start, end, n_tagged = n, n_trips = trips)
 
 
 # Prepara los registros de San Benedicto para el agrupamiento por
@@ -376,28 +372,39 @@ san_benedicto_seasons_full <- san_benedicto_season_complete |>
     season = paste0(season_year, "-", season_year + 1)
   ) |>
   arrange(season_year) |>
-  select(season, start, end, n, trips)
+  select(season, start, end, n_tagged = n, n_trips = trips)
 
 
 # ==== ENSAMBLE DE LA SALIDA ====
+# Suma los individuos rastreados de Guadalupe en todas sus temporadas
+guadalupe_n_tagged <- sum(guadalupe_seasons_full$n_tagged)
+# Suma los individuos rastreados de Clarion en todas sus temporadas
+clarion_n_tagged <- sum(clarion_seasons_full$n_tagged)
+# Suma los individuos rastreados de San Benedicto en todas sus temporadas
+san_benedicto_n_tagged <- sum(san_benedicto_seasons_full$n_tagged)
+# Suma los totales por colonia para obtener el total de individuos rastreados
+n_tagged_individuals <- guadalupe_n_tagged + clarion_n_tagged + san_benedicto_n_tagged
+
 # Combina los valores planos con las tablas de temporadas en una lista
 # única que el motor de mustache usa para resolver todas las variables
 methods_list <- list(
-  guadalupe_n_total = guadalupe_n_total,
+  n_tagged_individuals = n_tagged_individuals,
+  n_analyzed_individuals = n_analyzed_individuals,
+  guadalupe_n_tagged = guadalupe_n_tagged,
   guadalupe_n_trips = guadalupe_n_trips,
   guadalupe_min_date = guadalupe_min_date,
   guadalupe_max_date = guadalupe_max_date,
   guadalupe_min_year = guadalupe_min_year,
   guadalupe_max_year = guadalupe_max_year,
   guadalupe_seasons = guadalupe_seasons_full,
-  clarion_n_total = clarion_n_total,
+  clarion_n_tagged = clarion_n_tagged,
   clarion_n_trips = clarion_n_trips,
   clarion_min_date = clarion_min_date,
   clarion_max_date = clarion_max_date,
   clarion_min_year = clarion_min_year,
   clarion_max_year = clarion_max_year,
   clarion_seasons = clarion_seasons_full,
-  san_benedicto_n_total = san_benedicto_n_total,
+  san_benedicto_n_tagged = san_benedicto_n_tagged,
   san_benedicto_n_trips = san_benedicto_n_trips,
   san_benedicto_min_date = san_benedicto_min_date,
   san_benedicto_max_date = san_benedicto_max_date,

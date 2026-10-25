@@ -42,7 +42,8 @@ data/processed/methods.json: \
 	data/raw/gps-albatros-san-benedicto.csv \
 	data/processed/trips_summary_guadalupe.csv \
 	data/processed/trips_summary_clarion.csv \
-	data/processed/trips_summary_san_benedicto.csv
+	data/processed/trips_summary_san_benedicto.csv \
+	data/processed/individual_kde_all.rds
 	$(checkDirectories)
 	Rscript src/export_tracking_dates.R
 
