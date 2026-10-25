@@ -3,7 +3,7 @@
 
 ## Study Area
 
-<!-- main idea: M1 Study area — the spatial frame: the EEZ, the three colonies, the protected areas that hold them, and the oceanography that places the core areas. -->
+<!-- main idea: M1 Study area — the spatial frame: the EEZ, the three colonies, the protected areas involved, and the oceanography that places the core areas. -->
 We studied the core areas used by Laysan albatrosses within Mexico's EEZ.
 Specifically, we assessed whether Mexico's MPAs encompass core areas used by the Laysan albatross during its breeding season.
 The MPAs of interest for this study corresponded to the marine components of three PNAs.
@@ -46,30 +46,34 @@ The colony holds fewer than 80 breeding individuals.
 
 ## GPS deployment
 
-<!-- main idea: M2 GPS deployment — capture, attachment, and recovery; the breeding-season window; why devices return within the season. -->
+<!-- main idea: M2 GPS deployment — capture, attachment, and recovery; the breeding-season window and why devices return within it; the devices and settings across years and islands. -->
 
 We deployed and recovered GPS tracking devices while the individuals were breeding on the island.
 The devices were deployed from December to June, covering the breeding season, which generally spans from November to July.
 This ensured that we could recover the GPS devices before the individuals migrated, as recovery would not have been possible the next breeding season.
+
 The seabirds were captured by hand at their nests, and the GPS devices were attached to back feathers shed during the non-breeding season.
-We attached the GPS loggers to the albatrosses using Tesa tape (#4651, Tesa AG, Hamburg, Germany), following the method described in [@hernandez2019sexual].
-The capture process is brief and harmless; the individuals were released at the same location immediately after the GPS device was attached or removed.
+We attached the GPS loggers using Tesa tape (#4651, Tesa AG, Hamburg, Germany), following the method described in [@hernandez2019sexual].
+The individuals were released at the same location immediately after the GPS device was attached or removed.
 No albatrosses were harmed during the study.
 
 The GPS loggers offer the level of accuracy and precision required for this study [@soanes2013many; @clay2023adjustment; @hernandez2019sexual].
 We programmed the GPS units to record a position every 10 minutes.
-This 10-minute interval allows for the recording of multiple trips per individual throughout each season.
 This frequency is high enough to obtain representative data and to identify instances where an individual stops or reduces its speed.
 At the same time, it is low enough to ensure the battery lasts for the entire season, allowing for the recording of several trips.
 
 There were variations in the GPS device models across years and islands.
+
 On Guadalupe Island we used the following GPS devices: From 2014 to 2016: model GiSPy-4SB by Techno Smart (Italy).
 From 2017 to 2018: i-gotU model GT-120 by Mobile Action (Taiwan).
 From 2019 to 2023: ATS1 model Nodo-2018 by ACMOS (Mexico).
 From 2025 to 2026: GPS datalogger with accelerometer and UHF model Axy-Trek Remote by Techno Smart (Italy).
+
 On Clarion Island, from 2018 to 2022 we used the following GPS devices: i-gotU model GT-120 by Mobile Action (Taiwan).
 CatLog-S, Catnip Technologies (China).
 CatLog-S2, Perthold Engineering (USA).
+
+On San Benedicto Island, in 2020, we used the ATS1 model Nodo-2018 by ACMOS (Mexico).
 
 We used different GPS models as new and better technology was available during the 12-year period of the study.
 Despite model changes, all devices have similar accuracy and were programmed with the same frequency, so the data remain comparable.

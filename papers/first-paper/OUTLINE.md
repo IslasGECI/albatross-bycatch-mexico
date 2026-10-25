@@ -24,8 +24,8 @@
 
 ## METHODS — Action (the doing); 10 beats, ordered Trust → Define → Place → Measure
 
-- M1 Study area — the spatial frame: the EEZ, the three colonies, the protected areas that hold them, and the oceanography that places the core areas.
-- M2 GPS deployment — capture, attachment, and recovery; the breeding-season window; why devices return within the season.
+- M1 Study area — the spatial frame: the EEZ, the three colonies, the protected areas involved, and the oceanography that places the core areas.
+- M2 GPS deployment — capture, attachment, and recovery; the breeding-season window and why devices return within it; the devices and settings across years and islands.
 - M3 Tracking data — tagged and analyzed individuals per colony across the breeding seasons; trips; effort concentrated at the largest colony; the short-series premise that the trust beat proves.
 - M3.5 Overview — the workflow narrated step by step without function names; then the detailed steps and the archived analysis code.
 - M4 Trust — representativeness at the analyzed sample size; the short subset was not representative, which is why seasons are pooled; pooling justified because seasons align and years are comparable.
