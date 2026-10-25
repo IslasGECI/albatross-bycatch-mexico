@@ -136,7 +136,7 @@ We removed incomplete trips and points within a 60 km radius.
 We estimated the area-restricted search scale.
 We fitted kernel density estimates for each individual.
 We assessed sample representativeness.
-We then identified the potential KBA.
+We then identified the area used by at least 10% of the population.
 Below, we describe these steps in more detail; the full analysis code is archived on Zenodo at https://doi.org/10.5281/zenodo.23485336.
 
 <!-- main idea: M4 Trust — representativeness at the analyzed sample size; the short subset was not representative, which is why seasons are pooled; pooling justified because seasons align and years are comparable. -->
@@ -144,7 +144,7 @@ Representativeness refers to how well the sample represents the population.
 The representativeness assessment tells us whether the core areas calculated from the sample are valid for the whole population.
 It would not make sense to calculate core areas if their results could not be inferred to the entire population.
 We verified this assumption with a representativeness analysis.
-We then assessed sample representativeness and determined the potential KBA.
+We then assessed sample representativeness and determined the area used by at least 10% of the population.
 The representativeness assessment rebuilds the UD from a resampled subset of the KDEs and measures out-of-sample inclusion.
 For this purpose, individuals are subsampled, and their KDEs are combined to obtain a UD.
 From the resulting UD, we evaluate how many locations from the individuals not in the subsample fall outside.
@@ -153,7 +153,7 @@ That indicates whether the sample size is sufficiently representative of the pop
 The representativeness assessment checks that the sample is sufficient.
 We also confirmed that a 5-year dataset (2014-2018) was not long enough to be representative of the population.
 
-<!-- main idea: M5 Define — the colony-radius exclusion completed and justified; the excluded band returns as the area within a 60 km radius that, with the potential KBA, forms the core area; no resampling under uniform frequency. -->
+<!-- main idea: M5 Define — the colony-radius exclusion completed and justified; the excluded band returns as the area within a 60 km radius that, with the foraging component, forms the core area; no resampling under uniform frequency. -->
 We removed points falling within a 60 km radius of the colony because XXX.
 [[ how the excluded band returns as the area within a 60 km radius ]]
 Our methodological approach called for removing incomplete trips to avoid bias in the computed utilization distribution that represents XXX.
@@ -164,31 +164,30 @@ We did not resample because all GPS devices were programmed with the same freque
 
 ### Core areas used by Laysan albatross
 
-<!-- main idea: M6 Define — the offshore component: kernel density per individual, the 50% utilization distribution, and the overlap of individual UDs that yields the potential KBA; the union with the area within a 60 km radius defines the core area; why track2KBA. -->
+<!-- main idea: M6 Define — the foraging component: kernel density per individual, the 50% utilization distribution, and the overlap of individual UDs that defines it; the union with the area within a 60 km radius defines the core area; why track2KBA. -->
 We split each record into discrete round trips and analyze each individual as an independent tracking event using KDE [@beal2021track2kba].
 We split all tracks into single tracks representing a departure and return of an individual to the nesting colony.
 We chose the [@beal2021track2kba] methodology because it is replicable using a single open-source R package (track2KBA).
-It allows us to split tracks, estimate UD, and evaluate representativeness, and is explicitly designed to identify potential key biodiversity areas from tracking data.
+It allows us to split tracks, estimate UD, and evaluate representativeness, and is explicitly designed to identify important sites for biodiversity from tracking data.
 
 **Measurements and Variables**
 
 The independent variable is the GPS locations of the Laysan albatross.
 The dependent variable is the core areas used by the Laysan albatross.
 The unit of analysis is an individual, represented by a set of GPS locations.
-The individual locations are the input to KDE, and the potential KBA is the output of the UD analysis.
+The individual locations are the input to KDE, and the output is the area used by at least 10% of the population.
 
 **Analysis**
 
 The 50% utilization distribution (UD) of an individual is the area containing half of its estimated density.
 Each colony hosts multiple individuals; each individual makes multiple foraging trips per season; the individual is the unit of analysis.
-To identify the potential KBA, we split the tracks into individual trips and perform kernel density estimations for each individual.
+To identify that area, we split the tracks into individual trips and perform kernel density estimations for each individual.
 KDEs are calculated for each individual.
 The Area-Restricted Search scale uses First Passage Time analysis (adehabitatLT).
 From the GPS trajectories, we calculated kernel density estimation (KDE) to define the individual UDs.
 KDE has been widely used to determine UD.
-We then converted each individual 50% UD to a binary surface and counted the individuals covering each cell.
-We delineated the potential KBA as the cells where at least 10% of the population was estimated to occur.
-We defined the core area as the union of the potential KBA and the disk with a radius of 60 km around each colony.
+The foraging component is the cells where the individual 50% UDs overlap enough to reach 10% of the population.
+The core area is the union of the foraging component and the disk with a radius of 60 km around each colony.
 KDE was selected because a wide range of users are familiar with its use, which facilitates the communication of results among decision makers.
 
 ### Overlap of core areas with MPAs

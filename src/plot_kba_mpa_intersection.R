@@ -172,7 +172,7 @@ plot_kba_mpa_intersection <- ggplot() +
   theme_minimal() +
   # Etiquetas del mapa en inglés para integrarse al reporte del primer artículo
   labs(
-    title = "KBA Intersection with Marine Protected Areas",
+    title = "Foraging component and marine protected areas",
     subtitle = "Laysan Albatross — Guadalupe, Clarion and San Benedicto islands",
     x = "Longitude",
     y = "Latitude"

@@ -9,9 +9,9 @@
 
 - [ ] Replace the remaining literal numbers (93.4, 1–36) with mustache variables — `15_results.md:28, 37`.
 - [ ] Representativeness `XXX%` — `15_results.md:21`.
-- [ ] Area of the potential KBA (km2) — `15_results.md:47`.
+- [ ] Area of the foraging component (km2) — `15_results.md:47`.
 - [ ] Area within a 60 km radius of Guadalupe, Clarion, and San Benedicto (km2) — `15_results.md:47`.
-- [ ] Total core area (km2): the potential KBA unioned with the area within a 60 km radius — `15_results.md:48`.
+- [ ] Total core area (km2): the foraging component unioned with the area within a 60 km radius — `15_results.md:48`.
 - [ ] Area of the core area inside Mexican MPAs (km2) — `15_results.md:48`.
 - [ ] Percentage of the core area inside Mexican MPAs — `15_results.md:49`.
 - [ ] Add the comparison table: potential-KBA and core-area rows, inside-MPA area on the union row `[[ ]]` — `15_results.md:57`.

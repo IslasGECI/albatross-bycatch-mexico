@@ -79,7 +79,8 @@ Every script opens with a Spanish header in imperative form: title, context, des
 - **Code availability**: the methods name the analysis package (`track2KBA`) and cite the concept DOI; function detail and repository links stay out.
 - **Counts**: the paper reports exactly two, tagged individuals summed over seasons and colonies, and analyzed individuals with a kernel density surface; identifier counts and intermediate reconciliation numbers stay out.
 - **Colony radius**: the 60 km zone around a colony is a radius, never a ring or a circle, following Beal et al. and their points falling within this radius; the word disk appears once, in the core-area definition.
-- **Core area definition**: the Methods defines it once, as the union of the potential KBA and the disk with a radius of 60 km around each colony; the Introduction names the term and the Results uses it.
+- **Core area definition**: the Methods defines it once, as the union of the foraging component and the disk with a radius of 60 km around each colony; the Introduction names the term and the Results uses it.
+- **Foraging component**: the cells where the individual 50% UDs overlap enough to reach 10% of the population; use the full phrase unless the sentence would exceed 25 words, then use the term; never label it a KBA.
 
 ## Validation & Testing
 
