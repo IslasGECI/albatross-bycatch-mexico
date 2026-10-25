@@ -26,10 +26,9 @@ Tracking seabirds is a standard method for identifying such important marine are
 Ideally, these important marine areas should serve as the basis for delineating Marine Protected Areas [@lascelles2016applying; @critchley2018marine].
 However, in the Mexican Pacific, protected areas are linked to terrestrial units and were not delineated based on seabird tracking data [@mendez2022population].
 
-<!-- main idea: I5 Concepts compressed — the potential KBA named as the area used by at least 10% of the population, then the core area defined as the union of that potential KBA and the 60 km colony rings (one sentence each); MPA vs ANP distinction (one sentence); this seeds the term that the Discussion pays off (D4); full definitions live in Methods. -->
-We define three terms: core area, MPA, and KBA.
+<!-- main idea: I5 Concepts compressed — the potential KBA named as the area used by at least 10% of the population; the core area named in the term list, with its definition left to the Methods; MPA vs ANP distinction (one sentence); this seeds the term that the Discussion pays off (D4); full definitions live in Methods. -->
+We use three terms: core area, MPA, and KBA.
 For the Laysan albatross, the area used by at least 10% of the population is a potential Key Biodiversity Area (KBA) [@beal2021track2kba].
-We define the core area as the union of that potential KBA and a 60 km circle around the colony [@fieberg2005quantifying; @hernandez2019sexual].
 In Mexico, an MPA is the marine component of a protected natural area (PNA) administered by the National Commission of Protected Natural Areas (CONANP).
 
 <!-- main idea: I6 The gap — no study has quantified how much of the Laysan albatross core area in the Mexican Pacific falls inside existing MPAs. -->

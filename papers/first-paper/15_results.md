@@ -37,15 +37,14 @@ A second area of high use is located northwest of Guadalupe Island.
 Number of tracked Laysan Albatross (_Phoebastria immutabilis_) individuals (n = {{n_analyzed_individuals}}) whose 50% utilization distribution covers each grid cell (range 1–36).
 ](reports/figures/ud_in_grid_map.png)
 
-<!-- main idea: R4 Define ii — the potential KBA debuts: the move from the continuous N_IND surface to the delineated polygon, then the union with the 60 km colony rings that forms the core area. -->
+<!-- main idea: R4 Define ii — the potential KBA debuts: the move from the continuous N_IND surface to the delineated polygon; the core area enters through its two areas, without a second definition. -->
 Fig 4 shows the potential KBA delineated as purple polygons from the continuous N_IND surface.
 This is the area where the greatest number of individual 50% UDs overlap.
 
 Following [@hernandez2019sexual], the data within a radius of 60 km around each colony were removed before estimating the individual 50% UDs.
-We define the core area as the union of the potential KBA and the 60 km rings around each colony.
 
-<!-- main idea: R5 Measure — the answer (Fig 4): CORE_MPA_PCT = ((KBA ∪ 3 rings) ∩ MPA) / (KBA ∪ 3 rings) × 100, with every qualifier attached (pooled across three colonies, breeding season, inside the EEZ). The potential KBA sits offshore beyond the boundaries — the map carries the deficiency the single percentage alone cannot show. Absorbs the 5-of-22 count and the island-edge location. -->
-The potential KBA measures XXX km$^2$, and the 60 km rings around the colonies measure XXX km$^2$.
+<!-- main idea: R5 Measure — the answer (Fig 4): CORE_MPA_PCT = ((KBA ∪ 60 km radius) ∩ MPA) / (KBA ∪ 60 km radius) × 100, with every qualifier attached (pooled across three colonies, breeding season, inside the EEZ). The potential KBA sits offshore beyond the boundaries — the map carries the deficiency the single percentage alone cannot show. Absorbs the 5-of-22 count and the island-edge location. -->
+The potential KBA measures XXX km$^2$, and the area within a 60 km radius of the colonies measures XXX km$^2$.
 In total, the core area spans XXX km$^2$, of which XXX km$^2$ are within a Mexican marine protected area.
 That is, XXX% of the core area is protected.
 
@@ -54,7 +53,7 @@ The potential KBA (purple) for Laysan Albatross (_Phoebastria immutabilis_) deli
 Green surfaces show Mexican marine protected areas, and the blue line delimits Mexico's Exclusive Economic Zone.
 ](reports/figures/gps_albatross_50_percent_potential_kba_ars_all_with_mpa.png)
 
-<!-- main idea: R6 Measure — table + colonies: rows are the potential KBA and the core area (potential KBA ∪ 60 km rings, three colonies); the potential KBA area (km²) and, on the union row only, the inside-MPA area (km²); the percentage sits in prose beside the union row. Prose walks numerator and denominator. Clarion and San Benedicto delineate no potential KBA of their own — their tracks feed the pooled surface, their protection shows only through the union (they become prose here). -->
+<!-- main idea: R6 Measure — table + colonies: rows are the potential KBA and the core area (potential KBA ∪ 60 km radius, three colonies); the potential KBA area (km²) and, on the union row only, the inside-MPA area (km²); the percentage sits in prose beside the union row. Prose walks numerator and denominator. Clarion and San Benedicto delineate no potential KBA of their own — their tracks feed the pooled surface, their protection shows only through the union (they become prose here). -->
 [[ gap — "R6 table" — which rows, columns, and per-colony number should the table carry? ]]
 <!-- main idea: R7 Take-home — one final sentence carrying CORE_MPA_PCT, one idea, no interpretation; this is the Results answer (the LD close of the Action), deliberately distinct from the Conclusion resolution that closes the Opening circle. -->
 [[ gap — "R7 take-home" — what closing sentence carries the union-basis percentage? ]]

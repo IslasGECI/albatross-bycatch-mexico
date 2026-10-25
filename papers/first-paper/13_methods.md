@@ -132,7 +132,8 @@ Table: Breeding season, deployment window, tagged individuals, and trips for Lay
 <!-- main idea: M3.5 Overview — the workflow narrated step by step without function names; then the detailed steps and the archived analysis code. -->
 We used the R package track2KBA [@beal2021track2kba] and followed its methodology.
 We standardized the GPS records and split them into individual foraging trips.
-We projected the tracks and estimated the area-restricted search scale.
+We removed incomplete trips and points within a 60 km radius.
+We estimated the area-restricted search scale.
 We fitted kernel density estimates for each individual.
 We assessed sample representativeness.
 We then identified the potential KBA.
@@ -152,9 +153,9 @@ That indicates whether the sample size is sufficiently representative of the pop
 The representativeness assessment checks that the sample is sufficient.
 We also confirmed that a 5-year dataset (2014-2018) was not long enough to be representative of the population.
 
-<!-- main idea: M5 Define — the colony-radius exclusion completed and justified; the excluded band returns as the ring that, with the potential KBA, forms the core area; no resampling under uniform frequency. -->
-We removed points within 60 km around the colony because XXX.
-[[ how the excluded band returns as the colony ring ]]
+<!-- main idea: M5 Define — the colony-radius exclusion completed and justified; the excluded band returns as the area within a 60 km radius that, with the potential KBA, forms the core area; no resampling under uniform frequency. -->
+We removed points falling within a 60 km radius of the colony because XXX.
+[[ how the excluded band returns as the area within a 60 km radius ]]
 Our methodological approach called for removing incomplete trips to avoid bias in the computed utilization distribution that represents XXX.
 
 We did not resample because all GPS devices were programmed with the same frequency, so the raw data were already homogeneous.
@@ -163,7 +164,7 @@ We did not resample because all GPS devices were programmed with the same freque
 
 ### Core areas used by Laysan albatross
 
-<!-- main idea: M6 Define — the offshore component: kernel density per individual, the 50% utilization distribution, and the overlap of individual UDs that yields the potential KBA; the union with the colony rings defines the core area; why track2KBA. -->
+<!-- main idea: M6 Define — the offshore component: kernel density per individual, the 50% utilization distribution, and the overlap of individual UDs that yields the potential KBA; the union with the area within a 60 km radius defines the core area; why track2KBA. -->
 We split each record into discrete round trips and analyze each individual as an independent tracking event using KDE [@beal2021track2kba].
 We split all tracks into single tracks representing a departure and return of an individual to the nesting colony.
 We chose the [@beal2021track2kba] methodology because it is replicable using a single open-source R package (track2KBA).
@@ -187,7 +188,7 @@ From the GPS trajectories, we calculated kernel density estimation (KDE) to defi
 KDE has been widely used to determine UD.
 We then converted each individual 50% UD to a binary surface and counted the individuals covering each cell.
 We delineated the potential KBA as the cells where at least 10% of the population was estimated to occur.
-The core area is the union of the potential KBA and the 60 km rings around each colony.
+We defined the core area as the union of the potential KBA and the disk with a radius of 60 km around each colony.
 KDE was selected because a wide range of users are familiar with its use, which facilitates the communication of results among decision makers.
 
 ### Overlap of core areas with MPAs
@@ -203,13 +204,13 @@ The independent variables are the core areas used by the Laysan albatross and th
 The dependent variable is the overlap index.
 The overlap index is a ratio between the two areas.
 
-<!-- main idea: M8 Measure — the overlap index on the union basis; why the ring enters both sides. -->
+<!-- main idea: M8 Measure — the overlap index on the union basis; why the area within a 60 km radius enters both sides. -->
 **Analysis**
 
 We calculated the overlap index to quantify the overlap of the core areas with the MPA polygons.
 @fieberg2005quantifying quantified home-range overlap using the utilization distribution.
 The overlap index is area-based (proportional) overlap: $HR_{i,j} = \frac{A_{i,j}}{A_i}$.
-[[ the union basis: core plus rings on both sides, and why ]]
+[[ the union basis: core plus the area within a 60 km radius on both sides, and why ]]
 This index is directional: $HR_{i,j} \neq HR_{j,i}$.
 This measure of core habitat protection coverage tells us what fraction of the animal's most intensively used space is inside the protected area.
 
