@@ -4,25 +4,21 @@
 ## Study Area
 
 <!-- main idea: M1 Study area — the spatial frame: the EEZ, the three colonies, the protected areas that hold them, and the oceanography that places the core areas. -->
-We studied the core areas that Laysan albatrosses use within the Mexican EEZ.
-Specifically, we assessed whether Mexican marine protected areas cover the core areas used by the Laysan albatross during its breeding season.
-The protected areas relevant for this study have a terrestrial component (the island) and a marine component (the surrounding waters).
-[[ which protected areas hold the three colonies, with their marine component ]]
-There are several islands on which the Laysan albatross breeds: Guadalupe, Clarion, and San Benedicto are the relevant islands for the Mexican Pacific.
-The location of the islands is relevant to understand the surrounding oceanographic conditions, for instance, the California Current.
-Their food availability and distribution (fish, squid, etc.) are determined by oceanographic factors.
-The California Current enriches the water with nutrients, which makes food more available.
-ENSO variability might increase or reduce food availability in certain areas.
-This food availability will affect where the albatrosses feed, which will determine what the core areas are.
-These conditions help explain the location of the identified core areas.
-We describe each island in order of the relevance of the colonies.
+We studied the core areas used by Laysan albatrosses within Mexico's EEZ.
+Specifically, we assessed whether Mexico's MPAs encompass core areas used by the Laysan albatross during its breeding season.
+The MPAs of interest for this study corresponded to the marine components of three PNAs.
+Isla Guadalupe Biosphere Reserve and Revillagigedo National Park hosted the three albatross colonies.
+The Pacific Islands of the Baja California Peninsula Biosphere Reserve lay along the foraging paths used by the albatross during its breeding season.
+The oceanographic conditions of the waters surrounding the breeding colonies determine foraging patterns, which in turn define the albatrosses' core areas.
+The California Current and the El Niño-Southern Oscillation (ENSO) phenomenon are examples of such oceanographic conditions.
+Below we describe the three islands where the colonies breed.
 
 ### Guadalupe Island
 Guadalupe Island hosts the largest breeding colony of Laysan albatross in the eastern Pacific [@hernandez2019sexual].
 Guadalupe Island is an oceanic island of volcanic origin located 300 km west of the coast of Baja California.
 It has an area of 244 km$^2$.
 It measures 30 km at its longest part from the southern end to the northern end.
-On Guadalupe Island, there were 2,195 breeding pairs of Laysan albatross in 2025 (unpublished authors' monitoring data).
+On Guadalupe Island, there were 4,390 breeding individuals in 2025 (unpublished authors' monitoring data).
 
 ### Clarion Island
 Clarion Island is part of the Revillagigedo Archipelago.
@@ -32,6 +28,8 @@ It has an area of 19.8 km$^2$.
 It measures 8.6 km at its longest part from the eastern end to the western end.
 Clarion Island has the second largest Laysan albatross colony in Mexico.
 On Clarion Island, crows and snakes prey on Laysan albatross eggs and newly hatched chicks.
+The colony experienced complete breeding failure between 2016 and 2023 [@castillo2026breeding].
+The colony held approximately 100 breeding individuals in 2021/22 [@castillo2026breeding].
 
 ### San Benedicto
 San Benedicto Island is also part of the Revillagigedo Archipelago and shares the same tropical climate.
@@ -39,8 +37,8 @@ San Benedicto is located 600 kilometers from the Mexican mainland.
 It has an area of 10 km$^2$.
 It measures 4.8 km at its longest part from the northern end to the southern end.
 On San Benedicto Island, crabs feed on the chicks, and nests can be buried in ash.
-On both Clarion and San Benedicto islands, reproductive success for Laysan albatross is close to 0%.
-The number of nests is low (less than 40 for San Benedicto).
+Reproductive success for Laysan albatross is close to 0%.
+The colony holds fewer than 80 breeding individuals.
 
 ## GPS deployment
 
