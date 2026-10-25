@@ -107,24 +107,24 @@ The following tables show the number of individuals tagged per season at each co
 
 **Guadalupe Island**
 
-| Season | Start date | End date | Number of individuals | Number of trips |
-|--------|------------|----------|----------------------|-----------------|
+| Season | Start date | End date | Tagged individuals | Trips |
+|------------|------------|------------|--------------------|----------|
 {{#guadalupe_seasons}}
 | {{season}} | {{start}} | {{end}} | {{n_tagged}} | {{n_trips}} |
 {{/guadalupe_seasons}}
 
 **Clarion Island**
 
-| Season | Start date | End date | Number of individuals | Number of trips |
-|--------|------------|----------|----------------------|-----------------|
+| Season | Start date | End date | Tagged individuals | Trips |
+|------------|------------|------------|--------------------|----------|
 {{#clarion_seasons}}
 | {{season}} | {{start}} | {{end}} | {{n_tagged}} | {{n_trips}} |
 {{/clarion_seasons}}
 
 **San Benedicto Island**
 
-| Season | Start date | End date | Number of individuals | Number of trips |
-|--------|------------|----------|----------------------|-----------------|
+| Season | Start date | End date | Tagged individuals | Trips |
+|------------|------------|------------|--------------------|----------|
 {{#san_benedicto_seasons}}
 | {{season}} | {{start}} | {{end}} | {{n_tagged}} | {{n_trips}} |
 {{/san_benedicto_seasons}}
