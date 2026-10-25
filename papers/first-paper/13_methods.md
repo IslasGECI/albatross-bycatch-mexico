@@ -6,6 +6,7 @@
 <!-- main idea: M1 Study area — the spatial frame: the EEZ, the three colonies, the protected areas involved, and the oceanography that places the core areas. Point: "Specifically, we assessed whether Mexico's MPAs encompass core areas used by the Laysan albatross during its breeding season." -->
 We studied the core areas used by Laysan albatross within Mexico's EEZ.
 Specifically, we assessed whether Mexico's MPAs encompass core areas used by the Laysan albatross during its breeding season.
+[[ Schimel §12.5.2 — "during its breeding season" — the trailing scope holds the stress, so the assessed relation never lands there ]]
 The MPAs of interest for this study corresponded to the marine components of three PNAs.
 Guadalupe Island Biosphere Reserve and Revillagigedo National Park hosted the three albatross colonies.
 The Pacific Islands of the Baja California Peninsula Biosphere Reserve lay along the foraging paths used by the albatross during its breeding season.
@@ -13,6 +14,7 @@ The Pacific Islands of the Baja California Peninsula Biosphere Reserve lay along
 <!-- point: "The oceanographic conditions of the waters surrounding the breeding colonies determine foraging patterns, which in turn define the albatross core areas." -->
 The oceanographic conditions of the waters surrounding the breeding colonies determine foraging patterns, which in turn define the albatross core areas.
 The California Current and the El Niño-Southern Oscillation (ENSO) phenomenon are examples of such oceanographic conditions.
+[[ Schimel §12.2 — "such oceanographic conditions" — the stress repeats old information while both new names sit in the topic ]]
 
 <!-- point: none — the sentence announces the three island descriptions that follow. -->
 Below we describe the three islands where the colonies breed.
@@ -21,6 +23,7 @@ Below we describe the three islands where the colonies breed.
 <!-- point: "Guadalupe Island hosts the largest breeding colony of Laysan albatross in the eastern Pacific [@hernandez2019sexual]." -->
 Guadalupe Island hosts the largest breeding colony of Laysan albatross in the eastern Pacific [@hernandez2019sexual].
 On Guadalupe Island, there were 4,390 breeding individuals in 2025 (unpublished authors' monitoring data).
+[[ Schimel §12.5.2 — "4,390 breeding individuals in 2025" — the count never reaches the stress; a year and a source note trail it ]]
 Guadalupe Island is an oceanic island of volcanic origin located 300 km west of the coast of Baja California.
 It has an area of 244 km$^2$.
 It measures 30 km at its longest part from the southern end to the northern end.
@@ -156,6 +159,7 @@ We shared the full analysis code on Zenodo at https://doi.org/10.5281/zenodo.234
 
 <!-- main idea: M5 Preparation — consolidate the records into one database, split the tracks into trips, remove incomplete trips and trips that never reached beyond 60 km, and keep the survivors as the foraging trips. Point: "The remaining trips were considered foraging trips." -->
 The remaining trips were considered foraging trips.
+[[ Schimel §12.1 — "The remaining trips" — new information in the topic position, before the removals that define it ]]
 We consolidated the GPS records to bring them into a single database with a common format.
 We split all tracks into single trips.
 We removed incomplete trips, which are those without a recorded return to the colony.
@@ -163,6 +167,7 @@ Following @hernandez2019sexual, we removed trips that never reached beyond 60 km
 
 <!-- main idea: M6 KDE — the ARS scale from First Passage Time is the KDE smoothing parameter; a 50% UD holds half the probability mass of a KDE, one per individual. Point: "We calculated one 50% UD for each individual albatross [@beal2021track2kba]." -->
 We calculated one 50% UD for each individual albatross [@beal2021track2kba].
+[[ Schimel §12.1 — "one 50% UD" — this term and KDEs are used before the definitions that close the paragraph ]]
 The area-restricted search (ARS) scale is estimated using first-passage time analysis (adehabitatLT).
 We used that scale as the smoothing parameter of the KDEs.
 The 50% UD is the region that contains half of the probability mass of the KDE.
