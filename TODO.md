@@ -47,6 +47,10 @@
 
 - [ ] Propose `check_*` to islas.dev/guia_de_estilo/STYLEGUIDE as the level-2 verb for a validator whose artifact is an exit code; until the guide lists it, `AGENTS.md` carries the deviation.
 
+## Figures
+
+- [ ] Retitle the two unused first-paper figures to the foraging component and update their DOCS lines — `reports/figures/gps_albatross_50_percent_potential_kba_ars_all_without_mpa.png`, `reports/figures/gps_albatross_50_percent_potential_kba_ars_guadalupe_with_mpa.png`, `src/plot_potential_kba_all.R:143`, `src/plot_kba_guadalupe_mpa_intersection.R:176`, `DOCS.md:47-57`.
+
 ## Makefile
 
 - [ ] Retire or archive the two dangling PNG targets: `reports/figures/kba_and_vms_union_hotspot_map.png` (`Makefile:426`) and `reports/figures/kba_and_gfw_apparent_fishing_effort_hotspot_map.png` (`Makefile:450`) are prerequisites of `reports/second_paper.pdf` but no `papers/**/*.md` file references them.
