@@ -1,10 +1,5 @@
 # First paper
 
-## Methods
-
-- [ ] Fill the MPA layer and the intersection units `[[ ]]` — `13_methods.md:174`.
-- [ ] Fill the union basis `[[ ]]` — `13_methods.md:180`.
-
 ## Results
 
 - [ ] Replace the remaining literal numbers (93.4, 1–36) with mustache variables — `15_results.md:28, 37`.

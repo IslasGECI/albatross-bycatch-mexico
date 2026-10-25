@@ -163,28 +163,23 @@ It measures the inclusion of locations from the individuals not in the subsample
 It also sets the threshold percentage of the population that we use to define the foraging component.
 
 <!-- main idea: M8 Define — the foraging component is the cells whose individual 50% UDs reach the threshold set by the assessment; the core area is its union with the 60 km disk. -->
-The foraging component is the cells where the individual 50% UDs overlap enough to reach that threshold set by the representativeness assessment.
+The foraging component is the cells where the individual 50% UDs overlap enough to reach the threshold set by the representativeness assessment.
 We define the core area as the union of the foraging component and the disk with a radius of 60 km around each colony.
 
 ### Overlap of core areas with MPAs
 
-<!-- main idea: M9 Place — the MPA layer inside the EEZ mask; the intersection arithmetic and its units. -->
-Once the core areas were identified, we quantified their overlap with the existing protected areas.
+<!-- main idea: M9 Place and Measure — the overlap with the existing MPAs; the index formula; the core-area size against the size of its overlap; the fraction inside; the meaning of 1 and 0. -->
 
-[[ the MPA layer clipped to the EEZ, and the intersection units ]]
-To determine overlap, we intersect the core areas with the MPA polygons and quantify the level of overlap.
-<!-- main idea: M10 Measure — the overlap index on the union basis; why the area within a 60 km radius enters both sides. -->
-We calculated the overlap index to quantify the overlap of the core areas with the MPA polygons.
-@fieberg2005quantifying quantified home-range overlap using the utilization distribution.
-The overlap index is area-based (proportional) overlap: $HR_{i,j} = \frac{A_{i,j}}{A_i}$.
-[[ the union basis: core plus the area within a 60 km radius on both sides, and why ]]
-This index is directional: $HR_{i,j} \neq HR_{j,i}$.
-This measure of core habitat protection coverage tells us what fraction of the animal's most intensively used space is inside the protected area.
+Once the core areas were identified, we quantified their overlap with the existing MPAs using the overlap index [@fieberg2005quantifying].
+The overlap index is defined as $HR_{i,j} = \frac{A_{i,j}}{A_i}$ and is directional ($HR_{i,j} \neq HR_{j,i}$).
+In our case, $A_i$ is the core-area size, and $A_{i,j}$ is the size of its overlap with the MPAs.
+This index tells us what fraction of Laysan albatross core areas is inside the MPAs.
+A value of 1 indicates that the core area is entirely inside the MPAs, while a value of 0 indicates that it is entirely outside.
 
 ## Ethical considerations
 
-<!-- main idea: M11 Ethical considerations — permits, minimization, no harm. -->
-Our study followed necessary ethical guidelines ensuring the welfare of the seabirds during their handling.
+<!-- main idea: M10 Ethical considerations — permits, minimization, no harm. -->
+Our study followed all necessary ethical guidelines ensuring the welfare of the seabirds during their handling.
 We also had all the permits required by the Mexican government.
 Permits came from the Ministry of the Interior, the Ministry of Environment and Natural Resources, and the National Commission for Protected Natural Areas.
 A complete list of permits by island and year is available in the Supplementary Information.
