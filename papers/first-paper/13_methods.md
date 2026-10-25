@@ -131,7 +131,7 @@ Table: Breeding season, deployment window, tagged individuals, and trips for Lay
 
 ### Core areas used by Laysan albatross
 
-<!-- main idea: M4 Overview — why track2KBA in two sentences, the six numbered steps without function names, the promise of detail, and the archived analysis code. -->
+<!-- main idea: M4 Overview — why track2KBA in two sentences, the six steps without function names, the promise of detail, and the archived analysis code. -->
 We followed the track2KBA methodology because it is replicable using a single open-source R package [@beal2021track2kba].
 Also, it is explicitly designed to identify important sites for biodiversity from tracking data [@beal2021track2kba].
 We consolidated the GPS records and split them into individual foraging trips.
@@ -143,26 +143,26 @@ We defined the core area.
 Below, we describe these steps in more detail.
 We shared the full analysis code on Zenodo at https://doi.org/10.5281/zenodo.23485336.
 
-<!-- main idea: M5 Preparation, steps 1 and 2 — consolidate the records into one database, split the tracks into trips, remove incomplete trips and trips that never reached beyond 60 km, and keep the survivors as the foraging trips. -->
+<!-- main idea: M5 Preparation — consolidate the records into one database, split the tracks into trips, remove incomplete trips and trips that never reached beyond 60 km, and keep the survivors as the foraging trips. -->
 We consolidated the GPS records to bring them into a single database with a common format.
 We split all tracks into single trips.
 We removed incomplete trips, which are those without a recorded return to the colony.
 Following @hernandez2019sexual, we removed trips that never reached beyond 60 km of the colony.
 The remaining trips were considered foraging trips.
 
-<!-- main idea: M6 KDE, step 3 — the ARS scale from First Passage Time is the KDE smoothing parameter; a 50% UD holds half the probability mass of a KDE, one per individual. -->
+<!-- main idea: M6 KDE — the ARS scale from First Passage Time is the KDE smoothing parameter; a 50% UD holds half the probability mass of a KDE, one per individual. -->
 The area-restricted search (ARS) scale is estimated using First Passage Time analysis (adehabitatLT).
 We used that scale as the smoothing parameter of the KDEs.
 The 50% UD is the region that contains half of the probability mass of the KDE.
 We calculated one 50% UD for each individual albatross [@beal2021track2kba].
 
-<!-- main idea: M7 Trust, step 4 — what the representativeness assessment answers; the KDEs of a resampled subset of individuals averaged into a UD; the inclusion of the locations left out; the threshold percentage it sets for the foraging component. -->
+<!-- main idea: M7 Trust — what the representativeness assessment answers; the KDEs of a resampled subset of individuals averaged into a UD; the inclusion of the locations left out; the threshold percentage it sets for the foraging component. -->
 The representativeness assessment indicates whether the areas identified as important for the sample are valid for the entire population.
 The representativeness assessment averages the kernel density estimates (KDEs) of a resampled subset of individuals to obtain a utilization distribution (UD).
 It measures the inclusion of locations from the individuals not in the subsample.
 It also sets the threshold percentage of the population that we use to define the foraging component.
 
-<!-- main idea: M8 Define, steps 5 and 6 — the foraging component is the cells whose individual 50% UDs reach the threshold set by the assessment; the core area is its union with the 60 km disk. -->
+<!-- main idea: M8 Define — the foraging component is the cells whose individual 50% UDs reach the threshold set by the assessment; the core area is its union with the 60 km disk. -->
 The foraging component is the cells where the individual 50% UDs overlap enough to reach that threshold set by the representativeness assessment.
 We define the core area as the union of the foraging component and the disk with a radius of 60 km around each colony.
 
