@@ -47,21 +47,20 @@ The colony holds fewer than 80 breeding individuals.
 ## GPS deployment
 
 <!-- main idea: M2 GPS deployment — capture, attachment, and recovery; the breeding-season window; why devices return within the season. -->
-We installed and recovered GPS tracking devices while individuals were breeding on the island.
-Devices were deployed from December to June to encompass the breeding season that usually runs from November to July.
-This ensured that we were able to retrieve GPS devices before individuals migrated off the islands, since they cannot be recovered the next breeding season.
-Seabirds were captured by hand at the nest, and GPS devices were attached to feathers that are molted during the non-breeding season.
-We attached the GPS loggers to the albatrosses with Tesa tape (#4651, Tesa AG, Hamburg, Germany).
-The GPS was attached to the back feathers following [@hernandez2019sexual].
-The GPS needed to be securely attached during the whole breeding season.
-The capture is brief and harmless, and the individuals were released on site immediately after attaching or removing the GPS device.
-No albatross individuals were harmed during the study.
-GPS loggers have the appropriate accuracy and precision for the study [@soanes2013many; @clay2023adjustment; @hernandez2019sexual].
-Other devices, such as GLS loggers, are not accurate enough to determine core areas.
-We programmed the GPS to record one position every 10 minutes.
-The 10-minute frequency allows recording multiple trips per individual per season.
-This frequency is high enough for the data to be representative and identify moments when the individual stops or goes slow.
-Also, this frequency is low enough for the battery to last the whole season and track multiple trips.
+
+We deployed and recovered GPS tracking devices while the individuals were breeding on the island.
+The devices were deployed from December to June, covering the breeding season, which generally spans from November to July.
+This ensured that we could recover the GPS devices before the individuals migrated, as recovery would not have been possible the next breeding season.
+The seabirds were captured by hand at their nests, and the GPS devices were attached to back feathers shed during the non-breeding season.
+We attached the GPS loggers to the albatrosses using Tesa tape (#4651, Tesa AG, Hamburg, Germany), following the method described in [@hernandez2019sexual].
+The capture process is brief and harmless; the individuals were released at the same location immediately after the GPS device was attached or removed.
+No albatrosses were harmed during the study.
+
+The GPS loggers offer the level of accuracy and precision required for this study [@soanes2013many; @clay2023adjustment; @hernandez2019sexual].
+We programmed the GPS units to record a position every 10 minutes.
+This 10-minute interval allows for the recording of multiple trips per individual throughout each season.
+This frequency is high enough to obtain representative data and to identify instances where an individual stops or reduces its speed.
+At the same time, it is low enough to ensure the battery lasts for the entire season, allowing for the recording of several trips.
 
 There were variations in the GPS device models across years and islands.
 On Guadalupe Island we used the following GPS devices: From 2014 to 2016: model GiSPy-4SB by Techno Smart (Italy).
