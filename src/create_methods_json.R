@@ -241,8 +241,8 @@ guadalupe_seasons_full <- guadalupe_season_complete |>
     n = if_else(is.na(n), 0L, n),
     # Usa cero para el conteo de viajes completos en temporadas sin viajes
     trips = if_else(is.na(trips), 0L, trips),
-    # Crea la etiqueta de temporada con formato AAAA-AAAA para la tabla
-    season = paste0(season_year, "-", season_year + 1)
+    # Crea la etiqueta de temporada con formato AAAA/AA para la tabla
+    season = paste0(season_year, "/", str_sub(as.character(season_year + 1), 3, 4))
   ) |>
   # Ordena las temporadas de la más antigua a la más reciente antes de
   # descartar la columna season_year que solo sirve para el ordenamiento
@@ -307,7 +307,7 @@ clarion_seasons_full <- clarion_season_complete |>
     end = if_else(is.na(end), "--", end),
     n = if_else(is.na(n), 0L, n),
     trips = if_else(is.na(trips), 0L, trips),
-    season = paste0(season_year, "-", season_year + 1)
+    season = paste0(season_year, "/", str_sub(as.character(season_year + 1), 3, 4))
   ) |>
   arrange(season_year) |>
   select(season, start, end, n_tagged = n, n_trips = trips)
@@ -369,7 +369,7 @@ san_benedicto_seasons_full <- san_benedicto_season_complete |>
     end = if_else(is.na(end), "--", end),
     n = if_else(is.na(n), 0L, n),
     trips = if_else(is.na(trips), 0L, trips),
-    season = paste0(season_year, "-", season_year + 1)
+    season = paste0(season_year, "/", str_sub(as.character(season_year + 1), 3, 4))
   ) |>
   arrange(season_year) |>
   select(season, start, end, n_tagged = n, n_trips = trips)
@@ -413,16 +413,12 @@ n_tracking_span_years <- max(as.numeric(c(
   san_benedicto_min_year
 ))) + 1
 
-# Construye la etiqueta de la primera y la última temporada con datos para
-# usarla como rango de temporadas en el texto del artículo
+# Une la primera y la última temporada con datos para usarlas como rango
+# de temporadas en el texto del artículo
 tracking_season_span <- paste0(
-  str_sub(seasons_with_data$season[1], 1, 4),
-  "/",
-  str_sub(seasons_with_data$season[1], 8, 9),
+  seasons_with_data$season[1],
   "–",
-  str_sub(seasons_with_data$season[nrow(seasons_with_data)], 1, 4),
-  "/",
-  str_sub(seasons_with_data$season[nrow(seasons_with_data)], 8, 9)
+  seasons_with_data$season[nrow(seasons_with_data)]
 )
 
 # Combina los valores planos con las tablas de temporadas en una lista

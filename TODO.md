@@ -2,8 +2,8 @@
 
 ## Methods
 
-- [ ] Reason for the 60 km removal `XXX` — `13_methods.md:161`.
-- [ ] Bias the utilization distribution represents `XXX` — `13_methods.md:163`.
+- [ ] Reason for the 60 km removal `XXX` — `13_methods.md:157`.
+- [ ] Bias the utilization distribution represents `XXX` — `13_methods.md:159`.
 
 ## Results
 
