@@ -77,6 +77,7 @@ Every script opens with a Spanish header in imperative form: title, context, des
 - `papers/first-paper/OUTLINE.md` is the structural source of truth; it names each section's beats and order.
 - The assistant owns the `<!-- ... -->` comments and moves sentences verbatim; `[[ ... ]]`, `XXX`, and `#` headings are the author's.
 - **Code availability**: the methods name the analysis package (`track2KBA`) and cite the concept DOI; function detail and repository links stay out.
+- **Counts**: the paper reports exactly two, tagged individuals summed over seasons and colonies, and analyzed individuals with a kernel density surface; identifier counts and intermediate reconciliation numbers stay out.
 
 ## Validation & Testing
 

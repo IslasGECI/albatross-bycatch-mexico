@@ -93,7 +93,7 @@ We tagged {{n_tagged_individuals}} total individuals across the three colonies (
 The tracking effort was concentrated at the largest colony, Guadalupe Island (Table \ref{table-guadalupe}).
 Less effort was allocated at Clarion (Table \ref{table-clarion}) and San Benedicto (Table \ref{table-san-benedicto}), according to the available resources.
 
-Table: Deployment window, tagged individuals, and complete trips for Laysan albatross, {{tracking_season_span}}\label{table-deployment}.
+Table: Deployment window, tagged individuals, and trips for Laysan albatross, {{tracking_season_span}}\label{table-deployment}.
 
 | Colony | Start | End | Tagged individuals | Trips |
 |------------------|-------------|-------------|------------------------|--------|
@@ -102,7 +102,7 @@ Table: Deployment window, tagged individuals, and complete trips for Laysan alba
 | San Benedicto | {{ san_benedicto_min_date }} | {{ san_benedicto_max_date }} | {{ san_benedicto_n_tagged }} | {{ san_benedicto_n_trips }} |
 | TOTAL | | | {{n_tagged_individuals}} | {{n_trips_total}} |
 
-Table: Breeding season, deployment window, tagged individuals, and complete trips for Laysan albatross at Guadalupe Island\label{table-guadalupe}.
+Table: Breeding season, deployment window, tagged individuals, and trips for Laysan albatross at Guadalupe Island\label{table-guadalupe}.
 
 | Season | Start date | End date | Tagged individuals | Trips |
 |------------|------------|------------|--------------------|----------|
@@ -110,7 +110,7 @@ Table: Breeding season, deployment window, tagged individuals, and complete trip
 | {{season}} | {{start}} | {{end}} | {{n_tagged}} | {{n_trips}} |
 {{/guadalupe_seasons}}
 
-Table: Breeding season, deployment window, tagged individuals, and complete trips for Laysan albatross at Clarion Island.
+Table: Breeding season, deployment window, tagged individuals, and trips for Laysan albatross at Clarion Island.
 A season without tracking data shows a dash for the dates and zero for the counts\label{table-clarion}.
 
 | Season | Start date | End date | Tagged individuals | Trips |
@@ -119,7 +119,7 @@ A season without tracking data shows a dash for the dates and zero for the count
 | {{season}} | {{start}} | {{end}} | {{n_tagged}} | {{n_trips}} |
 {{/clarion_seasons}}
 
-Table: Breeding season, deployment window, tagged individuals, and complete trips for Laysan albatross at San Benedicto Island\label{table-san-benedicto}.
+Table: Breeding season, deployment window, tagged individuals, and trips for Laysan albatross at San Benedicto Island\label{table-san-benedicto}.
 
 | Season | Start date | End date | Tagged individuals | Trips |
 |------------|------------|------------|--------------------|----------|
