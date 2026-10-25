@@ -25,7 +25,7 @@ reports/first_paper.pdf: \
 	$(checkDirectories)
 	pandoc --include-in-header=options.sty --metadata-file=papers/first-paper/10_metadata.yaml --metadata=documentclass:article --table-of-contents --citeproc --output=$@ reports/first_paper.md
 
-reports/first_paper_no_annotations.md: reports/first_paper.md
+reports/first_paper_no_annotations.md: reports/first_paper.md src/create_first_paper_no_annotations.sh
 	$(checkDirectories)
 	src/create_first_paper_no_annotations.sh
 
