@@ -4,18 +4,15 @@
 ## Study Area
 
 <!-- point: "Specifically, during its breeding season, we assessed whether Mexico's MPAs encompass core areas used by the Laysan albatross." -->
-We studied the core areas used by Laysan albatross within Mexico's EEZ.
-[[ Schimel §15.1.2 — "Mexico's EEZ" — an abbreviation the reader meets here for the first time and never sees spelled out; the spatial frame of the study depends on it ]]
+We studied the core areas used by Laysan albatross within Mexico's Exclusive Economic Zone (EEZ).
 Specifically, during its breeding season, we assessed whether Mexico's MPAs encompass core areas used by the Laysan albatross.
-The MPAs of interest for this study were the marine components of three protected natural areas (PNAs).
-[[ Schimel §15.1.2 — "protected natural areas (PNAs)" — the abbreviation is defined here and never used again; the parenthetical costs a reader who gains nothing from it ]]
+The MPAs of interest for this study were the marine components of three protected natural areas.
 Guadalupe Island Biosphere Reserve and Revillagigedo National Park hosted the three albatross colonies.
 The Pacific Islands of the Baja California Peninsula Biosphere Reserve lay along the foraging paths used by the albatross during its breeding season.
 
 <!-- point: "The oceanographic conditions of the waters surrounding the breeding colonies determine foraging patterns, which in turn define the albatross core areas." -->
 The oceanographic conditions of the waters surrounding the breeding colonies determine foraging patterns, which in turn define the albatross core areas.
-Examples of such oceanographic conditions are the California Current and the El Niño-Southern Oscillation (ENSO) phenomenon.
-[[ Schimel §15.1.2 — "El Niño-Southern Oscillation (ENSO)" — the abbreviation is defined here and never used again in the paper ]]
+Examples of such oceanographic conditions are the California Current and the El Niño-Southern Oscillation phenomenon.
 
 Below we describe the three islands where the colonies breed.
 
@@ -38,8 +35,7 @@ It measures 8.6 km at its longest part from the eastern end to the western end.
 Clarion Island has the second largest Laysan albatross colony in Mexico.
 On Clarion Island, crows and snakes prey on Laysan albatross eggs and newly hatched chicks.
 The colony failed to produce any chicks between 2016 and 2023 [@castillo2026breeding].
-The colony held approximately 100 breeding individuals in 2021/22 [@castillo2026breeding].
-[[ Schimel §15.3 — "approximately" — heavy Latin where a shorter Anglo-Saxon word says the same thing ]]
+The colony held about 100 breeding individuals in 2021/22 [@castillo2026breeding].
 
 ### San Benedicto
 <!-- point: "Reproductive success for Laysan albatross is close to 0%." -->
@@ -151,7 +147,7 @@ We followed the track2KBA methodology because it is replicable using a single op
 It is also explicitly designed to identify important sites for biodiversity from tracking data [@beal2021track2kba].
 We shared the full analysis code on Zenodo at https://doi.org/10.5281/zenodo.23485336.
 
-We consolidated the GPS records and split them into individual trips.
+We combined the GPS records and split them into individual trips.
 We removed incomplete trips and trips that never reached beyond 60 km of the colony.
 We calculated the kernel density estimates for each individual.
 We assessed the sample representativeness.
@@ -160,8 +156,7 @@ We defined the core area.
 Below, we describe these steps in more detail.
 
 <!-- point: "The remaining trips were considered foraging trips." -->
-We consolidated the GPS records to bring them into a single database with a common format.
-[[ Schimel §15.3 — "consolidated" — heavy Latin, and the same verb already opens the summary above ]]
+We transformed the GPS records to combine them and bring them into a single database.
 We split all tracks into single trips.
 We removed incomplete trips, which are those without a recorded return to the colony.
 Following @hernandez2019sexual, we removed trips that never reached beyond 60 km of the colony.
