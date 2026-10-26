@@ -7,7 +7,9 @@ Bycatch [@birdlife2018phoebastria; @naughton2007conservation; @safina1995world; 
 
 <!-- point: MPAs are an important conservation tool, but they are coastal and colony-centred, so open-ocean users are missed by design: 13.2% of pelagic populations fall inside MPAs against 32.5% of coastal ones. -->
 In light of all these negative impacts, various strategies have been implemented to prevent the collapse of seabird populations [@naughton2007conservation; @mendez2022population; @dias2019threats; @phillips2024incidental].
+[[ Schimel §15.3 — "negative impacts" — heavy Latin; a shorter Anglo-Saxon word carries the harm ]]
 In particular, marine protected areas (MPAs) are considered an important tool for the conservation of seabirds [@critchley2018marine].
+[[ Schimel §15.4 — "for the conservation of seabirds" — prepositional phrase; a compound noun is shorter ]]
 However, protected areas for seabirds usually extend from the coast around a significant colony [@critchley2018marine].
 Pelagic species, such as albatrosses, receive less protection through MPAs than coastal species do [@lascelles2012hotspots; @critchley2018marine].
 13.2% of pelagic populations are covered by MPAs, compared to 32.5% of coastal populations [@critchley2018marine].
@@ -30,10 +32,13 @@ Without this information, we cannot determine whether the MPAs are spatially ade
 
 <!-- point: first 12-year, three-colony identification of the Laysan albatross core area in Mexico; the prior baseline is five years at Guadalupe and four at Clarion; this study incorporates and extends those data; track2KBA had not been applied to the species in Mexico. -->
 This study is the first to use {{n_tracking_span_years}} years of GPS tracking data from three colonies to identify Laysan albatross core areas in Mexico.
+[[ Schimel §15.1.1 — "core areas" — first use; the reader may not hold the schema the Methods defines ]]
 @hernandez2019sexual identified areas based on a 5-year time series from the colony on Guadalupe Island.
 @castillo2026breeding identified areas based on a 4-year time series from the colony on Clarion Island.
 This study incorporates and extends the data from these previous studies.
 Furthermore, this study is the first to employ *track2KBA* [@beal2021track2kba] to identify the core areas of the Laysan albatross.
+[[ Schimel §15.3 — "employ" — heavy French; "use" already appears earlier in the paragraph ]]
+[[ Schimel §15.4 — "the core areas of the Laysan albatross" — prepositional phrase; the compound form appears earlier ]]
 
 <!-- point: two questions, where the Laysan albatross core areas lie in the Mexican Pacific and what proportion falls inside MPAs; the hypothesis that the proportion is low because the MPAs were not designed around those areas; the approach that delineates the core area from pooled GPS tracking and measures its overlap with the MPA layer. -->
 We ask two questions: where are the Laysan albatross core areas in the Mexican Pacific, and what proportion of them falls inside MPAs?
