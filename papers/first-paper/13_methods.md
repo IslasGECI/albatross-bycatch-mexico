@@ -57,6 +57,7 @@ This ensured that we could recover the GPS devices before the individuals migrat
 
 <!-- point: "No albatross were harmed during the study." -->
 No albatross were harmed during the study.
+[[ Schimel §13.1 — "No albatross were harmed" — the opening states the outcome before the handling and does not reach back ]]
 The seabirds were captured by hand at their nests, and the GPS devices were attached to back feathers shed during the non-breeding season.
 We attached the GPS loggers using Tesa tape (#4651, Tesa AG, Hamburg, Germany), following the method described in [@hernandez2019sexual].
 The individuals were released at the same location immediately after the GPS device was attached or removed.
@@ -153,6 +154,7 @@ We identified the area used by a threshold percentage of the population.
 We defined the core area.
 Below, we describe these steps in more detail.
 We shared the full analysis code on Zenodo at https://doi.org/10.5281/zenodo.23485336.
+[[ Schimel §13.1 — "Below, we describe these steps" — the code pointer sits between the promise and the detail it announces ]]
 
 <!-- main idea: M5 Preparation — consolidate the records into one database, split the tracks into trips, remove incomplete trips and trips that never reached beyond 60 km, and keep the survivors as the foraging trips. Point: "The remaining trips were considered foraging trips." -->
 We consolidated the GPS records to bring them into a single database with a common format.
@@ -169,6 +171,7 @@ The 50% UD is the region that contains half of the probability mass of the KDE.
 
 <!-- main idea: M7 Trust — what the representativeness assessment answers; the KDEs of a resampled subset of individuals averaged into a UD; the inclusion of the locations left out; the threshold percentage it sets for the foraging component. Point: "The representativeness assessment indicates whether the areas identified as important for the sample are valid for the entire population." -->
 The representativeness assessment indicates whether the areas identified as important for the sample are valid for the entire population.
+[[ Schimel §13.1 — "The representativeness assessment" — the opening does not reach back to the KDE it follows ]]
 The representativeness assessment averages the KDEs of a resampled subset of individuals to obtain a UD.
 It measures the inclusion of locations from the individuals not in the subsample.
 It also sets the threshold percentage of the population that we use to define the foraging component.
