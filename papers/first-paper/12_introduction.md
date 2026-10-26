@@ -13,26 +13,17 @@ Pelagic species, such as albatrosses, receive less protection through MPAs than 
 13.2% of pelagic populations are covered by MPAs, compared to 32.5% of coastal populations [@critchley2018marine].
 
 <!-- main idea: I3 Mexican case — Laysan albatrosses nesting on Guadalupe, Clarion, and San Benedicto; Guadalupe lies in the Guadalupe Island Biosphere Reserve and the other two in the Revillagigedo National Park; the islands and their surrounding waters lie within protected areas; commercial fishing takes place in the waters adjacent to these protected areas. Pitman supports the colony list, and Castillo and Mendez support the designations. Information regarding island oceanography and colony profiles belongs in the Methods section, not here. -->
-Seabirds are marine organisms that come ashore during their reproductive phase.
-[[ Schimel §13.1 — "Seabirds are marine organisms that come ashore during their reproductive phase" — the paragraph opens on a generic definition instead of reaching back to the coverage gap the previous paragraph closed on ]]
 The Laysan albatross is a seabird that nests on islands in the Pacific.
 In Mexico, the Laysan albatross nests on the islands of Guadalupe, Clarion, and San Benedicto [@pitman2004population].
 All three islands are located within protected areas, and their surrounding waters are MPAs [@castillo2026breeding; @mendez2022population].
 Guadalupe Island is part of the Guadalupe Island Biosphere Reserve, while Clarion and San Benedicto are part of the Revillagigedo National Park [@mendez2022population; @castillo2026breeding].
-In the waters adjacent to these MPAs, commercial fishing activities take place.
-[[ Schimel §12.2 — "take place" — with the place phrase now in the topic, the sentence closes on an empty verb, so the fishing sits mid-sentence ]]
+In the waters adjacent to these MPAs take place commercial fishing activities.
 
 <!-- main idea: I4 Why tracking — to determine whether MPAs cover the areas that matter for a species, those areas must first be identified; GPS tracking is the standard method for identifying them; such areas should guide MPA delineation; in the Mexican Pacific, protected areas are linked to terrestrial units and were not delineated from seabird tracking. -->
-We must first identify what those areas are to determine whether MPAs cover areas that are important for a given species.
-[[ Schimel §13.1 — "We must first identify what those areas are" — the demonstrative points to areas defined later in the same sentence, not to the close of the previous paragraph ]]
+We must first identify areas that are important for a given species to determine whether MPAs cover those areas.
 Tracking seabirds, for example using GPS devices, is a standard method for identifying such important marine areas [@lascelles2016applying].
 Ideally, these important marine areas should serve as the basis for delineating marine protected areas [@lascelles2016applying; @critchley2018marine].
 However, in the Mexican Pacific, protected areas are linked to terrestrial units and were not delineated based on seabird tracking data [@mendez2022population].
-
-<!-- main idea: I5 Concepts compressed — the core area named in the term list, with its definition left to the Methods; MPA vs ANP distinction (one sentence); no framework term, because the paper performs no such assessment; full definitions live in Methods. -->
-We use two terms: core area and MPA.
-[[ Schimel §13.1 — "We use two terms" — the term list opens without grabbing the previous paragraph's close on tracking data ]]
-In Mexico, MPAs are administered by the National Commission of Protected Natural Areas (CONANP), and are the marine component of protected natural areas (PNAs).
 
 <!-- main idea: I6 The gap — no study has quantified how much of the Laysan albatross core area in the Mexican Pacific falls inside existing MPAs. -->
 No study has quantified what proportion of the Laysan albatross's core area in the Mexican Pacific falls within MPAs.
@@ -43,7 +34,7 @@ This study is the first to use {{n_tracking_span_years}} years of GPS tracking d
 @hernandez2019sexual identified areas based on a 5-year time series from the colony on Guadalupe Island.
 @castillo2026breeding identified areas based on a 4-year time series from the colony on Clarion Island.
 This study incorporates and extends the data from these previous studies.
-Furthermore, this study is the first to employ *track2KBA* [@beal2021track2kba] to identify the core areas in Mexico of the Laysan albatross.
+Furthermore, this study is the first to employ *track2KBA* [@beal2021track2kba] to identify the core areas of the Laysan albatross.
 
 <!-- main idea: I8 Question + hypothesis + approach — final beat: two questions, where the Laysan albatross core areas lie in the Mexican Pacific and what proportion falls inside MPAs; the hypothesis that the proportion is low because the MPAs were not designed around those areas; the approach that delineates the core area from pooled GPS tracking and measures its overlap with the MPA layer. Objectives dissolved into these sentences. -->
 We ask two questions: where are the Laysan albatross core areas in the Mexican Pacific, and what proportion of them falls inside MPAs?
