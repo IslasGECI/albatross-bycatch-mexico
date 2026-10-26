@@ -58,11 +58,11 @@ Every `src/` script opens with a Spanish, imperative header: title, context, des
 - **The test**: a script used outside the container belongs to `.pipelines/`; one Make invokes inside belongs to `src/`.
 - **Direction**: calls go downhill only — 5 (CI, `.pipelines/`) → 4 (Docker Compose) → 3 (Make) → 1–2 (`src/`); Make never calls `.pipelines/`.
 - **Reference**: https://islas.dev/guia_de_estilo/arquitectura.
-- **Deviations**: `check_*` is the level-2 verb for a validator whose artifact is an exit code; `create_*` would promise a nonexistent file. Shell scripts under `src/` keep functions and write no output file, so the linear and one-file rules bind R analysis scripts only.
+- **Validator naming**: `check_*` names a level-2 validator whose artifact is an exit code; `create_*` is for the scripts that write a file.
 
 ### Style Rules
 - **Reference**: https://islas.dev/guia_de_estilo/STYLEGUIDE
-- **Code**: English variables, Tidyverse, linear (no functions, loops, or conditionals).
+- **Code**: English variables, Tidyverse, and linear R scripts (no functions, loops, or conditionals); shell scripts use functions or input guards.
 - **Names and output**: `src/` scripts start with a verb, use letters, numbers, and underscores, and write one file.
 - **Species names**: singular for any number of individuals of one species, as with fish: `Laysan albatross`, never `Laysan albatrosses`; verbs follow the count, and mixed groups keep the plural.
 

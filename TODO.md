@@ -38,8 +38,6 @@
 
 # Not visible in the papers
 
-- [ ] Scope the shell-script exemption under Placement → Deviations in `AGENTS.md` to the `check_*` scripts, because `src/create_first_paper_no_annotations.sh` writes `reports/first_paper_no_annotations.md`.
-
 ## Style guide
 
 - [ ] Propose `check_*` to islas.dev/guia_de_estilo/STYLEGUIDE as the level-2 verb for a validator whose artifact is an exit code; until the guide lists it, `AGENTS.md` carries the deviation.
