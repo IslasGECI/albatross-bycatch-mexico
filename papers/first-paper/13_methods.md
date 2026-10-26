@@ -3,7 +3,7 @@
 
 ## Study Area
 
-<!-- main idea: M1 Study area — the spatial frame: the EEZ, the three colonies, the protected areas involved, and the oceanography that places the core areas. Point: "Specifically, we assessed whether Mexico's MPAs encompass core areas used by the Laysan albatross during its breeding season." -->
+<!-- main idea: M1 Study area — the spatial frame: the EEZ, the three colonies, the protected areas involved, and the oceanography that places the core areas. Point: "Specifically, during its breeding season, we assessed whether Mexico's MPAs encompass core areas used by the Laysan albatross." -->
 We studied the core areas used by Laysan albatross within Mexico's EEZ.
 Specifically, during its breeding season, we assessed whether Mexico's MPAs encompass core areas used by the Laysan albatross.
 The MPAs of interest for this study corresponded to the marine components of three PNAs.
@@ -56,11 +56,10 @@ The devices were deployed from December to June, covering the breeding season, w
 This ensured that we could recover the GPS devices before the individuals migrated, as recovery would not have been possible the next breeding season.
 
 <!-- point: "No albatross were harmed during the study." -->
-No albatross were harmed during the study.
-[[ Schimel §13.1 — "No albatross were harmed" — the opening states the outcome before the handling and does not reach back ]]
 The seabirds were captured by hand at their nests, and the GPS devices were attached to back feathers shed during the non-breeding season.
 We attached the GPS loggers using Tesa tape (#4651, Tesa AG, Hamburg, Germany), following the method described in [@hernandez2019sexual].
 The individuals were released at the same location immediately after the GPS device was attached or removed.
+No albatross were harmed during the study.
 
 <!-- point: "This frequency is high enough to obtain representative data and to identify instances where an individual stops or reduces its speed." and "At the same time, it is low enough to ensure the battery lasts for the entire season, allowing for the recording of several trips." -->
 The GPS loggers offer the level of accuracy and precision required for this study [@soanes2013many; @clay2023adjustment; @hernandez2019sexual].
@@ -146,14 +145,15 @@ Table: Breeding season, deployment window, tagged individuals, and trips for Lay
 <!-- main idea: M4 Overview — why track2KBA in two sentences, the six steps without function names, the promise of detail, and the archived analysis code. Point: "We followed the track2KBA methodology because it is replicable using a single open-source R package [@beal2021track2kba]." -->
 We followed the track2KBA methodology because it is replicable using a single open-source R package [@beal2021track2kba].
 Also, it is explicitly designed to identify important sites for biodiversity from tracking data [@beal2021track2kba].
-We consolidated the GPS records and split them into individual foraging trips.
+We shared the full analysis code on Zenodo at https://doi.org/10.5281/zenodo.23485336.
+
+First,we consolidated the GPS records and split them into individual foraging trips.
 We removed incomplete trips and trips that never reached beyond 60 km of the colony.
 We fitted kernel density estimates for each individual.
 We assessed the sample representativeness.
 We identified the area used by a threshold percentage of the population.
 We defined the core area.
 Below, we describe these steps in more detail.
-We shared the full analysis code on Zenodo at https://doi.org/10.5281/zenodo.23485336.
 [[ Schimel §13.1 — "Below, we describe these steps" — the code pointer sits between the promise and the detail it announces ]]
 
 <!-- main idea: M5 Preparation — consolidate the records into one database, split the tracks into trips, remove incomplete trips and trips that never reached beyond 60 km, and keep the survivors as the foraging trips. Point: "The remaining trips were considered foraging trips." -->
@@ -163,16 +163,15 @@ We removed incomplete trips, which are those without a recorded return to the co
 Following @hernandez2019sexual, we removed trips that never reached beyond 60 km of the colony.
 The remaining trips were considered foraging trips.
 
-<!-- main idea: M6 KDE — the ARS scale from First Passage Time is the KDE smoothing parameter; a 50% UD holds half the probability mass of a KDE, one per individual. Point: "We calculated one 50% UD for each individual albatross [@beal2021track2kba]." -->
+<!-- main idea: M6 KDE — the ARS scale from First Passage Time is the KDE smoothing parameter; a 50% UD holds half the probability mass of a KDE, one per individual. Point: "We calculated one 50% utilization distribution (UD) for each individual albatross [@beal2021track2kba]." -->
 We calculated one 50% utilization distribution (UD) for each individual albatross [@beal2021track2kba].
 The area-restricted search (ARS) scale is estimated using first-passage time analysis (adehabitatLT).
 We used that scale as the smoothing parameter of the kernel density estimates (KDEs).
 The 50% UD is the region that contains half of the probability mass of the KDE.
 
 <!-- main idea: M7 Trust — what the representativeness assessment answers; the KDEs of a resampled subset of individuals averaged into a UD; the inclusion of the locations left out; the threshold percentage it sets for the foraging component. Point: "The representativeness assessment indicates whether the areas identified as important for the sample are valid for the entire population." -->
-The representativeness assessment indicates whether the areas identified as important for the sample are valid for the entire population.
-[[ Schimel §13.1 — "The representativeness assessment" — the opening does not reach back to the KDE it follows ]]
 The representativeness assessment averages the KDEs of a resampled subset of individuals to obtain a UD.
+The representativeness assessment indicates whether the areas identified as important for the sample are valid for the entire population.
 It measures the inclusion of locations from the individuals not in the subsample.
 It also sets the threshold percentage of the population that we use to define the foraging component.
 
