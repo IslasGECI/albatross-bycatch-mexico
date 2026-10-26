@@ -7,6 +7,7 @@
 We studied the core areas used by Laysan albatross within Mexico's EEZ.
 Specifically, during its breeding season, we assessed whether Mexico's MPAs encompass core areas used by the Laysan albatross.
 The MPAs of interest for this study corresponded to the marine components of three protected natural areas (PNAs).
+[[ Schimel §14.2 — "corresponded to" — fuzzy verb: it names a matching, not what these MPAs were or how we selected them; the selection is the action ]]
 Guadalupe Island Biosphere Reserve and Revillagigedo National Park hosted the three albatross colonies.
 The Pacific Islands of the Baja California Peninsula Biosphere Reserve lay along the foraging paths used by the albatross during its breeding season.
 
@@ -34,6 +35,7 @@ It measures 8.6 km at its longest part from the eastern end to the western end.
 Clarion Island has the second largest Laysan albatross colony in Mexico.
 On Clarion Island, crows and snakes prey on Laysan albatross eggs and newly hatched chicks.
 The colony experienced complete breeding failure between 2016 and 2023 [@castillo2026breeding].
+[[ Schimel §14.2 — "experienced complete breeding failure" — fuzzy verb plus a noun where the action belongs; the breeding attempt is the actor and failing is the action ]]
 The colony held approximately 100 breeding individuals in 2021/22 [@castillo2026breeding].
 
 ### San Benedicto
@@ -65,6 +67,7 @@ The GPS loggers offer the level of accuracy and precision required for this stud
 We programmed the GPS units to record a position every 10 minutes.
 This frequency is high enough to obtain representative data and to identify instances where an individual stops or reduces its speed.
 At the same time, it is low enough to ensure the battery lasts for the entire season, allowing for the recording of several trips.
+[[ Schimel §14.3 — "allowing for the recording of several trips" — "recording" is a noun holding the action; the device and the trips are the actors ]]
 
 <!-- point: "On Guadalupe Island we used the following GPS devices." -->
 On Guadalupe Island we used the following GPS devices.
@@ -101,6 +104,7 @@ Because every year covers only the breeding season, which occurs in the same tim
 Each tracking device records multiple foraging trips during each breeding season.
 We tagged {{n_tagged_individuals}} total individuals across the three colonies (Table \ref{table-deployment}), {{n_analyzed_individuals}} of which were analyzed after filtering for data quality and completeness.
 The tracking effort was concentrated at the largest colony, Guadalupe Island (Table \ref{table-guadalupe}).
+[[ Schimel §14.1 — "The tracking effort was concentrated" — passive that hides the actor "we", and "effort" names no action; the same pattern returns in "was allocated" below ]]
 Less effort was allocated at Clarion (Table \ref{table-clarion}) and San Benedicto (Table \ref{table-san-benedicto}), according to the available resources.
 
 Table: Deployment window, tagged individuals, and trips for Laysan albatross, {{tracking_season_span}}\label{table-deployment}.
@@ -160,6 +164,7 @@ We split all tracks into single trips.
 We removed incomplete trips, which are those without a recorded return to the colony.
 Following @hernandez2019sexual, we removed trips that never reached beyond 60 km of the colony.
 The remaining trips were considered foraging trips.
+[[ Schimel §14.1 — "The remaining trips were considered foraging trips" — passive with an available actor; who applied the criterion belongs in the method ]]
 
 <!-- point: "We calculated one 50% UD for each individual albatross [@beal2021track2kba]." -->
 We pooled the foraging trips per individual to calculate the kernel density estimates (KDEs).
@@ -172,6 +177,7 @@ We calculated one 50% UD for each individual albatross [@beal2021track2kba].
 The representativeness assessment averages the KDEs of a resampled subset of individuals to obtain a UD.
 It indicates whether the areas identified as important for the sample are valid for the entire population.
 It measures the inclusion of locations from the individuals not in the subsample.
+[[ Schimel §14.3 — "measures the inclusion of locations" — the action "include" is buried in the noun "inclusion" ]]
 It also sets the threshold percentage of the population that we use to define the foraging component.
 
 <!-- point: "The foraging component is the cells where the individual 50% UDs overlap enough to reach the threshold set by the representativeness assessment." -->
