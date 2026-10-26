@@ -147,14 +147,13 @@ We followed the track2KBA methodology because it is replicable using a single op
 Also, it is explicitly designed to identify important sites for biodiversity from tracking data [@beal2021track2kba].
 We shared the full analysis code on Zenodo at https://doi.org/10.5281/zenodo.23485336.
 
-First,we consolidated the GPS records and split them into individual foraging trips.
+First, we consolidated the GPS records and split them into individual foraging trips.
 We removed incomplete trips and trips that never reached beyond 60 km of the colony.
-We fitted kernel density estimates for each individual.
+We calculated the kernel density estimates for each individual.
 We assessed the sample representativeness.
 We identified the area used by a threshold percentage of the population.
 We defined the core area.
 Below, we describe these steps in more detail.
-[[ Schimel §13.1 — "Below, we describe these steps" — the code pointer sits between the promise and the detail it announces ]]
 
 <!-- main idea: M5 Preparation — consolidate the records into one database, split the tracks into trips, remove incomplete trips and trips that never reached beyond 60 km, and keep the survivors as the foraging trips. Point: "The remaining trips were considered foraging trips." -->
 We consolidated the GPS records to bring them into a single database with a common format.
@@ -163,11 +162,12 @@ We removed incomplete trips, which are those without a recorded return to the co
 Following @hernandez2019sexual, we removed trips that never reached beyond 60 km of the colony.
 The remaining trips were considered foraging trips.
 
-<!-- main idea: M6 KDE — the ARS scale from First Passage Time is the KDE smoothing parameter; a 50% UD holds half the probability mass of a KDE, one per individual. Point: "We calculated one 50% utilization distribution (UD) for each individual albatross [@beal2021track2kba]." -->
-We calculated one 50% utilization distribution (UD) for each individual albatross [@beal2021track2kba].
-The area-restricted search (ARS) scale is estimated using first-passage time analysis (adehabitatLT).
-We used that scale as the smoothing parameter of the kernel density estimates (KDEs).
-The 50% UD is the region that contains half of the probability mass of the KDE.
+<!-- main idea: M6 -->
+We pooled the foraging trips per individual to calculate the kernel density estimates (KDEs).
+We used the area-restricted search (ARS) scale as the smoothing parameter of the KDEs.
+The ARS scale is estimated using first-passage time analysis (`adehabitatLT`).
+The 50% utilization distribution (UD) is the region that contains half of the probability mass of the KDE.
+We calculated one 50% UD for each individual albatross [@beal2021track2kba].
 
 <!-- main idea: M7 Trust — what the representativeness assessment answers; the KDEs of a resampled subset of individuals averaged into a UD; the inclusion of the locations left out; the threshold percentage it sets for the foraging component. Point: "The representativeness assessment indicates whether the areas identified as important for the sample are valid for the entire population." -->
 The representativeness assessment averages the KDEs of a resampled subset of individuals to obtain a UD.
