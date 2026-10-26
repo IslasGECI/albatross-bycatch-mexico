@@ -8,8 +8,7 @@ Bycatch [@birdlife2018phoebastria; @naughton2007conservation; @safina1995world; 
 <!-- point: MPAs are an important conservation tool, but they are coastal and colony-centred, so open-ocean users are missed by design: 13.2% of pelagic populations fall inside MPAs against 32.5% of coastal ones. -->
 In light of all these impacts, various strategies have been implemented to prevent the collapse of seabird populations [@naughton2007conservation; @mendez2022population; @dias2019threats; @phillips2024incidental].
 In particular, marine protected areas (MPAs) are considered an important tool for seabird conservation [@critchley2018marine].
-However, protected areas for seabirds usually extend from the coast around a significant colony [@critchley2018marine].
-[[ Schimel §16.4 — "significant colony" — the reader cannot tell whether the colony is large or important ]]
+However, protected areas for seabirds usually extend from the coast around a colony [@critchley2018marine].
 Pelagic species, such as albatrosses, receive less protection through MPAs than coastal species do [@lascelles2012hotspots; @critchley2018marine].
 13.2% of pelagic populations are covered by MPAs, compared to 32.5% of coastal populations [@critchley2018marine].
 
@@ -22,8 +21,7 @@ The waters adjacent to these MPAs are subject to commercial fishing.
 <!-- point: to determine whether MPAs cover the areas that matter for a species, those areas must first be identified; GPS tracking is the standard method for identifying them; such areas should guide MPA delineation; in the Mexican Pacific, protected areas are linked to terrestrial units and were not delineated from seabird tracking. -->
 We must first identify areas that are important for a given species to determine whether MPAs cover those areas.
 Tracking seabirds, for example using GPS devices, is a standard method for identifying such important marine areas [@lascelles2016applying].
-Ideally, these areas should serve as the basis for delineating marine protected areas [@lascelles2016applying; @critchley2018marine].
-[[ Schimel §16.6 — "serve as the basis for delineating" — verbose; the verb delineate would carry it ]]
+Ideally, marine protected areas should be delineated based on those important areas [@lascelles2016applying; @critchley2018marine].
 However, in the Mexican Pacific, protected areas were not delineated based on seabird tracking data [@mendez2022population].
 
 <!-- point: no study has quantified how much of the Laysan albatross core area in the Mexican Pacific falls inside existing MPAs. -->
