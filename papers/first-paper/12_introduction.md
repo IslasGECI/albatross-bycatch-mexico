@@ -4,6 +4,7 @@
 <!-- main idea: I1 Hook — seabirds among the most threatened groups of birds and the causes of their decline: bycatch, introduced predators, harvesting, and overfishing. Opening sentence; nothing precedes it. -->
 Seabirds are one of the most threatened groups of birds, with ~31% of species at risk and ~47% in decline [@dias2019threats].
 Bycatch [@birdlife2018phoebastria; @naughton2007conservation; @safina1995world; @mendez2022population], introduced predators [@birdlife2018phoebastria; @naughton2007conservation; @mendez2022population], and feather and egg harvesting [@birdlife2018phoebastria; @naughton2007conservation] have reduced seabird numbers, and overfishing has depleted their prey [@safina1995world].
+[[ Schimel §12.4 — "have reduced seabird numbers" — three citation groups sit between the causes and their verb, so the reader carries the whole list across them ]]
 
 <!-- main idea: I2 Pelagic gap — MPAs are an important conservation tool, but they are coastal and colony-centred, so open-ocean users are missed by design: 13.2% of pelagic populations fall inside MPAs against 32.5% of coastal ones. The global coverage study is cited here and stays here; Discussion move 3 cites it qualitatively only. -->
 In light of all these negative impacts, various strategies have been implemented to prevent the collapse of seabird populations and improve their conservation status [@naughton2007conservation; @mendez2022population; @dias2019threats; @phillips2024incidental].
@@ -33,6 +34,7 @@ In Mexico, MPAs are administered by the National Commission of Protected Natural
 <!-- main idea: I6 The gap — no study has quantified how much of the Laysan albatross core area in the Mexican Pacific falls inside existing MPAs. -->
 No study has quantified what proportion of the Laysan albatross's core area in the Mexican Pacific falls within MPAs.
 Without this information, it is not possible to determine whether the protection provided by the existing MPAs for the Laysan albatross is spatially adequate.
+[[ Schimel §12.4 — "the protection provided by the existing MPAs for the Laysan albatross is spatially adequate" — the source phrase separates the subject from its verb ]]
 
 <!-- main idea: I7 Novelty — first 12-year, three-colony identification of the Laysan albatross core area in Mexico; the prior baseline is five years at Guadalupe and four at Clarion; this study incorporates and extends those data; track2KBA had not been applied to the species in Mexico. -->
 This study is the first to use {{n_tracking_span_years}} years of GPS tracking data from three colonies to identify Laysan albatross core areas in Mexico.
