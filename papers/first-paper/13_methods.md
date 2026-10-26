@@ -147,7 +147,7 @@ We followed the track2KBA methodology because it is replicable using a single op
 It is also explicitly designed to identify important sites for biodiversity from tracking data [@beal2021track2kba].
 We shared the full analysis code on Zenodo at https://doi.org/10.5281/zenodo.23485336.
 
-We consolidated the GPS records and split them into individual foraging trips.
+We consolidated the GPS records and split them into individual trips.
 We removed incomplete trips and trips that never reached beyond 60 km of the colony.
 We calculated the kernel density estimates for each individual.
 We assessed the sample representativeness.
@@ -162,16 +162,16 @@ We removed incomplete trips, which are those without a recorded return to the co
 Following @hernandez2019sexual, we removed trips that never reached beyond 60 km of the colony.
 The remaining trips were considered foraging trips.
 
-<!-- main idea: M6 -->
+<!-- main idea: M6 KDE. Point: "We calculated one 50% UD for each individual albatross [@beal2021track2kba]." -->
 We pooled the foraging trips per individual to calculate the kernel density estimates (KDEs).
-We used the area-restricted search (ARS) scale as the smoothing parameter of the KDEs.
-The ARS scale is estimated using first-passage time analysis (`adehabitatLT`).
+The area-restricted search (ARS) scale is estimated using first-passage time analysis [@calenge2025adehabitatlt].
+We used the ARS scale as the smoothing parameter of the KDEs.
 The 50% utilization distribution (UD) is the region that contains half of the probability mass of the KDE.
 We calculated one 50% UD for each individual albatross [@beal2021track2kba].
 
 <!-- main idea: M7 Trust — what the representativeness assessment answers; the KDEs of a resampled subset of individuals averaged into a UD; the inclusion of the locations left out; the threshold percentage it sets for the foraging component. Point: "The representativeness assessment indicates whether the areas identified as important for the sample are valid for the entire population." -->
 The representativeness assessment averages the KDEs of a resampled subset of individuals to obtain a UD.
-The representativeness assessment indicates whether the areas identified as important for the sample are valid for the entire population.
+It indicates whether the areas identified as important for the sample are valid for the entire population.
 It measures the inclusion of locations from the individuals not in the subsample.
 It also sets the threshold percentage of the population that we use to define the foraging component.
 
