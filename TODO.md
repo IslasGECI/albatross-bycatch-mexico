@@ -3,7 +3,7 @@
 ## Results
 
 - [ ] Replace the remaining literal numbers (93.4, 1–36) with mustache variables — `15_results.md`.
-  Test: Grep 15_results.md for 93.4 and for 1–36 and find neither. Both values render from methods.json.
+  Test: Grep 15_results.md for 93.4 and for 1–36 and find neither. Both values render from first_paper_values.json.
 - [ ] Representativeness `XXX%` — `15_results.md`.
   Test: The representativeness sentence carries a mustache variable where XXX stood. Grep 15_results.md for XXX and find none.
 - [ ] Area of the foraging component (km2) — `15_results.md`.

@@ -82,7 +82,7 @@ Every `src/` script opens with a Spanish, imperative header: title, context, des
 - `make check` runs spellcheck and style checks; both languages pass.
 - **Style**: ≤ 25 words per sentence, one sentence per line; the checker counts words per line and skips `<!--` lines.
 - **Pre-push**: `.githooks/pre-push` (via `core.hooksPath`, set by `.pipelines/init.sh`) runs `make check` in the running `<directory>_ci` container; there is no `make push`.
-- **Placeholders**: `{{ key }}` resolves from `data/processed/methods.json`, unknown keys empty; `[[ ... ]]` notes are skipped; `XXX` marks an author-supplied number; `src/create_methods_json.R` generates that JSON, so a new key starts there.
+- **Placeholders**: `{{ key }}` resolves from `data/processed/first_paper_values.json`, unknown keys empty; `[[ ... ]]` notes are skipped; `XXX` marks an author-supplied number; `src/create_first_paper_values.R` generates that JSON, so a new key starts there.
 - **Annotations**: one `[[ ... ]]` note per line, no `]` inside; prose passes add `[[ Schimel §… — "target" — what to fix ]]`, the author rewrites and commits between steps; `src/create_first_paper_no_annotations.sh` strips them from the DOCX only.
 - **Whitelist**: add tokens to `.github/config/.wordlist-{en,es}.txt` and bump the `personal_ws-1.1` count; `aspell` ignores case, so a plural needs an entry.
 - **Figures**: check a description against the PNG, then the script and data.

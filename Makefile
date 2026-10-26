@@ -35,8 +35,8 @@ reports/first_paper.docx: reports/first_paper.pdf reports/first_paper_no_annotat
 
 first_paper_sources := $(wildcard papers/first-paper/1?_*.md)
 
-data/processed/methods.json: \
-	src/create_methods_json.R \
+data/processed/first_paper_values.json: \
+	src/create_first_paper_values.R \
 	data/raw/gps-albatros-guadalupe.csv \
 	data/raw/gps-albatros-clarion.csv \
 	data/raw/gps-albatros-san-benedicto.csv \
@@ -47,12 +47,12 @@ data/processed/methods.json: \
 	data/processed/representative_assessment_all.rds \
 	data/processed/ud_in_grid.gpkg
 	$(checkDirectories)
-	Rscript src/create_methods_json.R
+	Rscript src/create_first_paper_values.R
 
-reports/first_paper.md: data/processed/methods.json $(first_paper_sources)
+reports/first_paper.md: data/processed/first_paper_values.json $(first_paper_sources)
 	$(checkDirectories)
 	cat $(first_paper_sources) > papers/first-paper/first_paper.mustache
-	mustache data/processed/methods.json papers/first-paper/first_paper.mustache > $@
+	mustache data/processed/first_paper_values.json papers/first-paper/first_paper.mustache > $@
 
 reports/second_paper.docx reports/second_paper.pdf: \
 	data/processed/individual_kde_all.rds \

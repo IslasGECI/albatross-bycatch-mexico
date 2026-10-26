@@ -13,7 +13,7 @@
 # individuos rastreados y los viajes completos por temporada. Lee las
 # superficies KDE, la evaluación de representatividad y la rejilla de uso
 # para contar analizados, representatividad y rango por celda ocupada.
-# Combina los valores en un JSON plano en data/processed/methods.json.
+# Combina los valores en un JSON plano en data/processed/first_paper_values.json.
 #
 # Entradas:
 # data/raw/gps-albatros-guadalupe.csv
@@ -27,7 +27,7 @@
 # data/processed/ud_in_grid.gpkg (capa: "ud_in_grid")
 #
 # Salida:
-# data/processed/methods.json
+# data/processed/first_paper_values.json
 #
 # Dependencias:
 # tidyverse
@@ -68,7 +68,7 @@ input_representative_assessment_path <- "data/processed/representative_assessmen
 # Ruta del GeoPackage con la rejilla de individuos por celda
 input_ud_in_grid_path <- "data/processed/ud_in_grid.gpkg"
 # Ruta del archivo JSON que almacenará los metadatos del rastreo por colonia
-output_json_path <- "data/processed/methods.json"
+output_json_path <- "data/processed/first_paper_values.json"
 
 
 # ==== ENTRADAS ====
