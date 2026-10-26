@@ -5,14 +5,17 @@
 
 <!-- point: "Specifically, during its breeding season, we assessed whether Mexico's MPAs encompass core areas used by the Laysan albatross." -->
 We studied the core areas used by Laysan albatross within Mexico's EEZ.
+[[ Schimel §15.1.2 — "Mexico's EEZ" — an abbreviation the reader meets here for the first time and never sees spelled out; the spatial frame of the study depends on it ]]
 Specifically, during its breeding season, we assessed whether Mexico's MPAs encompass core areas used by the Laysan albatross.
 The MPAs of interest for this study were the marine components of three protected natural areas (PNAs).
+[[ Schimel §15.1.2 — "protected natural areas (PNAs)" — the abbreviation is defined here and never used again; the parenthetical costs a reader who gains nothing from it ]]
 Guadalupe Island Biosphere Reserve and Revillagigedo National Park hosted the three albatross colonies.
 The Pacific Islands of the Baja California Peninsula Biosphere Reserve lay along the foraging paths used by the albatross during its breeding season.
 
 <!-- point: "The oceanographic conditions of the waters surrounding the breeding colonies determine foraging patterns, which in turn define the albatross core areas." -->
 The oceanographic conditions of the waters surrounding the breeding colonies determine foraging patterns, which in turn define the albatross core areas.
 Examples of such oceanographic conditions are the California Current and the El Niño-Southern Oscillation (ENSO) phenomenon.
+[[ Schimel §15.1.2 — "El Niño-Southern Oscillation (ENSO)" — the abbreviation is defined here and never used again in the paper ]]
 
 Below we describe the three islands where the colonies breed.
 
@@ -21,6 +24,7 @@ Below we describe the three islands where the colonies breed.
 Guadalupe Island hosts the largest breeding colony of Laysan albatross in the eastern Pacific [@hernandez2019sexual].
 According to unpublished authors' monitoring data, in 2025 the island had 4,390 breeding individuals.
 Guadalupe Island is an oceanic island of volcanic origin located 300 km west of the coast of Baja California.
+[[ Schimel §15.4 — "of volcanic origin" — prepositional phrase; a compound modifier carries the same fact in fewer words ]]
 It has an area of 244 km$^2$.
 It measures 30 km at its longest part from the southern end to the northern end.
 
@@ -35,6 +39,7 @@ Clarion Island has the second largest Laysan albatross colony in Mexico.
 On Clarion Island, crows and snakes prey on Laysan albatross eggs and newly hatched chicks.
 The colony failed to produce any chicks between 2016 and 2023 [@castillo2026breeding].
 The colony held approximately 100 breeding individuals in 2021/22 [@castillo2026breeding].
+[[ Schimel §15.3 — "approximately" — heavy Latin where a shorter Anglo-Saxon word says the same thing ]]
 
 ### San Benedicto
 <!-- point: "Reproductive success for Laysan albatross is close to 0%." -->
@@ -156,6 +161,7 @@ Below, we describe these steps in more detail.
 
 <!-- point: "The remaining trips were considered foraging trips." -->
 We consolidated the GPS records to bring them into a single database with a common format.
+[[ Schimel §15.3 — "consolidated" — heavy Latin, and the same verb already opens the summary above ]]
 We split all tracks into single trips.
 We removed incomplete trips, which are those without a recorded return to the colony.
 Following @hernandez2019sexual, we removed trips that never reached beyond 60 km of the colony.
