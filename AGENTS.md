@@ -35,7 +35,7 @@ docker exec albatross-bycatch-mexico_ci src/check_manuscript_style.sh '<glob>'
 - **Data**: `data/raw/` is immutable; `create_*()` shapes `data/processed/`, and `render_*()` writes PNGs to `reports/figures/`.
 - **Traceability**: `analyses.json` maps each report to its scripts, data, and results.
 - **`references.bib`**: every entry fills author, title, year, `category`, and the screening fields; unwritten values read `not_applicable`, never `NA`.
-- **PDF text**: the image lacks `pdftotext`; the ignored `references/` in the main checkout holds the PDFs, extract there with the host's `pdftotext`.
+- **PDF text**: no `pdftotext` in the image; use the host's on `references/`.
 
 ### Pipelines
 
@@ -67,8 +67,9 @@ Every `src/` script opens with a Spanish, imperative header: title, context, des
 - **Species names**: singular for any number of individuals of one species, as with fish: `Laysan albatross`, never `Laysan albatrosses`; verbs follow the count, and mixed groups keep the plural.
 
 ### Manuscript Structure (first paper)
-- `papers/first-paper/OUTLINE.md` is the structural source of truth; it names each section's beats and order.
+- `papers/first-paper/OUTLINE.md` is the structural source of truth; it names each section's beats and order, in ≤30 words per line counting bullet, label, and dash.
 - The assistant owns the `<!-- ... -->` comments and moves sentences verbatim; existing `[[ ... ]]`, `XXX`, and `#` headings are the author's.
+- **Point comments**: one `<!-- point: … -->` per paragraph, unquoted, one sentence of ≤20 words stating the idea, so a prose edit leaves it true.
 - **Code availability**: the methods name `track2KBA` and cite the concept DOI; function detail and links stay out.
 - **Counts**: report exactly two, tagged individuals summed over seasons and colonies and analyzed individuals with a kernel density surface; drop identifier and reconciliation counts.
 - **Colony radius**: the 60 km zone is a radius, never a ring or a circle, following Beal et al.; `disk` appears once, in the core-area definition.
@@ -80,8 +81,8 @@ Every `src/` script opens with a Spanish, imperative header: title, context, des
 ### Quality Assurance
 - `make check` runs spellcheck and style checks; both languages pass.
 - **Style**: ≤ 25 words per sentence, one sentence per line; the checker counts words per line and skips `<!--` lines.
-- **Pre-push**: `.githooks/pre-push` (via `core.hooksPath`, set by `.pipelines/init.sh`) runs `make check` in the running `<directory>_ci` container; start it, then `git push`; there is no `make push`.
-- **Placeholders**: `{{ key }}` resolves from `data/processed/methods.json`, unknown keys empty; `[[ ... ]]` notes are skipped; `XXX` marks an author-supplied number.
+- **Pre-push**: `.githooks/pre-push` (via `core.hooksPath`, set by `.pipelines/init.sh`) runs `make check` in the running `<directory>_ci` container; there is no `make push`.
+- **Placeholders**: `{{ key }}` resolves from `data/processed/methods.json`, unknown keys empty; `[[ ... ]]` notes are skipped; `XXX` marks an author-supplied number; `src/create_methods_json.R` generates that JSON, so a new key starts there.
 - **Annotations**: one `[[ ... ]]` note per line, no `]` inside; prose passes add `[[ Schimel §… — "target" — what to fix ]]`, the author rewrites and commits between steps; `src/create_first_paper_no_annotations.sh` strips them from the DOCX only.
 - **Whitelist**: add tokens to `.github/config/.wordlist-{en,es}.txt` and bump the `personal_ws-1.1` count; `aspell` ignores case, so a plural needs an entry.
 - **Figures**: check a description against the PNG, then the script and data.
@@ -89,4 +90,4 @@ Every `src/` script opens with a Spanish, imperative header: title, context, des
 
 ## Documentation Map
 
-`README.md` serves end users; `AGENTS.md` developers; `DOCS.md` the interface; `CHANGELOG.md` its changes; `TODO.md` the backlog, with non-manuscript work under `# Not visible in the papers`.
+`README.md` serves end users; `AGENTS.md` developers; `DOCS.md` the interface; `CHANGELOG.md` its changes; `TODO.md` the backlog, with non-manuscript work under `# Not visible in the papers`. Every item carries a `Test:` line that fails while it is open, and names files, not line numbers.
