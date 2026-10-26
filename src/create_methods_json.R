@@ -1,5 +1,5 @@
 # ==========================================
-# Título: Crea las fechas extremas, los individuos rastreados y analizados, y los viajes completos
+# Título: Crea las fechas extremas, los conteos, la representatividad y el rango por celda
 #
 # Contexto (Por qué):
 # El manuscrito del primer artículo necesita las fechas de inicio y fin del
@@ -9,12 +9,11 @@
 #
 # Descripción (Qué / Cómo):
 # Lee los archivos CSV con registros GPS de las colonias Guadalupe, Clarion
-# y San Benedicto. Extrae las fechas mínima y máxima de la columna date y
-# deriva el año de cada fecha extrema. Agrupa los registros por temporada
-# octubre-septiembre y cuenta los individuos rastreados en cada temporada.
-# Lee el resumen de viajes y cuenta los viajes completos por temporada.
-# Lee las superficies KDE y cuenta los individuos analizados. Combina todos
-# los valores en un JSON plano y lo escribe en data/processed/methods.json.
+# y San Benedicto. Extrae las fechas extremas, deriva el año y cuenta los
+# individuos rastreados y los viajes completos por temporada. Lee las
+# superficies KDE, la evaluación de representatividad y la rejilla de uso
+# para contar analizados, representatividad y rango por celda ocupada.
+# Combina los valores en un JSON plano en data/processed/methods.json.
 #
 # Entradas:
 # data/raw/gps-albatros-guadalupe.csv
@@ -24,6 +23,8 @@
 # data/processed/trips_summary_clarion.csv
 # data/processed/trips_summary_san_benedicto.csv
 # data/processed/individual_kde_all.rds
+# data/processed/representative_assessment_all.rds
+# data/processed/ud_in_grid.gpkg (capa: "ud_in_grid")
 #
 # Salida:
 # data/processed/methods.json
@@ -31,12 +32,14 @@
 # Dependencias:
 # tidyverse
 # jsonlite
+# sf
 #
 # Notas:
 # - Las fechas deben estar en formato ISO 8601 (YYYY-MM-DD) para que el
 #   ordenamiento lexicográfico coincida con el orden cronológico
 # - El conteo de individuos rastreados suma las temporadas de las tres colonias
-# - El conteo de individuos analizados proviene de las superficies KDE
+# - El conteo de individuos analizados y la representatividad provienen del
+#   objeto KDE y de su evaluación
 # - Solo se cuentan viajes con el valor "complete trip" en la columna complete
 # ==========================================
 
@@ -44,6 +47,7 @@
 # ==== CONFIGURACIÓN ====
 library(tidyverse) # Proporciona read_csv para importar datos y n_distinct para conteos
 library(jsonlite) # Proporciona write_json para exportar el resultado como JSON
+library(sf) # Proporciona st_read para importar la rejilla de uso
 
 # Ruta del archivo CSV con los registros GPS de la colonia Guadalupe
 input_guadalupe_csv_path <- "data/raw/gps-albatros-guadalupe.csv"
@@ -59,6 +63,10 @@ input_clarion_trips_path <- "data/processed/trips_summary_clarion.csv"
 input_san_benedicto_trips_path <- "data/processed/trips_summary_san_benedicto.csv"
 # Ruta del archivo RDS con las superficies KDE de los individuos analizados
 input_kernel_density_estimation_path <- "data/processed/individual_kde_all.rds"
+# Ruta del archivo RDS con la evaluación de representatividad de la muestra
+input_representative_assessment_path <- "data/processed/representative_assessment_all.rds"
+# Ruta del GeoPackage con la rejilla de individuos por celda
+input_ud_in_grid_path <- "data/processed/ud_in_grid.gpkg"
 # Ruta del archivo JSON que almacenará los metadatos del rastreo por colonia
 output_json_path <- "data/processed/methods.json"
 
@@ -103,6 +111,11 @@ san_benedicto_trips <- read_csv(
 # Carga el objeto con las superficies KDE para contar los individuos que
 # entraron al análisis y quedaron representados en el artículo
 kernel_density_estimation_object <- readRDS(input_kernel_density_estimation_path)
+# Carga la evaluación de representatividad para extraer el porcentaje que
+# alcanza la muestra analizada
+representative_assessment_object <- readRDS(input_representative_assessment_path)
+# Importa la rejilla de uso para conocer el rango de individuos por celda
+ud_in_grid_sf <- st_read(input_ud_in_grid_path, quiet = TRUE)
 
 
 # ==== PROCESAMIENTO / ANÁLISIS ====
@@ -156,6 +169,21 @@ san_benedicto_max_year <- str_sub(san_benedicto_max_date, 1, 4)
 n_analyzed_individuals <- kernel_density_estimation_object$KDE_surface |>
   names() |>
   length()
+
+# Extrae el porcentaje de representatividad de la muestra analizada y lo
+# redondea a un decimal para el texto del artículo
+representativeness_percent <- representative_assessment_object$assessment_summary$out |>
+  round(digits = 1)
+
+# Conserva los individuos por celda de las celdas ocupadas, porque las celdas
+# vacías no cuentan para el rango que reporta la figura
+n_individuals_per_cell <- ud_in_grid_sf |>
+  filter(N_IND > 0) |>
+  pull(N_IND)
+# Calcula el mínimo de individuos por celda ocupada para el rango de la figura
+n_individuals_per_cell_min <- min(n_individuals_per_cell)
+# Calcula el máximo de individuos por celda ocupada para el rango de la figura
+n_individuals_per_cell_max <- max(n_individuals_per_cell)
 
 # Cuenta los viajes completos de Guadalupe filtrando la columna complete
 guadalupe_n_trips <- guadalupe_trips |>
@@ -426,6 +454,9 @@ tracking_season_span <- paste0(
 methods_list <- list(
   n_tagged_individuals = n_tagged_individuals,
   n_analyzed_individuals = n_analyzed_individuals,
+  representativeness_percent = representativeness_percent,
+  n_individuals_per_cell_min = n_individuals_per_cell_min,
+  n_individuals_per_cell_max = n_individuals_per_cell_max,
   n_tracking_seasons = n_tracking_seasons,
   n_tracking_span_years = n_tracking_span_years,
   tracking_season_span = tracking_season_span,

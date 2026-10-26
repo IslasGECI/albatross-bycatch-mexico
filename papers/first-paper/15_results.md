@@ -18,14 +18,14 @@ The blue line delimits Mexico's Exclusive Economic Zone, and green lines outline
 
 <!-- point: The sample size is adequate and represents the three colonies. -->
 The flattening at the right end of the curve in Fig 2 indicates that the sample size is adequate.
-The sample of {{n_analyzed_individuals}} individuals has a representativeness of XXX%, which means that it adequately represents the Laysan albatross population at the three colonies.
+The sample of {{n_analyzed_individuals}} individuals has a representativeness of {{representativeness_percent}}%, which means that it adequately represents the Laysan albatross population at the three colonies.
 We can state that the results obtained from this sample are applicable to the population.
 
 ![
 Representativeness of the analyzed sample of Laysan Albatross (_Phoebastria immutabilis_) GPS tracks from the Guadalupe, Clarion and San Benedicto colonies (2014–2026).
 Gray points show bootstrap estimates of the inclusion rate for each sample size, and the black line shows the fitted saturating curve.
 The gray ribbon represents the spread of the bootstrap inclusion rates.
-The 93.4% value is the representativeness achieved with the analyzed sample (n = {{n_analyzed_individuals}} individuals).
+The {{representativeness_percent}}% value is the representativeness achieved with the analyzed sample (n = {{n_analyzed_individuals}} individuals).
 The inclusion rate measures how much of the population's distribution the analyzed sample covers.
 ](reports/figures/gps_albatross_50_percent_representative_assessment_ars_all.png)
 
@@ -34,7 +34,7 @@ Fig 3 shows that the area between Guadalupe Island and the coast of Baja Califor
 A second area of high use is located northwest of Guadalupe Island.
 
 ![
-Number of tracked Laysan Albatross (_Phoebastria immutabilis_) individuals (n = {{n_analyzed_individuals}}) whose 50% utilization distribution covers each grid cell (range 1–36).
+Number of tracked Laysan Albatross (_Phoebastria immutabilis_) individuals (n = {{n_analyzed_individuals}}) whose 50% utilization distribution covers each grid cell (range {{n_individuals_per_cell_min}}–{{n_individuals_per_cell_max}}).
 ](reports/figures/ud_in_grid_map.png)
 
 <!-- point: The most overlapped cells become the delineated foraging component. -->

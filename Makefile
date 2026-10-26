@@ -43,7 +43,9 @@ data/processed/methods.json: \
 	data/processed/trips_summary_guadalupe.csv \
 	data/processed/trips_summary_clarion.csv \
 	data/processed/trips_summary_san_benedicto.csv \
-	data/processed/individual_kde_all.rds
+	data/processed/individual_kde_all.rds \
+	data/processed/representative_assessment_all.rds \
+	data/processed/ud_in_grid.gpkg
 	$(checkDirectories)
 	Rscript src/create_methods_json.R
 
