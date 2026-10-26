@@ -7,6 +7,7 @@ Bycatch [@birdlife2018phoebastria; @naughton2007conservation; @safina1995world; 
 
 <!-- point: MPAs are an important conservation tool, but they are coastal and colony-centred, so open-ocean users are missed by design: 13.2% of pelagic populations fall inside MPAs against 32.5% of coastal ones. -->
 In light of all these negative impacts, various strategies have been implemented to prevent the collapse of seabird populations and improve their conservation status [@naughton2007conservation; @mendez2022population; @dias2019threats; @phillips2024incidental].
+[[ Schimel §14.3 — "the collapse of seabird populations" — action collapse is a noun; consider the verb ]]
 In particular, marine protected areas (MPAs) are considered an important tool for the conservation of seabirds [@critchley2018marine].
 However, protected areas for seabirds usually extend from the coast around a significant colony [@critchley2018marine].
 Pelagic species, such as albatrosses, receive less protection through MPAs than coastal species do [@lascelles2012hotspots; @critchley2018marine].
@@ -17,16 +18,20 @@ In Mexico, the Laysan albatross nests on the islands of Guadalupe, Clarion, and 
 All three islands are located within protected areas, and their surrounding waters are MPAs [@castillo2026breeding; @mendez2022population].
 Guadalupe Island is part of the Guadalupe Island Biosphere Reserve, while Clarion and San Benedicto are part of the Revillagigedo National Park [@mendez2022population; @castillo2026breeding].
 The waters adjacent to these MPAs are subject to commercial fishing activities.
+[[ Schimel §14.2 — "are subject to" — fuzzy construction; the action is fishing, not a state ]]
 
 <!-- point: to determine whether MPAs cover the areas that matter for a species, those areas must first be identified; GPS tracking is the standard method for identifying them; such areas should guide MPA delineation; in the Mexican Pacific, protected areas are linked to terrestrial units and were not delineated from seabird tracking. -->
 We must first identify areas that are important for a given species to determine whether MPAs cover those areas.
 Tracking seabirds, for example using GPS devices, is a standard method for identifying such important marine areas [@lascelles2016applying].
 Ideally, these areas should serve as the basis for delineating marine protected areas [@lascelles2016applying; @critchley2018marine].
 However, in the Mexican Pacific, protected areas are linked to terrestrial units and were not delineated based on seabird tracking data [@mendez2022population].
+[[ Schimel §14.2 — "are linked to" — a relation, not an action; what happens stays unsaid ]]
 
 <!-- point: no study has quantified how much of the Laysan albatross core area in the Mexican Pacific falls inside existing MPAs. -->
 No study has quantified what proportion of the areas important for Laysan albatross in the Mexican Pacific falls within MPAs.
 Without this information, it is not possible to determine whether the protection is spatially adequate.
+[[ Schimel §14.1 — "it is not possible to determine" — dummy subject hides who cannot determine ]]
+[[ Schimel §14.3 — "the protection" — action protect is a noun ]]
 
 <!-- point: first 12-year, three-colony identification of the Laysan albatross core area in Mexico; the prior baseline is five years at Guadalupe and four at Clarion; this study incorporates and extends those data; track2KBA had not been applied to the species in Mexico. -->
 This study is the first to use {{n_tracking_span_years}} years of GPS tracking data from three colonies to identify Laysan albatross core areas in Mexico.
