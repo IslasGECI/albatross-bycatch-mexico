@@ -21,7 +21,6 @@ Below we describe the three islands where the colonies breed.
 Guadalupe Island hosts the largest breeding colony of Laysan albatross in the eastern Pacific [@hernandez2019sexual].
 According to unpublished authors' monitoring data, in 2025 the island had 4,390 breeding individuals.
 Guadalupe Island is an oceanic island of volcanic origin located 300 km west of the coast of Baja California.
-[[ Schimel §15.4 — "of volcanic origin" — prepositional phrase; a compound modifier carries the same fact in fewer words ]]
 It has an area of 244 km$^2$.
 It measures 30 km from the southern end to the northern end.
 
@@ -31,7 +30,7 @@ Clarion Island is part of the Revillagigedo Archipelago.
 Clarion is located 700 km from the Mexican mainland.
 It has a tropical climate.
 It has an area of 19.8 km$^2$.
-It measures 8.6 km at its longest part from the eastern end to the western end.
+It measures 8.6 km from the eastern end to the western end.
 Clarion Island has the second largest Laysan albatross colony in Mexico.
 On Clarion Island, crows and snakes prey on Laysan albatross eggs and newly hatched chicks.
 The colony failed to produce any chicks between 2016 and 2023 [@castillo2026breeding].
@@ -42,7 +41,7 @@ The colony held about 100 breeding individuals in 2021/22 [@castillo2026breeding
 San Benedicto Island is also part of the Revillagigedo Archipelago and shares the same tropical climate.
 San Benedicto is located 600 km from the Mexican mainland.
 It has an area of 10 km$^2$.
-It measures 4.8 km at its longest part from the northern end to the southern end.
+It measures 4.8 km from the northern end to the southern end.
 On San Benedicto Island, crabs feed on the chicks, and nests can be buried in ash.
 The colony holds fewer than 80 breeding individuals.
 Reproductive success for Laysan albatross is close to 0%.
@@ -151,7 +150,7 @@ We combined the GPS records and split them into individual trips.
 We removed incomplete trips and trips that never reached beyond 60 km of the colony.
 We calculated the kernel density estimates for each individual.
 We assessed the sample representativeness.
-We identified the area used by a threshold percentage of the population.
+We identified the foraging component used by a threshold percentage of the population.
 We defined the core area.
 Below, we describe these steps in more detail.
 
