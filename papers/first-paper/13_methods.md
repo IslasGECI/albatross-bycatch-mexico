@@ -144,10 +144,10 @@ Table: Breeding season, deployment window, tagged individuals, and trips for Lay
 
 <!-- main idea: M4 Overview — why track2KBA in two sentences, the six steps without function names, the promise of detail, and the archived analysis code. Point: "We followed the track2KBA methodology because it is replicable using a single open-source R package [@beal2021track2kba]." -->
 We followed the track2KBA methodology because it is replicable using a single open-source R package [@beal2021track2kba].
-Also, it is explicitly designed to identify important sites for biodiversity from tracking data [@beal2021track2kba].
+It is also explicitly designed to identify important sites for biodiversity from tracking data [@beal2021track2kba].
 We shared the full analysis code on Zenodo at https://doi.org/10.5281/zenodo.23485336.
 
-First, we consolidated the GPS records and split them into individual foraging trips.
+We consolidated the GPS records and split them into individual foraging trips.
 We removed incomplete trips and trips that never reached beyond 60 km of the colony.
 We calculated the kernel density estimates for each individual.
 We assessed the sample representativeness.
