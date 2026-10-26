@@ -24,6 +24,7 @@ Guadalupe Island is an oceanic island of volcanic origin located 300 km west of 
 [[ Schimel §15.4 — "of volcanic origin" — prepositional phrase; a compound modifier carries the same fact in fewer words ]]
 It has an area of 244 km$^2$.
 It measures 30 km at its longest part from the southern end to the northern end.
+[[ Schimel §16.6 — "at its longest part from the southern end to the northern end" — verbosity; the length, the longest part, and the two ends say one thing, and the same wording returns at lines 34 and 45 ]]
 
 ### Clarion Island
 <!-- point: "Clarion Island has the second largest Laysan albatross colony in Mexico." -->
@@ -62,9 +63,11 @@ The individuals were released at the same location immediately after the GPS dev
 No albatross were harmed during the study.
 
 <!-- point: "This frequency is high enough to obtain representative data and to identify instances where an individual stops or reduces its speed." and "At the same time, it is low enough to ensure the battery lasts for the entire season, allowing for the recording of several trips." -->
-The GPS loggers offer the level of accuracy and precision required for this study [@soanes2013many; @clay2023adjustment; @hernandez2019sexual].
+The GPS loggers offer the level of accuracy and precision required [@soanes2013many; @clay2023adjustment; @hernandez2019sexual].
+[[ Schimel §16.6 — "the level of accuracy and precision required" — "the level of" adds a dimension the sentence never uses ]]
 We programmed the GPS units to record a position every 10 minutes.
 This frequency is high enough to obtain representative data and to identify instances where an individual stops or reduces its speed.
+[[ Schimel §16.6 — "identify instances where an individual stops" — "instances where" is the long form of a single connector ]]
 At the same time, this frequency is low enough for the GPS units to record several trips per season.
 
 <!-- point: "On Guadalupe Island we used the following GPS devices." -->
@@ -86,6 +89,8 @@ In 2020: ATS1 model Nodo-2018 by ACMOS (Mexico).
 
 <!-- point: "Despite model changes, all devices have similar accuracy and were programmed with the same frequency, so the data remain comparable." -->
 We used different GPS models as new and better technology was available during the {{n_tracking_span_years}}-year period of the study.
+[[ Schimel §16.4 — "new and better technology" — two modifiers, neither measured; what improved is what decides whether they stay ]]
+[[ Schimel §16.6 — "the {{n_tracking_span_years}}-year period of the study" — the years already are the period and the study ]]
 Despite model changes, all devices have similar accuracy and were programmed with the same frequency, so the data remain comparable.
 
 ## Tracking data
@@ -157,6 +162,7 @@ Below, we describe these steps in more detail.
 
 <!-- point: "The remaining trips were considered foraging trips." -->
 We transformed the GPS records to combine them and bring them into a single database.
+[[ Schimel §16.2 — "to combine them and bring them into a single database" — the two verbs name one action, so the purpose is stated twice ]]
 We split all tracks into single trips.
 We removed incomplete trips, which are those without a recorded return to the colony.
 Following @hernandez2019sexual, we removed trips that never reached beyond 60 km of the colony.
@@ -186,13 +192,14 @@ We define the core area as the union of the foraging component and the disk with
 Once the core areas were identified, we quantified their overlap with the existing MPAs using the overlap index [@fieberg2005quantifying].
 The overlap index is defined as $HR_{i,j} = \frac{A_{i,j}}{A_i}$ and is directional ($HR_{i,j} \neq HR_{j,i}$).
 In our case, $A_i$ is the core-area size, and $A_{i,j}$ is the size of its overlap with the MPAs.
-A value of 1 indicates that the core area is entirely inside the MPAs, while a value of 0 indicates that it is entirely outside.
+A value of 1 indicates that the core area is entirely inside the MPAs, while a value of 0 indicates that it is outside.
 This index tells us what fraction of Laysan albatross core areas is inside the MPAs.
 
 ## Ethical considerations
 
 <!-- point: "Our study followed all necessary ethical guidelines ensuring the welfare of the seabirds during their handling." -->
 Our study followed all necessary ethical guidelines ensuring the welfare of the seabirds during their handling.
+[[ Schimel §16.5 — "Our study followed" — the sentence talks about the study instead of acting; the team is the actor, and the reader knows which study this is ]]
 We also had all the permits required by the Mexican government.
 Permits came from the Ministry of the Interior, the Ministry of Environment and Natural Resources, and the National Commission for Protected Natural Areas.
 A complete list of permits by island and year is available in the Supplementary Information.
