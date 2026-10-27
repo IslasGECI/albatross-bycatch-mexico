@@ -161,12 +161,14 @@ We removed incomplete trips, which are those without a recorded return to the co
 Following @hernandez2019sexual, we removed trips that never reached beyond 60 km of the colony.
 We considered the remaining trips to be foraging trips.
 
-<!-- point: Each individual gets one 50% utilization distribution from its pooled trips. -->
+<!-- point: Each individual gets one 50% UD, and each grid cell counts the UDs that cover it. -->
 We pooled the foraging trips per individual to calculate the kernel density estimates (KDEs).
 The area-restricted search (ARS) scale is estimated using first-passage time analysis [@calenge2025adehabitatlt].
 We used the ARS scale as the smoothing parameter of the KDEs.
 The 50% utilization distribution (UD) is the region that contains half of the probability mass of the KDE.
 We calculated one 50% UD for each individual albatross [@beal2021track2kba].
+We created a grid of 501 × 430 cells with a resolution of 11,282 m per side.
+For each cell of the grid, we counted the number of individual 50% UDs that cover it.
 
 <!-- point: The representativeness assessment tests whether the sample stands for the population. -->
 The representativeness assessment averages the KDEs of a resampled subset of individuals to obtain a UD.

@@ -39,7 +39,7 @@ Number of tracked Laysan Albatross (_Phoebastria immutabilis_) individuals (n = 
 ](reports/figures/ud_in_grid_map.png)
 
 <!-- point: The most overlapped cells become the delineated foraging component. -->
-Fig 4 shows the area used by at least {{foraging_component_threshold_percent}}% of the population delineated as purple polygons from the continuous N_IND surface.
+Fig 4 shows the area used by at least {{foraging_component_threshold_percent}}% of the population as purple polygons from the number of individuals using each cell.
 This is the area where the greatest number of individual 50% UDs overlap.
 
 ![

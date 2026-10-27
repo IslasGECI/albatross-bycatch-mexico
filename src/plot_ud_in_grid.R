@@ -2,9 +2,9 @@
 # Título: Grafica el conteo de individuos por celda de la rejilla KDE
 #
 # Contexto (Por qué):
-# findSite() produce una superficie continua de N_IND que cuenta cuántas
+# findSite() produce una rejilla con N_IND que cuenta cuántas
 # áreas de distribución individuales (core al 50%) cubren cada celda.
-# Visualizar esta superficie revela la gradación del solapamiento entre
+# Visualizar esta rejilla revela la gradación del solapamiento entre
 # los albatros de Laysan de las tres colonias del Pacífico mexicano.
 #
 # Descripción (Qué / Cómo):
