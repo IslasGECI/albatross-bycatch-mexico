@@ -44,9 +44,9 @@ This is the area where the greatest number of individual 50% UDs overlap.
 Following [@hernandez2019sexual], the data within a radius of 60 km around each colony were removed before estimating the individual 50% UDs.
 
 <!-- point: A minority of the core area falls inside Mexican MPAs. -->
-The foraging component measures XXX km$^2$, and the area within a 60 km radius of the colonies measures XXX km$^2$.
-In total, the core area spans XXX km$^2$, of which XXX km$^2$ are within a Mexican marine protected area.
-That is, XXX% of the core area is protected.
+The foraging component measures {{foraging_component_km2}} km$^2$, and the area within a 60 km radius of the colonies measures {{colony_radius_km2}} km$^2$.
+In total, the core area spans {{core_area_km2}} km$^2$, of which {{core_area_inside_mpa_km2}} km$^2$ are within a Mexican marine protected area.
+That is, {{core_area_inside_mpa_percent}}% of the core area is protected.
 
 ![
 The foraging component (purple) for Laysan Albatross (_Phoebastria immutabilis_) delineated from pooled tracking data of {{n_analyzed_individuals}} individuals breeding at Guadalupe, Clarion and San Benedicto (2014–2026).

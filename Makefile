@@ -35,6 +35,17 @@ reports/first_paper.docx: reports/first_paper.pdf reports/first_paper_no_annotat
 
 first_paper_sources := $(wildcard papers/first-paper/1?_*.md)
 
+data/processed/core_area.gpkg: \
+	src/create_core_area.R \
+	data/processed/kba_potential_site_all.gpkg \
+	data/processed/ud_in_grid.gpkg \
+	data/processed/mexico_mpa.gpkg \
+	config_trips_guadalupe.json \
+	config_trips_clarion.json \
+	config_trips_san_benedicto.json
+	$(checkDirectories)
+	Rscript src/create_core_area.R
+
 data/processed/first_paper_values.json: \
 	src/create_first_paper_values.R \
 	data/raw/gps-albatros-guadalupe.csv \
@@ -45,7 +56,8 @@ data/processed/first_paper_values.json: \
 	data/processed/trips_summary_san_benedicto.csv \
 	data/processed/individual_kde_all.rds \
 	data/processed/representative_assessment_all.rds \
-	data/processed/ud_in_grid.gpkg
+	data/processed/ud_in_grid.gpkg \
+	data/processed/core_area.gpkg
 	$(checkDirectories)
 	Rscript src/create_first_paper_values.R
 

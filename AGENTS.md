@@ -60,6 +60,12 @@ Every `src/` script opens with a Spanish, imperative header: title, context, des
 - **Reference**: https://islas.dev/guia_de_estilo/arquitectura.
 - **Validator naming**: `check_*` names a level-2 validator whose artifact is an exit code; `create_*` is for the scripts that write a file.
 
+### Value Extraction (`create_first_paper_values.R`)
+- **May**: read a field from an artifact; aggregate an existing column (`min`, `max`, `sum`, `count`, `n_distinct`, `mean`, `median`); reshape rows (`filter`, `group_by`, `summarise`, `arrange`); format and combine those results (`str_sub`, `round`, `paste0`, arithmetic between two such values).
+- **May not**: produce a quantity no input records — geometry (area, length, distance, buffer, union, intersection, projection), a model fit (KDE, bootstrap, regression, interpolation), or randomness (sampling, resampling).
+- **Artifact rule**: every non-trivial value must arrive as an artifact a separate script writes; the values script only extracts it, and never computes, recomputes, or writes that artifact.
+- **Test**: grep `src/create_first_paper_values.R` for a spatial call other than `st_read`, a model, or a random call and find none; every value in `first_paper_values.json` is a field, an aggregation over a field, or arithmetic between such values.
+
 ### Style Rules
 - **Reference**: https://islas.dev/guia_de_estilo/STYLEGUIDE
 - **Code**: English variables, Tidyverse, and linear R scripts (no functions, loops, or conditionals); shell scripts use functions or input guards.

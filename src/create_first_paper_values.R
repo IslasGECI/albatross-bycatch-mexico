@@ -1,5 +1,5 @@
 # ==========================================
-# Título: Crea las fechas extremas, los conteos, la representatividad y el rango por celda
+# Título: Crea las fechas extremas, los conteos, la representatividad y las áreas
 #
 # Contexto (Por qué):
 # El manuscrito del primer artículo necesita las fechas de inicio y fin del
@@ -8,12 +8,12 @@
 # discrepancias entre el texto del artículo y los datos fuente.
 #
 # Descripción (Qué / Cómo):
-# Lee los archivos CSV con registros GPS de las colonias Guadalupe, Clarion
-# y San Benedicto. Extrae las fechas extremas, deriva el año y cuenta los
-# individuos rastreados y los viajes completos por temporada. Lee las
-# superficies KDE, la evaluación de representatividad y la rejilla de uso
-# para contar analizados, representatividad y rango por celda ocupada.
-# Combina los valores en un JSON plano en data/processed/first_paper_values.json.
+# Lee los CSV de GPS de las tres colonias, deriva fechas y temporadas y cuenta
+# individuos y viajes. Lee las superficies KDE, la evaluación de
+# representatividad, la rejilla de uso y el área núcleo para extraer analizados,
+# representatividad, rango por celda y las cuatro áreas. Formatea las áreas y
+# calcula el porcentaje protegido. Combina los valores en un JSON plano en
+# data/processed/first_paper_values.json.
 #
 # Entradas:
 # data/raw/gps-albatros-guadalupe.csv
@@ -25,6 +25,7 @@
 # data/processed/individual_kde_all.rds
 # data/processed/representative_assessment_all.rds
 # data/processed/ud_in_grid.gpkg (capa: "ud_in_grid")
+# data/processed/core_area.gpkg (capa: "core_area")
 #
 # Salida:
 # data/processed/first_paper_values.json
@@ -67,6 +68,8 @@ input_kernel_density_estimation_path <- "data/processed/individual_kde_all.rds"
 input_representative_assessment_path <- "data/processed/representative_assessment_all.rds"
 # Ruta del GeoPackage con la rejilla de individuos por celda
 input_ud_in_grid_path <- "data/processed/ud_in_grid.gpkg"
+# Ruta del GeoPackage con el área de cada capa del área núcleo
+input_core_area_path <- "data/processed/core_area.gpkg"
 # Ruta del archivo JSON que almacenará los metadatos del rastreo por colonia
 output_json_path <- "data/processed/first_paper_values.json"
 
@@ -116,6 +119,8 @@ kernel_density_estimation_object <- readRDS(input_kernel_density_estimation_path
 representative_assessment_object <- readRDS(input_representative_assessment_path)
 # Importa la rejilla de uso para conocer el rango de individuos por celda
 ud_in_grid_sf <- st_read(input_ud_in_grid_path, quiet = TRUE)
+# Importa el área de cada capa del área núcleo para extraer las áreas
+core_area_sf <- st_read(input_core_area_path, quiet = TRUE)
 
 
 # ==== PROCESAMIENTO / ANÁLISIS ====
@@ -184,6 +189,18 @@ n_individuals_per_cell <- ud_in_grid_sf |>
 n_individuals_per_cell_min <- min(n_individuals_per_cell)
 # Calcula el máximo de individuos por celda ocupada para el rango de la figura
 n_individuals_per_cell_max <- max(n_individuals_per_cell)
+
+# Nombra el área de cada capa con su etiqueta para extraerla por nombre
+area_km2_by_layer <- core_area_sf$area_km2
+names(area_km2_by_layer) <- core_area_sf$layer
+# Calcula el porcentaje del área núcleo dentro de las AMP, redondeado a entero
+core_area_inside_mpa_percent <- (100 * area_km2_by_layer[["inside_mpa"]] / area_km2_by_layer[["core_area"]]) |>
+  round()
+# Redondea y formatea las áreas con separador de miles para el texto del artículo
+area_km2_formatted <- area_km2_by_layer |>
+  round() |>
+  format(big.mark = ",", trim = TRUE, scientific = FALSE) |>
+  set_names(names(area_km2_by_layer))
 
 # Cuenta los viajes completos de Guadalupe filtrando la columna complete
 guadalupe_n_trips <- guadalupe_trips |>
@@ -457,6 +474,11 @@ methods_list <- list(
   representativeness_percent = representativeness_percent,
   n_individuals_per_cell_min = n_individuals_per_cell_min,
   n_individuals_per_cell_max = n_individuals_per_cell_max,
+  foraging_component_km2 = area_km2_formatted[["foraging_component"]],
+  colony_radius_km2 = area_km2_formatted[["colony_radius"]],
+  core_area_km2 = area_km2_formatted[["core_area"]],
+  core_area_inside_mpa_km2 = area_km2_formatted[["inside_mpa"]],
+  core_area_inside_mpa_percent = core_area_inside_mpa_percent,
   n_tracking_seasons = n_tracking_seasons,
   n_tracking_span_years = n_tracking_span_years,
   tracking_season_span = tracking_season_span,
