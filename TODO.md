@@ -1,5 +1,10 @@
 # First paper
 
+## Results
+
+- [ ] State that the threshold the representativeness assessment yields is 10% of the population, and render 10% from a mustache variable — `15_results.md`.
+  Test: 15_results.md states the threshold as 10% of the population. The Fig 4 sentence carries a key from first_paper_values.json, and grep finds no literal `10%`.
+
 ## Discussion
 
 - [ ] Fill `XXX percent` with the Results percentage — `17_discussion.md`.

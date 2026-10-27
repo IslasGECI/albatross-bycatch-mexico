@@ -41,8 +41,6 @@ Number of tracked Laysan Albatross (_Phoebastria immutabilis_) individuals (n = 
 Fig 4 shows the area used by at least 10% of the population delineated as purple polygons from the continuous N_IND surface.
 This is the area where the greatest number of individual 50% UDs overlap.
 
-Following [@hernandez2019sexual], the data within a radius of 60 km around each colony were removed before estimating the individual 50% UDs.
-
 ![
 The foraging component (purple) for Laysan Albatross (_Phoebastria immutabilis_) delineated from pooled tracking data of {{n_analyzed_individuals}} individuals breeding at Guadalupe, Clarion and San Benedicto (2014–2026).
 Green surfaces show Mexican marine protected areas, and the blue line delimits Mexico's Exclusive Economic Zone.
