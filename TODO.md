@@ -1,26 +1,5 @@
 # First paper
 
-## Results
-
-- [ ] Replace the remaining literal numbers (93.4, 1–36) with mustache variables — `15_results.md`.
-  Test: Grep 15_results.md for 93.4 and for 1–36 and find neither. Both values render from first_paper_values.json.
-- [ ] Representativeness `XXX%` — `15_results.md`.
-  Test: The representativeness sentence carries a mustache variable where XXX stood. Grep 15_results.md for XXX and find none.
-- [ ] Area of the foraging component (km2) — `15_results.md`.
-  Test: The rendered Results give the foraging-component area in square kilometres. Grep 15_results.md for XXX and find none.
-- [ ] Area within a 60 km radius of Guadalupe, Clarion, and San Benedicto (km2) — `15_results.md`.
-  Test: The rendered Results give the area within 60 km of the three colonies. Grep 15_results.md for XXX and find none.
-- [ ] Total core area (km2): the foraging component unioned with the area within a 60 km radius — `15_results.md`.
-  Test: The rendered Results give the total core area in square kilometres. Grep 15_results.md for XXX and find none.
-- [ ] Area of the core area inside Mexican MPAs (km2) — `15_results.md`.
-  Test: The rendered Results give the core area inside Mexican MPAs in square kilometres. Grep 15_results.md for XXX and find none.
-- [ ] Percentage of the core area inside Mexican MPAs — `15_results.md`.
-  Test: The rendered Results give the protected percentage of the core area. Grep 15_results.md for XXX and find none.
-- [ ] Add the comparison table: foraging-component and core-area rows, inside-MPA area on the union row `[[ ]]` — `15_results.md`.
-  Test: The Results carry a table with a foraging-component row and a core-area row. A union row shows the inside-MPA area.
-- [ ] Add the closing Results sentence carrying the union-basis percentage `[[ ]]` — `15_results.md`.
-  Test: The Results end on one sentence carrying the union-basis percentage. Grep 15_results.md for [[ ]] and find none.
-
 ## Discussion
 
 - [ ] Fill `XXX percent` with the Results percentage — `17_discussion.md`.
