@@ -1,9 +1,9 @@
 # First paper
 
-## Results
+## Methods
 
-- [ ] State that the threshold the representativeness assessment yields is 10% of the population, and render 10% from a mustache variable — `15_results.md`.
-  Test: 15_results.md states the threshold as 10% of the population. The Fig 4 sentence carries a key from first_paper_values.json, and grep finds no literal `10%`.
+- [ ] Decide where the threshold is stated: `15_results.md` now names it and `13_methods.md` repeats it — `13_methods.md`, `15_results.md`.
+  Test: The 10% threshold is stated in exactly one of 13_methods.md and 15_results.md.
 
 ## Discussion
 
@@ -49,8 +49,8 @@
 
 ## Bycatch package
 
-- [ ] Make `bycatch::compute_potential_kba()` write `threshold_population_percent` as an attribute of `kba_polygons_all.gpkg`, then delete `src/create_foraging_component_threshold.R` and read the attribute from `data/processed/kba_polygons_all.gpkg` — `Dockerfile`, `Makefile`, `src/create_first_paper_values.R`.
-  Test: `kba_polygons_all.gpkg` carries `threshold_population_percent` and `src/create_foraging_component_threshold.R` no longer exists.
+- [ ] Make `bycatch::compute_potential_kba()` write `threshold_population_percent` as an attribute of `kba_polygons_all.gpkg`; then delete `src/create_foraging_component_threshold.R`, `data/processed/foraging_component_threshold.json`, and their Makefile rule, read the attribute in `src/create_first_paper_values.R`, and drop the threshold bullet from `AGENTS.md` — `Dockerfile`, `Makefile`, `AGENTS.md`.
+  Test: `kba_polygons_all.gpkg` carries `threshold_population_percent`; `src/create_foraging_component_threshold.R` and `data/processed/foraging_component_threshold.json` no longer exist.
 
 ## Makefile
 

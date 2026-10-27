@@ -16,10 +16,11 @@ GPS tracks of Laysan Albatross (_Phoebastria immutabilis_) from the Guadalupe (g
 The blue line delimits Mexico's Exclusive Economic Zone, and green lines outline its protected areas.
 ](reports/figures/mexico_eez_bounding_box_zoom_out.png)
 
-<!-- point: The sample size is adequate and represents the three colonies. -->
+<!-- point: The sample is adequate and its assessment sets the threshold. -->
 The flattening at the right end of the curve in Fig 2 indicates that the sample size is adequate.
 The sample of {{n_analyzed_individuals}} individuals has a representativeness of {{representativeness_percent}}%, which means that it adequately represents the Laysan albatross population at the three colonies.
 We can state that the results obtained from this sample are applicable to the population.
+Also, the representativeness assessment sets a threshold of {{foraging_component_threshold_percent}}% of the population, which is used to define the foraging component.
 
 ![
 Representativeness of the analyzed sample of Laysan Albatross (_Phoebastria immutabilis_) GPS tracks from the Guadalupe, Clarion and San Benedicto colonies (2014–2026).
