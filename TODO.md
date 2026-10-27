@@ -4,6 +4,17 @@
 
 - [ ] Decide where the threshold is stated: `15_results.md` now names it and `13_methods.md` repeats it — `13_methods.md`, `15_results.md`.
   Test: The 10% threshold is stated in exactly one of 13_methods.md and 15_results.md.
+- [ ] Define the per-cell count and the grid: the Results reports 1–36 individuals per cell and the Methods names neither `N_IND` nor the cell size — `13_methods.md`, `15_results.md`.
+  Test: 13_methods.md defines the number of individual UDs per cell and the grid resolution.
+- [ ] State the area method: the four km² values have no projection, planar buffer, union, or MPA clip in the Methods — `13_methods.md`.
+  Test: 13_methods.md states the projection and the planar buffer used to measure the areas.
+- [ ] Report the ARS smoothing scale: the Methods says first-passage time estimates it but gives no value, and no artifact holds one — `13_methods.md`, `src/create_first_paper_values.R`.
+  Test: 13_methods.md reports the estimated ARS scale value.
+
+## Results
+
+- [ ] Name the overlap index in the Results: the 40% is the index value, but the Results never says so and the Methods defines it as a 0–1 fraction — `15_results.md`, `13_methods.md`.
+  Test: 15_results.md names the overlap index beside the protected percentage.
 
 ## Discussion
 
