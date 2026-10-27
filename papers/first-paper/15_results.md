@@ -43,19 +43,25 @@ This is the area where the greatest number of individual 50% UDs overlap.
 
 Following [@hernandez2019sexual], the data within a radius of 60 km around each colony were removed before estimating the individual 50% UDs.
 
-<!-- point: A minority of the core area falls inside Mexican MPAs. -->
-The foraging component measures {{foraging_component_km2}} km$^2$, and the area within a 60 km radius of the colonies measures {{colony_radius_km2}} km$^2$.
-In total, the core area spans {{core_area_km2}} km$^2$, of which {{core_area_inside_mpa_km2}} km$^2$ are within a Mexican marine protected area.
-That is, {{core_area_inside_mpa_percent}}% of the core area is protected.
-
 ![
 The foraging component (purple) for Laysan Albatross (_Phoebastria immutabilis_) delineated from pooled tracking data of {{n_analyzed_individuals}} individuals breeding at Guadalupe, Clarion and San Benedicto (2014–2026).
 Green surfaces show Mexican marine protected areas, and the blue line delimits Mexico's Exclusive Economic Zone.
 ](reports/figures/gps_albatross_50_percent_potential_kba_ars_all_with_mpa.png)
 
-<!-- point: The table reports both layers and the union, by colony and in total. -->
-[[ gap — "R6 table" — which rows, columns, and per-colony number should the table carry? ]]
-<!-- point: One closing sentence states the protected fraction without interpreting it. -->
-[[ gap — "R7 take-home" — what closing sentence carries the union-basis percentage? ]]
+<!-- point: The table reports the area of the foraging component, the 60 km radius, the union, and the protected part. -->
+
+Table: Area of the foraging component, the 60 km radius, the core area (union), and inside MPAs\label{table-core-area}.
+
+| Layer | Area (km$^2$) |
+|:--|--:|
+| Foraging component | {{foraging_component_km2}} |
+| 60 km radius | {{colony_radius_km2}} |
+| Core area (union) | {{core_area_km2}} |
+| Inside MPAs | {{core_area_inside_mpa_km2}} |
+
+<!-- point: A minority of the core area falls inside Mexican MPAs. -->
+The foraging component measures {{foraging_component_km2}} km$^2$, and the area within a 60 km radius of the colonies measures {{colony_radius_km2}} km$^2$.
+In total, the core area spans {{core_area_km2}} km$^2$, of which {{core_area_inside_mpa_km2}} km$^2$ are within a Mexican marine protected area.
+That is, {{core_area_inside_mpa_percent}}% of the core area is protected.
 
 \FloatBarrier
