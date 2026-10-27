@@ -1,5 +1,5 @@
 # ==========================================
-# Título: Crea las fechas extremas, los conteos, la representatividad y las áreas
+# Título: Crea las fechas, los conteos, la representatividad, las áreas y el umbral
 #
 # Contexto (Por qué):
 # El manuscrito del primer artículo necesita las fechas de inicio y fin del
@@ -10,8 +10,8 @@
 # Descripción (Qué / Cómo):
 # Lee los CSV de GPS de las tres colonias, deriva fechas y temporadas y cuenta
 # individuos y viajes. Lee las superficies KDE, la evaluación de
-# representatividad, la rejilla de uso y el área núcleo para extraer analizados,
-# representatividad, rango por celda y las cuatro áreas. Formatea las áreas y
+# representatividad, la rejilla de uso, el área núcleo y el umbral para extraer
+# analizados, representatividad, rango por celda, las cuatro áreas y el umbral. Formatea las áreas y
 # calcula el porcentaje protegido. Combina los valores en un JSON plano en
 # data/processed/first_paper_values.json.
 #
@@ -26,6 +26,7 @@
 # data/processed/representative_assessment_all.rds
 # data/processed/ud_in_grid.gpkg (capa: "ud_in_grid")
 # data/processed/core_area.gpkg (capa: "core_area")
+# data/processed/foraging_component_threshold.json
 #
 # Salida:
 # data/processed/first_paper_values.json
@@ -70,6 +71,8 @@ input_representative_assessment_path <- "data/processed/representative_assessmen
 input_ud_in_grid_path <- "data/processed/ud_in_grid.gpkg"
 # Ruta del GeoPackage con el área de cada capa del área núcleo
 input_core_area_path <- "data/processed/core_area.gpkg"
+# Ruta del archivo JSON con el umbral de población de la componente de alimentación
+input_foraging_component_threshold_path <- "data/processed/foraging_component_threshold.json"
 # Ruta del archivo JSON que almacenará los metadatos del rastreo por colonia
 output_json_path <- "data/processed/first_paper_values.json"
 
@@ -121,6 +124,8 @@ representative_assessment_object <- readRDS(input_representative_assessment_path
 ud_in_grid_sf <- st_read(input_ud_in_grid_path, quiet = TRUE)
 # Importa el área de cada capa del área núcleo para extraer las áreas
 core_area_sf <- st_read(input_core_area_path, quiet = TRUE)
+# Importa el umbral de población que define la componente de alimentación
+foraging_component_threshold <- read_json(input_foraging_component_threshold_path)
 
 
 # ==== PROCESAMIENTO / ANÁLISIS ====
@@ -474,6 +479,7 @@ methods_list <- list(
   representativeness_percent = representativeness_percent,
   n_individuals_per_cell_min = n_individuals_per_cell_min,
   n_individuals_per_cell_max = n_individuals_per_cell_max,
+  foraging_component_threshold_percent = foraging_component_threshold$threshold_population_percent,
   foraging_component_km2 = area_km2_formatted[["foraging_component"]],
   colony_radius_km2 = area_km2_formatted[["colony_radius"]],
   core_area_km2 = area_km2_formatted[["core_area"]],

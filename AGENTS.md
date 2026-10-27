@@ -40,6 +40,8 @@ docker exec albatross-bycatch-mexico_ci src/check_manuscript_style.sh '<glob>'
 ### Pipelines
 
 - **EEZ mask**: `export_eez_mask_in_grid.R` → `data/processed/eez_mask_in_grid.gpkg`, column `in_eez_outside_gulf`.
+- **Foraging threshold**: `create_foraging_component_threshold.R` → `foraging_component_threshold.json`; mirrors `track2KBA`'s tier rule until bycatch records the attribute (see `TODO.md`).
+- **Core area**: `create_core_area.R` → `core_area.gpkg`; the foraging component united with three 60 km disks plus its MPA clip, one row per layer with `area_km2`.
 - **UD overlap**: `export_ud_in_grid.R` → `ud_in_grid.gpkg`; `export_ud_vms_longline_udoi.R` → `ud_vms_longline_udoi.gpkg`; `compute_udoi.R` → `longline_udoi.json` (UDOI = n_overlap × Σ(product)); `plot_ud_vms_longline_udoi.R` titles from the JSON.
 - **GFW hot spots**: `export_longline_events_long.R`; `export_gfw_longline_in_grid.R` → `gfw_longline_in_grid.gpkg`; `compute_gfw_longline_hotspot.R` (Getis-Ord Gi*) → `gfw_longline_hotspot_all.gpkg`; plots with `plot_gfw_longline_hotspot*.R`, binary at z ≥ 1.96.
 

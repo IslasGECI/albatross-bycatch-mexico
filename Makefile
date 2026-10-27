@@ -46,6 +46,12 @@ data/processed/core_area.gpkg: \
 	$(checkDirectories)
 	Rscript src/create_core_area.R
 
+data/processed/foraging_component_threshold.json: \
+	src/create_foraging_component_threshold.R \
+	data/processed/representative_assessment_all.rds
+	$(checkDirectories)
+	Rscript src/create_foraging_component_threshold.R
+
 data/processed/first_paper_values.json: \
 	src/create_first_paper_values.R \
 	data/raw/gps-albatros-guadalupe.csv \
@@ -57,7 +63,8 @@ data/processed/first_paper_values.json: \
 	data/processed/individual_kde_all.rds \
 	data/processed/representative_assessment_all.rds \
 	data/processed/ud_in_grid.gpkg \
-	data/processed/core_area.gpkg
+	data/processed/core_area.gpkg \
+	data/processed/foraging_component_threshold.json
 	$(checkDirectories)
 	Rscript src/create_first_paper_values.R
 

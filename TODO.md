@@ -47,6 +47,11 @@
 - [ ] Retitle the two unused first-paper figures to the foraging component and update their DOCS lines — `reports/figures/gps_albatross_50_percent_potential_kba_ars_all_without_mpa.png`, `reports/figures/gps_albatross_50_percent_potential_kba_ars_guadalupe_with_mpa.png`, `src/plot_potential_kba_all.R`, `src/plot_kba_guadalupe_mpa_intersection.R`, `DOCS.md`.
   Test: Grep DOCS.md and the two figure paths for potential_kba and find none. Both headings name the foraging component.
 
+## Bycatch package
+
+- [ ] Make `bycatch::compute_potential_kba()` write `threshold_population_percent` as an attribute of `kba_polygons_all.gpkg`, then delete `src/create_foraging_component_threshold.R` and read the attribute from `data/processed/kba_polygons_all.gpkg` — `Dockerfile`, `Makefile`, `src/create_first_paper_values.R`.
+  Test: `kba_polygons_all.gpkg` carries `threshold_population_percent` and `src/create_foraging_component_threshold.R` no longer exists.
+
 ## Makefile
 
 - [ ] Retire or archive the two dangling PNG targets: `reports/figures/kba_and_vms_union_hotspot_map.png` and `reports/figures/kba_and_gfw_apparent_fishing_effort_hotspot_map.png` are prerequisites of `reports/second_paper.pdf` but no `papers/**/*.md` file references them — `Makefile`.
