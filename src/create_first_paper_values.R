@@ -239,8 +239,12 @@ cell_area_km2 <- (ud_grid_metadata$cell_area_m2 / 1000000) |>
 # Nombra el área de cada capa con su etiqueta para extraerla por nombre
 area_km2_by_layer <- core_area_sf$area_km2
 names(area_km2_by_layer) <- core_area_sf$layer
-# Calcula el porcentaje del área núcleo dentro de las AMP, redondeado a entero
-core_area_inside_mpa_percent <- (100 * area_km2_by_layer[["inside_mpa"]] / area_km2_by_layer[["core_area"]]) |>
+# Calcula el índice de solapamiento como proporción y lo formatea a dos decimales
+overlap_index_proportion <- (area_km2_by_layer[["inside_mpa"]] / area_km2_by_layer[["core_area"]]) |>
+  round(digits = 2) |>
+  format(nsmall = 2, trim = TRUE)
+# Calcula el índice de solapamiento como porcentaje, redondeado a entero
+overlap_index_percentage <- (100 * area_km2_by_layer[["inside_mpa"]] / area_km2_by_layer[["core_area"]]) |>
   round()
 # Redondea y formatea las áreas con separador de miles para el texto del artículo
 area_km2_formatted <- area_km2_by_layer |>
@@ -532,7 +536,8 @@ methods_list <- list(
   colony_radius_km2 = area_km2_formatted[["colony_radius"]],
   core_area_km2 = area_km2_formatted[["core_area"]],
   core_area_inside_mpa_km2 = area_km2_formatted[["inside_mpa"]],
-  core_area_inside_mpa_percent = core_area_inside_mpa_percent,
+  overlap_index_proportion = overlap_index_proportion,
+  overlap_index_percentage = overlap_index_percentage,
   n_tracking_seasons = n_tracking_seasons,
   n_tracking_span_years = n_tracking_span_years,
   tracking_season_span = tracking_season_span,

@@ -1,10 +1,5 @@
 # First paper
 
-## Results
-
-- [ ] Name the overlap index in the Results: the 40% is the index value, but the Results never says so and the Methods defines it as a 0–1 fraction — `15_results.md`, `13_methods.md`.
-  Test: 15_results.md names the overlap index beside the protected percentage.
-
 ## Discussion
 
 - [ ] Fill `XXX percent` with the Results percentage — `17_discussion.md`.
