@@ -595,7 +595,7 @@ data/processed/ud_in_grid.gpkg: \
 	$(checkDirectories)
 	Rscript src/export_ud_in_grid.R
 
-# Exporta el número de celdas de la rejilla y el lado de cada celda
+# Exporta el número de celdas, el lado y el área de cada celda de la rejilla
 data/processed/ud_grid.json: \
   src/export_ud_grid_to_json.R \
   data/processed/ud_in_grid.gpkg

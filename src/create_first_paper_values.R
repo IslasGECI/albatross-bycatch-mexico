@@ -12,9 +12,9 @@
 # individuos y viajes. Lee las superficies KDE, la evaluación de
 # representatividad, la rejilla de uso, el área núcleo y el umbral para extraer
 # analizados, representatividad, rango por celda, medidas de la rejilla, las
-# cuatro áreas y el umbral. Formatea las áreas y el lado de la celda, y calcula
-# el porcentaje protegido. Combina los valores en un JSON plano en
-# data/processed/first_paper_values.json.
+# cuatro áreas y el umbral. Formatea las áreas, convierte el lado y el área de
+# la celda a kilómetros, calcula el porcentaje protegido y combina los valores
+# en un JSON plano en data/processed/first_paper_values.json.
 #
 # Entradas:
 # data/raw/gps-albatros-guadalupe.csv
@@ -46,7 +46,8 @@
 #   objeto KDE y de su evaluación
 # - Solo se cuentan viajes con el valor "complete trip" en la columna complete
 # - Las medidas de la rejilla provienen del artefacto que escribe
-#   export_ud_grid_to_json.R
+#   export_ud_grid_to_json.R; el lado y el área en kilómetros son conversiones
+#   de esas medidas
 # ==========================================
 
 
@@ -77,7 +78,7 @@ input_ud_in_grid_path <- "data/processed/ud_in_grid.gpkg"
 input_core_area_path <- "data/processed/core_area.gpkg"
 # Ruta del archivo JSON con el umbral de población de la componente de alimentación
 input_foraging_component_threshold_path <- "data/processed/foraging_component_threshold.json"
-# Ruta del archivo JSON con el número de celdas y el lado de la rejilla
+# Ruta del archivo JSON con el número de celdas, el lado y el área de la rejilla
 input_ud_grid_path <- "data/processed/ud_grid.json"
 # Ruta del archivo JSON que almacenará los metadatos del rastreo por colonia
 output_json_path <- "data/processed/first_paper_values.json"
@@ -204,12 +205,26 @@ n_individuals_per_cell_min <- min(n_individuals_per_cell)
 n_individuals_per_cell_max <- max(n_individuals_per_cell)
 
 # Extrae el número de columnas de la rejilla de uso
-n_grid_columns <- ud_grid_metadata$n_columns
+n_grid_columns <- ud_grid_metadata$n_grid_columns
 # Extrae el número de renglones de la rejilla de uso
-n_grid_rows <- ud_grid_metadata$n_rows
-# Redondea y formatea el lado de la celda con separador de miles
-grid_cell_size_m <- ud_grid_metadata$cell_size_m |>
+n_grid_rows <- ud_grid_metadata$n_grid_rows
+# Redondea y formatea el lado de la celda en metros con separador de miles
+cell_side_m <- ud_grid_metadata$cell_side_m |>
   round() |>
+  format(big.mark = ",", trim = TRUE, scientific = FALSE)
+# Redondea y formatea el área de la celda en metros cuadrados con separador
+# de miles
+cell_area_m2 <- ud_grid_metadata$cell_area_m2 |>
+  round() |>
+  format(big.mark = ",", trim = TRUE, scientific = FALSE)
+# Convierte el lado de la celda a kilómetros y lo redondea a un decimal
+cell_side_km <- (ud_grid_metadata$cell_side_m / 1000) |>
+  round(digits = 1) |>
+  format(big.mark = ",", trim = TRUE, scientific = FALSE)
+# Convierte el área de la celda a kilómetros cuadrados y la redondea a un
+# decimal
+cell_area_km2 <- (ud_grid_metadata$cell_area_m2 / 1000000) |>
+  round(digits = 1) |>
   format(big.mark = ",", trim = TRUE, scientific = FALSE)
 
 # Nombra el área de cada capa con su etiqueta para extraerla por nombre
@@ -498,7 +513,10 @@ methods_list <- list(
   n_individuals_per_cell_max = n_individuals_per_cell_max,
   n_grid_columns = n_grid_columns,
   n_grid_rows = n_grid_rows,
-  grid_cell_size_m = grid_cell_size_m,
+  cell_side_m = cell_side_m,
+  cell_side_km = cell_side_km,
+  cell_area_m2 = cell_area_m2,
+  cell_area_km2 = cell_area_km2,
   foraging_component_threshold_percent = foraging_component_threshold$threshold_population_percent,
   foraging_component_km2 = area_km2_formatted[["foraging_component"]],
   colony_radius_km2 = area_km2_formatted[["colony_radius"]],
