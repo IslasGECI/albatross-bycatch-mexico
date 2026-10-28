@@ -167,7 +167,7 @@ The area-restricted search (ARS) scale is estimated using first-passage time ana
 We used the ARS scale as the smoothing parameter of the KDEs.
 The 50% utilization distribution (UD) is the region that contains half of the probability mass of the KDE.
 We calculated one 50% UD for each individual albatross [@beal2021track2kba].
-We created a grid of 501 × 430 cells with a resolution of 11,282 m per side.
+We created a grid of {{n_grid_columns}} × {{n_grid_rows}} cells with a resolution of {{grid_cell_size_m}} m per side.
 For each cell of the grid, we counted the number of individual 50% UDs that cover it.
 
 <!-- point: The representativeness assessment tests whether the sample stands for the population. -->

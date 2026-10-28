@@ -11,8 +11,9 @@
 # Lee los CSV de GPS de las tres colonias, deriva fechas y temporadas y cuenta
 # individuos y viajes. Lee las superficies KDE, la evaluación de
 # representatividad, la rejilla de uso, el área núcleo y el umbral para extraer
-# analizados, representatividad, rango por celda, las cuatro áreas y el umbral. Formatea las áreas y
-# calcula el porcentaje protegido. Combina los valores en un JSON plano en
+# analizados, representatividad, rango por celda, medidas de la rejilla, las
+# cuatro áreas y el umbral. Formatea las áreas y el lado de la celda, y calcula
+# el porcentaje protegido. Combina los valores en un JSON plano en
 # data/processed/first_paper_values.json.
 #
 # Entradas:
@@ -27,6 +28,7 @@
 # data/processed/ud_in_grid.gpkg (capa: "ud_in_grid")
 # data/processed/core_area.gpkg (capa: "core_area")
 # data/processed/foraging_component_threshold.json
+# data/processed/ud_grid.json
 #
 # Salida:
 # data/processed/first_paper_values.json
@@ -43,6 +45,8 @@
 # - El conteo de individuos analizados y la representatividad provienen del
 #   objeto KDE y de su evaluación
 # - Solo se cuentan viajes con el valor "complete trip" en la columna complete
+# - Las medidas de la rejilla provienen del artefacto que escribe
+#   export_ud_grid_to_json.R
 # ==========================================
 
 
@@ -73,6 +77,8 @@ input_ud_in_grid_path <- "data/processed/ud_in_grid.gpkg"
 input_core_area_path <- "data/processed/core_area.gpkg"
 # Ruta del archivo JSON con el umbral de población de la componente de alimentación
 input_foraging_component_threshold_path <- "data/processed/foraging_component_threshold.json"
+# Ruta del archivo JSON con el número de celdas y el lado de la rejilla
+input_ud_grid_path <- "data/processed/ud_grid.json"
 # Ruta del archivo JSON que almacenará los metadatos del rastreo por colonia
 output_json_path <- "data/processed/first_paper_values.json"
 
@@ -126,6 +132,8 @@ ud_in_grid_sf <- st_read(input_ud_in_grid_path, quiet = TRUE)
 core_area_sf <- st_read(input_core_area_path, quiet = TRUE)
 # Importa el umbral de población que define la componente de alimentación
 foraging_component_threshold <- read_json(input_foraging_component_threshold_path)
+# Importa las medidas de la rejilla para reportar su tamaño y su lado
+ud_grid_metadata <- read_json(input_ud_grid_path)
 
 
 # ==== PROCESAMIENTO / ANÁLISIS ====
@@ -194,6 +202,15 @@ n_individuals_per_cell <- ud_in_grid_sf |>
 n_individuals_per_cell_min <- min(n_individuals_per_cell)
 # Calcula el máximo de individuos por celda ocupada para el rango de la figura
 n_individuals_per_cell_max <- max(n_individuals_per_cell)
+
+# Extrae el número de columnas de la rejilla de uso
+n_grid_columns <- ud_grid_metadata$n_columns
+# Extrae el número de renglones de la rejilla de uso
+n_grid_rows <- ud_grid_metadata$n_rows
+# Redondea y formatea el lado de la celda con separador de miles
+grid_cell_size_m <- ud_grid_metadata$cell_size_m |>
+  round() |>
+  format(big.mark = ",", trim = TRUE, scientific = FALSE)
 
 # Nombra el área de cada capa con su etiqueta para extraerla por nombre
 area_km2_by_layer <- core_area_sf$area_km2
@@ -479,6 +496,9 @@ methods_list <- list(
   representativeness_percent = representativeness_percent,
   n_individuals_per_cell_min = n_individuals_per_cell_min,
   n_individuals_per_cell_max = n_individuals_per_cell_max,
+  n_grid_columns = n_grid_columns,
+  n_grid_rows = n_grid_rows,
+  grid_cell_size_m = grid_cell_size_m,
   foraging_component_threshold_percent = foraging_component_threshold$threshold_population_percent,
   foraging_component_km2 = area_km2_formatted[["foraging_component"]],
   colony_radius_km2 = area_km2_formatted[["colony_radius"]],

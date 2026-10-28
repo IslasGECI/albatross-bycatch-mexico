@@ -64,7 +64,8 @@ data/processed/first_paper_values.json: \
 	data/processed/representative_assessment_all.rds \
 	data/processed/ud_in_grid.gpkg \
 	data/processed/core_area.gpkg \
-	data/processed/foraging_component_threshold.json
+	data/processed/foraging_component_threshold.json \
+	data/processed/ud_grid.json
 	$(checkDirectories)
 	Rscript src/create_first_paper_values.R
 
@@ -593,6 +594,13 @@ data/processed/ud_in_grid.gpkg: \
   data/processed/representative_assessment_all.rds
 	$(checkDirectories)
 	Rscript src/export_ud_in_grid.R
+
+# Exporta el número de celdas de la rejilla y el lado de cada celda
+data/processed/ud_grid.json: \
+  src/export_ud_grid_to_json.R \
+  data/processed/ud_in_grid.gpkg
+	$(checkDirectories)
+	Rscript src/export_ud_grid_to_json.R
 
 # Producto normalizado de solapamiento de albatros con presencia de palangre
 data/processed/ud_vms_longline_udoi.gpkg: \
