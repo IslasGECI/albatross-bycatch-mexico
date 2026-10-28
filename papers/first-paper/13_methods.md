@@ -164,7 +164,7 @@ We considered the remaining trips to be foraging trips.
 <!-- point: Each individual gets one 50% UD, and each grid cell counts the UDs that cover it. -->
 We pooled the foraging trips per individual to calculate the kernel density estimates (KDEs).
 The area-restricted search (ARS) scale is estimated using first-passage time analysis [@calenge2025adehabitatlt].
-We used the ARS scale as the smoothing parameter of the KDEs.
+We used the ARS scale of {{ars_scale_km}} km as the smoothing parameter of the KDEs.
 The 50% utilization distribution (UD) is the region that contains half of the probability mass of the KDE.
 We calculated one 50% UD for each individual albatross [@beal2021track2kba].
 We created a grid of {{n_grid_columns}} × {{n_grid_rows}} cells, each {{cell_side_km}} km per side with an area of {{cell_area_km2}} km$^2$.
@@ -178,7 +178,7 @@ It also sets the threshold percentage of the population that we use to define th
 
 <!-- point: The foraging component and the 60 km disk together form the core area. -->
 The foraging component is the cells where the individual 50% UDs overlap enough to reach the threshold set by the representativeness assessment.
-We define the core area as the union of the foraging component and the disk with a radius of 60 km around each colony.
+We define the core area as the union of the foraging component and the disk with a 60 km radius around each colony.
 
 ### Overlap of core areas with MPAs
 
@@ -186,9 +186,9 @@ We define the core area as the union of the foraging component and the disk with
 
 Once the core areas were identified, we quantified their overlap with the existing MPAs using the overlap index [@fieberg2005quantifying].
 The overlap index is defined as $HR_{i,j} = \frac{A_{i,j}}{A_i}$ and is directional ($HR_{i,j} \neq HR_{j,i}$).
-In our case, $A_i$ is the core-area size, and $A_{i,j}$ is the size of its overlap with the MPAs.
-A value of 1 indicates that the core area is entirely inside the MPAs, while a value of 0 indicates that it is outside.
-This index tells us what fraction of Laysan albatross core areas is inside the MPAs.
+In our case, $A_i$ is the core-area size, and $A_{i,j}$ is the size of the core area that lies inside MPAs.
+A value of 1 indicates that the core area is entirely inside MPAs, while a value of 0 indicates that it is outside.
+This index tells us what fraction of Laysan albatross core areas is inside MPAs.
 
 ## Ethical considerations
 

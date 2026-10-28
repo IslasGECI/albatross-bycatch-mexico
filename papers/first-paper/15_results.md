@@ -60,7 +60,7 @@ Table: Area of the foraging component, the 60 km radius, the core area (union), 
 
 <!-- point: A minority of the core area falls inside Mexican MPAs. -->
 The foraging component measures {{foraging_component_km2}} km$^2$, and the area within a 60 km radius of the colonies measures {{colony_radius_km2}} km$^2$.
-In total, the core area spans {{core_area_km2}} km$^2$, of which {{core_area_inside_mpa_km2}} km$^2$ are within a Mexican marine protected area.
+In total, the core area spans {{core_area_km2}} km$^2$, of which {{core_area_inside_mpa_km2}} km$^2$ are inside MPAs.
 That is, {{core_area_inside_mpa_percent}}% of the core area is protected.
 
 \FloatBarrier

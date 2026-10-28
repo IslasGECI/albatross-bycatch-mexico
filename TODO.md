@@ -1,12 +1,5 @@
 # First paper
 
-## Methods
-
-- [ ] State the area method: the four km² values have no projection, planar buffer, union, or MPA clip in the Methods — `13_methods.md`.
-  Test: 13_methods.md states the projection and the planar buffer used to measure the areas.
-- [ ] Report the ARS smoothing scale: the Methods says first-passage time estimates it but gives no value, and no artifact holds one — `13_methods.md`, `src/create_first_paper_values.R`.
-  Test: 13_methods.md reports the estimated ARS scale value.
-
 ## Results
 
 - [ ] Name the overlap index in the Results: the 40% is the index value, but the Results never says so and the Methods defines it as a 0–1 fraction — `15_results.md`, `13_methods.md`.

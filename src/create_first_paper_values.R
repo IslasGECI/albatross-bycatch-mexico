@@ -1,5 +1,5 @@
 # ==========================================
-# Título: Crea las fechas, los conteos, la representatividad, las áreas y el umbral
+# Título: Crea las fechas, los conteos, la representatividad, la escala y las áreas
 #
 # Contexto (Por qué):
 # El manuscrito del primer artículo necesita las fechas de inicio y fin del
@@ -11,7 +11,7 @@
 # Lee los CSV de GPS de las tres colonias, deriva fechas y temporadas y cuenta
 # individuos y viajes. Lee las superficies KDE, la evaluación de
 # representatividad, la rejilla de uso, el área núcleo y el umbral para extraer
-# analizados, representatividad, rango por celda, medidas de la rejilla, las
+# analizados, representatividad, la escala, rango por celda, medidas de la rejilla, las
 # cuatro áreas y el umbral. Formatea las áreas, convierte el lado y el área de
 # la celda a kilómetros, calcula el porcentaje protegido y combina los valores
 # en un JSON plano en data/processed/first_paper_values.json.
@@ -78,6 +78,8 @@ input_ud_in_grid_path <- "data/processed/ud_in_grid.gpkg"
 input_core_area_path <- "data/processed/core_area.gpkg"
 # Ruta del archivo JSON con el umbral de población de la componente de alimentación
 input_foraging_component_threshold_path <- "data/processed/foraging_component_threshold.json"
+# Factor de conversión de metros a kilómetros para la escala de búsqueda
+m_per_km <- 1000
 # Ruta del archivo JSON con el número de celdas, el lado y el área de la rejilla
 input_ud_grid_path <- "data/processed/ud_grid.json"
 # Ruta del archivo JSON que almacenará los metadatos del rastreo por colonia
@@ -188,6 +190,13 @@ san_benedicto_max_year <- str_sub(san_benedicto_max_date, 1, 4)
 n_analyzed_individuals <- kernel_density_estimation_object$KDE_surface |>
   names() |>
   length()
+
+# Extrae el parámetro de suavizado de cada superficie individual
+ars_scale_list <- lapply(kernel_density_estimation_object$KDE_surface, slot, "h")
+# Convierte la lista en un vector numérico con el parámetro de cada individuo
+ars_scale_m <- sapply(ars_scale_list, `[[`, "h")
+# Calcula la mediana de la escala en kilómetros para el texto del artículo
+ars_scale_km <- median(ars_scale_m) / m_per_km
 
 # Extrae el porcentaje de representatividad de la muestra analizada y lo
 # redondea a un decimal para el texto del artículo
@@ -508,6 +517,7 @@ tracking_season_span <- paste0(
 methods_list <- list(
   n_tagged_individuals = n_tagged_individuals,
   n_analyzed_individuals = n_analyzed_individuals,
+  ars_scale_km = ars_scale_km,
   representativeness_percent = representativeness_percent,
   n_individuals_per_cell_min = n_individuals_per_cell_min,
   n_individuals_per_cell_max = n_individuals_per_cell_max,
