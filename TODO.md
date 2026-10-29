@@ -2,17 +2,10 @@
 
 ## Discussion
 
-- [ ] Fill `XXX percent` with the Results percentage — `17_discussion.md`.
-  Test: The Discussion states the same percentage as the Results. Grep 17_discussion.md for XXX and find none.
-- [ ] Contribution beat: add the knowledge claim ahead of the first 12-year analysis `[[ ]]` — `17_discussion.md`.
-  Test: The contribution paragraph opens on a knowledge claim before the first 12-year sentence. No [[ ]] marker remains in 17_discussion.md.
-
-## Conclusion
-
-- [ ] Fill `XXX%` with the Results percentage — `18_conclusion.md`.
-  Test: The Conclusion states the same percentage as the Results. Grep 18_conclusion.md for XXX and find none.
-- [ ] Add the resolution sentences that synthesize the spatial understanding and close the opening circle `[[ ]]` — `18_conclusion.md`.
-  Test: The Conclusion restates the spatial understanding and closes the opening circle. No [[ ]] marker remains in 18_conclusion.md.
+- [ ] Restore one point comment per Discussion paragraph — `17_discussion.md`.
+  Test: Every paragraph in 17_discussion.md follows a point comment, and no marker remains.
+- [ ] Open the resolution paragraph with a flag sentence — `17_discussion.md`.
+  Test: The last paragraph of 17_discussion.md opens on a sentence that marks the resolution.
 
 ## Supplementary
 

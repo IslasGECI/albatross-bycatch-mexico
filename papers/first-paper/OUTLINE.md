@@ -2,7 +2,7 @@
 
 - Audience — specialist conservation/ornithology journal (e.g., Biological Conservation, Marine Ecology Progress Series, Bird Conservation International); readers are patient.
 - Story shape — OCAR
-- Hourglass — Opening wide (the global pelagic MPA gap); Resolution widening from the Mexican case to the general lesson that island-anchored protection misses an offshore core. The global opening is repaid qualitatively in D_placement.
+- Hourglass — Opening wide on the global pelagic gap; resolving into the lesson that island-anchored protection misses an offshore core. D_contribution repays the opening.
 - OPENING — Seabirds are among the most threatened groups of birds, and the tool for protecting them at sea is anchored to land, so pelagic species are missed.
 - CHALLENGE — No study has quantified how much Laysan albatross core area in Mexico falls inside MPAs; we ask where it lies and test the hypothesis of limited coverage.
 - ACTION — Records become foraging trips, trips become individual surfaces, and the surfaces give the foraging component, which joins the 60 km radius to form the core area we test against MPAs.
@@ -50,17 +50,11 @@ Question: Where are the core areas, and how much of them is protected?
 
 ## DISCUSSION — Action and Resolution
 
-Job: Answer, qualify the answer, explain the placement, and state the contribution.
+Job: Answer, qualify the answer, explain the placement, claim the contribution, and close the circle.
 Question: Why is the protected fraction low, and what follows from it?
 
 - D_answer — Job: State the answer the results support; Question: What did we find?; Arc: opening
 - D_limitation — Job: Limit the claim to the breeding season and say why that season matters most; Question: What does the evidence not cover?; Arc: development
 - D_placement — Job: Explain why island-anchored protection misses an offshore core; Question: Why is the coverage low?; Arc: development
-- D_contribution — Job: Claim what the study adds and recommend how the maps should be used; Question: What does this study contribute?; Arc: resolution
-
-## CONCLUSION — Resolution
-
-Job: Close the circle in one paragraph.
-Question: What should the reader take away?
-
-- C_resolution — Job: Restate the fraction, synthesize the spatial reading, and return to the opening problem; Question: What does the paper leave the reader with?; Arc: resolution
+- D_contribution — Job: Claim what the study adds by repeating the global finding for Mexico; Question: What does this study contribute?; Arc: development
+- D_resolution — Job: Close the circle from the island-anchored reading to the forward steps; Question: What should the reader take away?; Arc: resolution
