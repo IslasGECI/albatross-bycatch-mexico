@@ -6,9 +6,11 @@
 <!-- R_tracks — Point: The tracks loop counterclockwise from each colony, and only San Benedicto stays inside the EEZ. -->
 Fig \ref{fig-tracks} shows the GPS tracks of Laysan albatross from Guadalupe, Clarion, and San Benedicto Islands.
 The trajectories follow a counterclockwise pattern, beginning and ending at the corresponding colony, which is located to the south of the paths.
+[[ Schimel §12.5.2 — "beginning and ending at the corresponding colony, which is located to the south of the paths" — the trailing clause takes the stress; move or delete it so the counterclockwise pattern lands there ]]
 For Guadalupe and Clarion Islands, the initial heading of the trajectories is toward the northeast, passing along the coast of Baja California.
 On their return journey, the trajectories move away from the coast toward international waters.
 Some trajectories reach 165° W before returning to the island.
+[[ Schimel §12.5.2 — "Some trajectories reach 165° W before returning to the island" — the western reach, the point, sits before the trailing return clause; move or delete the clause so 165° W takes the stress ]]
 The trajectories of individuals from San Benedicto Island approach the coast of Baja California Sur and return to the island without leaving the EEZ.
 
 ![
@@ -39,6 +41,7 @@ Number of tracked Laysan Albatross (_Phoebastria immutabilis_) individuals (n = 
 
 <!-- R_foraging_component — Point: The most overlapped cells become the delineated foraging component. -->
 Fig \ref{fig-foraging-component} shows the area used by at least {{foraging_component_threshold_percent}}% of the population as purple polygons from the number of individuals using each cell.
+[[ Schimel §12.5.2 — "as purple polygons from the number of individuals using each cell" — the derivation dangles after the real stress; move it into the middle or cut it ]]
 This is the area where the greatest number of individual 50% UDs overlap.
 
 ![
@@ -61,5 +64,6 @@ Table: Areas of the foraging component, the 60-km-radius disks, the core area, a
 The foraging component measures {{foraging_component_km2}} km$^2$, and the area within a 60 km radius of the colonies measures {{colony_radius_km2}} km$^2$.
 In total, the core area spans {{core_area_km2}} km$^2$, of which {{core_area_inside_mpa_km2}} km$^2$ is inside MPAs.
 The overlap index, $\frac{A_{i,j}}{A_i}$, is {{overlap_index_proportion}}; that is, {{overlap_index_percentage}}% of the core area is protected.
+[[ Schimel §12.4 — "The overlap index, $\frac{A_{i,j}}{A_i}$, is" — the formula separates subject and verb; move it out of the middle ]]
 
 \FloatBarrier
