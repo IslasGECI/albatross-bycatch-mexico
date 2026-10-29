@@ -16,4 +16,3 @@ In Mexico, MPAs are associated with islands, while the albatross core areas are 
 <!-- D_contribution — Point: The study evaluates existing MPAs and shows island-anchored protection misses the pelagic core. -->
 The results of this study confirm what has been reported elsewhere by @critchley2018marine and now confirmed also for the Mexican Pacific.
 This is the first {{n_tracking_span_years}}-year core-area analysis for Mexico’s albatross colonies.
-We recommend incorporating the core area and overlap maps into protected area management plans and using them to adjust boundaries toward uncovered core areas [@mendez2022population; @afan2018adaptive].
