@@ -1,19 +1,20 @@
-
 # Discussion
 
-<!-- D_answer — Point: Mexican MPAs leave most of the core area unprotected. -->
 Mexican MPAs do not protect the core area within the EEZ used by Laysan albatross nesting in Mexico.
 Only {{overlap_index_percentage}} percent of the core area falls inside MPAs.
 
-<!-- D_limitation — Point: Breeding-season data limit the claim to the period that matters most. -->
 The main limitation is that the data cover only the breeding season.
 Therefore, the conclusions apply only to that period, and we cannot speak of MPA protection during the rest of the year.
 However, given that it is during the breeding season that the population could be most vulnerable, this period is the most relevant for protection.
 
-<!-- D_placement — Point: Island-anchored protection cannot reach a core area that lies offshore. -->
-In Mexico, MPAs are associated with islands, while the albatross core areas are associated with oceanographic conditions and food availability.
-[[ Schimel §11.1 — "In Mexico, MPAs are associated with islands, while the albatross core areas are associated with oceanographic conditions and food availability" — the sentence sets up a contrast but never states its consequence, that island-anchored protection cannot reach the offshore core; add that resolution ]]
+In Mexico, MPAs are associated with islands, while the albatross foraging component of the core area is associated with oceanographic conditions and food availability.
+The core area is largely unprotected, given that the foraging area lies offshore, beyond the existing MPAs.
 
-<!-- D_contribution — Point: The study evaluates existing MPAs and shows island-anchored protection misses the pelagic core. -->
-The results of this study confirm what has been reported elsewhere by @critchley2018marine and now confirmed also for the Mexican Pacific.
-This is the first {{n_tracking_span_years}}-year core-area analysis for Mexico’s albatross colonies.
+The results of this study agree with what has been reported elsewhere by @critchley2018marine and now confirmed also for the Mexican Pacific.
+
+In Mexico, the core area of the Laysan albatross extends beyond the boundaries of existing MPAs, which are primarily island-anchored.
+Currently, establishing and enforcing an MPA in offshore waters is challenging; therefore, alternative options should be explored.
+A path forward is to incorporate data from other species using the same core area.
+This broader perspective would help determine which management strategies are appropriate for the core area.
+It is important to consider the potential threats that Laysan albatross faces in its unprotected core area.
+Bycatch from commercial fisheries is the most significant at-sea threat to the species [@copello2014spatial]; a risk assessment for this area is a natural next step.
