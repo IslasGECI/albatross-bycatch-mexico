@@ -8,9 +8,7 @@ Therefore, the conclusions apply only to that period, and we cannot speak of MPA
 However, given that it is during the breeding season that the population could be most vulnerable, this period is the most relevant for protection.
 
 In Mexico, MPAs are associated with islands, while the albatross foraging component of the core area is associated with oceanographic conditions and food availability.
-The core area is largely unprotected, given that the foraging area lies offshore, beyond the existing MPAs.
-
-The results of this study agree with what has been reported elsewhere by @critchley2018marine and now confirmed also for the Mexican Pacific.
+The results of this study agree with what has been reported elsewhere by @critchley2018marine.
 
 In Mexico, the core area of the Laysan albatross extends beyond the boundaries of existing MPAs, which are primarily island-anchored.
 Currently, establishing and enforcing an MPA in offshore waters is challenging; therefore, alternative options should be explored.
