@@ -4,12 +4,13 @@
 \FloatBarrier
 
 <!-- R_tracks — Point: The tracks loop counterclockwise from each colony, and only San Benedicto stays inside the EEZ. -->
-Fig \ref{fig-tracks} shows the GPS tracks of Laysan albatross from Guadalupe, Clarion, and San Benedicto Islands.
+Fig \ref{fig-tracks} shows the GPS tracks of tagged Laysan albatross from Guadalupe, Clarion, and San Benedicto Islands.
 The trajectories follow a counterclockwise pattern, beginning and ending at the corresponding colony.
 For Guadalupe and Clarion Islands, the initial heading of the trajectories is toward the northeast, passing along the coast of Baja California.
 On their return journey, the trajectories move away from the coast toward international waters.
 Before returning to the island, some trajectories reach 165° W.
 The trajectories of individuals from San Benedicto Island approach the coast of Baja California Sur and return to the island without leaving the EEZ.
+Since the breeding colonies use different areas of the Mexican Pacific, we determined whether the analyzed sample adequately represents the population.
 
 ![
 GPS tracks of Laysan Albatross (_Phoebastria immutabilis_) from the Guadalupe (green; 2014–2026), Clarion (purple; 2018–2022) and San Benedicto (coral; 2020) colonies.
@@ -17,9 +18,8 @@ The blue line delimits Mexico's Exclusive Economic Zone, and green lines outline
 ](reports/figures/mexico_eez_bounding_box_zoom_out.png)
 
 <!-- R_representativeness — Point: The sample is adequate and represents the population; the threshold defines the component. -->
-The curve in Fig \ref{fig-representativeness} is flattening at the right, reaching a saturation point.
-[[ Schimel §13.1 — "The curve in Fig \ref{fig-representativeness}" — the opening does not reach back to the previous paragraph's closing stress, the EEZ; tie the new arc to the tracks or their range ]]
 The sample of {{n_analyzed_individuals}} individuals has a representativeness of {{representativeness_percent}}%, and the threshold used to define the foraging component is {{foraging_component_threshold_percent}}% of the population.
+The curve in Fig \ref{fig-representativeness} is flattening at the right, reaching a saturation point.
 The representativeness indicates that the sample adequately represents the Laysan albatross population at the three colonies during the breeding season.
 
 ![
