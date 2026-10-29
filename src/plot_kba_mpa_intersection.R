@@ -1,23 +1,22 @@
 # ==========================================
-# Título: Grafica la intersección entre el sitio potencial KBA y las AMP de México
+# Título: Grafica el componente de forrajeo, los discos de 60 km y las AMP de México
 #
 # Contexto (Por qué):
-# El polígono rojo del KBA (potentialSite = TRUE) delimita la zona de
-# alimentación relevante del albatros de Laysan. Las Áreas Marinas Protegidas
-# (AMP) definen zonas marinas bajo protección legal. Su intersección revela
-# qué fracción del sitio potencial KBA está protegida dentro del sistema de AMP.
+# El componente de forrajeo delimita la zona de alimentación relevante del
+# albatros de Laysan y, junto con los discos de 60 km alrededor de las
+# colonias, forma el área núcleo. Las Áreas Marinas Protegidas (AMP) definen
+# las zonas marinas bajo protección legal.
 #
 # Descripción (Qué / Cómo):
-# Lee el GeoPackage de la intersección KBA ∩ AMP (calculada solo con celdas
-# potentialSite = TRUE), los polígonos KBA originales, las AMP, la ZEE y la
-# costa. Filtra el KBA a potentialSite = TRUE y lo fusiona en un contorno rojo.
-# Construye un mapa con ggplot2 que superpone la intersección destacada sobre
-# el contorno rojo del KBA, las AMP, la ZEE y la costa. Usa el bounding box
-# de zoom in como extensión.
+# Lee el área núcleo, las AMP, la ZEE y la costa. Separa el componente de
+# forrajeo y los discos de 60 km con la columna layer. Construye un mapa con
+# ggplot2: el terreno en gris, la ZEE en azul, el relleno translúcido de las
+# AMP, el componente de forrajeo relleno en púrpura, los perímetros de los
+# discos en el mismo púrpura y, encima de todo, el contorno de las AMP. Usa
+# el bounding box de zoom in como extensión.
 #
 # Entradas:
-# data/processed/kba_mpa_intersection_all.gpkg
-# data/processed/kba_polygons_all.gpkg
+# data/processed/core_area.gpkg (capa: "core_area")
 # data/processed/mexico_mpa.gpkg
 # data/external/Exclusive_economic_zone_Mexico.shp
 #
@@ -31,10 +30,10 @@
 # tidyverse
 #
 # Notas:
-# - El KBA se filtra a potentialSite = TRUE (polígono rojo de mapSite())
-# - st_union() fusiona las 16 celdas del sitio potencial en un solo contorno
-# - La ZEE se transforma de NSIDC EASE-Grid Global a WGS 84 (EPSG:4326)
-# - La intersección ya viene pre-calculada por export_kba_mpa_intersection.R
+# - La capa core_area trae el componente, los discos, el área núcleo y el área dentro de AMP
+# - El componente y los discos se extraen por la columna layer
+# - Los discos se dibujan solo con su perímetro, en el mismo púrpura del componente
+# - El área núcleo está en LAEA y se transforma a WGS 84 (EPSG:4326)
 # ==========================================
 
 
@@ -42,35 +41,31 @@
 library(rnaturalearth) # Proporciona ne_countries() para descargar límites políticos mundiales
 library(rnaturalearthdata) # Proporciona los datos cartográficos base de Natural Earth
 library(sf) # Proporciona st_read para importar geometrías y st_transform para reproyectar
-library(tidyverse) # Proporciona ggplot2 para graficar y dplyr para filtrar y agrupar
+library(tidyverse) # Proporciona ggplot2 para graficar y dplyr para filtrar
 
 # Rutas de los archivos de entrada con datos geoespaciales
-input_intersection_path <- "data/processed/kba_mpa_intersection_all.gpkg"
-input_kba_path <- "data/processed/kba_polygons_all.gpkg"
+input_core_area_path <- "data/processed/core_area.gpkg"
 input_mpa_path <- "data/processed/mexico_mpa.gpkg"
 input_eez_shapefile_path <- "data/external/Exclusive_economic_zone_Mexico.shp"
 
-# Ruta del archivo PNG que almacenará el mapa de intersección KBA ∩ AMP
+# Ruta del archivo PNG que almacenará el mapa del área núcleo y las AMP
 output_figure_path <- "reports/figures/gps_albatross_50_percent_potential_kba_ars_all_with_mpa.png"
 
 # Escala de la línea de costa mundial para el fondo del mapa
 coastline_scale <- "medium"
-# Sistema de referencia espacial para la reproyección de la ZEE
+# Sistema de referencia espacial para la reproyección de las capas de entrada
 target_crs <- 4326
 
 # Colores para las capas del mapa
 coast_fill_color <- "gray90" # Color de relleno para el continente
 coast_line_color <- "gray50" # Color del contorno de la línea de costa
-eez_fill_color <- NA # Sin relleno para la ZEE (solo contorno)
-eez_fill_alpha <- NA # Sin transparencia porque la ZEE no tiene relleno
 eez_line_color <- "#1E3A8A" # Color del contorno de la ZEE
-mpa_fill_color <- "#86EFAC" # Color de relleno verde claro para las Áreas Marinas Protegidas
+mpa_fill_color <- "#86EFAC" # Color de relleno verde claro para las AMP
 mpa_fill_alpha <- 0.3 # Transparencia del relleno de las AMP para ver capas subyacentes
 mpa_line_color <- "#166534" # Color del contorno verde oscuro de las AMP
-kba_fill_color <- "#8B5CF6" # Color de relleno púrpura del sitio potencial KBA
-intersection_fill_color <- "#22C55E" # Color de relleno destacado para la intersección KBA ∩ AMP
-intersection_fill_alpha <- 0.7 # Transparencia moderada para resaltar la intersección
-intersection_line_color <- "#166534" # Color del contorno de la intersección
+foraging_component_fill_color <- "#8B5CF6" # Color de relleno púrpura del componente de forrajeo
+disk_line_color <- "#8B5CF6" # Color del perímetro de los discos, igual al del componente
+disk_line_width <- 0.4 # Grosor del perímetro de los discos, igual al de otros contornos
 
 # Dimensiones y resolución de la figura de salida
 fig_width <- 8 # Ancho en pulgadas consistente con otros mapas del proyecto
@@ -79,12 +74,9 @@ fig_dpi <- 300 # Resolución adecuada para reportes o publicaciones
 
 
 # ==== ENTRADAS ====
-# Importa la intersección KBA ∩ AMP desde el GeoPackage generado por
-# export_kba_mpa_intersection.R (ya filtrada a potentialSite = TRUE)
-kba_mpa_intersection_sf <- st_read(input_intersection_path, quiet = TRUE)
-# Importa los polígonos KBA originales para extraer el contorno rojo del
-# sitio potencial (potentialSite = TRUE) como referencia
-kba_polygons_sf <- st_read(input_kba_path, quiet = TRUE)
+# Importa el área núcleo con sus cuatro capas: componente, discos, área núcleo
+# y área dentro de AMP
+core_area_sf <- st_read(input_core_area_path, quiet = TRUE)
 # Importa las Áreas Marinas Protegidas de México como contexto de las
 # zonas marinas protegidas existentes
 mexico_mpa_sf <- st_read(input_mpa_path, quiet = TRUE)
@@ -96,29 +88,30 @@ mexico_eez_sf <- st_read(input_eez_shapefile_path, quiet = TRUE)
 world_coastline_sf <- ne_countries(scale = coastline_scale, returnclass = "sf")
 # ==== PROCESAMIENTO / ANÁLISIS ====
 # Desactiva la validación S2 para evitar errores por geometrías inválidas
-# en los polígonos KBA durante el filtrado y la fusión espacial
+# en los polígonos del área núcleo durante el filtrado
 sf_use_s2(FALSE)
-# Filtra los polígonos KBA para conservar solo las celdas identificadas
-# como sitio potencial (potentialSite = TRUE) que corresponden al polígono
-# rojo que renderiza bycatch::render_potential_kba(), y las fusiona en un
-# solo contorno para graficarlo como referencia
-kba_red_polygon_sf <- kba_polygons_sf |>
-  filter(potentialSite == TRUE) |>
-  # summarise() sin argumentos disuelve la geometría automáticamente en sf
-  summarise()
+# Transforma el área núcleo de LAEA a coordenadas geográficas WGS84 para que
+# coincida con el sistema de referencia de las AMP y la ZEE
+core_area_wgs84_sf <- core_area_sf |>
+  st_transform(target_crs)
+# Conserva solo el componente de forrajeo para dibujarlo como relleno púrpura
+foraging_component_sf <- core_area_wgs84_sf |>
+  filter(layer == "foraging_component")
+# Conserva solo los discos de 60 km para dibujar su perímetro púrpura
+colony_radius_disks_sf <- core_area_wgs84_sf |>
+  filter(layer == "colony_radius")
 # Transforma la ZEE de NSIDC EASE-Grid Global a coordenadas geográficas WGS84
-# para que coincida con el sistema de referencia de los polígonos KBA y AMP
+# para que coincida con el sistema de referencia de las demás capas
 mexico_eez_wgs84_sf <- mexico_eez_sf |>
   st_transform(target_crs)
 # Define los límites del mapa centrados en el Pacífico de la península de Baja
-# California para mostrar la intersección KBA con las AMP de ambas colonias
+# California para mostrar el área núcleo y las AMP de las tres colonias
 bbox_lon_min <- -125
 bbox_lon_max <- -105
 bbox_lat_min <- 15
 bbox_lat_max <- 35
-# Construye el mapa temático con cinco capas espaciales que muestran la
-# relación entre el sitio potencial KBA y las AMP
-plot_kba_mpa_intersection <- ggplot() +
+# Construye el mapa temático con las capas ordenadas de abajo hacia arriba
+plot_foraging_component_and_mpa <- ggplot() +
   # Capa base de costa mundial como referencia geográfica regional para
   # ubicar visualmente la extensión del mapa
   geom_sf(
@@ -135,31 +128,36 @@ plot_kba_mpa_intersection <- ggplot() +
     color = eez_line_color,
     linewidth = 0.3
   ) +
-  # Capa de las Áreas Marinas Protegidas en verde que muestra la extensión de las
-  # zonas marinas bajo protección legal en México
+  # Capa del relleno translúcido de las AMP, debajo del área núcleo para que
+  # el púrpura quede opaco sobre el verde
   geom_sf(
     data = mexico_mpa_sf,
     fill = mpa_fill_color,
     alpha = mpa_fill_alpha,
-    color = mpa_line_color,
-    linewidth = 0.3
-  ) +
-  # Capa del relleno púrpura del sitio potencial KBA que replica la
-  # representación del área de alimentación del albatros de manera
-  # consistente con los demás mapas de hot spots del proyecto
-  geom_sf(
-    data = kba_red_polygon_sf,
-    fill = kba_fill_color,
     color = NA
   ) +
-  # Capa de la intersección KBA ∩ AMP con color destacado que muestra
-  # la fracción del sitio potencial KBA que está bajo protección legal
+  # Capa del componente de forrajeo con relleno púrpura opaco, sin contorno
+  # para que su forma la defina el propio relleno
   geom_sf(
-    data = kba_mpa_intersection_sf,
-    fill = intersection_fill_color,
-    alpha = intersection_fill_alpha,
-    color = intersection_line_color,
-    linewidth = 0.4
+    data = foraging_component_sf,
+    fill = foraging_component_fill_color,
+    color = NA
+  ) +
+  # Capa del perímetro de los discos de 60 km, sin relleno y en el mismo
+  # púrpura del componente
+  geom_sf(
+    data = colony_radius_disks_sf,
+    fill = NA,
+    color = disk_line_color,
+    linewidth = disk_line_width
+  ) +
+  # Capa del contorno de las AMP dibujada al final para que quede encima del
+  # área núcleo y conserve visible el límite de la protección
+  geom_sf(
+    data = mexico_mpa_sf,
+    fill = NA,
+    color = mpa_line_color,
+    linewidth = 0.3
   ) +
   # Limita la extensión del mapa al bounding box de zoom in centrado en
   # la ZEE de México donde se ubican las AMP del Pacífico mexicano
@@ -170,10 +168,9 @@ plot_kba_mpa_intersection <- ggplot() +
   ) +
   # Estilo limpio que enfatiza las capas espaciales sin distracciones
   theme_minimal() +
-  # Etiquetas del mapa en inglés para integrarse al reporte del primer artículo
+  # Etiquetas de los ejes en inglés para integrarse al reporte del primer
+  # artículo, sin título ni subtítulo porque el pie de figura los aporta
   labs(
-    title = "Foraging component and marine protected areas",
-    subtitle = "Laysan Albatross — Guadalupe, Clarion and San Benedicto islands",
     x = "Longitude",
     y = "Latitude"
   )
@@ -184,7 +181,7 @@ plot_kba_mpa_intersection <- ggplot() +
 # en el reporte del primer artículo del proyecto
 ggsave(
   filename = output_figure_path,
-  plot = plot_kba_mpa_intersection,
+  plot = plot_foraging_component_and_mpa,
   width = fig_width,
   height = fig_height,
   dpi = fig_dpi

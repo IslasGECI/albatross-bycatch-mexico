@@ -1,5 +1,10 @@
 # First paper
 
+## Results
+
+- [ ] Update the Fig 4 caption to name the core area, its 60-km disks, the MPAs, and the EEZ, once the figure shows the disks and loses its title — `15_results.md`.
+  Test: The Fig 4 caption names the core area, the 60-km disks, the MPAs, and the EEZ. Read the caption above the Fig 4 image and find all four.
+
 ## Discussion
 
 - [ ] Fill `XXX percent` with the Results percentage — `17_discussion.md`.

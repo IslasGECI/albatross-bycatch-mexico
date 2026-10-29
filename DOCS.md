@@ -40,7 +40,7 @@ Individual 50% utilization distributions of the tracked albatrosses.
 
 ### reports/figures/gps_albatross_50_percent_potential_kba_ars_all_with_mpa.png
 
-Foraging component contour with the MPA intersection overlay.
+Foraging component and 60-km disk outlines over MPAs and the EEZ.
 
 - Notes: Produced by `src/plot_kba_mpa_intersection.R`.
 

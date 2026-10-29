@@ -502,8 +502,7 @@ data/processed/kba_mpa_intersection_guadalupe.gpkg: \
 	Rscript src/export_kba_guadalupe_mpa_intersection.R
 
 reports/figures/gps_albatross_50_percent_potential_kba_ars_all_with_mpa.png: \
-	data/processed/kba_mpa_intersection_all.gpkg \
-	data/processed/kba_polygons_all.gpkg \
+	data/processed/core_area.gpkg \
 	data/processed/mexico_mpa.gpkg \
 	data/external/Exclusive_economic_zone_Mexico.shp
 	$(checkDirectories)
