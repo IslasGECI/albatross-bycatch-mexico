@@ -3,14 +3,13 @@
 
 \FloatBarrier
 
-<!-- R_tracks — Point: The pooled tracks follow a shared route that remains inside the EEZ. -->
+<!-- R_tracks — Point: The tracks loop counterclockwise from each colony, and only San Benedicto stays inside the EEZ. -->
 Fig 1 shows the GPS tracks of Laysan albatross from Guadalupe, Clarion, and San Benedicto Islands.
 The trajectories follow a counterclockwise pattern, beginning and ending at the corresponding colony, which is located to the south of the paths.
 For Guadalupe and Clarion Islands, the initial heading of the trajectories is toward the northeast, passing along the coast of Baja California.
 On their return journey, the trajectories move away from the coast toward international waters.
 Some trajectories reach 165° W before returning to the island.
 The trajectories of individuals from San Benedicto Island approach the coast of Baja California Sur and return to the island without leaving the EEZ.
-[[ Schimel §11.3 — "Fig 1 shows the GPS tracks" — the paragraph walks the routes in spatial order with no lead and no point; split the shared offshore route from the San Benedicto route that stays inside the EEZ ]]
 
 ![
 GPS tracks of Laysan Albatross (_Phoebastria immutabilis_) from the Guadalupe (green; 2014–2026), Clarion (purple; 2018–2022) and San Benedicto (coral; 2020) colonies.
