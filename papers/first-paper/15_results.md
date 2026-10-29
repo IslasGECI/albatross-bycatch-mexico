@@ -10,6 +10,7 @@ For Guadalupe and Clarion Islands, the initial heading of the trajectories is to
 On their return journey, the trajectories move away from the coast toward international waters.
 Some trajectories reach 165° W before returning to the island.
 The trajectories of individuals from San Benedicto Island approach the coast of Baja California Sur and return to the island without leaving the EEZ.
+[[ Schimel §11.3 — "Fig 1 shows the GPS tracks" — the paragraph walks the routes in spatial order with no lead and no point; split the shared offshore route from the San Benedicto route that stays inside the EEZ ]]
 
 ![
 GPS tracks of Laysan Albatross (_Phoebastria immutabilis_) from the Guadalupe (green; 2014–2026), Clarion (purple; 2018–2022) and San Benedicto (coral; 2020) colonies.
@@ -21,6 +22,7 @@ The flattening at the right end of the curve in Fig 2 indicates that the sample 
 The sample of {{n_analyzed_individuals}} individuals has a representativeness of {{representativeness_percent}}%, which means that it adequately represents the Laysan albatross population at the three colonies.
 We can state that the results obtained from this sample are applicable to the population.
 The representativeness assessment sets a threshold of {{foraging_component_threshold_percent}}% of the population, which is used to define the foraging component.
+[[ Schimel §11.3 — "The representativeness assessment sets a threshold" — the paragraph makes the sample's adequacy its point, then a second point arrives unannounced; split the threshold sentence into its own paragraph ]]
 
 ![
 Representativeness of the analyzed sample of Laysan Albatross (_Phoebastria immutabilis_) GPS tracks from the Guadalupe, Clarion and San Benedicto colonies (2014–2026).
