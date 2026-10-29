@@ -18,11 +18,9 @@ The blue line delimits Mexico's Exclusive Economic Zone, and green lines outline
 ](reports/figures/mexico_eez_bounding_box_zoom_out.png)
 
 <!-- R_representativeness — Point: The analyzed sample adequately represents the population, and the threshold defines the component. -->
-The sample of {{n_analyzed_individuals}} individuals has a representativeness of {{representativeness_percent}}%, and the threshold used to define the foraging component is {{foraging_component_threshold_percent}}% of the population.
-[[ Schimel §14.1 — "the threshold used to define the foraging component" — the passive hides who defines it; name the actor or let the threshold do the defining ]]
+The sample of {{n_analyzed_individuals}} individuals has a representativeness of {{representativeness_percent}}%, and the threshold that defines the foraging component is {{foraging_component_threshold_percent}}% of the population.
 The curve in Fig \ref{fig-representativeness} is flattening at the right, reaching a saturation point.
-The representativeness indicates that the sample adequately represents the Laysan albatross population at the three colonies during the breeding season.
-[[ Schimel §14.2 — "The representativeness indicates" — indicates masks what the value shows; name the action in a concrete verb ]]
+The representativeness shows that the sample adequately represents the Laysan albatross population at the three colonies during the breeding season.
 
 ![
 Representativeness of the analyzed sample of Laysan Albatross (_Phoebastria immutabilis_) GPS tracks from the Guadalupe, Clarion and San Benedicto colonies (2014–2026).
