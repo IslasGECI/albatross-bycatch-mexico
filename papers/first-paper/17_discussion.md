@@ -12,6 +12,7 @@ However, given that it is during the breeding season that the population could b
 
 <!-- D_placement — Point: Island-anchored protection cannot reach a core area that lies offshore. -->
 In Mexico, MPAs are associated with islands, while the albatross core areas are associated with oceanographic conditions and food availability.
+[[ Schimel §11.1 — "In Mexico, MPAs are associated with islands, while the albatross core areas are associated with oceanographic conditions and food availability" — the sentence sets up a contrast but never states its consequence, that island-anchored protection cannot reach the offshore core; add that resolution ]]
 
 <!-- D_contribution — Point: The study evaluates existing MPAs and shows island-anchored protection misses the pelagic core. -->
 The results of this study confirm what has been reported elsewhere by @critchley2018marine and now confirmed also for the Mexican Pacific.
