@@ -20,8 +20,7 @@ The blue line delimits Mexico's Exclusive Economic Zone, and green lines outline
 <!-- R_representativeness — Point: The analyzed sample adequately represents the population, and the threshold defines the component. -->
 The sample of {{n_analyzed_individuals}} individuals has a representativeness of {{representativeness_percent}}%, and the threshold that defines the foraging component is {{foraging_component_threshold_percent}}% of the population.
 The curve in Fig \ref{fig-representativeness} is flattening at the right, reaching a saturation point.
-The representativeness shows that the sample adequately represents the Laysan albatross population at the three colonies during the breeding season.
-[[ Schimel §16.2 — "The representativeness shows that the sample adequately represents" — the noun and the verb repeat one idea; say it once ]]
+The sample adequately represents the Laysan albatross population at the three colonies during the breeding season.
 
 ![
 Representativeness of the analyzed sample of Laysan Albatross (_Phoebastria immutabilis_) GPS tracks from the Guadalupe, Clarion and San Benedicto colonies (2014–2026).
@@ -33,8 +32,7 @@ The inclusion rate measures how much of the population's distribution the analyz
 
 <!-- R_heavy_use — Point: Heavy use concentrates between Guadalupe and the Baja California coast. -->
 Fig \ref{fig-heavy-use} shows that the area between Guadalupe Island and the coast of Baja California is the most used by the Laysan albatross.
-A second area of high use is located northwest of Guadalupe Island.
-[[ Schimel §16.7 — "A second area of high use is located northwest of Guadalupe Island" — is located adds a verb with no action; use a direct verb for where the area lies ]]
+A second area of high use is northwest of Guadalupe Island.
 
 ![
 Number of tracked Laysan Albatross (_Phoebastria immutabilis_) individuals (n = {{n_analyzed_individuals}}) whose 50% utilization distribution covers each grid cell (range {{n_individuals_per_cell_min}}–{{n_individuals_per_cell_max}})\label{fig-heavy-use}.
@@ -42,8 +40,6 @@ Number of tracked Laysan Albatross (_Phoebastria immutabilis_) individuals (n = 
 
 <!-- R_foraging_component — Point: The most overlapped cells become the delineated foraging component. -->
 Fig \ref{fig-foraging-component} shows the area used by at least {{foraging_component_threshold_percent}}% of the population as purple polygons.
-This is the area where the greatest number of individual 50% UDs overlap.
-[[ Schimel §16.2 — "This is the area where the greatest number of individual 50% UDs overlap" — the sentence restates the threshold the previous sentence already gave; keep one statement of the criterion ]]
 
 ![
 The foraging component (purple) for Laysan Albatross (_Phoebastria immutabilis_) delineated from pooled tracking data of {{n_analyzed_individuals}} individuals breeding at Guadalupe, Clarion and San Benedicto (2014–2026).
