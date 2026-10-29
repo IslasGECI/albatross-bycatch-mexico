@@ -11,6 +11,7 @@ However, given that it is during the breeding season that the population could b
 
 In Mexico, MPAs are associated with islands, while the albatross foraging component of the core area is associated with oceanographic conditions and food availability.
 The results of this study agree with what has been reported elsewhere by @critchley2018marine.
+[[ Schimel §13 — "The results of this study agree with what has been reported elsewhere by @critchley2018marine" — the topic does not pick up the stress of the preceding sentence, food availability; reach back to that idea so the agreement reads as a consequence ]]
 
 In Mexico, the core area of the Laysan albatross extends beyond the boundaries of existing MPAs, which are primarily island-anchored.
 Currently, establishing and enforcing an MPA in offshore waters is challenging; therefore, alternative options should be explored.
