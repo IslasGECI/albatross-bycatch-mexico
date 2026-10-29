@@ -42,7 +42,8 @@ Number of tracked Laysan Albatross (_Phoebastria immutabilis_) individuals (n = 
 Fig \ref{fig-foraging-component} shows the area used by at least {{foraging_component_threshold_percent}}% of the population as purple polygons.
 
 ![
-The foraging component (purple) for Laysan Albatross (_Phoebastria immutabilis_) delineated from pooled tracking data of {{n_analyzed_individuals}} individuals breeding at Guadalupe, Clarion and San Benedicto (2014–2026).
+The core area (purple) for Laysan Albatross (_Phoebastria immutabilis_) delineated from pooled tracking data of {{n_analyzed_individuals}} individuals breeding at Guadalupe, Clarion and San Benedicto (2014–2026).
+The purple circumferences mark the 60-km disks around the three colonies, and the filled patches mark the foraging component.
 Green surfaces show Mexican marine protected areas, and the blue line delimits Mexico's Exclusive Economic Zone\label{fig-foraging-component}.
 ](reports/figures/gps_albatross_50_percent_potential_kba_ars_all_with_mpa.png)
 
