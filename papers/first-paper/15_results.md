@@ -18,6 +18,7 @@ The blue line delimits Mexico's Exclusive Economic Zone, and green lines outline
 
 <!-- R_representativeness — Point: The sample is adequate and represents the population; the threshold defines the component. -->
 The curve in Fig \ref{fig-representativeness} is flattening at the right, reaching a saturation point.
+[[ Schimel §13.1 — "The curve in Fig \ref{fig-representativeness}" — the opening does not reach back to the previous paragraph's closing stress, the EEZ; tie the new arc to the tracks or their range ]]
 The sample of {{n_analyzed_individuals}} individuals has a representativeness of {{representativeness_percent}}%, and the threshold used to define the foraging component is {{foraging_component_threshold_percent}}% of the population.
 The representativeness indicates that the sample adequately represents the Laysan albatross population at the three colonies during the breeding season.
 
