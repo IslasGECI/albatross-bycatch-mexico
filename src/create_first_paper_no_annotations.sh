@@ -1,31 +1,40 @@
 #!/usr/bin/env bash
 # ==========================================
 # Título: Prepara el manuscrito sin anotaciones para el DOCX
+#
 # Contexto (Por qué): El PDF conserva las anotaciones [[ ]] como
 #   recordatorios de edición, pero el DOCX debe presentarse sin ellas.
-#   Además, el PDF numera las tablas con LaTeX, mientras que el DOCX no
-#   tiene contador, así que las referencias a tablas hay que resolverlas
-#   antes de convertir el archivo.
+#   Además, el PDF numera tablas y figuras con LaTeX, mientras que el DOCX no
+#   tiene contadores, así que las referencias hay que resolverlas antes de
+#   convertir el archivo.
+#
 # Descripción (Qué / Cómo): Lee reports/first_paper.md y escribe
 #   reports/first_paper_no_annotations.md. Numera las tablas por orden de
-#   aparición, sustituye cada \ref{table-...} por el número que le
-#   corresponde y descarta las etiquetas \label{table-...}. Con awk
-#   descarta las líneas que son solo una anotación y, en el resto, quita
-#   cada anotación junto con un espacio adyacente. Verifica que no queden
-#   anotaciones ni referencias sin resolver y que solo se hayan eliminado
-#   las líneas de anotación.
+#   aparición y las figuras por orden de bloque, sustituye cada
+#   \ref{table-...} y \ref{fig-...} por el número que le corresponde y
+#   descarta las etiquetas \label{...}. Con awk descarta las líneas que son
+#   solo una anotación y, en el resto, quita cada anotación junto con un
+#   espacio adyacente. Verifica que no queden anotaciones ni referencias sin
+#   resolver y que solo se hayan eliminado las líneas de anotación.
+#
 # Entradas:
 # reports/first_paper.md
+#
 # Salida:
 # reports/first_paper_no_annotations.md
+#
 # Dependencias:
 # awk
 # grep
 # wc
+#
 # Notas:
 #   - Cada tabla empieza su leyenda con "Table: " y lleva \label{table-...}
 #   - Cada referencia en el texto se escribe \ref{table-...}
-#   - Una leyenda puede ocupar varias líneas y termina en una línea vacía
+#   - Una leyenda de tabla puede ocupar varias líneas y termina en una línea
+#     vacía
+#   - Cada figura abre un bloque con "![" y lo cierra con "](ruta)"
+#   - La etiqueta \label{fig-...} vive dentro de la leyenda de su figura
 #   - Solo reconoce anotaciones de una línea
 #   - No divide ni une párrafos
 #   - Falla si sobra una anotación, si una referencia no tiene etiqueta o si
@@ -51,13 +60,16 @@ fi
 whole_line_annotations=$(awk '/^[[:space:]]*\[\[[^]]*\]\][[:space:]]*$/ { total++ } END { print total + 0 }' "$input_markdown_path")
 # Cuenta las líneas de entrada con NR para no depender del salto final
 input_lines=$(awk 'END { print NR }' "$input_markdown_path")
-# Numera las tablas por orden de aparición, resuelve cada referencia con el
-# número de su tabla, descarta las etiquetas y limpia las anotaciones
+# Numera las tablas por orden de aparición y las figuras por orden de
+# bloque, resuelve cada referencia con el número de su tabla o figura,
+# descarta las etiquetas y limpia las anotaciones
 awk '
     { lines[NR] = $0 }
     END {
         table_number = 0
+        figure_number = 0
         in_caption = 0
+        in_figure = 0
         for (i = 1; i <= NR; i++) {
             if (lines[i] ~ /^Table: /) {
                 table_number++
@@ -65,11 +77,25 @@ awk '
             } else if (lines[i] ~ /^[[:space:]]*$/) {
                 in_caption = 0
             }
-            if (!in_caption) continue
-            rest = lines[i]
-            while (match(rest, /\\label\{table-[A-Za-z0-9-]+\}/)) {
-                number_of[substr(rest, RSTART + 7, RLENGTH - 8)] = table_number
-                rest = substr(rest, RSTART + RLENGTH)
+            if (lines[i] ~ /^!\[/) {
+                figure_number++
+                in_figure = 1
+            } else if (lines[i] ~ /^\]\(/) {
+                in_figure = 0
+            }
+            if (in_caption) {
+                rest = lines[i]
+                while (match(rest, /\\label\{table-[A-Za-z0-9-]+\}/)) {
+                    number_of[substr(rest, RSTART + 7, RLENGTH - 8)] = table_number
+                    rest = substr(rest, RSTART + RLENGTH)
+                }
+            }
+            if (in_figure) {
+                rest = lines[i]
+                while (match(rest, /\\label\{fig-[A-Za-z0-9-]+\}/)) {
+                    number_of[substr(rest, RSTART + 7, RLENGTH - 8)] = figure_number
+                    rest = substr(rest, RSTART + RLENGTH)
+                }
             }
         }
         for (i = 1; i <= NR; i++) {
@@ -80,7 +106,8 @@ awk '
                 line = "Table: Table " caption_number ": " substr(line, 8)
             }
             gsub(/\\label\{table-[A-Za-z0-9-]+\}/, "", line)
-            while (match(line, /\\ref\{table-[A-Za-z0-9-]+\}/)) {
+            gsub(/\\label\{fig-[A-Za-z0-9-]+\}/, "", line)
+            while (match(line, /\\ref\{(table|fig)-[A-Za-z0-9-]+\}/)) {
                 label = substr(line, RSTART + 5, RLENGTH - 6)
                 if (!(label in number_of)) {
                     print "referencia sin etiqueta: " label > "/dev/stderr"
