@@ -13,7 +13,7 @@ The trajectories of individuals from San Benedicto Island approach the coast of 
 Since the breeding colonies use different areas of the Mexican Pacific, we determined whether the analyzed sample adequately represents the population.
 
 ![
-GPS tracks of Laysan Albatross (_Phoebastria immutabilis_) from the Guadalupe (green; 2014–2026), Clarion (purple; 2018–2022) and San Benedicto (coral; 2020) colonies.
+GPS tracks of Laysan albatross (_Phoebastria immutabilis_) from the Guadalupe (green; 2014–2026), Clarion (purple; 2018–2022), and San Benedicto (coral; 2020) colonies.
 The blue line delimits Mexico's Exclusive Economic Zone, and green lines outline its protected areas\label{fig-tracks}.
 ](reports/figures/mexico_eez_bounding_box_zoom_out.png)
 
@@ -23,7 +23,7 @@ The curve in Fig \ref{fig-representativeness} is flattening at the right, reachi
 The sample adequately represents the Laysan albatross population at the three colonies during the breeding season.
 
 ![
-Representativeness of the analyzed sample of Laysan Albatross (_Phoebastria immutabilis_) GPS tracks from the Guadalupe, Clarion and San Benedicto colonies (2014–2026).
+Representativeness of the analyzed sample of Laysan albatross (_Phoebastria immutabilis_) GPS tracks from the Guadalupe, Clarion, and San Benedicto colonies (2014–2026).
 Gray points show bootstrap estimates of the inclusion rate for each sample size, and the black line shows the fitted saturating curve.
 The gray ribbon represents the spread of the bootstrap inclusion rates.
 The {{representativeness_percent}}% value is the representativeness achieved with the analyzed sample (n = {{n_analyzed_individuals}} individuals).
@@ -35,14 +35,14 @@ Fig \ref{fig-heavy-use} shows that the area between Guadalupe Island and the coa
 A second area of high use is northwest of Guadalupe Island.
 
 ![
-Number of tracked Laysan Albatross (_Phoebastria immutabilis_) individuals (n = {{n_analyzed_individuals}}) whose 50% utilization distribution covers each grid cell (range {{n_individuals_per_cell_min}}–{{n_individuals_per_cell_max}})\label{fig-heavy-use}.
+Number of tracked Laysan albatross (_Phoebastria immutabilis_) individuals (n = {{n_analyzed_individuals}}) whose 50% utilization distribution covers each grid cell (range {{n_individuals_per_cell_min}}–{{n_individuals_per_cell_max}})\label{fig-heavy-use}.
 ](reports/figures/ud_in_grid_map.png)
 
 <!-- R_foraging_component — Point: The most overlapped cells become the delineated foraging component. -->
 Fig \ref{fig-foraging-component} shows the area used by at least {{foraging_component_threshold_percent}}% of the population as purple polygons.
 
 ![
-The core area (purple) for Laysan Albatross (_Phoebastria immutabilis_) delineated from pooled tracking data of {{n_analyzed_individuals}} individuals breeding at Guadalupe, Clarion and San Benedicto (2014–2026).
+The core area (purple) for Laysan albatross (_Phoebastria immutabilis_) delineated from pooled tracking data of {{n_analyzed_individuals}} individuals breeding at Guadalupe, Clarion, and San Benedicto (2014–2026).
 The purple circumferences mark the 60-km disks around the three colonies, and the filled patches mark the foraging component.
 Green surfaces show Mexican marine protected areas, and the blue line delimits Mexico's Exclusive Economic Zone\label{fig-foraging-component}.
 ](reports/figures/gps_albatross_50_percent_potential_kba_ars_all_with_mpa.png)

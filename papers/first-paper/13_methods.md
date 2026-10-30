@@ -180,7 +180,7 @@ It also sets the threshold percentage of the population that we use to define th
 
 <!-- M_core_area — Point: The foraging component and the 60 km disk together form the core area. -->
 The foraging component is the cells where the individual 50% UDs overlap enough to reach the threshold set by the representativeness assessment.
-We define the core area as the union of the foraging component and the disk with a 60 km radius around each colony.
+We define the core area as the union of the foraging component and the disk with a 60-km radius around each colony.
 
 ### Overlap of core areas with MPAs
 
