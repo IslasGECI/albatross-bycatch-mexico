@@ -7,8 +7,7 @@ The main limitation is that the data cover only the breeding season.
 Therefore, the conclusions apply only to that period.
 However, this period is the most relevant for protection, given that the population could be most vulnerable during the breeding season.
 
-In Mexico, MPAs surround islands, while the albatross foraging component of the core area is offshore, unprotected.
-[[ Schimel §17.3 — "the albatross foraging component of the core area" — three nouns stack before the genitive; the Methods names the foraging component, so the extra modifier can go ]]
+In Mexico, MPAs surround islands, while the foraging component of the core area is unprotected.
 This coverage deficit agrees with what has been reported by @critchley2018marine for pelagic species.
 
 In Mexico, the core area of the Laysan albatross extends beyond the boundaries of existing MPAs, which are primarily island-anchored.
