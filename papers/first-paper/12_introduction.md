@@ -17,25 +17,24 @@ In Mexico, the Laysan albatross nests on the islands of Guadalupe, Clarion, and 
 All three islands are within protected areas, and their surrounding waters are MPAs [@castillo2026breeding; @mendez2022population].
 Guadalupe Island is part of the Guadalupe Island Biosphere Reserve, while Clarion and San Benedicto are part of the Revillagigedo National Park [@mendez2022population; @castillo2026breeding].
 The waters adjacent to these MPAs are subject to commercial fishing.
-[[ Schimel §17.2 — "The waters adjacent to these MPAs are subject to commercial fishing." — the paragraph ends on fishing, and the next one opens on identifying important areas without taking it up; mark what the fact is for ]]
 
 <!-- I_why_tracking — Point: Important areas must be identified before testing coverage, and tracking is the standard method. -->
-We must first identify areas that are important for a given species to determine whether MPAs cover those areas.
+Fishing activities are regulated in MPAs.
+To determine whether MPAs cover the areas that are important for a given species, we must first identify those areas.
 Tracking seabirds, for example using GPS devices, is a standard method for identifying such important marine areas [@lascelles2016applying].
 Ideally, marine protected areas should be delineated based on those important areas [@lascelles2016applying; @critchley2018marine].
 However, in the Mexican Pacific, protected areas were not delineated based on seabird tracking data [@mendez2022population].
 
 <!-- I_gap — Point: No study has measured how much of that area falls inside MPAs. -->
+A consequence of this is that we do not know whether the MPAs in the Mexican Pacific cover the areas important for Laysan albatross.
 No study has quantified what proportion of the areas important for Laysan albatross in the Mexican Pacific falls within MPAs.
-[[ Schimel §17.2 — "No study has quantified what proportion of the areas important for Laysan albatross in the Mexican Pacific falls within MPAs." — the previous paragraph closed on how protected areas were delineated, so this opening shifts from method to coverage without a bridge ]]
 Without this information, we cannot determine whether the MPAs are spatially adequate.
 
 <!-- I_novelty — Point: This study pools three colonies over a longer series and applies track2KBA for the first time. -->
-This study is the first to use {{n_tracking_span_years}} years of tracking data from three colonies to identify the areas important for Laysan albatross in Mexico.
 @hernandez2019sexual identified areas based on a 5-year time series from the colony on Guadalupe Island.
-[[ Schimel §17.2 — "@hernandez2019sexual identified areas based on a 5-year time series from the colony on Guadalupe Island." — the sentence moves from this study to earlier work with no connective, so the reader supplies the contrast ]]
 @castillo2026breeding identified areas based on a 4-year time series from the colony on Clarion Island.
 This study incorporates and extends the data from these studies.
+This study is the first to use {{n_tracking_span_years}} years of tracking data from three colonies to identify the areas important for Laysan albatross in Mexico.
 Furthermore, this study is the first to use *track2KBA* [@beal2021track2kba] to identify the Laysan albatross core areas.
 
 <!-- I_question — Point: We ask where the core area lies and how much of it MPAs cover, expecting limited coverage. -->
