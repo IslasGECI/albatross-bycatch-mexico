@@ -7,6 +7,7 @@
 Fig \ref{fig-tracks} shows the GPS tracks of tagged Laysan albatross from Guadalupe, Clarion, and San Benedicto Islands.
 The trajectories follow a counterclockwise pattern, beginning and ending at the corresponding colony.
 For Guadalupe and Clarion Islands, the initial heading of the trajectories is toward the northeast, passing along the coast of Baja California.
+[[ Schimel §17.3 — "the initial heading of the trajectories is toward the northeast" — trajectories recurs in every sentence of the paragraph; let a pronoun or another subject carry part of it ]]
 On their return journey, the trajectories move away from the coast toward international waters.
 Before returning to the island, some trajectories reach 165° W.
 

@@ -27,6 +27,7 @@ However, in the Mexican Pacific, protected areas were not delineated based on se
 
 <!-- I_gap — Point: No study has measured how much of that area falls inside MPAs. -->
 A consequence of this is that we do not know whether the MPAs in the Mexican Pacific cover the areas important for Laysan albatross.
+[[ Schimel §17.3 — "A consequence of this is that we do not know whether the MPAs in the Mexican Pacific cover the areas important for Laysan albatross." — the next sentence repeats the unknown and the same long object; say it once ]]
 No study has quantified what proportion of the areas important for Laysan albatross in the Mexican Pacific falls within MPAs.
 Without this information, we cannot determine whether the MPAs are spatially adequate.
 
@@ -35,6 +36,7 @@ Without this information, we cannot determine whether the MPAs are spatially ade
 @castillo2026breeding identified areas based on a 4-year time series from the colony on Clarion Island.
 This study incorporates and extends the data from these studies.
 This study is the first to use {{n_tracking_span_years}} years of tracking data from three colonies to identify the areas important for Laysan albatross in Mexico.
+[[ Schimel §17.3 — "This study is the first to use {{n_tracking_span_years}} years of tracking data from three colonies" — three sentences in the paragraph open on this study; vary the openings or merge the two claims ]]
 Furthermore, this study is the first to use *track2KBA* [@beal2021track2kba] to identify the Laysan albatross core areas.
 
 <!-- I_question — Point: We ask where the core area lies and how much of it MPAs cover, expecting limited coverage. -->

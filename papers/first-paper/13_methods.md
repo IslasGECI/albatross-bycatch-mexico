@@ -54,6 +54,7 @@ This ensured that we could recover the GPS devices before the individuals migrat
 <!-- M_deployment — Point: No albatross was harmed. -->
 The seabirds were captured by hand at their nests, and the GPS devices were attached to back feathers shed during the non-breeding season.
 We attached the GPS loggers using Tesa tape (#4651, Tesa AG, Hamburg, Germany), following the method described in [@hernandez2019sexual].
+[[ Schimel §17.3 — "following the method described in [@hernandez2019sexual]" — the bracket renders as a parenthetical citation, so in points at nothing; cite the authors as the ones who described the method ]]
 The individuals were released at the same location immediately after the GPS device was attached or removed.
 No albatross were harmed during the study.
 
