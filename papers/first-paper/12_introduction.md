@@ -36,8 +36,7 @@ This study incorporates and extends the data from these studies.
 Furthermore, this study is the first to use *track2KBA* [@beal2021track2kba] to identify the Laysan albatross core areas.
 
 <!-- I_question — Point: We ask where the core area lies and how much of it MPAs cover, expecting limited coverage. -->
-We ask two questions: where are the Laysan albatross core areas in the Mexican Pacific, and what proportion of them falls inside MPAs?
-[[ Schimel §17.1 — "where are the Laysan albatross core areas in the Mexican Pacific" — the next sentence and the Methods delineate one pooled core area; settle the number ]]
+We ask two questions: where is the Laysan albatross core area in the Mexican Pacific, and what proportion of it falls inside MPAs?
 Given that the MPAs were not designed with these core areas in mind, we hypothesize that this proportion will be low.
 To answer them, we delineate the core area from pooled GPS tracking and measure its overlap with the MPA layer.
 
