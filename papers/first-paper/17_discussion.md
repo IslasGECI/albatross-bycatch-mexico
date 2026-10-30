@@ -11,10 +11,8 @@ In Mexico, MPAs surround islands, while the albatross foraging component of the 
 This coverage deficit agrees with what has been reported by @critchley2018marine for pelagic species.
 
 In Mexico, the core area of the Laysan albatross extends beyond the boundaries of existing MPAs, which are primarily island-anchored.
-Currently, establishing and enforcing an MPA in offshore waters is challenging; therefore, alternative options should be explored.
-[[ Schimel §15.3 — "is challenging" — a French-derived euphemism where a short Anglo-Saxon word would carry the difficulty ]]
-A path forward is to incorporate data from other species using the same core area.
-[[ Schimel §15.1 — "A path forward" — a metaphor with a plain language equivalent; name the option the sentence offers ]]
+Currently, establishing and enforcing an MPA in offshore waters is hard; therefore, alternative options should be explored.
+One option is to incorporate data from other species using the same core area.
 This broader perspective would help determine which management strategies are appropriate for the core area.
 
 In its unprotected core area, Laysan albatross faces potential threats.
