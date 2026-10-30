@@ -26,8 +26,8 @@ Ideally, marine protected areas should be delineated based on those important ar
 However, in the Mexican Pacific, protected areas were not delineated based on seabird tracking data [@mendez2022population].
 
 <!-- I_gap — Point: No study has measured how much of that area falls inside MPAs. -->
-A consequence of this is that we do not know whether the MPAs in the Mexican Pacific cover the areas important for Laysan albatross during its breeding season.
-Without this information, we cannot determine whether the MPAs are spatially adequate.
+A consequence of this is that we do not know whether the MPAs cover the areas important for Laysan albatross during its breeding season.
+Without this information, we cannot determine whether the MPAs in the Mexican Pacific are spatially adequate.
 
 <!-- I_novelty — Point: This study pools three colonies over a longer series and applies track2KBA for the first time. -->
 @hernandez2019sexual identified areas based on a 5-year time series from the colony on Guadalupe Island.
