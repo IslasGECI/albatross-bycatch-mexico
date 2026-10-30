@@ -17,3 +17,4 @@ This broader perspective would help determine which management strategies are ap
 
 In its unprotected core area, Laysan albatross faces potential threats.
 Commercial fisheries bycatch is the most significant at-sea threat to the species [@copello2014spatial]; assessing bycatch risk in this area is a next step.
+[[ Schimel §17.1 — "Commercial fisheries bycatch is the most significant at-sea threat to the species" — this paragraph opens a threat arc after the resolution has closed; the manuscript ends on a follow-up its opening never asked for ]]

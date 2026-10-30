@@ -13,6 +13,7 @@ The Pacific Islands of the Baja California Peninsula Biosphere Reserve lay along
 <!-- M_study_area — Point: Oceanographic conditions shape foraging and therefore where the core areas lie. -->
 The oceanographic conditions of the waters surrounding the breeding colonies determine foraging patterns, which in turn define the albatross core areas.
 Examples of such oceanographic conditions are the California Current and the El Niño-Southern Oscillation phenomenon.
+[[ Schimel §17.1 — "The oceanographic conditions of the waters surrounding the breeding colonies determine foraging patterns" — no result measures this driver and no later section uses it; decide whether the study area keeps it ]]
 
 <!-- M_study_area — Point: The three colonies are described next. -->
 Below we describe the three islands where the colonies breed.
@@ -24,6 +25,7 @@ According to unpublished authors' monitoring data, in 2025 the island had 4,390 
 Guadalupe Island is an oceanic island of volcanic origin located 300 km west of the coast of Baja California.
 It has an area of 244 km$^2$.
 It measures 30 km from the southern end to the northern end.
+[[ Schimel §17.1 — "It measures 30 km from the southern end to the northern end." — the island areas and spans are never used again; decide whether the study area needs them ]]
 
 ### Clarion Island
 <!-- M_study_area — Point: Clarion holds the second largest colony in Mexico. -->

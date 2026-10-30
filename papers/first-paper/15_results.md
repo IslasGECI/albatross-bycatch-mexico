@@ -62,5 +62,6 @@ Table: Areas of the foraging component, the 60-km-radius disks, the core area, a
 The foraging component measures {{foraging_component_km2}} km$^2$, and the 60-km-radius area measures {{colony_radius_km2}} km$^2$.
 In total, the core area spans {{core_area_km2}} km$^2$, of which {{core_area_inside_mpa_km2}} km$^2$ is inside MPAs.
 The overlap index is $\frac{A_{i,j}}{A_i}$ = {{overlap_index_proportion}}; that is, {{overlap_index_percentage}}% of the core area is protected.
+[[ Schimel §17.1 — "that is, {{overlap_index_percentage}}% of the core area is protected" — protected claims more than the index measures, which is the share inside MPAs; the Discussion uses that phrasing ]]
 
 \FloatBarrier
