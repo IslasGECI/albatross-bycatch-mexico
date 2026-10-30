@@ -9,8 +9,8 @@ The trajectories follow a counterclockwise pattern, beginning and ending at the 
 For Guadalupe and Clarion Islands, the initial heading of the trajectories is toward the northeast, passing along the coast of Baja California.
 On their return journey, the trajectories move away from the coast toward international waters.
 Before returning to the island, some trajectories reach 165° W.
+
 The trajectories of individuals from San Benedicto Island approach the coast of Baja California Sur and return to the island without leaving the EEZ.
-[[ Schimel §17.2 — "The trajectories of individuals from San Benedicto Island approach the coast of Baja California Sur" — the sentence switches colony after the 165° W detail with no contrast marker ]]
 Since the breeding colonies use different areas of the Mexican Pacific, we determined whether the analyzed sample adequately represents the population.
 
 ![
