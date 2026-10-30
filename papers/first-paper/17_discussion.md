@@ -12,8 +12,10 @@ This coverage deficit agrees with what has been reported by @critchley2018marine
 
 In Mexico, the core area of the Laysan albatross extends beyond the boundaries of existing MPAs, which are primarily island-anchored.
 Currently, establishing and enforcing an MPA in offshore waters is challenging; therefore, alternative options should be explored.
+[[ Schimel §15.3 — "is challenging" — a French-derived euphemism where a short Anglo-Saxon word would carry the difficulty ]]
 A path forward is to incorporate data from other species using the same core area.
+[[ Schimel §15.1 — "A path forward" — a metaphor with a plain language equivalent; name the option the sentence offers ]]
 This broader perspective would help determine which management strategies are appropriate for the core area.
 
 In its unprotected core area, Laysan albatross faces potential threats.
-Bycatch from commercial fisheries is the most significant at-sea threat to the species [@copello2014spatial]; assessing bycatch risk in this area is a natural next step.
+Commercial fisheries bycatch is the most significant at-sea threat to the species [@copello2014spatial]; assessing bycatch risk in this area is a natural next step.
