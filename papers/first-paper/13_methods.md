@@ -89,12 +89,10 @@ Despite model changes, all devices have similar accuracy and were programmed wit
 <!-- M_tracking — Point: Breeding-season records are comparable across years and can be pooled. -->
 We focused solely on albatross that nest on the islands Guadalupe, Clarion, and San Benedicto.
 We used a long time series spanning {{n_tracking_span_years}} years to identify the core areas that persist across interannual variability.
-From the {{tracking_season_span}} seasons, {{n_tracking_seasons}} carried tracking.
-[[ Schimel §17.2 — "{{n_tracking_seasons}} carried tracking" — carried tracking names no concrete action; say what those seasons have ]]
+We have tracking data for {{n_tracking_seasons}} of the {{tracking_season_span}} seasons.
 We assumed that this dataset would be long enough to capture the patterns that persist despite the interannual variability.
 We grouped all {{n_tracking_seasons}} seasons without distinguishing between years.
-Because every year covers only the breeding season, which occurs in the same time period, the years are comparable and can be pooled.
-[[ Schimel §17.2 — "Because every year covers only the breeding season, which occurs in the same time period" — a year does not cover a season, and the comparison stays unnamed; say who covers what and same as what ]]
+Because we tracked albatross only during the breeding season, which occurs in the same months each year, the years are comparable and can be pooled.
 
 <!-- M_tracking — Point: We tagged more individuals at the largest colony than at the others. -->
 Each tracking device records multiple foraging trips during each breeding season.
