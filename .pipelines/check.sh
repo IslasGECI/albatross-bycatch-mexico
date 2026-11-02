@@ -13,11 +13,11 @@
 # Dependencias: docker
 # Notas:
 #   - Corre fuera del contenedor: pertenece a .pipelines/
-#   - Supone que el contenedor ${PWD##*/}_ci ya está iniciado
+#   - Supone que el contenedor ${PWD##*/}_dev ya está iniciado
 #   - Uso: .pipelines/check.sh
 # ==========================================
 
 # Nombre del contenedor que queda corriendo en este equipo
-CONTAINER_NAME="${PWD##*/}_ci"
+CONTAINER_NAME="${PWD##*/}_dev"
 
 docker exec "${CONTAINER_NAME}" make check

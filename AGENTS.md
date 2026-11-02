@@ -7,7 +7,7 @@ The public interface is the `make` targets a `papers/` file references; one no p
 ## Environment Setup & Operations
 
 ### Build System
-- **Docker**: `docker compose run --rm islasgeci`, or `docker exec albatross-bycatch-mexico_ci <command>` in the running container; image `islasgeci/albatross-bycatch-mexico:latest`.
+- **Docker**: `docker compose run --rm islasgeci`, or `docker exec albatross-bycatch-mexico_dev <command>` in the running container; image `islasgeci/albatross-bycatch-mexico:latest`.
 - **CI**: `check.yml` reruns the checks on pushes to `develop`; `render.yml` rebuilds `make all` weekly and pushes the image with `DOCKER_USERNAME`/`DOCKER_PASSWORD`.
 
 ### Key Commands
@@ -17,10 +17,10 @@ make reports/second_paper.pdf
 make reports/obsolete_results.pdf
 make restore
 make format
-docker exec albatross-bycatch-mexico_ci make <target>
-docker exec albatross-bycatch-mexico_ci Rscript src/foo.R
-docker exec albatross-bycatch-mexico_ci src/check_spelling.sh '<glob>' '<es|en>'
-docker exec albatross-bycatch-mexico_ci src/check_manuscript_style.sh '<glob>'
+docker exec albatross-bycatch-mexico_dev make <target>
+docker exec albatross-bycatch-mexico_dev Rscript src/foo.R
+docker exec albatross-bycatch-mexico_dev src/check_spelling.sh '<glob>' '<es|en>'
+docker exec albatross-bycatch-mexico_dev src/check_manuscript_style.sh '<glob>'
 .pipelines/check.sh
 ```
 
@@ -89,7 +89,7 @@ Every `src/` script opens with a Spanish, imperative header: title, context, des
 ### Quality Assurance
 - `make check` runs spellcheck and style checks; both languages pass.
 - **Style**: ≤ 25 words per sentence, one sentence per line; the checker counts words per line and skips `<!--` lines.
-- **Pre-push**: `.githooks/pre-push` (via `core.hooksPath`, set by `.pipelines/init.sh`) runs `make check` in the running `<directory>_ci` container; there is no `make push`.
+- **Pre-push**: `.githooks/pre-push` (via `core.hooksPath`, set by `.pipelines/init.sh`) runs `make check` in the running `<directory>_dev` container; there is no `make push`.
 - **Placeholders**: `{{ key }}` resolves from `data/processed/first_paper_values.json`, unknown keys empty; `[[ ... ]]` notes are skipped; `XXX` marks an author-supplied number; `src/create_first_paper_values.R` generates that JSON, so a new key starts there.
 - **Annotations**: one `[[ ... ]]` note per line, no `]` inside; prose passes add `[[ Schimel §… — "target" — what to fix ]]`, the author rewrites and commits between steps; `src/create_first_paper_no_annotations.sh` strips them from the DOCX only.
 - **Whitelist**: add tokens to `.github/config/.wordlist-{en,es}.txt` and bump the `personal_ws-1.1` count; `aspell` ignores case, so a plural needs an entry.
