@@ -13,6 +13,8 @@
   Test: Every row of the permit table lists a permit number. Grep 19_supplementary.md for XXX and find none.
 - [ ] Fill the foraging-trip count `XXX` — `19_supplementary.md`.
   Test: The supplementary text states the foraging-trip count as a number. Grep 19_supplementary.md for XXX and find none.
+- [ ] Add the trip-summary table to the supplementary: mean, standard deviation, minimum, quartiles, median, and maximum of duration, total distance, and maximum distance — `data/processed/trips_summary_all.csv`, `19_supplementary.md`.
+  Test: 19_supplementary.md lists mean, standard deviation, minimum, quartiles, median, and maximum for the three variables over every foraging trip.
 
 # Second paper
 
@@ -34,6 +36,11 @@
 
 - [ ] Retitle the two unused first-paper figures to the foraging component and update their DOCS lines — `reports/figures/gps_albatross_50_percent_potential_kba_ars_all_without_mpa.png`, `reports/figures/gps_albatross_50_percent_potential_kba_ars_guadalupe_with_mpa.png`, `src/plot_potential_kba_all.R`, `src/plot_kba_guadalupe_mpa_intersection.R`, `DOCS.md`.
   Test: Grep DOCS.md and the two figure paths for potential_kba and find none. Both headings name the foraging component.
+
+## Exploratory analysis
+
+- [ ] Plot the distribution of duration, total distance, and maximum distance from `data/processed/trips_summary_all.csv` as a box plot.
+  Test: A script reads data/processed/trips_summary_all.csv and writes a box-plot PNG of the three variables.
 
 ## Bycatch package
 
