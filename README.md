@@ -8,12 +8,13 @@ Maps where Laysan albatrosses forage in the Mexican Pacific and measures how muc
 
 ## What it does
 
-This project answers two questions about the albatrosses that nest on Guadalupe, Clarion, and San Benedicto:
+This project answers three questions about the albatrosses that nest on Guadalupe, Clarion, and San Benedicto:
 
 1. Where are their most important feeding areas at sea, and how much of that area lies inside marine protected areas?
 2. How much of the space they use overlaps where longline and trawler vessels fish?
+3. Can the shape of a stretch of their path tell whether they were foraging?
 
-The answers are delivered as two scientific articles, each a PDF with maps and tables. The maps are also saved as separate images for talks and reports.
+The answers are delivered as three scientific articles, each a PDF with maps and tables. The maps are also saved as separate images for talks and reports.
 
 ## How to use it
 
