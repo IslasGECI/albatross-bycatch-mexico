@@ -12,5 +12,7 @@ jobs:
       - uses: actions/checkout@v3
       - name: Pull Docker image
         run: docker pull islasgeci/albatross-bycatch-mexico:latest
+      - name: Build the development image
+        run: docker compose --profile develop build develop
       - name: Check manuscripts
-        run: docker run --volume $PWD:/workdir islasgeci/albatross-bycatch-mexico:latest make check
+        run: docker compose --profile develop run --rm develop make check

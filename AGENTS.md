@@ -7,7 +7,7 @@ The public interface is the `make` targets a `papers/` file references; one no p
 ## Environment Setup & Operations
 
 ### Build System
-- **Docker**: `docker compose run --rm islasgeci`, or `docker exec albatross-bycatch-mexico_dev <command>` in the running container; image `islasgeci/albatross-bycatch-mexico:latest`.
+- **Docker**: `docker compose run --rm islasgeci`, or `docker exec albatross-bycatch-mexico_dev <command>` in the running container; image `islasgeci/albatross-bycatch-mexico:latest`. The production image carries only what `make all` needs; `Dockerfile.dev` adds the rest as `islasgeci/albatross-bycatch-mexico:develop`, which `dev-run` starts and where `make check` runs.
 - **CI**: `check.yml` reruns the checks on pushes to `develop`; `render.yml` rebuilds `make all` weekly and pushes the image with `DOCKER_USERNAME`/`DOCKER_PASSWORD`.
 
 ### Key Commands

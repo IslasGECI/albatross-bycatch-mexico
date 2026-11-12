@@ -15,22 +15,12 @@ jobs:
     steps:
     - name: Checkout repo
       uses: actions/checkout@main
-    - name: Set up Docker Buildx
-      uses: docker/setup-buildx-action@master
-    - name: Build and export
-      uses: docker/build-push-action@master
-      with:
-        context: .
-        tags: islasgeci/albatross-bycatch-mexico:latest
+    - name: Build the production image
+      run: docker compose build islasgeci
     - name: 🐋🔏 Docker log-in
       run: echo "${DOCKER_PASSWORD}" | docker login -u "${DOCKER_USERNAME}" --password-stdin
-    - name: Copy vessel data
-      run: docker pull islasgeci/vessel_data:latest
-    - run: docker run --name vessel_data islasgeci/vessel_data:latest
-    - run: docker cp vessel_data:/data/. data/external
     - name: 🌎🦆🎣🛥️ Generate papers
-      run: |
-        docker run --volume $PWD:/workdir --env BITBUCKET_EMAIL=$BITBUCKET_EMAIL --env BITBUCKET_API_TOKEN=$BITBUCKET_API_TOKEN islasgeci/albatross-bycatch-mexico:latest make all
+      run: docker compose run --rm islasgeci make all
     - name: ⏫🏛️ Upload draft
       uses: actions/upload-artifact@main
       with:
