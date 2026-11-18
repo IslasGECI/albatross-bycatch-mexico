@@ -18,27 +18,25 @@ Below we describe the three islands where the colonies breed.
 Guadalupe Island hosts the largest breeding colony of Laysan albatross in the eastern Pacific [@hernandez2019sexual].
 According to unpublished authors' monitoring data, in 2025 the island had 4,390 breeding individuals.
 Guadalupe Island is an oceanic island of volcanic origin located 300 km west of the coast of Baja California.
-It has an area of 244 km$^2$.
-It measures 30 km from the southern end to the northern end.
+It measures 30 km from the southern end to the northern end and has an area of 244 km$^2$.
+[[ R48 — "Guadalupe Island" — Mencionar brevemente especies invasoras que le afectan, gatos? O si ya se controlaron también mencionarlo brevemente. ]]
 
 ### Clarion Island
 <!-- M_study_area — Point: Clarion holds the second largest colony in Mexico. -->
-Clarion Island is part of the Revillagigedo Archipelago.
+Clarion Island is part of the Revillagigedo Archipelago, located XXX km south of Guadalupe Island, already having a tropical climate.
 Clarion is located 700 km from the Mexican mainland.
-It has a tropical climate.
-It has an area of 19.8 km$^2$.
-It measures 8.6 km from the eastern end to the western end.
-Clarion Island has the second largest Laysan albatross colony in Mexico.
+It has an area of 19.8 km$^2$, measuring 8.6 km from the eastern to the western end.
+While considerably smaller, it has the second largest Laysan albatross colony in Mexico.
 On Clarion Island, crows and snakes prey on Laysan albatross eggs and newly hatched chicks.
 The colony failed to produce any chicks between 2016 and 2023 [@castillo2026breeding].
 The colony held about 100 breeding individuals in 2021/22 [@castillo2026breeding].
+[[ R49 — "located XXX km south of Guadalupe Island" — el dato quedó como xx km; falta la distancia ]]
 
 ### San Benedicto
 <!-- M_study_area — Point: Reproductive success on San Benedicto is close to zero. -->
 San Benedicto Island is also part of the Revillagigedo Archipelago and shares the same tropical climate.
 San Benedicto is located 600 km from the Mexican mainland.
-It has an area of 10 km$^2$.
-It measures 4.8 km from the northern end to the southern end.
+It measures 4.8 km from the northern end to the southern end, being the smallest of the three, with a total area of 10 km$^2$.
 On San Benedicto Island, crabs feed on the chicks, and nests can be buried in ash.
 The colony holds fewer than 80 breeding individuals.
 Reproductive success for Laysan albatross is close to 0%.
@@ -62,6 +60,7 @@ The GPS loggers offer the accuracy and precision required [@soanes2013many; @cla
 We programmed the GPS units to record a position every 10 minutes.
 This frequency is high enough to obtain representative data and to identify when an individual stops or reduces its speed.
 At the same time, this frequency is low enough for the GPS units to record several trips per season.
+[[ R17 — "The GPS loggers offer the accuracy and precision required" — more details please ]]
 
 <!-- M_deployment — Point: Guadalupe used a different device model in each period. -->
 On Guadalupe Island we used the following GPS devices.
@@ -81,16 +80,16 @@ On San Benedicto Island we used the following GPS devices.
 In 2020: ATS1 model Nodo-2018 by ACMOS (Mexico).
 
 <!-- M_deployment — Point: Model changes do not compromise comparability across the series. -->
-We used different GPS models as new technology was available during the {{n_tracking_span_years}} years.
+We used different GPS models as new technology was available during the {{n_tracking_span_years}} years this research took place.
 Despite model changes, all devices have similar accuracy and were programmed with the same frequency, so the data remain comparable.
 
 ## Tracking data
 
 <!-- M_tracking — Point: Breeding-season records are comparable across years and can be pooled. -->
-We focused solely on albatross that nest on the islands Guadalupe, Clarion, and San Benedicto.
+We focused solely on albatross that nest on the Guadalupe, Clarion, and San Benedicto islands.
 We used a long time series spanning {{n_tracking_span_years}} years to identify the core areas that persist across interannual variability.
 We have tracking data for {{n_tracking_seasons}} of the {{tracking_season_span}} seasons.
-We assumed that this dataset would be long enough to capture the patterns that persist despite the interannual variability.
+While some inherent interannual variability could exist, we assumed that this dataset would be long enough to capture persistent movement patterns representative of the whole Laysan albatross population that nests in Mexico.
 We grouped all {{n_tracking_seasons}} seasons without distinguishing between years.
 Because we tracked albatross only during the breeding season, which occurs in the same months each year, the years are comparable and can be pooled.
 
@@ -141,7 +140,7 @@ Table: Breeding season, deployment window, tagged individuals, and trips for Lay
 <!-- M_overview — Point: We followed track2KBA because one open package makes the analysis replicable. -->
 We followed the track2KBA methodology because it is replicable using a single open-source R package [@beal2021track2kba].
 It is also explicitly designed to identify important sites for biodiversity from tracking data [@beal2021track2kba].
-We shared the full analysis code on Zenodo at https://doi.org/10.5281/zenodo.23485336.
+The full analysis code on Zenodo is available at https://doi.org/10.5281/zenodo.23485336.
 
 <!-- M_overview — Point: The workflow turns records into a core area, step by step. -->
 We combined the GPS records and split them into individual trips.
@@ -151,22 +150,28 @@ We assessed the sample representativeness.
 We identified the foraging component used by a threshold percentage of the population.
 We defined the core area.
 Below, we describe these steps in more detail.
+[[ R18 — "We removed incomplete trips and trips that never reached beyond 60 km of the colony" — Rationale and citation backing up this action ]]
+[[ R19 — "We calculated the kernel density estimates for each individual..." — Esto es redundante con lo que se explica a mayor detalle en los párrafos siguientes, solo se menciona cada paso una vez, sino es confuso seguir el orden de acciones que se siguieron. ]]
 
 <!-- M_preparation — Point: Trips that return to the colony and leave the 60 km zone count as foraging. -->
 We transformed the GPS records to bring them into a single database.
 We split all tracks into single trips.
 We removed incomplete trips, which are those without a recorded return to the colony.
 Following @hernandez2019sexual, we removed trips that never reached beyond 60 km of the colony.
+We refer to this as the breeding area, thereafter, representing a disk with a 60-km radius around each colony.
 We considered the remaining trips to be foraging trips.
+[[ R20 — "We transformed the GPS records..." — Creo que hay información de este párrafo que está repetida con el anterior, integrar en uno solo por favor ]]
 
 <!-- M_kde — Point: Each individual gets one 50% UD, and each grid cell counts the UDs that cover it. -->
 We pooled the foraging trips per individual to calculate the kernel density estimates (KDEs).
 The area-restricted search (ARS) scale is estimated using first-passage time analysis [@calenge2025adehabitatlt].
 We used the ARS scale of {{ars_scale_km}} km as the smoothing parameter of the KDEs.
+We assumed that our ARS/First-passage time identifies area-restricted search behavior, which is consistent with foraging but is not a direct observation of feeding.
 The 50% utilization distribution (UD) is the region that contains half of the probability mass of the KDE.
-We calculated one 50% UD for each individual albatross [@beal2021track2kba].
+We calculated one 50% UD for each individual albatross, thus representing the area within which each individual concentrated 50% of its estimated space use [@beal2021track2kba].
 We created a grid of {{n_grid_columns}} × {{n_grid_rows}} cells, each {{cell_side_km}} km per side with an area of {{cell_area_km2}} km$^2$.
-For each cell of the grid, we counted the number of individual 50% UDs that cover it.
+For each cell of the grid, we counted the number of individuals whose 50% UD overlapped, yielding an index of individual-level overlap in use areas.
+[[ R21 — "We pooled the foraging trips per individual..." — Esto también está repetido de arriba... ]]
 
 <!-- M_representativeness — Point: The representativeness assessment tests whether the sample stands for the population. -->
 The representativeness assessment averages the KDEs of a resampled subset of individuals to obtain a UD.
@@ -176,7 +181,12 @@ It also sets the threshold percentage of the population that we use to define th
 
 <!-- M_core_area — Point: The foraging component and the 60 km disk together form the core area. -->
 The foraging component is the cells where the individual 50% UDs overlap enough to reach the threshold set by the representativeness assessment.
-We define the core area as the union of the foraging component and the disk with a 60-km radius around each colony.
+We define the core area as the union of the foraging component and the breeding area, as the combination of these two areas would represent core components in the lifecycle of Laysan albatross.
+[[ R22 — "breeding area" — Creo que en lugar de referirnos a esto como un "disco con un radio de 60 km" hay que ponerle un nombre más atractivo, sugiero "breeding area" para que sea alusivo a lo que ahí ocurre para la especie, así al unirlos entonces tiene sentido que sea una "core area" ]]
+[[ R23 — "the core area as the union of the foraging component and the breeding area" — No entiendo por qué ésta sería la “core area", pensé que la "core area" es la que corresponde al 10% de la UD y que sería solo con base en los viajes, y no necesariamente con el traslape con este disco alrededor de la colonia? Incluso según lo que recuerdo y entiendo del tratamiento de los datos esos 60 km, que corresponden a ese disco de 60 km se eliminaron y no se consideran para el análisis, qué no? ]]
+[[ R24 — "the core area" — Creo que ya entendí, pero entonces falta una definición conceptual de la "core area", no una definición técnica, pues a lo que te refieres es que esta core area incorpora el área de relevancia para la anidación, es decir la colina y su zona inmediata (el disco de 60 km) y la zona de alimentación, lo cual tiene sentido, pero eso no está expresado aquí de manera clara, hay que integrarlo. ]]
+[[ R41 — "We define the core area as the union of the foraging component and the disk with a 60-km radius around each colony" — En los métodos dices: We define the core area as the union of the foraging component and the disk with a 60-km radius around each colony. Pero no entiendo porqué esta sería la “core area", no esta que corresponde al 10% de la UD sería solo con base en los viajes, y no necesariamente con el traslape con este disco alrededor de la colonia? ]]
+[[ R44 — "the core area definition" — Creo que ya al fin me cayó el 20, y creo que en general estoy de acuerdo con la idea, la vdd no recuerdo si lo platicamos antes,…pero entonces en los métodos hace falta una definición conceptual de lo que es una "core area”, ahorita slo está una definición técnica. Y bueno, el otro punto es que el enfoque inicial es identificar las zonas de alimentación, y esas en definitiva no caen dentro de las MPAs, entonces estas core areas siento que pueden dar un mensaje errónea, porque están “cargadas” dentro de las MPAs, pues son las zonas de crianza, no sé, me gustaría que lo platicáramos para estar en el mismo canal. Dejo mi comentario en el documento. ]]
 
 ### Overlap of core areas with MPAs
 
