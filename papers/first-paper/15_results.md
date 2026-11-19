@@ -50,6 +50,7 @@ The core area (purple) for Laysan albatross (_Phoebastria immutabilis_) delineat
 The purple circumferences mark the breeding areas around the three colonies, and the filled patches mark the foraging component.
 Green surfaces show Mexican marine protected areas, and the blue line delimits Mexico's Exclusive Economic Zone\label{fig-foraging-component}.
 ](reports/figures/gps_albatross_50_percent_potential_kba_ars_all_with_mpa.png)
+
 [[ R28 — "The core area (purple)" — Pero no esta sería solo el área del "foraging component"? ]]
 [[ R42 — "The core area (purple)" — y es que en la Figura 4, dices que la “core area" son los polígonos púrpura, lo cual me hace sentido, pero eso precisamente no corresponde al traslape entre el disco de 60 km y el 10% del UD ]]
 
