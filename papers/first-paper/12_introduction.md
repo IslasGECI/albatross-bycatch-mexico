@@ -6,7 +6,7 @@ Seabirds are one of the most threatened groups of birds globally.
 Bycatch from fishing activities [@birdlife2018phoebastria; @naughton2007conservation; @safina1995world; @mendez2022population], introduced predators [@birdlife2018phoebastria; @naughton2007conservation; @mendez2022population], as well as direct feather and egg harvesting [@birdlife2018phoebastria; @naughton2007conservation] have reduced seabird numbers.
 In addition, overfishing, mainly by industrial fishing operations, has depleted their prey affecting their survival, fertility rates, and breeding success [@safina1995world].
 There are an estimated ~31% of seabird species at risk and ~47% in decline [@dias2019threats].
-[[ R1 — "In addition, overfishing, mainly by industrial fishing operations, has depleted their prey affecting their survival, fertility rates, and breeding success" — Verificar que lo que agregué esté respaldado por esta cita, que no estoy seguro, y/o agregar las siguientes y cualquier otra que sea pertinente: https://doi.org/10.1093/icesjms/fsad173 https://www.science.org/doi/10.1126/science.1212928 ]]
+[[ R1 — "In addition, overfishing, mainly by industrial fishing operations, has depleted their prey affecting their survival, fertility rates, and breeding success" — Verificar que lo que agregué esté respaldado por esta cita, que no estoy seguro, y/o agregar las siguientes y cualquier otra que sea pertinente: votier2023overview cury2011global ]]
 [[ R2 — "affecting their survival, fertility rates, and breeding success" — Además, es importante ser específico, no es suficiente decir, la sobrepesca afecta a las aves marinas, hay que decir en qué sentido o aspectos es el impacto. ]]
 [[ R3 — "There are an estimated ~31% of seabird species at risk and ~47% in decline" — De nuevo, esto es a nivel global o en una región particular, hay que decirlo para no hacer malas interpretaciones ]]
 
@@ -25,7 +25,7 @@ All three islands are within protected areas, and their surrounding waters are M
 Guadalupe Island is part of the Guadalupe Island Biosphere Reserve, while Clarion and San Benedicto are part of the Revillagigedo National Park [@mendez2022population; @castillo2026breeding].
 While no fisheries are allowed within the latter, the waters adjacent to the former MPA are subject to commercial fishing, however it is mostly restricted to artisanal low impact fishing, for abalone (*Haliotis* spp.) using hooka diving and lobster (*Panulirus interruptus*) trapping, none of which, to our knowledge, has a reported negative interaction with seabirds.
 [[ R11 — "While no fisheries are allowed within the latter..." — Según una búsqueda rápida porque la verdad no conozco mucho del parte Revillagigedo, pero allá no está permitida la pesca comercial de ningún tipo, lo cual es diferente a Guadalupe, sería bueno verificar este dato, voy a hacer una edición siguiendo este supuesto pero confirma con el equipo en GECI por favor. ]]
-[[ R12 — "none of which, to our knowledge, has a reported negative interaction with seabirds" — Citar estas dos aquí: https://doi.org/10.1016/j.biocon.2017.04.002 https://doi.org/10.1016/j.ocecoaman.2025.107660 ]]
+[[ R12 — "none of which, to our knowledge, has a reported negative interaction with seabirds" — Citar estas dos aquí: pott2017information pereira2025seasonal ]]
 
 Fishing activities are regulated in MPAs.
 [[ R6 — "Fishing activities are regulated in MPAs." — Esta idea la separé del párrafo en que estaba porque siento que no va al tema del párrafo, sobre todo porque es la primera idea del mismo, pero el párrafo habla de cómo se determinan las MPAs...no de la regulación pesquera en las MPAs. Recuerda, un tema por párrafo. ]]
@@ -43,7 +43,7 @@ While some of their colonies are within protected areas where strict conservatio
 Given that Laysan albatross depends on the success of these trips to ensure the survival of the next generation, understanding where they are traveling to, and identifying critical grounds (e.g. feeding, resting areas, etc.) during these trips is warranted.
 Moreover, exploring the overlap of seabirds and marine protected areas would provide information to better design targeted conservation and management strategies for this species as well as for seabirds with similar life cycles.
 [[ R9 — "The Laysan albatross is the largest seabird" — Un párrafo así es altamente necesario en este documento, integra el ciclo de vida de la especie, con el vacío en el conocimiento, desde la perspectiva de las áreas protegidas, y da pie a las preguntas de investigación y a la metodología usada. ]]
-[[ R10 — "thousands of kilometers; hundreds of kilometers; outside protected areas" — Citar estos dos aquí: https://www.nature.com/articles/343746a0 https://doi.org/10.1126/science.1106042 ]]
+[[ R10 — "thousands of kilometers; hundreds of kilometers; outside protected areas" — Citar estos dos aquí: jouventin1990satellite croxall2005global ]]
 
 While these protected areas in the Mexican Pacific offer relevant protection to breeding Laysan albatross, they were not delineated based on seabird tracking data [@mendez2022population].
 Ideally, marine protected areas should incorporate information on the level of protection they offer to the overall cycle of species of interest, such as Laysan albatross [@critchley2018marine; @lascelles2016applying].
