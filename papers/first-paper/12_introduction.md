@@ -4,9 +4,9 @@
 <!-- I_hook — Point: Seabirds are among the most threatened birds, and several human pressures drive their decline. -->
 Seabirds are one of the most threatened groups of birds globally.
 Bycatch from fishing activities [@birdlife2018phoebastria; @naughton2007conservation; @safina1995world; @mendez2022population], introduced predators [@birdlife2018phoebastria; @naughton2007conservation; @mendez2022population], as well as direct feather and egg harvesting [@birdlife2018phoebastria; @naughton2007conservation] have reduced seabird numbers.
-In addition, overfishing, mainly by industrial fishing operations, has depleted their prey affecting their survival, fertility rates, and breeding success [@safina1995world].
+Industrial fishing has depleted fish stocks worldwide [@safina1995world].
+Forage-fish depletion below about one-third of maximum prey biomass reduces seabird breeding success [@cury2011global; @votier2023overview].
 There are an estimated ~31% of seabird species at risk and ~47% in decline [@dias2019threats].
-[[ R1 — "In addition, overfishing, mainly by industrial fishing operations, has depleted their prey affecting their survival, fertility rates, and breeding success" — Verificar que lo que agregué esté respaldado por esta cita, que no estoy seguro, y/o agregar las siguientes y cualquier otra que sea pertinente: votier2023overview cury2011global ]]
 [[ R2 — "affecting their survival, fertility rates, and breeding success" — Además, es importante ser específico, no es suficiente decir, la sobrepesca afecta a las aves marinas, hay que decir en qué sentido o aspectos es el impacto. ]]
 [[ R3 — "There are an estimated ~31% of seabird species at risk and ~47% in decline" — De nuevo, esto es a nivel global o en una región particular, hay que decirlo para no hacer malas interpretaciones ]]
 
