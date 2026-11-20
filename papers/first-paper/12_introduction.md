@@ -6,9 +6,7 @@ Seabirds are one of the most threatened groups of birds globally.
 Bycatch from fishing activities [@birdlife2018phoebastria; @naughton2007conservation; @safina1995world; @mendez2022population], introduced predators [@birdlife2018phoebastria; @naughton2007conservation; @mendez2022population], as well as direct feather and egg harvesting [@birdlife2018phoebastria; @naughton2007conservation] have reduced seabird numbers.
 Industrial fishing has depleted fish stocks worldwide [@safina1995world].
 Forage-fish depletion below about one-third of maximum prey biomass reduces seabird breeding success [@cury2011global; @votier2023overview].
-There are an estimated ~31% of seabird species at risk and ~47% in decline [@dias2019threats].
-[[ R2 — "affecting their survival, fertility rates, and breeding success" — Además, es importante ser específico, no es suficiente decir, la sobrepesca afecta a las aves marinas, hay que decir en qué sentido o aspectos es el impacto. ]]
-[[ R3 — "There are an estimated ~31% of seabird species at risk and ~47% in decline" — De nuevo, esto es a nivel global o en una región particular, hay que decirlo para no hacer malas interpretaciones ]]
+Globally, an estimated 31% of seabird species are threatened and 47% are in decline [@dias2019threats].
 
 <!-- I_pelagic_gap — Point: MPAs protect coastal species better than pelagic ones, which the reserves seldom reach. -->
 In light of all these impacts, various strategies have been implemented to prevent the collapse of seabird populations [@naughton2007conservation; @mendez2022population; @dias2019threats; @phillips2024incidental].
