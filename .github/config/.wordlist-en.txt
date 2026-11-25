@@ -1,10 +1,4 @@
-personal_ws-1.1 en 92 utf-8
-Beal
-Niña
-PNA
-PNAs
-Schimel
-Zenodo
+personal_ws-1.1 en 96 utf-8
 accelerometer
 acmos
 adehabitatlt
@@ -13,13 +7,16 @@ anp
 anps
 anthropogenic
 ars
+artisanal
 asymptote
 axy
 azimuthal
 baja
 basemap
+Beal
 benedicto
 biosecurity
+brito
 bycatch
 catlog
 conanp
@@ -60,15 +57,20 @@ mpa
 mpas
 naughton
 neq
+Niña
 niño
 nodo
 of
 overfishing
 peakmethod
+pereira
 perthold
 phoebastria
 pitman
+PNA
+PNAs
 posteriori
+pott
 predation
 preprocessing
 replicable
@@ -76,6 +78,7 @@ representativeness
 revillagigedo
 safina
 sbra
+Schimel
 sgpa
 shapefiles
 soanes
@@ -91,3 +94,4 @@ uds
 vms
 worton
 xxx
+Zenodo
