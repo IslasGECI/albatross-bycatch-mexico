@@ -23,12 +23,6 @@ While no fisheries are allowed within the latter, the waters within the former M
 The fishing in Isla Guadalupe is restricted to artisanal low impact fishing for abalone (_Haliotis_ spp.) using hookah diving and lobster (_Panulirus interruptus_) trapping.
 To our knowledge, no negative interaction has been reported between Isla Guadalupe artisanal fishing and seabirds, although such bycatch is often unreported [@pott2017information; @pereira2025seasonal].
 
-<!-- I_why_tracking — Point: Important areas must be identified before testing coverage, and tracking is the standard method. -->
-To determine the areas that are important for a given species, we must first identify those areas.
-Tracking seabirds, for example using GPS devices, is a standard method for identifying such important marine areas [@lascelles2016applying].
-[[ R7 — "To determine the areas that are important..." — Creo que en lugar de que este párrafo se vaya sobre las MPAs debe irse sobre la identificación de áreas de importancia para las aves marinas usando telemetría satelital. ]]
-[[ R8 — "Tracking seabirds, for example using GPS devices" — Robustecer este párrafo con estudios de aves marinas que hayan ayudado a entender zonas críticas de alimentación o de otros procesos de importancia en su ciclo de vida ]]
-
 The Laysan albatross is the largest seabird, with a widespread oceanic distribution.
 Albatrosses are renowned for long distance trips that can span thousands of kilometers.
 While they remain on the open ocean most of their lifetimes, during the breeding season, Laysan albatross nest on islands where male and females take turns taking care of their nests and making foraging trips that can span hundreds of kilometers.
@@ -38,10 +32,14 @@ Moreover, exploring the overlap of seabirds and marine protected areas would pro
 [[ R9 — "The Laysan albatross is the largest seabird" — Un párrafo así es altamente necesario en este documento, integra el ciclo de vida de la especie, con el vacío en el conocimiento, desde la perspectiva de las áreas protegidas, y da pie a las preguntas de investigación y a la metodología usada. ]]
 [[ R10 — "thousands of kilometers; hundreds of kilometers; outside protected areas" — Citar estos dos aquí: jouventin1990satellite croxall2005global ]]
 
+<!-- I_why_tracking — Point: Telemetry identifies the areas seabirds use, making protected-area coverage testable. -->
+Identification of those critical grounds for seabirds is done by tracking them using satellite telemetry [@lascelles2016applying].
+This analysis helps to understand ecological processes like competition and partitioning of foraging space.
+For instance, telemetry has revealed how gannets use and divide the sea for foraging [@gremillet2004offshore; @wakefield2013space].
+With the important areas identified, it is possible to compare them against the MPAs, providing a testable evaluation based on tracking data.
+
 While these protected areas in the Mexican Pacific offer relevant protection to breeding Laysan albatross, they were not delineated based on seabird tracking data [@mendez2022population].
 Ideally, marine protected areas should incorporate information on the level of protection they offer to the overall cycle of species of interest, such as Laysan albatross [@critchley2018marine; @lascelles2016applying].
-
-<!-- I_gap — Point: No study has measured how much of that area falls inside MPAs. -->
 Therefore, we do not know whether the MPAs in the Mexican Pacific cover the areas important for Laysan albatross.
 Without this information, we cannot determine whether the MPAs are spatially adequate or if additional conservation measures are needed for the adequate protection and management of the species.
 
