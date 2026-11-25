@@ -1,4 +1,4 @@
-personal_ws-1.1 en 91 utf-8
+personal_ws-1.1 en 92 utf-8
 Beal
 Niña
 PNA
@@ -19,6 +19,7 @@ azimuthal
 baja
 basemap
 benedicto
+biosecurity
 bycatch
 catlog
 conanp
