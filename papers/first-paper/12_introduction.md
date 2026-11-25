@@ -19,12 +19,9 @@ Protecting habitats near colonies may not safeguard the seabirds most at risk, e
 In Mexico, the Laysan albatross nests on the islands of Guadalupe, Clarion, and San Benedicto [@pitman2004population].
 All three islands are within protected areas, and their surrounding waters are MPAs [@castillo2026breeding; @mendez2022population].
 Guadalupe Island is part of the Guadalupe Island Biosphere Reserve, while Clarion and San Benedicto are part of the Revillagigedo National Park [@mendez2022population; @castillo2026breeding].
-While no fisheries are allowed within the latter, the waters adjacent to the former MPA are subject to commercial fishing, however it is mostly restricted to artisanal low impact fishing, for abalone (*Haliotis* spp.) using hooka diving and lobster (*Panulirus interruptus*) trapping, none of which, to our knowledge, has a reported negative interaction with seabirds.
-[[ R11 — "While no fisheries are allowed within the latter..." — Según una búsqueda rápida porque la verdad no conozco mucho del parte Revillagigedo, pero allá no está permitida la pesca comercial de ningún tipo, lo cual es diferente a Guadalupe, sería bueno verificar este dato, voy a hacer una edición siguiendo este supuesto pero confirma con el equipo en GECI por favor. ]]
-[[ R12 — "none of which, to our knowledge, has a reported negative interaction with seabirds" — Citar estas dos aquí: pott2017information pereira2025seasonal ]]
-
-Fishing activities are regulated in MPAs.
-[[ R6 — "Fishing activities are regulated in MPAs." — Esta idea la separé del párrafo en que estaba porque siento que no va al tema del párrafo, sobre todo porque es la primera idea del mismo, pero el párrafo habla de cómo se determinan las MPAs...no de la regulación pesquera en las MPAs. Recuerda, un tema por párrafo. ]]
+While no fisheries are allowed within the latter, the waters within the former MPA are subject to commercial fishing.
+The fishing in Isla Guadalupe is restricted to artisanal low impact fishing for abalone (_Haliotis_ spp.) using hookah diving and lobster (_Panulirus interruptus_) trapping.
+To our knowledge, no negative interaction has been reported between Isla Guadalupe artisanal fishing and seabirds, although such bycatch is often unreported [@pott2017information; @pereira2025seasonal].
 
 <!-- I_why_tracking — Point: Important areas must be identified before testing coverage, and tracking is the standard method. -->
 To determine the areas that are important for a given species, we must first identify those areas.
