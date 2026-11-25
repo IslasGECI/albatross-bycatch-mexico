@@ -9,13 +9,11 @@ Forage-fish depletion below about one-third of maximum prey biomass reduces seab
 Globally, an estimated 31% of seabird species are threatened and 47% are in decline [@dias2019threats].
 
 <!-- I_pelagic_gap — Point: MPAs protect coastal species better than pelagic ones, which the reserves seldom reach. -->
-In light of all these impacts, various strategies have been implemented to prevent the collapse of seabird populations [@naughton2007conservation; @mendez2022population; @dias2019threats; @phillips2024incidental].
+To address these impacts, bycatch mitigation, invasive species control or eradication, legal and area protection, monitoring, biosecurity, and education are among the strategies implemented [@naughton2007conservation; @mendez2022population; @dias2019threats; @phillips2024incidental].
 In particular, marine protected areas (MPAs) are considered an important tool for seabird conservation [@critchley2018marine].
 However, protected areas for seabirds usually only include nesting colonies on land and extend from the coast towards a relatively small marine area around a colony [@critchley2018marine].
 This is even more critical for pelagic species, such as albatrosses, which given their wide-ranging movements and migratory habits receive even less protection through MPAs than coastal species do [@critchley2018marine; @lascelles2012hotspots].
-For example, on Britain and Ireland, only 13.2% of the distribution of pelagic populations are covered by MPAs, compared to 32.5% of coastal populations [@critchley2018marine].
-[[ R4 — "various strategies have been implemented" — Aquí habrá que ser más específicos e indicar cuáles son cada una de estas estrategias, aunque sólo sea su mención. Sin embargo, veo que estas referencias son de artículos más generales que no están de manera puntual abordando estas estrategias, así que habría que buscar literatura primaria que las estudiara de manera puntual. ]]
-[[ R5 — "on Britain and Ireland" — Cuidado con hacer afirmaciones que exageren el sustento y mensaje original, este estudio es muy puntual, entonces hay que acotarlo pues sino se entiende que esto fuera a nivel global, cuando no lo es. ]]
+Protecting habitats near colonies may not safeguard the seabirds most at risk, especially pelagic species whose offshore feeding grounds shift with ocean conditions [@critchley2018marine; @lascelles2012hotspots].
 
 <!-- I_mexican_case — Point: The three Mexican colonies sit in protected areas, and their adjacent waters are fished. -->
 In Mexico, the Laysan albatross nests on the islands of Guadalupe, Clarion, and San Benedicto [@pitman2004population].
