@@ -11,5 +11,5 @@ fontsize: 12pt
 lang: en
 bibliography: references.bib
 reference-section-title: References
-csl: boletin-de-la-sociedad-matematica-mexicana.csl
+csl: styles/apa.csl
 ...
