@@ -1,4 +1,4 @@
-personal_ws-1.1 en 97 utf-8
+personal_ws-1.1 en 101 utf-8
 accelerometer
 acmos
 adehabitatlt
@@ -19,6 +19,7 @@ biosecurity
 brito
 bycatch
 catlog
+cedros
 conanp
 conapesca
 critchley
@@ -27,6 +28,7 @@ datalogger
 dgvs
 eez
 el
+ensenada
 enso
 fieberg
 floatbarrier
@@ -45,6 +47,7 @@ iba
 immutabilis
 interannual
 interpretability
+interruptus
 kba
 kde
 kdes
@@ -83,6 +86,7 @@ sgpa
 shapefiles
 soanes
 sparn
+spp
 subsample
 subsampled
 sur

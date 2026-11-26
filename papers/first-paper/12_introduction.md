@@ -20,8 +20,8 @@ In Mexico, the Laysan albatross nests on the islands of Guadalupe, Clarion, and 
 All three islands are within protected areas, and their surrounding waters are MPAs [@castillo2026breeding; @mendez2022population].
 Guadalupe Island is part of the Guadalupe Island Biosphere Reserve, while Clarion and San Benedicto are part of the Revillagigedo National Park [@mendez2022population; @castillo2026breeding].
 While no fisheries are allowed within the latter, the waters within the former MPA are subject to commercial fishing.
-The fishing in Isla Guadalupe is restricted to artisanal low impact fishing for abalone (_Haliotis_ spp.) using hookah diving and lobster (_Panulirus interruptus_) trapping.
-To our knowledge, no negative interaction has been reported between Isla Guadalupe artisanal fishing and seabirds, although such bycatch is often unreported [@pott2017information; @pereira2025seasonal].
+The fishing on Guadalupe Island is restricted to artisanal low impact fishing for abalone (_Haliotis_ spp.) using hookah diving and lobster (_Panulirus interruptus_) trapping.
+To our knowledge, no negative interaction has been reported between Guadalupe Island artisanal fishing and seabirds, although such bycatch is often unreported [@pott2017information; @pereira2025seasonal].
 
 The Laysan albatross is a large seabird, with a widespread oceanic distribution, and remains on the open ocean most of its life, only returning to land to breed [@pitman2004population].
 Albatrosses are renowned for long-distance trips that can span thousands of kilometers [@jouventin1990satellite].
@@ -42,12 +42,13 @@ Therefore, we do not know whether the MPAs in the Mexican Pacific cover the area
 Without this information, we cannot determine whether the MPAs are spatially adequate or if additional conservation measures are needed for the adequate protection and management of the species.
 
 <!-- I_novelty — Point: This study pools three colonies over a longer series and applies track2KBA for the first time. -->
-@hernandez2019sexual identified areas based on a 5-year time series from the colony on Guadalupe Island.
+@hernandez2019sexual identified a 50% kernel composed of three areas based on a 5-year time series from the colony on Guadalupe Island.
+The largest is located northwest of Cedros Island, close to the coast of the Baja California Peninsula.
+The medium-sized one is found northwest of Guadalupe Island, and the smallest is located off the port of Ensenada.
 @castillo2026breeding identified areas based on a 4-year time series from the colony on Clarion Island.
 This study incorporates and extends the data from these studies.
 This study is the first to use {{n_tracking_span_years}} years of tracking data from three colonies to identify the areas important for Laysan albatross in Mexico.
 Furthermore, it is the first to use *track2KBA* [@beal2021track2kba] to identify the Laysan albatross core areas.
-[[ R13 — "@hernandez2019sexual identified areas based on a 5-year time series from the colony on Guadalupe Island" — Más allá de lo que hizo, cuál fue el resultado más relevante de ese estudio que pueda mencionarse aquí? ]]
 [[ R14 — "@castillo2026breeding identified areas based on a 4-year time series from the colony on Clarion Island" — Idem que el comentario anterior ]]
 [[ R15 — "the first to use track2KBA" — Por qué usar track2KBA es relevante, qué ventaja tiene, por qué vale la pena mencionarlo? ]]
 
