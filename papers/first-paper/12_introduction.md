@@ -23,14 +23,12 @@ While no fisheries are allowed within the latter, the waters within the former M
 The fishing in Isla Guadalupe is restricted to artisanal low impact fishing for abalone (_Haliotis_ spp.) using hookah diving and lobster (_Panulirus interruptus_) trapping.
 To our knowledge, no negative interaction has been reported between Isla Guadalupe artisanal fishing and seabirds, although such bycatch is often unreported [@pott2017information; @pereira2025seasonal].
 
-The Laysan albatross is the largest seabird, with a widespread oceanic distribution.
-Albatrosses are renowned for long distance trips that can span thousands of kilometers.
-While they remain on the open ocean most of their lifetimes, during the breeding season, Laysan albatross nest on islands where male and females take turns taking care of their nests and making foraging trips that can span hundreds of kilometers.
-While some of their colonies are within protected areas where strict conservation measures are implemented (i.e. low ecotourism is allowed, invasive species removal, etc.), once they venture into the open ocean it is likely that a large portion of their travels falls outside protected areas.
+The Laysan albatross is a large seabird, with a widespread oceanic distribution, and remains on the open ocean most of its life, only returning to land to breed [@pitman2004population].
+Albatrosses are renowned for long-distance trips that can span thousands of kilometers [@jouventin1990satellite].
+During the breeding season, Laysan albatross nest on islands where males and females take turns taking care of their nests.
+While some of their colonies are within protected areas where strict conservation measures are implemented (e.g. low ecotourism is allowed, invasive species removal, etc.), once they venture into the open ocean it is likely that a large portion of their travels falls outside protected areas [@croxall2005global].
 Given that Laysan albatross depends on the success of these trips to ensure the survival of the next generation, understanding where they are traveling to, and identifying critical grounds (e.g. feeding, resting areas, etc.) during these trips is warranted.
 Moreover, exploring the overlap of seabirds and marine protected areas would provide information to better design targeted conservation and management strategies for this species as well as for seabirds with similar life cycles.
-[[ R9 — "The Laysan albatross is the largest seabird" — Un párrafo así es altamente necesario en este documento, integra el ciclo de vida de la especie, con el vacío en el conocimiento, desde la perspectiva de las áreas protegidas, y da pie a las preguntas de investigación y a la metodología usada. ]]
-[[ R10 — "thousands of kilometers; hundreds of kilometers; outside protected areas" — Citar estos dos aquí: jouventin1990satellite croxall2005global ]]
 
 <!-- I_why_tracking — Point: Telemetry identifies the areas seabirds use, making protected-area coverage testable. -->
 Identification of those critical grounds for seabirds is done by tracking them using satellite telemetry [@lascelles2016applying].
