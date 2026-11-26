@@ -38,7 +38,7 @@ Such information would help design targeted strategies for this species and othe
 
 <!-- I_why_tracking — Point: Telemetry identifies the areas seabirds use, making protected-area coverage testable. -->
 Identification of those critical grounds for seabirds is done by tracking them using satellite telemetry [@lascelles2016applying].
-This analysis helps to understand ecological processes like competition and partitioning of foraging space.
+This identification helps to understand ecological processes such as competition and partitioning of feeding space.
 For instance, telemetry has revealed how gannets use and divide the sea for foraging [@gremillet2004offshore; @wakefield2013space].
 With the important areas identified, it is possible to compare them against the MPAs, providing a testable evaluation based on tracking data.
 
