@@ -60,7 +60,9 @@ During the brooding period, the main area was located to the southeast of the co
 This study incorporates and extends the data from @hernandez2019sexual and @castillo2026breeding.
 This study is the first to use {{n_tracking_span_years}} years of tracking data from three colonies to identify the areas important for Laysan albatross in Mexico.
 Furthermore, it is the first to use *track2KBA* [@beal2021track2kba] to identify the Laysan albatross core areas.
-[[ R15 — "the first to use track2KBA" — Por qué usar track2KBA es relevante, qué ventaja tiene, por qué vale la pena mencionarlo? ]]
+*track2KBA* is a population-level method, developed from individual trajectories and extrapolated to the population scale.
+It is designed for evaluation against quantitative criteria of regional or global significance, such as the Key Biodiversity Areas (KBA) standard [@butchart2026extent].
+This standardized package allows comparisons with other regions or species that custom analyses do not allow.
 
 <!-- I_question — Point: We ask where the core area lies and how much of it MPAs cover, expecting limited coverage. -->
 We asked two questions: where is the Laysan albatross core area in the Mexican Pacific, and what proportion of it falls inside MPAs?
