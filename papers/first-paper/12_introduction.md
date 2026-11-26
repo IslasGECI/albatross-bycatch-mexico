@@ -64,9 +64,7 @@ Furthermore, it is the first to use *track2KBA* [@beal2021track2kba] to identify
 It is designed for evaluation against quantitative criteria of regional or global significance, such as the Key Biodiversity Areas (KBA) standard [@butchart2026extent].
 This standardized package allows comparisons with other regions or species that custom analyses do not allow.
 
-<!-- I_question — Point: We ask where the core area lies and how much of it MPAs cover, expecting limited coverage. -->
-We asked two questions: where is the Laysan albatross core area in the Mexican Pacific, and what proportion of it falls inside MPAs?
-Given that the MPAs were not designed with these core areas in mind, we hypothesize that this proportion will be low.
-To answer them, we delineate the core area from pooled GPS tracking and measure its overlap with the MPA layer.
-[[ R16 — "core area" — Esto lo definimos hasta abajo, entonces o se elimina, o se define desde aquí o mejor desde aquí le llamamos solo foraging area a donde comen, al breeding el área alrededor de la colonia de 60km, y al core area a la combinación, como sugiero en los métodos, pero aquí solo decir que identificaremos como estas tres areas ]]
-[[ R45 — "the manuscript" — Yo considero que hay que diferenciar entre foraging, breeding y core áreas, y el manuscrito y la discusión toma avenidas diferentes dependiendo de cuál sea el principal enfoque, en lo personal, y con base en lo que se platicó desde el principio el enfoque debería ser sobre las "foraging areas", pues así tiene mayor aplicación el enfoque de la metodología usada y permite la crítica a las MPAs y el pase al siguiente capítulo, decirle "core areas" y hacer sobre eso la discusión nos obliga a tener que separar de nuevo y considero es muy confuso. Este cambio permea en todo el manuscrito, entonces aunque creo que hice mis observaciones para que hiciéramos los cambios pertinentes y hubiera consistencia por favor revisa con cuidado todo el texto para que así sea. ]]
+<!-- I_question — Point: We ask where the foraging area lies and how much of it MPAs cover, expecting limited coverage. -->
+We asked two questions: where is the Laysan albatross foraging area in the Mexican Pacific, and what proportion of it falls inside MPAs?
+Given that the MPAs were not designed with these foraging areas in mind, we hypothesize that this proportion will be low.
+To answer them, we delineate the foraging area from pooled GPS tracking and measure its overlap with the MPA layer.
