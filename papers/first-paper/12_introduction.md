@@ -11,8 +11,10 @@ Globally, an estimated 31% of seabird species are threatened and 47% are in decl
 <!-- I_pelagic_gap — Point: MPAs protect coastal species better than pelagic ones, which the reserves seldom reach. -->
 To address these impacts, bycatch mitigation, invasive species control or eradication, legal and area protection, monitoring, biosecurity, and education are among the strategies implemented [@naughton2007conservation; @mendez2022population; @dias2019threats; @phillips2024incidental].
 In particular, marine protected areas (MPAs) are considered an important tool for seabird conservation [@critchley2018marine].
-However, protected areas for seabirds usually only include nesting colonies on land and extend from the coast towards a relatively small marine area around a colony [@critchley2018marine].
-This is even more critical for pelagic species, such as albatrosses, which given their wide-ranging movements and migratory habits receive even less protection through MPAs than coastal species do [@critchley2018marine; @lascelles2012hotspots].
+However, protected areas for seabirds usually only include nesting colonies on land.
+They extend from the coast towards a relatively small marine area around a colony [@critchley2018marine].
+This is even more critical for pelagic species, such as albatrosses.
+Given their wide-ranging movements and migratory habits, they receive even less protection through MPAs than coastal species do [@critchley2018marine; @lascelles2012hotspots].
 Protecting habitats near colonies may not safeguard the seabirds most at risk, especially pelagic species whose offshore feeding grounds shift with ocean conditions [@critchley2018marine; @lascelles2012hotspots].
 
 <!-- I_mexican_case — Point: The three Mexican colonies sit in protected areas, and their adjacent waters are fished. -->
@@ -23,12 +25,16 @@ While no fisheries are allowed within the latter, the waters within the former M
 The fishing on Guadalupe Island is restricted to artisanal low impact fishing for abalone (_Haliotis_ spp.) using hookah diving and lobster (_Panulirus interruptus_) trapping.
 To our knowledge, no negative interaction has been reported between Guadalupe Island artisanal fishing and seabirds, although such bycatch is often unreported [@pott2017information; @pereira2025seasonal].
 
-The Laysan albatross is a large seabird, with a widespread oceanic distribution, and remains on the open ocean most of its life, only returning to land to breed [@pitman2004population].
+The Laysan albatross is a large seabird with a widespread oceanic distribution.
+It remains on the open ocean most of its life, returning to land only to breed [@pitman2004population].
 Albatrosses are renowned for long-distance trips that can span thousands of kilometers [@jouventin1990satellite].
 During the breeding season, Laysan albatross nest on islands where males and females take turns taking care of their nests.
-While some of their colonies are within protected areas where strict conservation measures are implemented (e.g. low ecotourism is allowed, invasive species removal, etc.), once they venture into the open ocean it is likely that a large portion of their travels falls outside protected areas [@croxall2005global].
-Given that Laysan albatross depends on the success of these trips to ensure the survival of the next generation, understanding where they are traveling to, and identifying critical grounds (e.g. feeding, resting areas, etc.) during these trips is warranted.
-Moreover, exploring the overlap of seabirds and marine protected areas would provide information to better design targeted conservation and management strategies for this species as well as for seabirds with similar life cycles.
+Some of their colonies are within protected areas where strict conservation measures are implemented (e.g. low ecotourism is allowed, invasive species removal, etc.).
+Once they venture into the open ocean, it is likely that a large portion of their travels falls outside protected areas [@croxall2005global].
+The Laysan albatross depends on the success of these trips to ensure the survival of the next generation.
+Understanding where they are traveling to and identifying the critical grounds they use, such as feeding and resting areas, during these trips is warranted.
+Moreover, exploring the overlap of seabirds and marine protected areas would inform conservation planning.
+Such information would help design targeted strategies for this species and other seabirds with similar life cycles.
 
 <!-- I_why_tracking — Point: Telemetry identifies the areas seabirds use, making protected-area coverage testable. -->
 Identification of those critical grounds for seabirds is done by tracking them using satellite telemetry [@lascelles2016applying].
@@ -37,19 +43,23 @@ For instance, telemetry has revealed how gannets use and divide the sea for fora
 With the important areas identified, it is possible to compare them against the MPAs, providing a testable evaluation based on tracking data.
 
 While these protected areas in the Mexican Pacific offer relevant protection to breeding Laysan albatross, they were not delineated based on seabird tracking data [@mendez2022population].
-Ideally, marine protected areas should incorporate information on the level of protection they offer to the overall cycle of species of interest, such as Laysan albatross [@critchley2018marine; @lascelles2016applying].
+Ideally, marine protected areas should incorporate information on the level of protection they offer to the overall cycle of species of interest.
+This includes Laysan albatross [@critchley2018marine; @lascelles2016applying].
 Therefore, we do not know whether the MPAs in the Mexican Pacific cover the areas important for Laysan albatross.
-Without this information, we cannot determine whether the MPAs are spatially adequate or if additional conservation measures are needed for the adequate protection and management of the species.
+Without this information, we cannot determine whether the MPAs are spatially adequate.
+We also cannot tell if additional conservation measures are needed for the species.
 
 <!-- I_novelty — Point: This study pools three colonies over a longer series and applies track2KBA for the first time. -->
 @hernandez2019sexual identified a 50% kernel composed of three areas based on a 5-year time series from the colony on Guadalupe Island.
 The largest is located northwest of Cedros Island, close to the coast of the Baja California Peninsula.
 The medium-sized one is found northwest of Guadalupe Island, and the smallest is located off the port of Ensenada.
 @castillo2026breeding identified areas based on a 4-year time series from the colony on Clarion Island.
-This study incorporates and extends the data from these studies.
+The primary foraging areas during the incubation period were located within the California Current System.
+A high density of use occurred between San Francisco and Los Angeles.
+During the brooding period, the main area was located to the southeast of the colony.
+This study incorporates and extends the data from @hernandez2019sexual and @castillo2026breeding.
 This study is the first to use {{n_tracking_span_years}} years of tracking data from three colonies to identify the areas important for Laysan albatross in Mexico.
 Furthermore, it is the first to use *track2KBA* [@beal2021track2kba] to identify the Laysan albatross core areas.
-[[ R14 — "@castillo2026breeding identified areas based on a 4-year time series from the colony on Clarion Island" — Idem que el comentario anterior ]]
 [[ R15 — "the first to use track2KBA" — Por qué usar track2KBA es relevante, qué ventaja tiene, por qué vale la pena mencionarlo? ]]
 
 <!-- I_question — Point: We ask where the core area lies and how much of it MPAs cover, expecting limited coverage. -->
